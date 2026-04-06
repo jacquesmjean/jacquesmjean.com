@@ -18,49 +18,48 @@
 
         body {
             font-family: 'Inter', sans-serif;
-            color: #333;
+            background-color: #FFFFFF;
+            color: #1F2937;
             line-height: 1.6;
-            background-color: #fff;
         }
 
-        /* Header & Navigation */
-        header {
+        /* Navigation */
+        nav {
             position: sticky;
             top: 0;
             z-index: 1000;
-            background-color: #0F1B4C;
-            box-shadow: 0 2px 8px rgba(15, 27, 76, 0.15);
+            background-color: #FFFFFF;
+            border-bottom: 1px solid #E5E7EB;
+            padding: 1.25rem 2rem;
         }
 
-        nav {
+        .nav-container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 0 20px;
             display: flex;
             justify-content: space-between;
             align-items: center;
-            height: 70px;
         }
 
-        .logo {
+        .nav-logo {
             font-family: 'Playfair Display', serif;
-            font-size: 24px;
+            font-size: 1.5rem;
             font-weight: 700;
-            color: #C9A84C;
+            color: #0F1B4C;
             text-decoration: none;
         }
 
         .nav-links {
             display: flex;
             list-style: none;
-            gap: 40px;
+            gap: 2.5rem;
             align-items: center;
         }
 
         .nav-links a {
-            color: white;
+            color: #1F2937;
             text-decoration: none;
-            font-size: 14px;
+            font-size: 0.95rem;
             font-weight: 500;
             transition: color 0.3s ease;
             position: relative;
@@ -72,74 +71,312 @@
 
         .nav-links a.active {
             color: #C9A84C;
-            border-bottom: 2px solid #C9A84C;
-            padding-bottom: 2px;
+            border-bottom: 3px solid #C9A84C;
+            padding-bottom: 0.25rem;
         }
 
         .mobile-menu-btn {
             display: none;
             background: none;
             border: none;
-            color: white;
-            font-size: 24px;
+            color: #0F1B4C;
+            font-size: 1.5rem;
             cursor: pointer;
         }
 
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, #0F1B4C 0%, #1a2f5f 100%);
-            color: white;
-            padding: 80px 20px;
+        /* Page Header */
+        .page-header {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem 2rem;
             text-align: center;
         }
 
-        .hero-content {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .hero h1 {
+        .page-header h1 {
             font-family: 'Playfair Display', serif;
-            font-size: 48px;
+            font-size: 3rem;
             font-weight: 700;
-            margin-bottom: 20px;
-            animation: fadeInDown 0.8s ease;
+            color: #0F1B4C;
+            margin-bottom: 0.5rem;
         }
 
-        .hero h1 span {
-            border-bottom: 3px solid #C9A84C;
-            padding-bottom: 5px;
-        }
-
-        @keyframes fadeInDown {
-            from {
-                opacity: 0;
-                transform: translateY(-20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+        .page-header .underline {
+            display: inline-block;
+            border-bottom: 4px solid #C9A84C;
+            padding-bottom: 0.25rem;
         }
 
         /* Intro Section */
         .intro-section {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 80px 20px;
+            max-width: 900px;
+            margin: 3rem auto;
+            padding: 0 2rem;
             text-align: center;
         }
 
-        .intro-text {
-            font-size: 18px;
-            color: #555;
+        .intro-section p {
+            font-size: 1.05rem;
+            color: #6B7280;
             line-height: 1.8;
-            max-width: 900px;
-            margin: 0 auto;
-            animation: fadeIn 0.8s ease;
         }
 
-        @keyframes fadeIn {
+        /* Services Grid */
+        .services-section {
+            background-color: #F5F6F8;
+            padding: 4rem 2rem;
+            margin-top: 3rem;
+        }
+
+        .services-container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .service-card {
+            background: #FFFFFF;
+            padding: 2.5rem;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+            transition: all 0.3s ease;
+        }
+
+        .service-card:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .service-icon {
+            width: 50px;
+            height: 50px;
+            margin-bottom: 1.25rem;
+        }
+
+        .service-icon svg {
+            width: 100%;
+            height: 100%;
+        }
+
+        .service-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: #0F1B4C;
+            margin-bottom: 0.75rem;
+        }
+
+        .service-card .divider {
+            width: 40px;
+            height: 2px;
+            background-color: #C9A84C;
+            margin-bottom: 1rem;
+        }
+
+        .service-card p {
+            font-size: 0.95rem;
+            color: #6B7280;
+            line-height: 1.7;
+        }
+
+        /* Engagement Approach */
+        .approach-section {
+            max-width: 1200px;
+            margin: 4rem auto;
+            padding: 0 2rem;
+        }
+
+        .approach-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: #0F1B4C;
+            text-align: center;
+            margin-bottom: 2.5rem;
+        }
+
+        .approach-card {
+            background: #F5F6F8;
+            padding: 2.5rem;
+            border-radius: 8px;
+            border-left: 4px solid #C9A84C;
+        }
+
+        .approach-card h3 {
+            font-family: 'Playfair Display', serif;
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: #0F1B4C;
+            margin-bottom: 1.25rem;
+        }
+
+        .approach-card p {
+            font-size: 0.95rem;
+            color: #6B7280;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+        }
+
+        .approach-card p:last-child {
+            margin-bottom: 0;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            background: linear-gradient(135deg, #0F1B4C 0%, #1a2f5f 100%);
+            color: #FFFFFF;
+            padding: 4rem 2rem;
+            text-align: center;
+            margin-top: 4rem;
+        }
+
+        .cta-section h2 {
+            font-family: 'Playfair Display', serif;
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+
+        .cta-section p {
+            font-size: 1rem;
+            margin-bottom: 2rem;
+            opacity: 0.95;
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #C9A84C;
+            color: #0F1B4C;
+            padding: 0.875rem 2rem;
+            border-radius: 4px;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            border: 2px solid #C9A84C;
+        }
+
+        .cta-button:hover {
+            background-color: transparent;
+            color: #FFFFFF;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #0F1B4C;
+            color: #FFFFFF;
+            padding: 3rem 2rem 1.5rem;
+            margin-top: 4rem;
+        }
+
+        .footer-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            margin-bottom: 2rem;
+        }
+
+        .footer-col h4 {
+            font-family: 'Playfair Display', serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #C9A84C;
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        .footer-col p {
+            font-size: 0.85rem;
+            line-height: 1.8;
+            color: #D1D5DB;
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-col a {
+            color: #D1D5DB;
+            text-decoration: none;
+            font-size: 0.85rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-col a:hover {
+            color: #C9A84C;
+        }
+
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(201, 168, 76, 0.2);
+            padding-top: 1.5rem;
+            text-align: center;
+            font-size: 0.8rem;
+            color: #9CA3AF;
+        }
+
+        /* Mobile Responsive */
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                right: 0;
+                flex-direction: column;
+                background-color: #FFFFFF;
+                border-bottom: 1px solid #E5E7EB;
+                padding: 1rem;
+                gap: 0.5rem;
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+
+            .mobile-menu-btn {
+                display: block;
+            }
+
+            .page-header h1 {
+                font-size: 2rem;
+            }
+
+            .services-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .cta-section {
+                padding: 2.5rem 1.5rem;
+            }
+
+            .cta-section h2 {
+                font-size: 1.5rem;
+            }
+
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+        }
+
+        /* Animations */
+        @keyframes fadeInUp {
             from {
                 opacity: 0;
                 transform: translateY(20px);
@@ -150,356 +387,52 @@
             }
         }
 
-        /* Services Section */
-        .services-section {
-            background-color: #F8F9FA;
-            padding: 80px 20px;
-        }
-
-        .services-content {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .section-heading {
-            font-family: 'Playfair Display', serif;
-            font-size: 40px;
-            font-weight: 700;
-            color: #0F1B4C;
-            text-align: center;
-            margin-bottom: 60px;
-            animation: fadeIn 0.8s ease;
-        }
-
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-        }
-
         .service-card {
-            background: white;
-            padding: 40px;
-            border-radius: 8px;
-            border-top: 4px solid #C9A84C;
-            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
-            animation: fadeIn 0.8s ease;
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
-            display: flex;
-            flex-direction: column;
+            animation: fadeInUp 0.6s ease-out forwards;
         }
 
-        .service-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
-        }
-
-        .service-icon {
-            width: 60px;
-            height: 60px;
-            margin-bottom: 20px;
-            flex-shrink: 0;
-        }
-
-        .service-icon svg {
-            width: 100%;
-            height: 100%;
-        }
-
-        .service-card h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 20px;
-            font-weight: 700;
-            color: #0F1B4C;
-            margin-bottom: 15px;
-        }
-
-        .service-card p {
-            font-size: 16px;
-            color: #666;
-            line-height: 1.6;
-            margin-bottom: 25px;
-            flex-grow: 1;
-        }
-
-        .service-card a {
-            display: inline-block;
-            color: #0F1B4C;
-            text-decoration: none;
-            font-size: 14px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            border-bottom: 2px solid #C9A84C;
-            padding-bottom: 2px;
-        }
-
-        .service-card a:hover {
-            color: #C9A84C;
-        }
-
-        /* Engagement Approach Section */
-        .approach-section {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 80px 20px;
-        }
-
-        .approach-card {
-            background: white;
-            padding: 50px;
-            border-radius: 8px;
-            border-left: 4px solid #C9A84C;
-            box-shadow: 0 2px 16px rgba(0, 0, 0, 0.08);
-            animation: fadeIn 0.8s ease;
-        }
-
-        .approach-card h3 {
-            font-family: 'Playfair Display', serif;
-            font-size: 28px;
-            font-weight: 700;
-            color: #0F1B4C;
-            margin-bottom: 30px;
-        }
-
-        .approach-card p {
-            font-size: 16px;
-            color: #555;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-
-        .approach-card p:last-child {
-            margin-bottom: 0;
-        }
-
-        /* CTA Section */
-        .cta-section {
-            background: linear-gradient(135deg, #0F1B4C 0%, #1a2f5f 100%);
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-        }
-
-        .cta-content {
-            max-width: 1400px;
-            margin: 0 auto;
-        }
-
-        .cta-section h2 {
-            font-family: 'Playfair Display', serif;
-            font-size: 40px;
-            font-weight: 700;
-            margin-bottom: 30px;
-            animation: fadeIn 0.8s ease;
-        }
-
-        .cta-section p {
-            font-size: 18px;
-            margin-bottom: 40px;
-            animation: fadeIn 0.8s ease 0.1s both;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background-color: #C9A84C;
-            color: #0F1B4C;
-            padding: 16px 40px;
-            border-radius: 4px;
-            text-decoration: none;
-            font-size: 16px;
-            font-weight: 600;
-            transition: all 0.3s ease;
-            border: 2px solid #C9A84C;
-            animation: fadeIn 0.8s ease 0.2s both;
-        }
-
-        .cta-button:hover {
-            background-color: transparent;
-            color: white;
-        }
-
-        /* Footer */
-        footer {
-            background-color: #0F1B4C;
-            color: white;
-            padding: 60px 20px 30px;
-            margin-top: 80px;
-        }
-
-        footer-content {
-            max-width: 1400px;
-            margin: 0 auto;
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 40px;
-            margin-bottom: 40px;
-        }
-
-        footer-col h4 {
-            font-family: 'Playfair Display', serif;
-            font-size: 16px;
-            font-weight: 700;
-            margin-bottom: 20px;
-            color: #C9A84C;
-        }
-
-        footer-col ul {
-            list-style: none;
-        }
-
-        footer-col ul li {
-            margin-bottom: 12px;
-        }
-
-        footer-col a {
-            color: #ccc;
-            text-decoration: none;
-            font-size: 14px;
-            transition: color 0.3s ease;
-        }
-
-        footer-col a:hover {
-            color: #C9A84C;
-        }
-
-        .footer-bottom {
-            border-top: 1px solid rgba(201, 168, 76, 0.3);
-            padding-top: 30px;
-            text-align: center;
-            color: #999;
-            font-size: 14px;
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .nav-links {
-                display: none;
-            }
-
-            .mobile-menu-btn {
-                display: block;
-            }
-
-            .hero h1 {
-                font-size: 32px;
-            }
-
-            .intro-section {
-                padding: 60px 20px;
-            }
-
-            .intro-text {
-                font-size: 16px;
-            }
-
-            .services-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .section-heading {
-                font-size: 28px;
-            }
-
-            .cta-section h2 {
-                font-size: 28px;
-            }
-
-            .cta-section p {
-                font-size: 16px;
-            }
-
-            footer-content {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-
-            .services-section,
-            .approach-section,
-            .cta-section {
-                padding: 60px 20px;
-            }
-        }
-
-        @media (max-width: 480px) {
-            .hero h1 {
-                font-size: 28px;
-            }
-
-            .section-heading {
-                font-size: 24px;
-            }
-
-            .nav {
-                height: 60px;
-            }
-
-            .logo {
-                font-size: 20px;
-            }
-
-            .service-card,
-            .approach-card {
-                padding: 25px;
-            }
-
-            .cta-section h2 {
-                font-size: 24px;
-            }
-        }
-
-        /* Scroll animation helper class */
-        .scroll-fade {
-            opacity: 0;
-            transform: translateY(20px);
-            transition: opacity 0.8s ease, transform 0.8s ease;
-        }
-
-        .scroll-fade.visible {
-            opacity: 1;
-            transform: translateY(0);
-        }
+        .service-card:nth-child(1) { animation-delay: 0.1s; }
+        .service-card:nth-child(2) { animation-delay: 0.2s; }
+        .service-card:nth-child(3) { animation-delay: 0.3s; }
+        .service-card:nth-child(4) { animation-delay: 0.4s; }
+        .service-card:nth-child(5) { animation-delay: 0.5s; }
+        .service-card:nth-child(6) { animation-delay: 0.6s; }
     </style>
 </head>
 <body>
-    <!-- Header -->
-    <header>
-        <nav>
-            <a href="../index.html" class="logo">JMJ</a>
-            <ul class="nav-links">
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="../index.html" class="nav-logo">Jacques M. Jean</a>
+            <ul class="nav-links" id="navLinks">
                 <li><a href="../index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="advisory.html" class="active">Advisory</a></li>
-                <li><a href="governance.html">Governance</a></li>
-                <li><a href="insights.html">Insights</a></li>
-                <li><a href="flagship-paper.html">Flagship Paper</a></li>
-                <li><a href="engagement.html">Engagement</a></li>
-                <li><a href="contact.html">Contact</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./advisory.html" class="active">Advisory</a></li>
+                <li><a href="./governance.html">Governance</a></li>
+                <li><a href="./insights.html">Insights</a></li>
+                <li><a href="./flagship-paper.html">Paper</a></li>
+                <li><a href="./engagement.html">Engagement</a></li>
+                <li><a href="./contact.html">Contact</a></li>
             </ul>
-            <button class="mobile-menu-btn">&#9776;</button>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Advisory <span>Services</span></h1>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">&#9776;</button>
         </div>
-    </section>
+    </nav>
+
+    <!-- Page Header -->
+    <div class="page-header">
+        <h1>Advisory <span class="underline">Services</span></h1>
+    </div>
 
     <!-- Intro Section -->
     <section class="intro-section">
-        <div class="intro-text scroll-fade">
-            <p>System-level advisory for complex institutional and economic challenges. Jacques M. Jean provides strategic guidance to governments, institutions, and enterprises navigating AI transformation, infrastructure development, and cross-border economic integration.</p>
-        </div>
+        <p>System-level advisory for complex institutional and economic challenges. Strategic guidance for governments, institutions, and enterprises navigating AI transformation, infrastructure development, and cross-border economic integration.</p>
     </section>
 
-    <!-- Services Section -->
+    <!-- Services Grid -->
     <section class="services-section">
-        <div class="services-content">
-            <h2 class="section-heading scroll-fade">Core Service Offerings</h2>
+        <div class="services-container">
             <div class="services-grid">
-                <!-- Card 1: AI Governance -->
-                <div class="service-card scroll-fade">
+                <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="30" cy="30" r="28" stroke="#0F1B4C" stroke-width="2"/>
@@ -511,12 +444,11 @@
                         </svg>
                     </div>
                     <h3>AI Governance & Institutional Systems</h3>
-                    <p>Architecting governance-aligned AI deployment frameworks that enhance institutional productivity, risk management, and decision transparency at enterprise and sovereign scale.</p>
-                    <a href="contact.html">Learn More →</a>
+                    <div class="divider"></div>
+                    <p>Architecting governance-aligned AI deployment frameworks that enhance institutional productivity, risk management, and decision transparency.</p>
                 </div>
 
-                <!-- Card 2: Infrastructure Strategy -->
-                <div class="service-card scroll-fade">
+                <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="10" y="20" width="40" height="30" stroke="#0F1B4C" stroke-width="2" rx="2"/>
@@ -526,12 +458,11 @@
                         </svg>
                     </div>
                     <h3>Infrastructure Strategy & Capital Structuring</h3>
-                    <p>Designing frameworks that improve revenue capture, asset optimization, and long-term capital efficiency across public and private infrastructure systems.</p>
-                    <a href="contact.html">Learn More →</a>
+                    <div class="divider"></div>
+                    <p>Designing frameworks that improve revenue capture, asset optimization, and long-term capital efficiency across infrastructure systems.</p>
                 </div>
 
-                <!-- Card 3: Informal Economy -->
-                <div class="service-card scroll-fade">
+                <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="18" cy="20" r="6" stroke="#0F1B4C" stroke-width="2"/>
@@ -541,12 +472,11 @@
                         </svg>
                     </div>
                     <h3>Informal Economy Modernization</h3>
-                    <p>Developing scalable digital enablement models that formalize value creation, increase financial inclusion, and strengthen data-driven economic participation in emerging markets.</p>
-                    <a href="contact.html">Learn More →</a>
+                    <div class="divider"></div>
+                    <p>Developing scalable digital enablement models that formalize value creation and increase financial inclusion in emerging markets.</p>
                 </div>
 
-                <!-- Card 4: Global Trade -->
-                <div class="service-card scroll-fade">
+                <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <circle cx="30" cy="30" r="20" stroke="#0F1B4C" stroke-width="2"/>
@@ -555,12 +485,11 @@
                         </svg>
                     </div>
                     <h3>Global Trade & Infrastructure Systems</h3>
-                    <p>Designing structured cross-border commodity frameworks that improve pricing transparency, supply chain governance, and capital retention within emerging market economies.</p>
-                    <a href="contact.html">Learn More →</a>
+                    <div class="divider"></div>
+                    <p>Designing structured cross-border frameworks that improve pricing transparency and supply chain governance in emerging markets.</p>
                 </div>
 
-                <!-- Card 5: Digital Economic Platforms -->
-                <div class="service-card scroll-fade">
+                <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <rect x="12" y="15" width="36" height="30" stroke="#0F1B4C" stroke-width="2" rx="2"/>
@@ -572,12 +501,11 @@
                         </svg>
                     </div>
                     <h3>Digital Economic Platforms</h3>
-                    <p>Building integrated digital ecosystems that connect market participants, reduce transaction costs, and enable seamless value exchange across fragmented markets.</p>
-                    <a href="contact.html">Learn More →</a>
+                    <div class="divider"></div>
+                    <p>Building integrated digital ecosystems that connect market participants, reduce transaction costs, and enable seamless value exchange.</p>
                 </div>
 
-                <!-- Card 6: Cross-Border Capital -->
-                <div class="service-card scroll-fade">
+                <div class="service-card">
                     <div class="service-icon">
                         <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M15 45L30 15L45 45" stroke="#0F1B4C" stroke-width="2" stroke-linejoin="round"/>
@@ -587,118 +515,76 @@
                         </svg>
                     </div>
                     <h3>Cross-Border Capital Integration</h3>
-                    <p>Structuring financial mechanisms and policy frameworks that facilitate secure, compliant, and efficient capital flows between developed and emerging markets.</p>
-                    <a href="contact.html">Learn More →</a>
+                    <div class="divider"></div>
+                    <p>Structuring financial mechanisms and policy frameworks that facilitate secure, compliant capital flows between markets.</p>
                 </div>
             </div>
         </div>
     </section>
 
-    <!-- Engagement Approach Section -->
+    <!-- Engagement Approach -->
     <section class="approach-section">
-        <h2 class="section-heading scroll-fade">Engagement Approach</h2>
-        <div class="approach-card scroll-fade">
-            <h3>How Jacques Works With Clients</h3>
-            <p>Jacques operates with a selective, outcomes-driven methodology focused on institutional value creation. Rather than providing generic strategic advice, he conducts rigorous diagnostic assessments of organizational systems, capital structures, and governance architectures to identify high-impact intervention points.</p>
-            <p>Each engagement is structured around measurable institutional outcomes: improved decision-making transparency, enhanced capital efficiency, reduced systemic risk, and sustainable competitive positioning. Jacques works directly with C-suite and government leadership to translate complex economic and technical challenges into actionable strategic frameworks that drive long-term institutional value.</p>
-            <p>His approach emphasizes institutional design principles over tactical consulting—helping organizations build resilient execution systems capable of adapting to rapid technological and market changes while maintaining governance integrity.</p>
+        <h2>Engagement Approach</h2>
+        <div class="approach-card">
+            <h3>How I Work With Clients</h3>
+            <p>I operate with a selective, outcomes-driven methodology focused on institutional value creation. Rather than generic strategic advice, I conduct rigorous diagnostic assessments of organizational systems, capital structures, and governance architectures to identify high-impact intervention points.</p>
+            <p>Each engagement is structured around measurable institutional outcomes: improved decision-making transparency, enhanced capital efficiency, reduced systemic risk, and sustainable competitive positioning. I work directly with C-suite and government leadership to translate complex economic and technical challenges into actionable strategic frameworks.</p>
+            <p>My approach emphasizes institutional design principles over tactical consulting—helping organizations build resilient execution systems capable of adapting to rapid change while maintaining governance integrity.</p>
         </div>
     </section>
 
     <!-- CTA Section -->
     <section class="cta-section">
-        <div class="cta-content">
-            <h2 class="scroll-fade">Ready to Explore Strategic Possibilities?</h2>
-            <p class="scroll-fade">Connect with Jacques to discuss how advisory services can address your most complex institutional and economic challenges.</p>
-            <a href="contact.html" class="cta-button scroll-fade">Request a Strategic Discussion</a>
-        </div>
+        <h2>Ready to Explore Strategic Possibilities?</h2>
+        <p>Connect to discuss how advisory services can address your most complex institutional and economic challenges.</p>
+        <a href="./contact.html" class="cta-button">Request a Strategic Discussion</a>
     </section>
 
     <!-- Footer -->
     <footer>
-        <div style="max-width: 1400px; margin: 0 auto;">
-            <footer-content>
-                <footer-col>
-                    <h4>Navigation</h4>
-                    <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="about.html">About</a></li>
-                        <li><a href="advisory.html">Advisory</a></li>
-                        <li><a href="governance.html">Governance</a></li>
-                    </ul>
-                </footer-col>
-                <footer-col>
-                    <h4>Resources</h4>
-                    <ul>
-                        <li><a href="insights.html">Insights</a></li>
-                        <li><a href="flagship-paper.html">Flagship Paper</a></li>
-                        <li><a href="engagement.html">Engagement</a></li>
-                        <li><a href="contact.html">Contact</a></li>
-                    </ul>
-                </footer-col>
-                <footer-col>
-                    <h4>Connect</h4>
-                    <ul>
-                        <li><a href="mailto:contact@jacquesmjean.com">Email</a></li>
-                        <li><a href="#">LinkedIn</a></li>
-                        <li><a href="#">Twitter</a></li>
-                    </ul>
-                </footer-col>
-            </footer-content>
-            <div class="footer-bottom">
-                <p>&copy; 2026 Jacques M. Jean. All rights reserved.</p>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Brand</h4>
+                <p><strong>Jacques M. Jean</strong></p>
+                <p>AI Transformation Advisor | Global Technologist</p>
             </div>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./advisory.html">Advisory</a></li>
+                    <li><a href="./governance.html">Governance</a></li>
+                    <li><a href="./insights.html">Insights</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><a href="mailto:contact@jacquesmjean.com">contact@jacquesmjean.com</a></p>
+                <p style="margin-top: 1rem; color: #9CA3AF; font-size: 0.8rem;">
+                    <strong>Regions:</strong><br>
+                    North America | Africa<br>
+                    Latin America | Caribbean
+                </p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Jacques M. Jean. All rights reserved.</p>
         </div>
     </footer>
 
     <script>
-        // Mobile menu toggle
-        const mobileMenuBtn = document.querySelector('.mobile-menu-btn');
-        const navLinks = document.querySelector('.nav-links');
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+        const navLinks = document.getElementById('navLinks');
 
-        mobileMenuBtn.addEventListener('click', function() {
-            if (navLinks.style.display === 'flex') {
-                navLinks.style.display = 'none';
-            } else {
-                navLinks.style.display = 'flex';
-                navLinks.style.position = 'absolute';
-                navLinks.style.top = '70px';
-                navLinks.style.left = '0';
-                navLinks.style.right = '0';
-                navLinks.style.flexDirection = 'column';
-                navLinks.style.gap = '0';
-                navLinks.style.background = '#0F1B4C';
-                navLinks.style.padding = '20px';
-                navLinks.style.zIndex = '999';
-            }
+        mobileMenuBtn.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
         });
 
-        // Scroll animation for elements with scroll-fade class
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -100px 0px'
-        };
-
-        const observer = new IntersectionObserver(function(entries) {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.classList.add('visible');
-                    observer.unobserve(entry.target);
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.scroll-fade').forEach(el => {
-            observer.observe(el);
-        });
-
-        // Highlight active nav link
-        const currentPath = window.location.pathname;
         document.querySelectorAll('.nav-links a').forEach(link => {
-            link.classList.remove('active');
-            if (link.getAttribute('href') === 'advisory.html' || currentPath.includes('advisory.html')) {
-                link.classList.add('active');
-            }
+            link.addEventListener('click', () => {
+                navLinks.classList.remove('active');
+            });
         });
     </script>
 </body>

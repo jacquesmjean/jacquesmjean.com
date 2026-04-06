@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Flagship Paper | Jacques M. Jean</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
     <style>
         * {
             margin: 0;
@@ -12,18 +12,14 @@
             box-sizing: border-box;
         }
 
-        :root {
-            --navy: #0F1B4C;
-            --white: #FFFFFF;
-            --gold: #C9A84C;
-            --light-gray: #F8F9FA;
-            --border-color: #E5E7EB;
+        html {
+            scroll-behavior: smooth;
         }
 
         body {
             font-family: 'Inter', sans-serif;
-            background-color: var(--white);
-            color: var(--navy);
+            background-color: #FFFFFF;
+            color: #1F2937;
             line-height: 1.6;
         }
 
@@ -31,141 +27,140 @@
         nav {
             position: sticky;
             top: 0;
-            background-color: var(--white);
-            border-bottom: 1px solid var(--border-color);
             z-index: 1000;
-            padding: 1rem 1.5rem;
+            background-color: #FFFFFF;
+            border-bottom: 1px solid #E5E7EB;
+            padding: 1.25rem 2rem;
         }
 
-        nav .nav-container {
-            max-width: 1200px;
+        .nav-container {
+            max-width: 1400px;
             margin: 0 auto;
             display: flex;
             justify-content: space-between;
             align-items: center;
         }
 
-        nav .logo {
+        .nav-logo {
             font-family: 'Playfair Display', serif;
             font-size: 1.5rem;
             font-weight: 700;
-            color: var(--navy);
+            color: #0F1B4C;
             text-decoration: none;
         }
 
-        nav .nav-links {
+        .nav-links {
             display: flex;
-            gap: 2rem;
             list-style: none;
+            gap: 2.5rem;
+            align-items: center;
         }
 
-        nav .nav-links a {
-            color: var(--navy);
+        .nav-links a {
+            color: #1F2937;
             text-decoration: none;
-            font-weight: 500;
             font-size: 0.95rem;
+            font-weight: 500;
             transition: color 0.3s ease;
         }
 
-        nav .nav-links a:hover {
-            color: var(--gold);
+        .nav-links a:hover {
+            color: #C9A84C;
         }
 
-        .hamburger {
+        .nav-links a.active {
+            color: #C9A84C;
+            border-bottom: 3px solid #C9A84C;
+            padding-bottom: 0.25rem;
+        }
+
+        .mobile-menu-btn {
             display: none;
-            flex-direction: column;
+            background: none;
+            border: none;
+            color: #0F1B4C;
+            font-size: 1.5rem;
             cursor: pointer;
-            gap: 5px;
         }
 
-        .hamburger span {
-            width: 25px;
-            height: 3px;
-            background-color: var(--navy);
-            border-radius: 2px;
-            transition: all 0.3s ease;
-        }
-
-        /* Hero Section */
-        .hero {
-            background: linear-gradient(135deg, var(--navy) 0%, #1a2d6d 100%);
-            color: var(--white);
-            padding: 6rem 1.5rem;
+        /* Page Header */
+        .page-header {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 4rem 2rem 2rem;
             text-align: center;
-            animation: fadeIn 0.8s ease-out;
         }
 
-        .hero h1 {
+        .page-header h1 {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(2.5rem, 8vw, 4rem);
-            margin-bottom: 1rem;
+            font-size: 3rem;
             font-weight: 700;
+            color: #0F1B4C;
         }
 
         /* Main Content */
         .container {
-            max-width: 900px;
+            max-width: 1000px;
             margin: 0 auto;
-            padding: 4rem 1.5rem;
+            padding: 3rem 2rem;
         }
 
+        /* Paper Header */
         .paper-header {
-            margin-bottom: 4rem;
-            animation: fadeIn 0.8s ease-out 0.2s both;
+            margin-bottom: 3rem;
         }
 
         .paper-title {
             font-family: 'Playfair Display', serif;
-            font-size: clamp(2rem, 6vw, 3rem);
-            color: var(--navy);
+            font-size: 2.2rem;
+            font-weight: 700;
+            color: #0F1B4C;
             margin-bottom: 1rem;
-            line-height: 1.2;
+            line-height: 1.3;
         }
 
         .paper-subtitle {
             font-size: 1.1rem;
-            color: #666;
+            color: #6B7280;
             line-height: 1.8;
-            margin-bottom: 0.5rem;
+            margin-bottom: 1.5rem;
         }
 
         .paper-meta {
             display: flex;
-            gap: 1.5rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid var(--border-color);
+            gap: 2rem;
             flex-wrap: wrap;
-        }
-
-        .meta-item {
+            padding-top: 1.5rem;
+            border-top: 1px solid #E5E7EB;
             font-size: 0.9rem;
-            color: #555;
+            color: #6B7280;
         }
 
         .meta-label {
             font-weight: 600;
-            color: var(--navy);
+            color: #0F1B4C;
         }
 
         /* Overview Section */
         .overview-section {
-            background-color: var(--light-gray);
+            background: #F5F6F8;
             padding: 2rem;
             border-radius: 8px;
-            border-left: 4px solid var(--gold);
+            border-left: 4px solid #C9A84C;
             margin-bottom: 3rem;
-            animation: fadeIn 0.8s ease-out 0.3s both;
         }
 
         .overview-section h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            color: var(--navy);
-            margin-bottom: 1rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #0F1B4C;
+            margin-bottom: 1.25rem;
         }
 
         .overview-section p {
-            color: #555;
+            font-size: 0.95rem;
+            color: #6B7280;
             line-height: 1.8;
             margin-bottom: 1rem;
         }
@@ -174,62 +169,63 @@
             margin-bottom: 0;
         }
 
-        /* Key Themes */
+        /* Themes Section */
         .themes-section {
             margin-bottom: 3rem;
-            animation: fadeIn 0.8s ease-out 0.4s both;
         }
 
         .themes-section h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            color: var(--navy);
-            margin-bottom: 2rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #0F1B4C;
+            margin-bottom: 1.5rem;
         }
 
         .themes-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
         }
 
         .theme-card {
-            background-color: var(--light-gray);
+            background: #F5F6F8;
             padding: 1.5rem;
             border-radius: 8px;
-            border: 1px solid var(--border-color);
+            border: 1px solid #E5E7EB;
             transition: all 0.3s ease;
         }
 
         .theme-card:hover {
-            border-color: var(--gold);
+            border-color: #C9A84C;
             box-shadow: 0 4px 12px rgba(201, 168, 76, 0.15);
         }
 
         .theme-card h3 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.15rem;
-            color: var(--navy);
+            font-size: 1.1rem;
+            font-weight: 700;
+            color: #0F1B4C;
             margin-bottom: 0.75rem;
         }
 
         .theme-card p {
             font-size: 0.9rem;
-            color: #666;
+            color: #6B7280;
             line-height: 1.6;
         }
 
         /* Arguments Section */
         .arguments-section {
             margin-bottom: 3rem;
-            animation: fadeIn 0.8s ease-out 0.5s both;
         }
 
         .arguments-section h2 {
             font-family: 'Playfair Display', serif;
-            font-size: 1.5rem;
-            color: var(--navy);
-            margin-bottom: 2rem;
+            font-size: 1.4rem;
+            font-weight: 700;
+            color: #0F1B4C;
+            margin-bottom: 1.5rem;
         }
 
         .argument-list {
@@ -237,45 +233,47 @@
         }
 
         .argument-item {
+            background: #F5F6F8;
             padding: 1.5rem;
             margin-bottom: 1rem;
-            background-color: var(--light-gray);
             border-radius: 8px;
-            border-left: 3px solid var(--gold);
+            border-left: 3px solid #C9A84C;
             transition: all 0.3s ease;
         }
 
         .argument-item:hover {
-            transform: translateX(5px);
+            transform: translateX(4px);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
         }
 
         .argument-item h3 {
             font-family: 'Playfair Display', serif;
             font-size: 1.05rem;
-            color: var(--navy);
+            font-weight: 700;
+            color: #0F1B4C;
             margin-bottom: 0.5rem;
         }
 
         .argument-item p {
             font-size: 0.95rem;
-            color: #666;
+            color: #6B7280;
             line-height: 1.7;
         }
 
         /* CTA Section */
         .cta-section {
-            background: linear-gradient(135deg, var(--navy) 0%, #1a2d6d 100%);
-            color: var(--white);
+            background: linear-gradient(135deg, #0F1B4C 0%, #1a2f5f 100%);
+            color: #FFFFFF;
             padding: 3rem;
             border-radius: 8px;
             text-align: center;
-            margin: 3rem 0;
-            animation: fadeIn 0.8s ease-out 0.6s both;
+            margin-top: 3rem;
         }
 
         .cta-section h2 {
             font-family: 'Playfair Display', serif;
             font-size: 1.8rem;
+            font-weight: 700;
             margin-bottom: 1rem;
         }
 
@@ -287,121 +285,108 @@
 
         .cta-button {
             display: inline-block;
-            background-color: var(--gold);
-            color: var(--navy);
-            padding: 1rem 2rem;
-            border: none;
-            border-radius: 6px;
-            font-weight: 600;
-            font-size: 1rem;
+            background-color: #C9A84C;
+            color: #0F1B4C;
+            padding: 0.875rem 2rem;
+            border-radius: 4px;
             text-decoration: none;
-            cursor: pointer;
+            font-size: 0.95rem;
+            font-weight: 600;
             transition: all 0.3s ease;
+            border: 2px solid #C9A84C;
         }
 
         .cta-button:hover {
-            background-color: #b8952f;
-            transform: translateY(-3px);
-            box-shadow: 0 8px 24px rgba(201, 168, 76, 0.3);
+            background-color: transparent;
+            color: #FFFFFF;
         }
 
         /* Footer */
         footer {
-            background-color: var(--navy);
-            color: var(--white);
-            padding: 3rem 1.5rem;
+            background-color: #0F1B4C;
+            color: #FFFFFF;
+            padding: 3rem 2rem 1.5rem;
             margin-top: 4rem;
-            text-align: center;
         }
 
-        footer .footer-content {
-            max-width: 1200px;
+        .footer-container {
+            max-width: 1400px;
             margin: 0 auto;
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 2rem;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
             margin-bottom: 2rem;
-            text-align: left;
         }
 
-        footer h4 {
+        .footer-col h4 {
             font-family: 'Playfair Display', serif;
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: #C9A84C;
             margin-bottom: 1rem;
-            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
         }
 
-        footer p {
-            font-size: 0.9rem;
+        .footer-col p {
+            font-size: 0.85rem;
             line-height: 1.8;
+            color: #D1D5DB;
+            margin-bottom: 0.5rem;
         }
 
-        footer a {
-            color: var(--gold);
+        .footer-col a {
+            color: #D1D5DB;
             text-decoration: none;
+            font-size: 0.85rem;
             transition: color 0.3s ease;
         }
 
-        footer a:hover {
-            color: var(--white);
+        .footer-col a:hover {
+            color: #C9A84C;
         }
 
-        footer .divider {
-            border-top: 1px solid rgba(255, 255, 255, 0.1);
-            padding-top: 2rem;
-            margin-top: 2rem;
+        .footer-col ul {
+            list-style: none;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(201, 168, 76, 0.2);
+            padding-top: 1.5rem;
             text-align: center;
-        }
-
-        footer .divider p {
-            font-size: 0.85rem;
-            color: #aaa;
-        }
-
-        /* Animations */
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(20px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
+            font-size: 0.8rem;
+            color: #9CA3AF;
         }
 
         /* Mobile Responsive */
         @media (max-width: 768px) {
-            nav .nav-links {
+            .nav-links {
                 display: none;
                 position: absolute;
-                top: 60px;
+                top: 70px;
                 left: 0;
                 right: 0;
                 flex-direction: column;
-                background-color: var(--white);
-                border-bottom: 1px solid var(--border-color);
+                background-color: #FFFFFF;
+                border-bottom: 1px solid #E5E7EB;
                 padding: 1rem;
                 gap: 0.5rem;
             }
 
-            nav .nav-links.active {
+            .nav-links.active {
                 display: flex;
             }
 
-            .hamburger {
-                display: flex;
+            .mobile-menu-btn {
+                display: block;
             }
 
-            .hero {
-                padding: 4rem 1.5rem;
-            }
-
-            .hero h1 {
+            .page-header h1 {
                 font-size: 2rem;
-            }
-
-            .container {
-                padding: 2rem 1.5rem;
             }
 
             .paper-title {
@@ -420,36 +405,66 @@
                 font-size: 1.3rem;
             }
 
-            .meta-item {
-                flex-basis: 100%;
+            .footer-container {
+                grid-template-columns: 1fr;
+                gap: 2rem;
             }
         }
+
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .theme-card {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .theme-card:nth-child(1) { animation-delay: 0.1s; }
+        .theme-card:nth-child(2) { animation-delay: 0.2s; }
+        .theme-card:nth-child(3) { animation-delay: 0.3s; }
+        .theme-card:nth-child(4) { animation-delay: 0.4s; }
+
+        .argument-item {
+            animation: fadeInUp 0.6s ease-out forwards;
+        }
+
+        .argument-item:nth-child(1) { animation-delay: 0.1s; }
+        .argument-item:nth-child(2) { animation-delay: 0.2s; }
+        .argument-item:nth-child(3) { animation-delay: 0.3s; }
+        .argument-item:nth-child(4) { animation-delay: 0.4s; }
     </style>
 </head>
 <body>
     <!-- Navigation -->
     <nav>
         <div class="nav-container">
-            <a href="../index.html" class="logo">JMJ</a>
+            <a href="../index.html" class="nav-logo">Jacques M. Jean</a>
             <ul class="nav-links" id="navLinks">
                 <li><a href="../index.html">Home</a></li>
+                <li><a href="./about.html">About</a></li>
+                <li><a href="./advisory.html">Advisory</a></li>
+                <li><a href="./governance.html">Governance</a></li>
                 <li><a href="./insights.html">Insights</a></li>
-                <li><a href="./flagship-paper.html">Flagship Paper</a></li>
+                <li><a href="./flagship-paper.html" class="active">Paper</a></li>
                 <li><a href="./engagement.html">Engagement</a></li>
                 <li><a href="./contact.html">Contact</a></li>
             </ul>
-            <div class="hamburger" id="hamburger">
-                <span></span>
-                <span></span>
-                <span></span>
-            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">&#9776;</button>
         </div>
     </nav>
 
-    <!-- Hero Section -->
-    <section class="hero">
+    <!-- Page Header -->
+    <div class="page-header">
         <h1>Flagship Paper</h1>
-    </section>
+    </div>
 
     <!-- Main Content -->
     <div class="container">
@@ -458,17 +473,17 @@
             <h2 class="paper-title">Competing with Systems, Not Transactions</h2>
             <p class="paper-subtitle">A strategic framework for aligning AI, policy, and economic systems to drive long-term competitive advantage in emerging markets.</p>
             <div class="paper-meta">
-                <div class="meta-item"><span class="meta-label">Published:</span> 2025</div>
-                <div class="meta-item"><span class="meta-label">Focus:</span> Strategic Framework</div>
-                <div class="meta-item"><span class="meta-label">Regions:</span> Emerging Markets</div>
+                <span><span class="meta-label">Published:</span> 2025</span>
+                <span><span class="meta-label">Focus:</span> Strategic Framework</span>
+                <span><span class="meta-label">Scope:</span> Emerging Markets</span>
             </div>
         </section>
 
         <!-- Overview Section -->
         <section class="overview-section">
             <h2>Paper Overview</h2>
-            <p>This paper introduces a paradigm shift in how institutions approach competitive advantage. Rather than optimizing for individual transactions, successful organizations must align their strategy across three interconnected systems: artificial intelligence capabilities, policy frameworks, and economic structures.</p>
-            <p>The analysis reveals that traditional transaction-focused approaches fail in emerging markets where institutional capacity, regulatory environments, and economic infrastructure are rapidly evolving. Only organizations that design for systemic alignment can achieve sustainable, long-term competitive advantage.</p>
+            <p>This paper introduces a paradigm shift in competitive advantage strategy. Rather than optimizing individual transactions, successful organizations must align strategy across three interconnected systems: artificial intelligence capabilities, policy frameworks, and economic structures.</p>
+            <p>Traditional transaction-focused approaches fail in emerging markets where institutional capacity, regulatory environments, and economic infrastructure are rapidly evolving. Only organizations that design for systemic alignment achieve sustainable long-term competitive advantage.</p>
         </section>
 
         <!-- Key Themes -->
@@ -477,11 +492,11 @@
             <div class="themes-grid">
                 <div class="theme-card">
                     <h3>Systems Alignment</h3>
-                    <p>How AI, policy, and economic systems must be designed and operated as integrated wholes, not isolated components.</p>
+                    <p>How AI, policy, and economic systems must be designed as integrated wholes, not isolated components.</p>
                 </div>
                 <div class="theme-card">
                     <h3>Emerging Market Dynamics</h3>
-                    <p>The unique characteristics of growth economies and how institutional strategy must adapt to rapid change and institutional development.</p>
+                    <p>Unique characteristics of growth economies and how institutional strategy must adapt to rapid change.</p>
                 </div>
                 <div class="theme-card">
                     <h3>Long-Term Value Creation</h3>
@@ -489,7 +504,7 @@
                 </div>
                 <div class="theme-card">
                     <h3>Policy as Strategy</h3>
-                    <p>How regulatory frameworks become a source of competitive advantage when properly architected alongside business and technology strategy.</p>
+                    <p>How regulatory frameworks become a competitive advantage when properly architected alongside business and technology strategy.</p>
                 </div>
             </div>
         </section>
@@ -500,7 +515,7 @@
             <ul class="argument-list">
                 <li class="argument-item">
                     <h3>Transaction-Centric Models Fail in Emerging Markets</h3>
-                    <p>Traditional business models optimize for discrete transactions. Emerging markets require systemic approaches that account for institutional development, policy uncertainty, and evolving economic structures.</p>
+                    <p>Traditional business models optimize for discrete transactions. Emerging markets require systemic approaches accounting for institutional development, policy uncertainty, and evolving economic structures.</p>
                 </li>
                 <li class="argument-item">
                     <h3>AI is a System, Not a Tool</h3>
@@ -508,11 +523,11 @@
                 </li>
                 <li class="argument-item">
                     <h3>Policy Shapes Competitive Outcomes</h3>
-                    <p>Organizations that co-design their strategy with policy frameworks—rather than reacting to them—build durable competitive advantages that competitors cannot easily replicate.</p>
+                    <p>Organizations that co-design strategy with policy frameworks build durable competitive advantages that competitors cannot easily replicate.</p>
                 </li>
                 <li class="argument-item">
                     <h3>Institutional Design is a Competitive Advantage</h3>
-                    <p>How governments, corporations, and international organizations structure their institutions determines their ability to compete in a rapidly changing global economy.</p>
+                    <p>How governments, corporations, and organizations structure their institutions determines their ability to compete in a rapidly changing global economy.</p>
                 </li>
             </ul>
         </section>
@@ -527,61 +542,49 @@
 
     <!-- Footer -->
     <footer>
-        <div class="footer-content">
-            <div>
-                <h4>Jacques M. Jean</h4>
-                <p>Strategic advisor on AI governance, economic systems, and institutional design for emerging markets.</p>
+        <div class="footer-container">
+            <div class="footer-col">
+                <h4>Brand</h4>
+                <p><strong>Jacques M. Jean</strong></p>
+                <p>AI Transformation Advisor | Global Technologist</p>
             </div>
-            <div>
-                <h4>Focus Areas</h4>
-                <p><a href="#">AI Governance</a><br><a href="#">Economic Systems</a><br><a href="#">Institutional Design</a></p>
+            <div class="footer-col">
+                <h4>Navigation</h4>
+                <ul>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="./about.html">About</a></li>
+                    <li><a href="./advisory.html">Advisory</a></li>
+                    <li><a href="./governance.html">Governance</a></li>
+                    <li><a href="./insights.html">Insights</a></li>
+                </ul>
             </div>
-            <div>
-                <h4>Engagement</h4>
-                <p><a href="./contact.html">Start a Conversation</a><br><a href="./engagement.html">Engagement Model</a></p>
+            <div class="footer-col">
+                <h4>Contact</h4>
+                <p><a href="mailto:contact@jacquesmjean.com">contact@jacquesmjean.com</a></p>
+                <p style="margin-top: 1rem; color: #9CA3AF; font-size: 0.8rem;">
+                    <strong>Regions:</strong><br>
+                    North America | Africa<br>
+                    Latin America | Caribbean
+                </p>
             </div>
         </div>
-        <div class="divider">
+        <div class="footer-bottom">
             <p>&copy; 2026 Jacques M. Jean. All rights reserved.</p>
         </div>
     </footer>
 
-    <!-- Mobile Menu Script -->
     <script>
-        const hamburger = document.getElementById('hamburger');
+        const mobileMenuBtn = document.getElementById('mobileMenuBtn');
         const navLinks = document.getElementById('navLinks');
 
-        hamburger.addEventListener('click', () => {
+        mobileMenuBtn.addEventListener('click', () => {
             navLinks.classList.toggle('active');
         });
 
-        // Close menu when a link is clicked
-        navLinks.querySelectorAll('a').forEach(link => {
+        document.querySelectorAll('.nav-links a').forEach(link => {
             link.addEventListener('click', () => {
                 navLinks.classList.remove('active');
             });
-        });
-
-        // Scroll animations
-        const observerOptions = {
-            threshold: 0.1,
-            rootMargin: '0px 0px -50px 0px'
-        };
-
-        const observer = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    entry.target.style.opacity = '1';
-                    entry.target.style.transform = 'translateY(0)';
-                }
-            });
-        }, observerOptions);
-
-        document.querySelectorAll('.theme-card, .argument-item').forEach(el => {
-            el.style.opacity = '0';
-            el.style.transform = 'translateY(20px)';
-            el.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
-            observer.observe(el);
         });
     </script>
 </body>
