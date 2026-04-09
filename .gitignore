@@ -1,55 +1,42 @@
-# OS
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# dependencies
+/node_modules
+/.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# testing
+/coverage
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# misc
 .DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+*.pem
 
-# IDEs and Editors
-.vscode/
-.idea/
-*.swp
-*.swo
-*~
-*.sublime-project
-*.sublime-workspace
-.atom/
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
+# debug
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+.pnpm-debug.log*
 
-# Node (if adding any build tools later)
-node_modules/
-npm-debug.log
-yarn-error.log
-.npm/
-.yarn/
+# env files (can opt-in for committing if needed)
+.env*
 
-# Local environment files
-.env
-.env.local
-.env.*.local
+# vercel
+.vercel
 
-# Build outputs
-dist/
-build/
-.cache/
-
-# Temp files
-*.tmp
-*.bak
-.temp/
-
-# Dependencies
-package-lock.json
-yarn.lock
-
-# Misc
-.gitkeep
-.DS_Store
-*.orig
+# typescript
+*.tsbuildinfo
+next-env.d.ts
+.claude/

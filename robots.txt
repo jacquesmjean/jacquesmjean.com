@@ -1,6 +1,0 @@
-# Allow all crawlers
-User-agent: *
-Allow: /
-
-# Point to sitemap
-Sitemap: https://jacquesmjean.com/sitemap.xml
