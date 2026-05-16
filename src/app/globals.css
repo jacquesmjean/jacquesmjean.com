@@ -17,12 +17,21 @@
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 html, body {
   background-color: var(--color-paper);
   color: var(--color-ink);
   font-family: var(--font-sans);
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+/* Offset all anchor jumps so they don't hide under the sticky nav */
+section[id] {
+  scroll-margin-top: 5rem;
 }
 
 ::selection {

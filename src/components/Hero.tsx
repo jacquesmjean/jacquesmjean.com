@@ -1,6 +1,6 @@
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden">
+    <section id="top" className="relative overflow-hidden scroll-mt-24">
       <div className="paper-grain absolute inset-0 opacity-60 pointer-events-none" />
       <div className="mx-auto max-w-6xl px-6 pt-20 pb-24 md:pt-28 md:pb-32">
         <div className="grid items-center gap-12 md:grid-cols-[1.4fr_1fr] md:gap-16">
