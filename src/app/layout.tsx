@@ -4,8 +4,27 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Jacques M. Jean — Founder, Technologist, Global Operator",
   description:
-    "25 years building technology across more than 30 countries. Now helping small businesses own their AI through TechFides, and restoring heritage sites the world has forgotten through Levoila.",
+    "Founder of TechFides and Levoila. 25 years across 30+ countries — now helping small business own its AI, and restoring sites the world has forgotten.",
   metadataBase: new URL("https://jacquesmjean.com"),
+  applicationName: "Jacques M. Jean",
+  authors: [{ name: "Jacques M. Jean", url: "https://jacquesmjean.com" }],
+  creator: "Jacques M. Jean",
+  publisher: "Jacques M. Jean",
+  keywords: [
+    "Jacques M. Jean",
+    "Jacques Jean",
+    "TechFides",
+    "Levoila",
+    "local AI",
+    "AI deployment",
+    "Forbes Technology Council",
+    "Haiti heritage",
+    "Citadelle Henri Christophe",
+    "Universal Learning Centre",
+    "American Business Council Gabon",
+    "OVYNA",
+    "MUSA Asset Management",
+  ],
   openGraph: {
     title: "Jacques M. Jean — Founder, Technologist, Global Operator",
     description:
@@ -20,10 +39,20 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jacques M. Jean",
     description:
-      "Founder of TechFides and Levoila. 25 years across 30+ countries. Three libraries in Haiti.",
+      "Founder of TechFides and Levoila. 25 years across 30+ countries. Local AI for small business; restoring sites the world has forgotten.",
     images: ["/images/og-image.jpg"],
   },
-  robots: { index: true, follow: true },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-snippet": -1,
+      "max-image-preview": "large",
+      "max-video-preview": -1,
+    },
+  },
 };
 
 export default function RootLayout({

@@ -4,7 +4,7 @@ const en: Messages = {
   meta: {
     title: "Jacques M. Jean — Founder, Technologist, Global Operator",
     description:
-      "25 years building technology across more than 30 countries. Now helping small businesses own their AI through TechFides, and restoring heritage sites the world has forgotten through Levoila.",
+      "Founder of TechFides and Levoila. 25 years across 30+ countries — now helping small business own its AI, and restoring sites the world has forgotten.",
   },
   nav: {
     work: "What I Do",

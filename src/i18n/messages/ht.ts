@@ -4,7 +4,7 @@ const ht: Messages = {
   meta: {
     title: "Jacques M. Jean — Fondatè, Teknolojis, Operatè Entènasyonal",
     description:
-      "25 lane k ap bati sistèm teknolojik nan plis pase 30 peyi. Kounye a, m ap ede ti antrepriz yo posede pwòp AI pa yo grasa TechFides, e m ap restore monilman patrimwàn mond lan bliye yo grasa Levoila.",
+      "Fondatè TechFides ak Levoila. 25 lane nan plis pase 30 peyi — m ap ede ti antrepriz posede pwòp AI yo, epi m ap restore sit mond lan bliye yo.",
   },
   nav: {
     work: "Sa m fè",

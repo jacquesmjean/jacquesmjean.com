@@ -5,7 +5,7 @@ const fr: Messages = {
     title:
       "Jacques M. Jean — Fondateur, technologue, opérateur international",
     description:
-      "25 ans à bâtir des systèmes technologiques dans plus de 30 pays. Aujourd'hui, j'aide les petites entreprises à devenir propriétaires de leur IA grâce à TechFides, et je restaure les sites patrimoniaux que le monde a oubliés grâce à Levoila.",
+      "Fondateur de TechFides et Levoila. 25 ans dans plus de 30 pays — j'aide les petites entreprises à posséder leur IA et je restaure les sites que le monde a oubliés.",
   },
   nav: {
     work: "Ce que je fais",
