@@ -142,6 +142,7 @@ export default function JsonLd({ locale }: { locale: Locale }) {
       "@type": "PostalAddress",
       addressLocality: "Frisco",
       addressRegion: "TX",
+      postalCode: "75034",
       addressCountry: "US",
     },
   };
