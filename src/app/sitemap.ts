@@ -1,29 +1,20 @@
 import type { MetadataRoute } from "next";
-import { perspectives } from "@/data/perspectives";
+import { locales, localeHref } from "@/i18n";
 
 export const dynamic = "force-static";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = "https://jacquesmjean.com";
+  const now = new Date();
 
-  const staticPages = [
-    { url: baseUrl, lastModified: new Date(), priority: 1 },
-    { url: `${baseUrl}/about`, lastModified: new Date(), priority: 0.8 },
-    { url: `${baseUrl}/advisory`, lastModified: new Date(), priority: 0.8 },
-    { url: `${baseUrl}/governance`, lastModified: new Date(), priority: 0.8 },
-    {
-      url: `${baseUrl}/perspectives`,
-      lastModified: new Date(),
-      priority: 0.7,
+  return locales.map((locale) => ({
+    url: `${baseUrl}${localeHref(locale)}`,
+    lastModified: now,
+    priority: locale === "en" ? 1 : 0.9,
+    alternates: {
+      languages: Object.fromEntries(
+        locales.map((l) => [l, `${baseUrl}${localeHref(l)}`])
+      ),
     },
-    { url: `${baseUrl}/contact`, lastModified: new Date(), priority: 0.6 },
-  ];
-
-  const perspectivePages = perspectives.map((p) => ({
-    url: `${baseUrl}/perspectives/${p.slug}`,
-    lastModified: new Date(p.date),
-    priority: 0.6,
   }));
-
-  return [...staticPages, ...perspectivePages];
 }

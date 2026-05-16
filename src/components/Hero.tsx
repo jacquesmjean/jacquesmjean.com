@@ -1,4 +1,13 @@
-export default function Hero() {
+import { locales, localeLabels, localeHref, type Locale } from "@/i18n";
+import type { Messages } from "@/i18n";
+
+export default function Hero({
+  locale,
+  messages,
+}: {
+  locale: Locale;
+  messages: Messages["hero"];
+}) {
   return (
     <section id="top" className="relative overflow-hidden scroll-mt-24">
       <div className="paper-grain absolute inset-0 opacity-60 pointer-events-none" />
@@ -7,23 +16,22 @@ export default function Hero() {
           <div>
             <div className="mb-6 inline-flex items-center gap-2 rounded-full border border-ink/10 bg-paper-warm px-3 py-1 text-xs font-medium uppercase tracking-wider text-ink-muted">
               <span className="h-1.5 w-1.5 rounded-full bg-accent" />
-              Founder · Technologist · Global Operator
+              {messages.badge}
             </div>
 
             <h1 className="font-display text-5xl font-medium leading-[1.05] tracking-tightish text-ink md:text-7xl">
-              I help businesses{" "}
-              <span className="text-accent italic">own their AI</span> —
-              and I'm restoring{" "}
-              <span className="text-accent italic">what governments forget</span>.
+              {messages.headline1Pre}{" "}
+              <span className="text-accent italic">{messages.headline1Em}</span>{" "}
+              — {messages.headline2Pre}{" "}
+              <span className="text-accent italic">{messages.headline2Em}</span>.
             </h1>
 
             <p className="mt-8 max-w-xl text-lg leading-relaxed text-ink-soft md:text-xl">
-              I'm Jacques. I spent 25 years building technology systems for
-              Honeywell, Invensys, and Schneider Electric across more than 30
-              countries. Today I run <strong className="font-semibold text-ink">TechFides</strong>,
-              where small businesses install AI on hardware they own — no rent,
-              no data leaving the building. And I chair <strong className="font-semibold text-ink">Levoila</strong>,
-              a global heritage trust restoring sites the world has abandoned.
+              {messages.bodyPre}
+              <strong className="font-semibold text-ink">{messages.bodyTF}</strong>
+              {messages.bodyMid}
+              <strong className="font-semibold text-ink">{messages.bodyLV}</strong>
+              {messages.bodyPost}
             </p>
 
             <div className="mt-10 flex flex-wrap items-center gap-4">
@@ -31,24 +39,46 @@ export default function Hero() {
                 href="#contact"
                 className="rounded-full bg-ink px-6 py-3 text-sm font-medium text-paper hover:bg-accent transition-colors"
               >
-                Start a conversation
+                {messages.ctaPrimary}
               </a>
               <a
                 href="#work"
                 className="rounded-full border border-ink/15 px-6 py-3 text-sm font-medium text-ink hover:border-accent hover:text-accent transition-colors"
               >
-                See what I'm building →
+                {messages.ctaSecondary} →
               </a>
             </div>
 
-            <div className="mt-12 flex flex-wrap items-center gap-x-6 gap-y-2 text-xs uppercase tracking-wider text-ink-muted">
-              <span>Forbes Technology Council</span>
+            <div className="mt-12 flex flex-wrap items-center gap-x-6 gap-y-3 text-xs uppercase tracking-wider text-ink-muted">
+              {messages.creds.map((c, i) => (
+                <span key={c} className="flex items-center gap-x-6">
+                  <span>{c}</span>
+                  {i < messages.creds.length - 1 ? (
+                    <span aria-hidden className="text-ink/20">·</span>
+                  ) : null}
+                </span>
+              ))}
               <span aria-hidden className="text-ink/20">·</span>
-              <span>Goldman Sachs 10KSB</span>
-              <span aria-hidden className="text-ink/20">·</span>
-              <span>Carnegie Mellon MS</span>
-              <span aria-hidden className="text-ink/20">·</span>
-              <span>EN · FR · KR · ES · PT</span>
+              <span className="flex flex-wrap items-center gap-2">
+                {locales.map((l, i) => (
+                  <span key={l} className="flex items-center gap-2">
+                    <a
+                      href={localeHref(l)}
+                      aria-current={l === locale ? "page" : undefined}
+                      className={`transition-colors ${
+                        l === locale
+                          ? "text-accent"
+                          : "text-ink-muted hover:text-accent"
+                      }`}
+                    >
+                      {localeLabels[l].code}
+                    </a>
+                    {i < locales.length - 1 ? (
+                      <span aria-hidden className="text-ink/20">·</span>
+                    ) : null}
+                  </span>
+                ))}
+              </span>
             </div>
           </div>
 
@@ -62,7 +92,7 @@ export default function Hero() {
             </div>
             <div className="absolute -bottom-6 -left-6 hidden rounded-xl border border-ink/10 bg-paper px-5 py-4 shadow-lg md:block">
               <div className="text-[10px] font-medium uppercase tracking-wider text-ink-muted">
-                Currently building
+                {messages.currentlyBuilding}
               </div>
               <div className="mt-1 font-display text-lg font-medium text-ink">
                 TechFides · Levoila

@@ -1,48 +1,37 @@
-const tracks = [
-  {
-    label: "Business",
-    title: "Local AI for your business",
-    body: "Medical, legal, auto, property, trades. Discovery call with TechFides — typically 20 minutes.",
-    href: "mailto:engage@jacquesmjean.com?subject=TechFides%20inquiry",
-    cta: "Start a TechFides conversation",
-  },
-  {
-    label: "Levoila",
-    title: "Become a Steward",
-    body: "Steward tiers from $150. Heritage Patron from $25,000. Or nominate a site at risk.",
-    href: "https://levoila.org",
-    cta: "Go to levoila.org",
-    external: true,
-  },
-  {
-    label: "Board · Speaking · Press",
-    title: "Other engagements",
-    body: "Board work, speaking, advisory, press, ABC Gabon delegations. Send the brief — short is fine.",
-    href: "mailto:engage@jacquesmjean.com?subject=Engagement%20inquiry",
-    cta: "Email me directly",
-  },
+import type { Messages } from "@/i18n";
+
+const TRACK_HREFS = [
+  "mailto:engage@jacquesmjean.com?subject=TechFides%20inquiry",
+  "https://levoila.org",
+  "mailto:engage@jacquesmjean.com?subject=Engagement%20inquiry",
 ];
 
-export default function Contact() {
+export default function Contact({
+  messages,
+}: {
+  messages: Messages["contact"];
+}) {
   return (
-    <section id="contact" className="relative border-t border-ink/5 bg-ink text-paper">
+    <section
+      id="contact"
+      className="relative border-t border-ink/5 bg-ink text-paper scroll-mt-24"
+    >
       <div className="paper-grain absolute inset-0 opacity-10 pointer-events-none" />
       <div className="relative mx-auto max-w-6xl px-6 py-24 md:py-32">
         <div className="grid gap-16 md:grid-cols-[1fr_1.2fr] md:gap-20">
           <div>
             <div className="mb-4 text-xs font-medium uppercase tracking-wider text-accent-soft">
-              Get in touch
+              {messages.eyebrow}
             </div>
             <h2 className="font-display text-4xl font-medium leading-tight tracking-tightish text-paper md:text-5xl">
-              Three doors. Pick the one that fits.
+              {messages.headline}
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-paper-warm/80">
-              I read every message. If we're a fit, you'll hear back in a day
-              or two. If we're not, I'll point you somewhere useful.
+              {messages.intro}
             </p>
             <div className="mt-10 space-y-2 text-sm text-paper-warm/70">
               <div>
-                Direct:{" "}
+                {messages.directLabel}:{" "}
                 <a
                   className="text-paper hover:text-accent-soft transition-colors"
                   href="mailto:engage@jacquesmjean.com"
@@ -51,7 +40,7 @@ export default function Contact() {
                 </a>
               </div>
               <div>
-                Levoila:{" "}
+                {messages.levoilaLabel}:{" "}
                 <a
                   className="text-paper hover:text-accent-soft transition-colors"
                   href="mailto:jacques@levoila.org"
@@ -60,7 +49,7 @@ export default function Contact() {
                 </a>
               </div>
               <div>
-                LinkedIn:{" "}
+                {messages.linkedinLabel}:{" "}
                 <a
                   className="text-paper hover:text-accent-soft transition-colors"
                   href="https://www.linkedin.com/in/jacques-m-jean"
@@ -71,16 +60,16 @@ export default function Contact() {
                 </a>
               </div>
               <div className="pt-2 text-xs uppercase tracking-wider text-paper-warm/40">
-                Frisco, Texas · U.S.A.
+                {messages.location}
               </div>
             </div>
           </div>
 
           <div className="space-y-4">
-            {tracks.map((t) => (
+            {messages.tracks.map((t, i) => (
               <a
                 key={t.label}
-                href={t.href}
+                href={TRACK_HREFS[i]}
                 target={t.external ? "_blank" : undefined}
                 rel={t.external ? "noreferrer" : undefined}
                 className="group block rounded-2xl border border-paper/10 bg-ink-soft/40 p-7 transition-all hover:border-accent-soft/60 hover:bg-ink-soft/60"

@@ -1,23 +1,23 @@
-import LayoutShell from "@/components/LayoutShell";
-import Button from "@/components/Button";
-
 export default function NotFound() {
   return (
-    <LayoutShell>
-      <section className="pt-32 pb-24 px-6 min-h-screen flex items-start justify-center">
-        <div className="mx-auto max-w-xl text-center mt-20">
-          <h1 className="font-heading text-6xl font-bold text-gold-400">404</h1>
-          <h2 className="mt-4 font-heading text-2xl font-semibold text-white">
-            Page Not Found
-          </h2>
-          <p className="mt-4 text-slate-400">
-            The page you are looking for does not exist or has been moved.
-          </p>
-          <div className="mt-8">
-            <Button href="/">Return Home</Button>
-          </div>
+    <main className="min-h-screen bg-paper text-ink">
+      <section className="mx-auto flex min-h-screen max-w-2xl flex-col items-center justify-center px-6 py-24 text-center">
+        <div className="text-xs font-medium uppercase tracking-wider text-accent">
+          404
         </div>
+        <h1 className="mt-4 font-display text-5xl font-medium leading-tight tracking-tightish text-ink md:text-6xl">
+          This page doesn&apos;t exist.
+        </h1>
+        <p className="mt-6 max-w-md text-lg leading-relaxed text-ink-soft">
+          Either it never did, or it moved when we redesigned the site. Either way — back to the start.
+        </p>
+        <a
+          href="/"
+          className="mt-10 rounded-full bg-ink px-6 py-3 text-sm font-medium text-paper hover:bg-accent transition-colors"
+        >
+          Go home →
+        </a>
       </section>
-    </LayoutShell>
+    </main>
   );
 }
