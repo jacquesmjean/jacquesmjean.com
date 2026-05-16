@@ -1,26 +1,26 @@
 const posts = [
   {
-    tag: "Local AI",
-    title: "Why your medical office shouldn't rent its AI",
-    blurb:
-      "The same logic that put servers back on premises in 2018 is putting AI back on premises in 2026. Three reasons it matters more this time.",
-    href: "#",
-    when: "Coming soon",
-  },
-  {
-    tag: "Haiti",
+    tag: "Founder · Levoila",
     title: "From the library at 18 to the Citadelle at 50",
     blurb:
       "The first library I walked into changed me. The last fortress I will walk into will be the one we leave standing. Between those two doors is the life I was given.",
-    href: "https://levoila.org",
-    when: "Levoila dispatch",
+    href: "https://levoila.org/#founder",
+    when: "Levoila dispatch · May 2026",
   },
   {
-    tag: "Forbes",
-    title: "What 25 years of enterprise IT teaches you about small business",
+    tag: "Founder · Haiti",
+    title: "The three libraries that started all this",
     blurb:
-      "The Fortune 500 spent a decade outsourcing every decision to a vendor. Small business is about to repeat that mistake — unless we learn the lesson first.",
-    href: "#",
+      "Before Levoila, there was the Universal Learning Centre. Before that, a boy in Ferrier who had never seen a library until he was eighteen. The full story of how 500,000 readers came to be.",
+    href: "https://levoila.org/#dispatches",
+    when: "Levoila dispatch · April 2026",
+  },
+  {
+    tag: "Forbes Tech Council",
+    title: "How nonprofits can shift their mindset to information technology",
+    blurb:
+      "Just twelve percent of nonprofits are digitally mature — and those that are happen to be four times more likely to achieve their mission. The case for treating IT as core to the work, not overhead.",
+    href: "https://www.linkedin.com/posts/jacques-m-jean_council-post-how-nonprofits-can-shift-their-activity-7041570520508620800-jVau",
     when: "Forbes Tech Council",
   },
 ];
@@ -56,6 +56,8 @@ export default function Perspectives() {
             <a
               key={p.title}
               href={p.href}
+              target="_blank"
+              rel="noreferrer"
               className="group flex flex-col rounded-2xl border border-ink/10 bg-paper-warm p-7 transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_20px_40px_-20px_rgba(184,71,45,0.15)]"
             >
               <div className="flex items-center justify-between text-[10px] font-medium uppercase tracking-wider">
