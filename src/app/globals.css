@@ -1,85 +1,40 @@
 @import "tailwindcss";
 
-@theme inline {
-  /* Obsidian (dark backgrounds) */
-  --color-obsidian-950: #08090d;
-  --color-obsidian-900: #0d0f16;
-  --color-obsidian-800: #141722;
-  --color-obsidian-700: #1c2033;
+@theme {
+  --color-ink: #15171C;
+  --color-ink-soft: #2A2D35;
+  --color-ink-muted: #5C6068;
 
-  /* Gold accents */
-  --color-gold-300: #E2C87A;
-  --color-gold-400: #C9A84C;
-  --color-gold-500: #B08D3A;
-  --color-gold-600: #8A6E2D;
+  --color-paper: #FAF7F2;
+  --color-paper-warm: #F3EEE5;
+  --color-paper-sand: #E8DFD3;
 
-  /* Fonts */
-  --font-heading: var(--font-playfair), Georgia, serif;
-  --font-sans: var(--font-inter), system-ui, sans-serif;
+  --color-accent: #B8472D;
+  --color-accent-deep: #8E351F;
+  --color-accent-soft: #D67658;
+
+  --font-display: "Fraunces", Georgia, ui-serif, serif;
+  --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
-body {
-  background-color: var(--color-obsidian-950);
-  color: #e2e8f0; /* slate-200 */
+html, body {
+  background-color: var(--color-paper);
+  color: var(--color-ink);
   font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Gold text glow for hero */
-.text-glow-gold {
-  text-shadow: 0 0 40px rgba(201, 168, 76, 0.25);
-}
-
-/* Subtle gold ambient glow for images */
-.glow-gold {
-  box-shadow: 0 0 30px rgba(201, 168, 76, 0.15), 0 0 60px rgba(201, 168, 76, 0.08);
-}
-
-/* Section divider */
-.section-divider {
-  border-top: 1px solid rgba(138, 110, 45, 0.2);
-}
-
-/* Focus visible for accessibility */
-*:focus-visible {
-  outline: 2px solid var(--color-gold-400);
-  outline-offset: 2px;
-}
-
-/* Skip to content */
-.skip-to-content {
-  position: absolute;
-  top: -100%;
-  left: 50%;
-  transform: translateX(-50%);
-  z-index: 100;
-  padding: 0.75rem 1.5rem;
-  background: var(--color-gold-400);
-  color: var(--color-obsidian-950);
-  font-weight: 600;
-  border-radius: 0 0 0.5rem 0.5rem;
-  transition: top 0.2s;
-}
-
-.skip-to-content:focus {
-  top: 0;
-}
-
-/* Smooth card hover transitions */
-.card-hover {
-  transition: border-color 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card-hover:hover {
-  border-color: var(--color-gold-400);
-  box-shadow: 0 4px 20px rgba(201, 168, 76, 0.08);
-}
-
-/* Selection */
 ::selection {
-  background-color: rgba(201, 168, 76, 0.3);
-  color: #ffffff;
+  background-color: var(--color-accent);
+  color: var(--color-paper);
+}
+
+/* Subtle paper-grain texture (optional) */
+.paper-grain {
+  background-image:
+    radial-gradient(rgba(21, 23, 28, 0.02) 1px, transparent 1px),
+    radial-gradient(rgba(21, 23, 28, 0.015) 1px, transparent 1px);
+  background-size: 4px 4px, 7px 7px;
+  background-position: 0 0, 2px 3px;
 }
