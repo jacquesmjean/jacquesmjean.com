@@ -1,69 +1,23 @@
-import Link from "next/link";
-
-const navLinks = [
-  { href: "/about", label: "About" },
-  { href: "/advisory", label: "Advisory" },
-  { href: "/governance", label: "Governance" },
-  { href: "/perspectives", label: "Perspectives" },
-  { href: "/contact", label: "Contact" },
-];
-
 export default function Footer() {
   return (
-    <footer className="section-divider bg-obsidian-950">
-      <div className="mx-auto max-w-6xl px-6 py-12">
-        <div className="flex flex-col md:flex-row md:items-center md:justify-between gap-8">
-          {/* Left: Name + positioning */}
-          <div>
-            <Link
-              href="/"
-              className="font-heading text-lg tracking-wide text-white hover:text-gold-400 transition-colors"
-            >
-              JACQUES M. JEAN
-            </Link>
-            <p className="mt-2 text-sm text-slate-500 max-w-xs">
-              AI Governance Advisor & Global Technologist
-            </p>
-          </div>
-
-          {/* Center: Nav */}
-          <ul className="flex flex-wrap gap-x-6 gap-y-2">
-            {navLinks.map((link) => (
-              <li key={link.href}>
-                <Link
-                  href={link.href}
-                  className="text-sm text-slate-400 hover:text-white transition-colors"
-                >
-                  {link.label}
-                </Link>
-              </li>
-            ))}
-          </ul>
-
-          {/* Right: Connect */}
-          <div className="flex items-center gap-4">
-            <a
-              href="mailto:engage@jacquesmjean.com"
-              className="text-sm text-slate-400 hover:text-gold-400 transition-colors"
-            >
-              Email
-            </a>
-            <a
-              href="https://www.linkedin.com/in/jacques-m-jean"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-sm text-slate-400 hover:text-gold-400 transition-colors"
-            >
-              LinkedIn
-            </a>
-          </div>
+    <footer className="border-t border-paper/10 bg-ink text-paper-warm/60">
+      <div className="mx-auto flex max-w-6xl flex-col gap-6 px-6 py-10 md:flex-row md:items-center md:justify-between">
+        <div className="font-display text-sm tracking-tight">
+          © {new Date().getFullYear()} Jacques M. Jean. All rights reserved.
         </div>
-
-        <div className="mt-8 pt-6 section-divider text-center">
-          <p className="text-xs text-slate-600">
-            &copy; {new Date().getFullYear()} Jacques M. Jean. All rights
-            reserved.
-          </p>
+        <div className="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs uppercase tracking-wider">
+          <a className="hover:text-accent-soft transition-colors" href="https://techfides.com" target="_blank" rel="noreferrer">
+            TechFides
+          </a>
+          <a className="hover:text-accent-soft transition-colors" href="https://levoila.org" target="_blank" rel="noreferrer">
+            Levoila
+          </a>
+          <a className="hover:text-accent-soft transition-colors" href="https://www.linkedin.com/in/jacques-m-jean" target="_blank" rel="noreferrer">
+            LinkedIn
+          </a>
+          <a className="hover:text-accent-soft transition-colors" href="mailto:engage@jacquesmjean.com">
+            Email
+          </a>
         </div>
       </div>
     </footer>

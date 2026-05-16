@@ -1,122 +1,51 @@
 import type { Metadata } from "next";
-import { Playfair_Display, Inter } from "next/font/google";
 import "./globals.css";
 
-const playfair = Playfair_Display({
-  variable: "--font-playfair",
-  subsets: ["latin"],
-  display: "swap",
-  weight: ["400", "600", "700"],
-});
-
-const inter = Inter({
-  variable: "--font-inter",
-  subsets: ["latin"],
-  display: "swap",
-});
-
 export const metadata: Metadata = {
-  metadataBase: new URL("https://jacquesmjean.com"),
-  title: {
-    default: "Jacques M. Jean | AI Governance Advisor & Global Technologist",
-    template: "%s | Jacques M. Jean",
-  },
+  title: "Jacques M. Jean — Founder, Technologist, Global Operator",
   description:
-    "Shaping the institutional frameworks that govern how AI transforms enterprise, capital, and policy. AI governance advisor to governments and Fortune 500 leaders.",
-  keywords: [
-    "AI governance",
-    "digital transformation",
-    "enterprise AI",
-    "technology advisor",
-    "AI policy",
-    "global technologist",
-    "board governance",
-    "Jacques Jean",
-  ],
-  authors: [{ name: "Jacques M. Jean" }],
+    "25 years building technology across more than 30 countries. Now helping small businesses own their AI through TechFides, and restoring heritage sites the world has forgotten through Levoila.",
+  metadataBase: new URL("https://jacquesmjean.com"),
   openGraph: {
-    type: "website",
-    locale: "en_US",
+    title: "Jacques M. Jean — Founder, Technologist, Global Operator",
+    description:
+      "Founder of TechFides and Levoila. Built three libraries in Haiti. Now building local AI for small business — and restoring what governments have abandoned.",
     url: "https://jacquesmjean.com",
     siteName: "Jacques M. Jean",
-    title: "Jacques M. Jean | AI Governance Advisor & Global Technologist",
-    description:
-      "Shaping the institutional frameworks that govern how AI transforms enterprise, capital, and policy.",
-    images: [
-      {
-        url: "/images/og-image.jpg",
-        width: 1200,
-        height: 630,
-        alt: "Jacques M. Jean — AI Governance Advisor",
-      },
-    ],
+    images: [{ url: "/images/og-image.jpg", width: 1200, height: 630 }],
+    locale: "en_US",
+    type: "website",
   },
   twitter: {
     card: "summary_large_image",
-    title: "Jacques M. Jean | AI Governance Advisor & Global Technologist",
+    title: "Jacques M. Jean",
     description:
-      "Shaping the institutional frameworks that govern how AI transforms enterprise, capital, and policy.",
+      "Founder of TechFides and Levoila. 25 years across 30+ countries. Three libraries in Haiti.",
+    images: ["/images/og-image.jpg"],
   },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
-
-const jsonLd = {
-  "@context": "https://schema.org",
-  "@type": "Person",
-  name: "Jacques M. Jean",
-  jobTitle: "AI Governance Advisor & Global Technologist",
-  url: "https://jacquesmjean.com",
-  image: "https://jacquesmjean.com/images/headshot.png",
-  description:
-    "AI transformation advisor to governments and enterprise leaders. Shaping institutional frameworks for AI governance, infrastructure strategy, and cross-border capital integration.",
-  knowsAbout: [
-    "AI Governance",
-    "Digital Transformation",
-    "Enterprise AI Strategy",
-    "Cross-Border Capital Integration",
-    "Infrastructure Strategy",
-  ],
-  memberOf: [
-    { "@type": "Organization", name: "OVYNA", roleName: "Board Chair" },
-    {
-      "@type": "Organization",
-      name: "MUSA Asset Management",
-      roleName: "Board Chair",
-    },
-    {
-      "@type": "Organization",
-      name: "TechFides",
-      roleName: "Founder & Board Chair",
-    },
-    {
-      "@type": "Organization",
-      name: "American Business Council Gabon",
-      roleName: "Co-Chair (Founding)",
-    },
-  ],
-  sameAs: ["https://www.linkedin.com/in/jacques-m-jean"],
+  robots: { index: true, follow: true },
 };
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
-    <html
-      lang="en"
-      className={`${playfair.variable} ${inter.variable} h-full antialiased`}
-    >
+    <html lang="en">
       <head>
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link
+          rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossOrigin=""
+        />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap"
+          rel="stylesheet"
         />
       </head>
-      <body className="min-h-full flex flex-col">{children}</body>
+      <body className="bg-paper text-ink antialiased">{children}</body>
     </html>
   );
 }
