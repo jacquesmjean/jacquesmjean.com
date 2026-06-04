@@ -108,6 +108,11 @@ export type Messages = {
       external: boolean;
     }[];
   };
+  faq: {
+    eyebrow: string;
+    headline: string;
+    items: { q: string; a: string }[];
+  };
   footer: {
     rights: string;
   };

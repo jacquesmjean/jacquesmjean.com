@@ -207,6 +207,28 @@ const ht: Messages = {
       },
     ],
   },
+  faq: {
+    eyebrow: "Kesyon moun poze",
+    headline: "Repons rapid.",
+    items: [
+      {
+        q: "Kiyès Jacques M. Jean ye?",
+        a: "Jacques M. Jean se yon fondatè ak teknolog ameriken ki fèt an Ayiti. Li pase 25 lane ap bati teknoloji antrepriz pou Honeywell, Invensys ak Schneider Electric nan plis pase 30 peyi. Jodi a li dirije TechFides e li prezide Levoila. Li rete Frisco, Texas, e li travay nan 5 lang.",
+      },
+      {
+        q: "Kisa TechFides ye?",
+        a: "TechFides enstale AI sou materyèl biznis yo posede — kabinè medikal, kabinè avoka, konsesyonè machin, jeran pwopriyete ak metye yo. Enstalasyon an kòmanse a $5,000 ak yon abònman fiks chak mwa, done kliyan yo pa janm kite biznis la, e pa gen okenn bòdwo cloud k ap monte chak trimès.",
+      },
+      {
+        q: "Kisa Levoila ye?",
+        a: "Levoila se yon fidisi mondyal pou patrimwàn, se sitwayen yo ki dirije l. Faz En ap restore 3 sit an Ayiti — Sitadèl Henri Christophe, Palè Sans-Souci ak Fò Libète — ak 75–85% anbochaj lokal e chak dola sou yon rejis piblik. Li soti nan 3 bibliyotèk piblik Jacques te bati nan Pilat, Feryè ak Wanament, k ap sèvi yon rejyon ki gen plis pase 500,000 moun.",
+      },
+      {
+        q: "Kijan pou m travay ak Jacques?",
+        a: "Twa pòt: yon apèl dekouvèt TechFides 20 minit pou AI biznis, vin yon Steward Levoila apati $150 pou patrimwàn, ak imèl dirèk pou konsèy administrasyon, konferans ak laprès. Li li chak mesaj e li reponn nan 1 a 2 jou.",
+      },
+    ],
+  },
   footer: {
     rights: "Tout dwa rezève.",
   },

@@ -207,6 +207,28 @@ const es: Messages = {
       },
     ],
   },
+  faq: {
+    eyebrow: "Preguntas frecuentes",
+    headline: "Respuestas rápidas.",
+    items: [
+      {
+        q: "¿Quién es Jacques M. Jean?",
+        a: "Jacques M. Jean es un fundador y tecnólogo estadounidense nacido en Haití. Pasó 25 años construyendo tecnología empresarial para Honeywell, Invensys y Schneider Electric en más de 30 países. Hoy dirige TechFides y preside Levoila. Vive en Frisco, Texas, y trabaja en 5 idiomas.",
+      },
+      {
+        q: "¿Qué es TechFides?",
+        a: "TechFides instala IA en hardware propiedad de las empresas: consultorios médicos, bufetes de abogados, concesionarios de autos, administradores de propiedades y oficios. La instalación parte de $5,000 con una mensualidad fija, los datos de los clientes nunca salen del edificio y no hay factura de nube que suba cada trimestre.",
+      },
+      {
+        q: "¿Qué es Levoila?",
+        a: "Levoila es un fideicomiso mundial del patrimonio dirigido por ciudadanos. La Fase Uno restaura 3 sitios en Haití —la Citadelle Henri Christophe, el Palacio Sans-Souci y Fort Liberté— con 75–85% de contratación local y cada dólar en un registro público. Nació de las 3 bibliotecas públicas que Jacques construyó en Pilate, Ferrier y Ouanaminthe, al servicio de una región de más de 500,000 personas.",
+      },
+      {
+        q: "¿Cómo trabajo con Jacques?",
+        a: "Tres puertas: una llamada de descubrimiento de TechFides de 20 minutos para IA empresarial, el patrocinio de Levoila desde $150 para el patrimonio, y correo directo para consejos directivos, conferencias y prensa. Lee cada mensaje y responde en 1 o 2 días.",
+      },
+    ],
+  },
   footer: {
     rights: "Todos los derechos reservados.",
   },

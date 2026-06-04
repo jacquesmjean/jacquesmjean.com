@@ -208,6 +208,28 @@ const fr: Messages = {
       },
     ],
   },
+  faq: {
+    eyebrow: "Questions fréquentes",
+    headline: "Réponses rapides.",
+    items: [
+      {
+        q: "Qui est Jacques M. Jean ?",
+        a: "Jacques M. Jean est un fondateur et technologue américain né en Haïti. Il a passé 25 ans à bâtir des systèmes technologiques d'entreprise pour Honeywell, Invensys et Schneider Electric dans plus de 30 pays. Aujourd'hui, il dirige TechFides et préside Levoila. Il vit à Frisco, au Texas, et travaille en 5 langues.",
+      },
+      {
+        q: "Qu'est-ce que TechFides ?",
+        a: "TechFides installe l'IA sur du matériel que les entreprises possèdent — cabinets médicaux, cabinets d'avocats, concessionnaires automobiles, gestionnaires immobiliers et métiers techniques. L'installation démarre à 5 000 $ avec un forfait mensuel fixe, les données clients ne quittent jamais le bâtiment, et aucune facture cloud ne grimpe chaque trimestre.",
+      },
+      {
+        q: "Qu'est-ce que Levoila ?",
+        a: "Levoila est une fiducie mondiale du patrimoine, dirigée par les citoyens. La Phase Un restaure 3 sites en Haïti — la Citadelle Henri Christophe, le Palais Sans-Souci et Fort-Liberté — avec 75 à 85 % d'embauche locale et chaque dollar inscrit sur un registre public. Elle est née des 3 bibliothèques publiques que Jacques a construites à Pilate, Ferrier et Ouanaminthe, au service d'une région de plus de 500 000 personnes.",
+      },
+      {
+        q: "Comment travailler avec Jacques ?",
+        a: "Trois portes : un appel découverte TechFides de 20 minutes pour l'IA d'entreprise, le parrainage Levoila à partir de 150 $ pour le patrimoine, et l'email direct pour les conseils d'administration, les conférences et la presse. Il lit chaque message et répond sous 1 à 2 jours.",
+      },
+    ],
+  },
   footer: {
     rights: "Tous droits réservés.",
   },

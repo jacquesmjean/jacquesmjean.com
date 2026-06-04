@@ -4,6 +4,7 @@ import WhatIDoNow from "@/components/WhatIDoNow";
 import TechFidesSpotlight from "@/components/TechFidesSpotlight";
 import LevoilaSpotlight from "@/components/LevoilaSpotlight";
 import Story from "@/components/Story";
+import FAQ from "@/components/FAQ";
 import Perspectives from "@/components/Perspectives";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
@@ -21,6 +22,7 @@ export default function PageContent({ locale }: { locale: Locale }) {
       <TechFidesSpotlight messages={m.techFides} />
       <LevoilaSpotlight messages={m.levoila} />
       <Story messages={m.story} />
+      <FAQ messages={m.faq} />
       <Perspectives messages={m.perspectives} />
       <Contact messages={m.contact} />
       <Footer messages={m.footer} />
