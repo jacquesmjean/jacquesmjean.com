@@ -129,7 +129,7 @@ const ht: Messages = {
     pullquote:
       "« M te gen dizwit lane premye fwa m te antre nan yon bibliyotèk. »",
     para1:
-      "Mwen fèt nan Feryè, nan Nòdès Ayiti. Mwen vin Etazini lè m te adolesan epi m pase ven-senk lane ki vin apre yo ap bati teknoloji antrepriz pou konpayi tout moun konnen — Honeywell, Invensys, Schneider Electric — nan plis pase trant peyi. M aprann kijan vrè sistèm yo ye nan gwo nivo. M aprann tou ke yo pa t bati anyen nan sa pou moun mwen sòti yo.",
+      "Mwen fèt Jacques Medina Jean nan Feryè, nan Nòdès Ayiti. Mwen vin Etazini lè m te adolesan epi m pase ven-senk lane ki vin apre yo ap bati teknoloji antrepriz pou konpayi tout moun konnen — Honeywell, Invensys, Schneider Electric — nan plis pase trant peyi. M aprann kijan vrè sistèm yo ye nan gwo nivo. M aprann tou ke yo pa t bati anyen nan sa pou moun mwen sòti yo.",
     para2:
       "Kidonk m kòmanse bati. Gen kèk lane, twa ti bibliyotèk te leve nan Nò Ayiti — nan Pilàt, nan vil mwen Feryè, ak nan Wanament. Yo aprann mwen ke ti bagay yo ki byen bati chanje tout sa ki bò kote yo. Leson sa a vin TechFides : ti antrepriz pa bezwen yon nyaj gwosè peyi a. Yo bezwen yon AI ki rete nan biwo yo, sou aparèy ki pou yo, k ap fè egzakteman travay yo bay li pou fè a.",
     pivot: "Levoila se pi gwo repons lan pou menm kesyon an.",
