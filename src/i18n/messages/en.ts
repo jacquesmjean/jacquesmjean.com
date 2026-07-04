@@ -128,7 +128,7 @@ const en: Messages = {
     pullquote:
       '"I was eighteen years old the first time I walked into a library."',
     para1:
-      "I was born in Ferrier, in the northeast of Haiti. I came to the United States as a teenager and spent the next twenty-five years building enterprise technology for companies people have heard of — Honeywell, Invensys, Schneider Electric — across more than thirty countries. I learned what real systems look like at scale. I also learned that none of it had been built for the people I came from.",
+      "I was born Jacques Medina Jean in Ferrier, in the northeast of Haiti. I came to the United States as a teenager and spent the next twenty-five years building enterprise technology for companies people have heard of — Honeywell, Invensys, Schneider Electric — across more than thirty countries. I learned what real systems look like at scale. I also learned that none of it had been built for the people I came from.",
     para2:
       "So I started building. A few years ago, three small libraries went up in northern Haiti — in Pilate, in my hometown of Ferrier, and in Ouanaminthe. They taught me that small, well-built things change everything around them. That lesson became TechFides: small businesses don't need a cloud the size of a country. They need AI that lives in their office, on hardware they own, doing exactly the job they hired it to do.",
     pivot: "Levoila is the bigger answer to the same question.",
