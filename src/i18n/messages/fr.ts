@@ -130,7 +130,7 @@ const fr: Messages = {
     pullquote:
       '« J\'avais dix-huit ans la première fois que je suis entré dans une bibliothèque. »',
     para1:
-      "Je suis né à Ferrier, dans le nord-est d'Haïti. Je suis arrivé aux États-Unis adolescent et j'ai passé les vingt-cinq années suivantes à bâtir des systèmes technologiques pour des entreprises que tout le monde connaît — Honeywell, Invensys, Schneider Electric — dans plus de trente pays. J'ai appris à quoi ressemblent les vrais systèmes à grande échelle. J'ai aussi appris que rien de tout ça n'avait été conçu pour le peuple d'où je viens.",
+      "Je suis né Jacques Medina Jean à Ferrier, dans le nord-est d'Haïti. Je suis arrivé aux États-Unis adolescent et j'ai passé les vingt-cinq années suivantes à bâtir des systèmes technologiques pour des entreprises que tout le monde connaît — Honeywell, Invensys, Schneider Electric — dans plus de trente pays. J'ai appris à quoi ressemblent les vrais systèmes à grande échelle. J'ai aussi appris que rien de tout ça n'avait été conçu pour le peuple d'où je viens.",
     para2:
       "Alors j'ai commencé à construire. Il y a quelques années, trois petites bibliothèques ont vu le jour dans le nord d'Haïti — à Pilate, dans mon village natal de Ferrier, et à Ouanaminthe. Elles m'ont appris que les petites choses bien bâties changent tout ce qui les entoure. Cette leçon est devenue TechFides : les petites entreprises n'ont pas besoin d'un nuage de la taille d'un pays. Elles ont besoin d'une IA qui vit dans leur bureau, sur leur matériel, et qui fait exactement le travail pour lequel elles l'ont embauchée.",
     pivot: "Levoila, c'est la réponse plus grande à la même question.",
