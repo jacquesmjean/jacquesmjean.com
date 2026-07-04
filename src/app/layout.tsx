@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   authors: [{ name: "Jacques M. Jean", url: "https://jacquesmjean.com" }],
   creator: "Jacques M. Jean",
   publisher: "Jacques M. Jean",
+    verification: { other: { "msvalidate.01": "315FCB78A389AA7C4372CF732819AA4F" } },
   keywords: [
     "Jacques M. Jean",
     "Jacques Jean",
