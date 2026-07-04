@@ -113,7 +113,9 @@ export default function JsonLd({ locale }: { locale: Locale }) {
       "https://www.linkedin.com/in/jacques-m-jean",
       "https://techfides.com",
       "https://levoila.org",
-      "https://councils.forbes.com",
+      "https://x.com/jacquesmjean",
+      "https://www.forbes.com/councils/forbestechcouncil/people/jacquesjean/",
+      "https://councils.forbes.com/profile/Jacques-Jean-Founder-CEO-TechFides-LLC/2c1ba7c4-5a0a-4285-9f01-de5ebda16de1",
     ],
   };
 
