@@ -130,7 +130,7 @@ const pt: Messages = {
     pullquote:
       '"Eu tinha dezoito anos quando entrei pela primeira vez em uma biblioteca."',
     para1:
-      "Nasci em Ferrier, no nordeste do Haiti. Cheguei aos Estados Unidos ainda adolescente e passei os vinte e cinco anos seguintes construindo tecnologia corporativa para empresas que todo mundo conhece — Honeywell, Invensys, Schneider Electric — em mais de trinta países. Aprendi como são os sistemas de verdade em larga escala. Aprendi também que nada daquilo havia sido construído para a gente de onde eu venho.",
+      "Nasci Jacques Medina Jean em Ferrier, no nordeste do Haiti. Cheguei aos Estados Unidos ainda adolescente e passei os vinte e cinco anos seguintes construindo tecnologia corporativa para empresas que todo mundo conhece — Honeywell, Invensys, Schneider Electric — em mais de trinta países. Aprendi como são os sistemas de verdade em larga escala. Aprendi também que nada daquilo havia sido construído para a gente de onde eu venho.",
     para2:
       "Então comecei a construir. Há alguns anos, três pequenas bibliotecas surgiram no norte do Haiti — em Pilate, na minha cidade natal de Ferrier, e em Ouanaminthe. Elas me ensinaram que coisas pequenas e bem feitas mudam tudo ao redor. Essa lição virou a TechFides: pequenas empresas não precisam de uma nuvem do tamanho de um país. Precisam de uma IA que viva no escritório delas, em hardware que lhes pertence, fazendo exatamente o trabalho para o qual foi contratada.",
     pivot: "A Levoila é a resposta maior para a mesma pergunta.",
