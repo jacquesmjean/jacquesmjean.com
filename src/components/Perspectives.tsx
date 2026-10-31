@@ -27,7 +27,9 @@ export default function Perspectives({
             </p>
           </div>
           <a
-            href="#"
+            href="https://www.linkedin.com/in/jacques-m-jean/recent-activity/all/"
+            target="_blank"
+            rel="noopener"
             className="self-start text-sm font-medium text-ink hover:text-accent transition-colors"
           >
             {messages.allWriting} →

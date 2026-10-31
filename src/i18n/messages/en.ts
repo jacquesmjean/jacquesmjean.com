@@ -4,7 +4,7 @@ const en: Messages = {
   meta: {
     title: "Jacques M. Jean — Founder, Technologist, Global Operator",
     description:
-      "Founder of TechFides and Levoila. 25 years across 30+ countries — now helping small business own its AI, and restoring sites the world has forgotten.",
+      "Founder of TechFides and Levoila. 25 years across 15 countries — now helping small business own its AI, and restoring sites the world has forgotten.",
   },
   nav: {
     work: "What I Do",
@@ -21,10 +21,10 @@ const en: Messages = {
     headline1Em: "own their AI",
     headline2Pre: "and I'm restoring",
     headline2Em: "what governments forget",
-    bodyPre: "I'm Jacques. I spent 25 years building technology systems for Honeywell, Invensys, and Schneider Electric across more than 30 countries. Today I run ",
+    bodyPre: "I'm Jacques. I spent 25 years building technology systems for Honeywell, Invensys, and Schneider Electric across 15 countries. Today I run ",
     bodyTF: "TechFides",
     bodyMid:
-      ", where small businesses install AI on hardware they own — no rent, no data leaving the building. And I chair ",
+      ", where small businesses run AI on hardware they own — no rent, no data leaving the building. And I chair ",
     bodyLV: "Levoila",
     bodyPost:
       ", a global heritage trust restoring sites the world has abandoned.",
@@ -34,6 +34,7 @@ const en: Messages = {
     creds: [
       "Forbes Technology Council",
       "Goldman Sachs 10KSB",
+      "USGLC Texas Advisory Committee",
       "Carnegie Mellon MS",
     ],
   },
@@ -47,7 +48,7 @@ const en: Messages = {
         label: "The Business",
         title: "TechFides",
         role: "CEO & Founder",
-        body: "Local AI for small and mid-size businesses. Medical offices, law firms, auto dealers, property managers, trades. We install AI on hardware you own — no rent, no data leaving the building.",
+        body: "Local AI for small and mid-size businesses. Medical offices, law firms, auto dealers, property managers, trades. We deploy AI on hardware you own — no rent, no data leaving the building.",
         linkLabel: "How TechFides works",
       },
       {
@@ -71,7 +72,7 @@ const en: Messages = {
     headline: "Own your AI.",
     body1:
       "Most small businesses are stuck renting AI from Big Tech. Every chat, every document, every customer record leaves the building. The bill keeps climbing. The data isn't yours. There's nothing you can hand to the next owner of the business.",
-    body2Pre: "TechFides installs AI on hardware ",
+    body2Pre: "TechFides deploys AI on hardware ",
     body2Em: "you",
     body2Post:
       " own, configured for your operations. The medical office that keeps patient records on premises. The law firm that can't put client data into anyone else's cloud. The auto dealer who wants the AI to outlast the next vendor lock-in.",
@@ -82,11 +83,11 @@ const en: Messages = {
       "Your patient files, contracts, and customer data leave the building every time you use it.",
       "Your monthly API bill climbs every quarter — and you don't own anything when you're done.",
     ],
-    installLabel: "What we install",
+    installLabel: "What we deploy",
     installItems: [
       "AI runs on hardware you own — Mac, Windows, a Pi, or a server.",
       "Your data never leaves your office.",
-      "Flat installation fee. Optional retainer. No surprise bills.",
+      "Flat deployment fee. Optional retainer. No surprise bills.",
     ],
   },
   levoila: {
@@ -128,7 +129,7 @@ const en: Messages = {
     pullquote:
       '"I was eighteen years old the first time I walked into a library."',
     para1:
-      "I was born Jacques Medina Jean in Ferrier, in the northeast of Haiti. I came to the United States as a teenager and spent the next twenty-five years building enterprise technology for companies people have heard of — Honeywell, Invensys, Schneider Electric — across more than thirty countries. I learned what real systems look like at scale. I also learned that none of it had been built for the people I came from.",
+      "I was born Jacques Medina Jean in Ferrier, in the northeast of Haiti. I came to the United States as a teenager and spent the next twenty-five years building enterprise technology for companies people have heard of — Honeywell, Invensys, Schneider Electric — across fifteen countries — with travels that carried me through forty-five. I learned what real systems look like at scale. I also learned that none of it had been built for the people I came from.",
     para2:
       "So I started building. A few years ago, three small libraries went up in northern Haiti — in Pilate, in my hometown of Ferrier, and in Ouanaminthe. They taught me that small, well-built things change everything around them. That lesson became TechFides: small businesses don't need a cloud the size of a country. They need AI that lives in their office, on hardware they own, doing exactly the job they hired it to do.",
     pivot: "Levoila is the bigger answer to the same question.",
@@ -137,7 +138,7 @@ const en: Messages = {
     languagesLabel: "Languages",
     languagesValue: "English · French · Kreyòl · Spanish · Portuguese",
     educationLabel: "Education",
-    educationValue: "Carnegie Mellon · U. de Guadalajara · Harvard exec",
+    educationValue: "Carnegie Mellon · U. de Guadalajara · Harvard & UNC exec",
     credentialsLabel: "Credentials",
     credentialsValue: "Six Sigma Black Belt · PMP · ITIL",
   },
@@ -145,7 +146,7 @@ const en: Messages = {
     eyebrow: "Perspectives",
     headline: "Writing, in plain English.",
     subhead:
-      "Notes from the work — running a small business in the AI era, building libraries and fortresses, and what 25 years across 30+ countries actually teaches you.",
+      "Notes from the work — running a small business in the AI era, building libraries and fortresses, and what 25 years across 15 countries actually teaches you.",
     allWriting: "All writing",
     readLabel: "Read",
     posts: [
@@ -212,11 +213,11 @@ const en: Messages = {
     items: [
       {
         q: "Who is Jacques M. Jean?",
-        a: "Jacques M. Jean is a Haitian-born American founder and technologist. He spent 25 years building enterprise technology for Honeywell, Invensys, and Schneider Electric across more than 30 countries, and today he is CEO of TechFides and Founder & Chair of Levoila. He lives in Frisco, Texas, and works in 5 languages.",
+        a: "Jacques M. Jean is a Haitian-born American founder and technologist. He spent 25 years building enterprise technology for Honeywell, Invensys, and Schneider Electric across 15 countries, and today he is CEO of TechFides and Founder & Chair of Levoila. He lives in Frisco, Texas, and works in 5 languages.",
       },
       {
         q: "What is TechFides?",
-        a: "TechFides installs AI on hardware businesses own — medical offices, law firms, auto dealers, property managers, and trades. Setup starts at $5,000 with a flat monthly retainer, customer data never leaves the building, and there is no cloud bill climbing every quarter.",
+        a: "TechFides deploys AI on hardware businesses own — medical offices, law firms, auto dealers, property managers, and trades. Setup starts at $5,000 with a flat monthly retainer, customer data never leaves the building, and there is no cloud bill climbing every quarter.",
       },
       {
         q: "What is Levoila?",

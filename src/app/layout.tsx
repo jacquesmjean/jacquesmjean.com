@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata: Metadata = {
   title: "Jacques M. Jean — Founder, Technologist, Global Operator",
   description:
-    "Founder of TechFides and Levoila. 25 years across 30+ countries — now helping small business own its AI, and restoring sites the world has forgotten.",
+    "Founder of TechFides and Levoila. 25 years across 15 countries — now helping small business own its AI, and restoring sites the world has forgotten.",
   metadataBase: new URL("https://jacquesmjean.com"),
   applicationName: "Jacques M. Jean",
   authors: [{ name: "Jacques M. Jean", url: "https://jacquesmjean.com" }],
@@ -40,7 +40,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Jacques M. Jean",
     description:
-      "Founder of TechFides and Levoila. 25 years across 30+ countries. Local AI for small business; restoring sites the world has forgotten.",
+      "Founder of TechFides and Levoila. 25 years across 15 countries. Local AI for small business; restoring sites the world has forgotten.",
     images: ["/images/og-image.jpg"],
   },
   robots: {
