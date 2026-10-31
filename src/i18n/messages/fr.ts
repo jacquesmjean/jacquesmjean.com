@@ -12,6 +12,7 @@ const fr: Messages = {
     techfides: "TechFides",
     levoila: "Levoila",
     story: "Mon histoire",
+    speaking: "Conférences",
     contact: "Contact",
     getInTouch: "Me contacter",
     selectLanguage: "Langue",
@@ -230,6 +231,50 @@ const fr: Messages = {
         a: "Trois portes : un appel découverte TechFides de 20 minutes pour l'IA d'entreprise, le parrainage Levoila à partir de 150 $ pour le patrimoine, et l'email direct pour les conseils d'administration, les conférences et la presse. Il lit chaque message et répond sous 1 à 2 jours.",
       },
     ],
+  },
+  speaking: {
+    metaTitle: "Conférences — Jacques M. Jean",
+    metaDescription:
+      "Conférences et briefings sur la propriété de l'IA, la souveraineté numérique des gouvernements et l'accès à la technologie comme construction nationale. Téléchargez la fiche de présentation.",
+    eyebrow: "Conférences & engagements",
+    headline: "Des histoires tirées de l'expérience, pas de la théorie.",
+    intro:
+      "Vingt-cinq ans de technologie d'entreprise dans quinze pays. Trois bibliothèques construites dans le nord d'Haïti. Une entreprise qui apprend aux PME à posséder leur IA. Je m'adresse aux conseils d'administration, aux ministères, aux ambassades et aux conférences — en cinq langues.",
+    downloadCta: "Télécharger la fiche d'une page (PDF)",
+    downloadNote: "Tout ce dont un organisateur a besoin, sur une page. Prête à transférer.",
+    themesEyebrow: "Mes sujets",
+    themesHeadline: "Trois sujets. Un fil conducteur : la propriété.",
+    themes: [
+      {
+        title: "Posséder son IA",
+        body: "Pourquoi les entreprises devraient faire tourner l'IA sur une infrastructure qu'elles contrôlent — et ce que cela change pour les coûts, la confidentialité et l'indépendance. Raconté depuis le terrain, pas depuis le laboratoire.",
+      },
+      {
+        title: "Souveraineté numérique des gouvernements",
+        body: "Ce que la propriété de l'IA signifie pour les ministères, les ambassades et les institutions publiques dont les données ne peuvent pas quitter le pays. Des chemins concrets, pas des abstractions.",
+      },
+      {
+        title: "La bibliothèque à dix-huit ans",
+        body: "De sa première visite dans une bibliothèque à dix-huit ans à la construction de trois d'entre elles en Haïti : l'accès à la technologie comme construction nationale, raconté d'après une vie entre Haïti, le Mexique, l'Europe, l'Afrique et l'Amérique des grandes entreprises.",
+      },
+    ],
+    bioEyebrow: "Le conférencier",
+    bioHeadline: "Qui est dans la salle.",
+    bio1: "Jacques M. Jean a passé vingt-cinq ans à bâtir la technologie d'entreprise pour Honeywell, Invensys et Schneider Electric, avec des projets livrés dans quinze pays et des voyages qui l'ont mené à travers quarante-cinq. Né en Haïti et forgé en Amérique, il est entré dans une bibliothèque pour la première fois à dix-huit ans.",
+    bio2: "Aujourd'hui, il dirige TechFides, qui aide les entreprises à posséder l'IA dont elles dépendent, et préside Levoila, la fondation mondiale du patrimoine née des trois bibliothèques publiques qu'il a construites dans le nord d'Haïti. Il est co-président fondateur de l'American Business Council Gabon et président du conseil d'OVYNA.",
+    facts: [
+      { label: "Langues", value: "Anglais · Français · Créole · Espagnol · Portugais" },
+      { label: "Formation", value: "Carnegie Mellon · U. de Guadalajara · Harvard & UNC exec" },
+      { label: "Certifications", value: "Six Sigma Black Belt · PMP · ITIL" },
+      {
+        label: "Affiliations",
+        value: "Forbes Technology Council · Goldman Sachs 10KSB · Comité consultatif USGLC Texas",
+      },
+    ],
+    bookEyebrow: "Réserver une intervention",
+    bookHeadline: "Apportez ceci dans votre salle.",
+    bookBody: "Dites-moi l'audience, la date et ce que vous voulez qu'elle retienne. Je lis chaque message et je réponds sous un jour ou deux.",
+    bookCta: "Écrire à engage@jacquesmjean.com",
   },
   footer: {
     rights: "Tous droits réservés.",

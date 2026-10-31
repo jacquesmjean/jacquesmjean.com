@@ -11,6 +11,7 @@ const en: Messages = {
     techfides: "TechFides",
     levoila: "Levoila",
     story: "Story",
+    speaking: "Speaking",
     contact: "Contact",
     getInTouch: "Get in touch",
     selectLanguage: "Language",
@@ -228,6 +229,50 @@ const en: Messages = {
         a: "Three doors: a 20-minute TechFides discovery call for business AI, Levoila stewardship from $150 for heritage work, and direct email for board service, speaking, and press. He reads every message and replies within 1–2 days.",
       },
     ],
+  },
+  speaking: {
+    metaTitle: "Speaking — Jacques M. Jean",
+    metaDescription:
+      "Keynotes and briefings on owning your AI, digital sovereignty for governments, and technology access as nation building. Download the one-page leadership brief.",
+    eyebrow: "Speaking & Engagements",
+    headline: "Stories I tell from experience, not theory.",
+    intro:
+      "Twenty-five years of enterprise technology across fifteen countries. Three libraries built in northern Haiti. A business teaching small companies to own their AI. I speak to boardrooms, ministries, embassies, and conferences — in five languages.",
+    downloadCta: "Download the one-page brief (PDF)",
+    downloadNote: "Everything an organizer needs on one page. Ready to forward.",
+    themesEyebrow: "What I speak on",
+    themesHeadline: "Three topics. One thread: ownership.",
+    themes: [
+      {
+        title: "Own Your AI",
+        body: "Why businesses should run AI on infrastructure they control — and what that changes about cost, privacy, and independence. Told from the field, not the lab.",
+      },
+      {
+        title: "Digital Sovereignty for Governments",
+        body: "What AI ownership means for ministries, embassies, and public institutions whose data cannot leave the country. Practical paths, not policy abstractions.",
+      },
+      {
+        title: "The Library at Eighteen",
+        body: "From a first library visit at eighteen to building three of them in Haiti: technology access as nation building, told from lived experience across Haiti, Mexico, Europe, Africa, and corporate America.",
+      },
+    ],
+    bioEyebrow: "The speaker",
+    bioHeadline: "Who is in the room.",
+    bio1: "Jacques M. Jean spent twenty-five years building enterprise technology for Honeywell, Invensys, and Schneider Electric, delivering projects in fifteen countries, with travels that carried him through forty-five. Haitian-born and American-made, he walked into a library for the first time at eighteen.",
+    bio2: "Today he is CEO of TechFides, helping businesses own the AI they depend on, and Founder & Chair of Levoila, the global heritage trust that grew out of the three public libraries he built in northern Haiti. He serves as Co-Chair (Founding) of the American Business Council Gabon and Board Chair of OVYNA.",
+    facts: [
+      { label: "Languages", value: "English · French · Kreyòl · Spanish · Portuguese" },
+      { label: "Education", value: "Carnegie Mellon · U. de Guadalajara · Harvard & UNC exec" },
+      { label: "Credentials", value: "Six Sigma Black Belt · PMP · ITIL" },
+      {
+        label: "Affiliations",
+        value: "Forbes Technology Council · Goldman Sachs 10KSB · USGLC Texas Advisory Committee",
+      },
+    ],
+    bookEyebrow: "Book a conversation",
+    bookHeadline: "Bring this to your room.",
+    bookBody: "Tell me the audience, the date, and what you want them to leave with. I read every message and reply within a day or two.",
+    bookCta: "Email engage@jacquesmjean.com",
   },
   footer: {
     rights: "All rights reserved.",
