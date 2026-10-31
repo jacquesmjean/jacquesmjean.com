@@ -4,7 +4,7 @@ const ht: Messages = {
   meta: {
     title: "Jacques M. Jean — Fondatè, Teknolojis, Operatè Entènasyonal",
     description:
-      "Fondatè TechFides ak Levoila. 25 lane nan plis pase 30 peyi — m ap ede ti antrepriz posede pwòp AI yo, epi m ap restore sit mond lan bliye yo.",
+      "Fondatè TechFides ak Levoila. 25 lane nan 15 peyi — m ap ede ti antrepriz posede pwòp AI yo, epi m ap restore sit mond lan bliye yo.",
   },
   nav: {
     work: "Sa m fè",
@@ -22,10 +22,10 @@ const ht: Messages = {
     headline2Pre: "epi m ap restore",
     headline2Em: "sa gouvènman yo bliye",
     bodyPre:
-      "Yo rele m Jacques. Mwen pase 25 lane ap bati sistèm teknolojik pou Honeywell, Invensys ak Schneider Electric nan plis pase 30 peyi. Jodi a m ap dirije ",
+      "Yo rele m Jacques. Mwen pase 25 lane ap bati sistèm teknolojik pou Honeywell, Invensys ak Schneider Electric nan 15 peyi. Jodi a m ap dirije ",
     bodyTF: "TechFides",
     bodyMid:
-      ", kote ti antrepriz yo enstale AI sou aparèy ki pou yo — okenn lwaye, okenn done pa janm soti deyò biwo a. Epi m ap prezide ",
+      ", kote ti antrepriz yo fè AI mache sou aparèy ki pou yo — okenn lwaye, okenn done pa janm soti deyò biwo a. Epi m ap prezide ",
     bodyLV: "Levoila",
     bodyPost:
       ", yon fondasyon entènasyonal sitwayen k ap restore sit mond lan abandone yo.",
@@ -35,6 +35,7 @@ const ht: Messages = {
     creds: [
       "Forbes Technology Council",
       "Goldman Sachs 10KSB",
+      "USGLC Texas Advisory Committee",
       "Carnegie Mellon MS",
     ],
   },
@@ -48,7 +49,7 @@ const ht: Messages = {
         label: "Biznis la",
         title: "TechFides",
         role: "PDG ak Fondatè",
-        body: "AI lokal pou ti antrepriz ak antrepriz mwayen. Kabinè doktè, kabinè avoka, konsesyonè otomobil, jeran imobilye, metye konstriksyon. Nou enstale AI sou aparèy ki pou ou — okenn lwaye, okenn done pa soti deyò biwo a.",
+        body: "AI lokal pou ti antrepriz ak antrepriz mwayen. Kabinè doktè, kabinè avoka, konsesyonè otomobil, jeran imobilye, metye konstriksyon. Nou deplwaye AI sou aparèy ki pou ou — okenn lwaye, okenn done pa soti deyò biwo a.",
         linkLabel: "Kòman TechFides mache",
       },
       {
@@ -72,7 +73,7 @@ const ht: Messages = {
     headline: "Posede pwòp AI ou.",
     body1:
       "Pifò ti antrepriz kwense ap lwe AI nan men gwo konpayi teknolojik. Chak konvèsasyon, chak dokiman, chak dosye kliyan soti deyò biwo a. Fakti a kontinye monte. Done yo se pa pou ou. Pa gen anyen ou ka pase bay pwochen mèt biznis lan.",
-    body2Pre: "TechFides enstale AI sou aparèy ki pou ",
+    body2Pre: "TechFides deplwaye AI sou aparèy ki pou ",
     body2Em: "ou",
     body2Post:
       ", konfigire pou operasyon ou yo. Kabinè doktè ki kenbe dosye pasyan yo sou plas. Kabinè avoka ki pa ka mete done kliyan yo nan nyaj yon lòt moun. Konsesyonè otomobil ki vle AI a dire pi lontan pase pwochen founisè a.",
@@ -83,11 +84,11 @@ const ht: Messages = {
       "Dosye pasyan ou yo, kontra ou yo ak done kliyan ou yo soti deyò biwo a chak fwa w sèvi avè l.",
       "Fakti API mansyèl ou a monte chak trimès — epi ou pa posede anyen lè w fini.",
     ],
-    installLabel: "Sa nou enstale",
+    installLabel: "Sa nou deplwaye",
     installItems: [
       "AI a mache sou aparèy ki pou ou — Mac, Windows, yon Raspberry Pi, oswa yon sèvè.",
       "Done ou yo pa janm kite biwo ou.",
-      "Yon sèl pri pou enstalasyon. Kontra antretyen opsyonèl. Pa gen sipriz.",
+      "Yon sèl pri pou deplwaman an. Kontra antretyen opsyonèl. Pa gen sipriz.",
     ],
   },
   levoila: {
@@ -129,7 +130,7 @@ const ht: Messages = {
     pullquote:
       "« M te gen dizwit lane premye fwa m te antre nan yon bibliyotèk. »",
     para1:
-      "Mwen fèt Jacques Medina Jean nan Feryè, nan Nòdès Ayiti. Mwen vin Etazini lè m te adolesan epi m pase ven-senk lane ki vin apre yo ap bati teknoloji antrepriz pou konpayi tout moun konnen — Honeywell, Invensys, Schneider Electric — nan plis pase trant peyi. M aprann kijan vrè sistèm yo ye nan gwo nivo. M aprann tou ke yo pa t bati anyen nan sa pou moun mwen sòti yo.",
+      "Mwen fèt Jacques Medina Jean nan Feryè, nan Nòdès Ayiti. Mwen vin Etazini lè m te adolesan epi m pase ven-senk lane ki vin apre yo ap bati teknoloji antrepriz pou konpayi tout moun konnen — Honeywell, Invensys, Schneider Electric — nan kenz peyi — ak vwayaj ki mennen m nan karannsenk peyi. M aprann kijan vrè sistèm yo ye nan gwo nivo. M aprann tou ke yo pa t bati anyen nan sa pou moun mwen sòti yo.",
     para2:
       "Kidonk m kòmanse bati. Gen kèk lane, twa ti bibliyotèk te leve nan Nò Ayiti — nan Pilàt, nan vil mwen Feryè, ak nan Wanament. Yo aprann mwen ke ti bagay yo ki byen bati chanje tout sa ki bò kote yo. Leson sa a vin TechFides : ti antrepriz pa bezwen yon nyaj gwosè peyi a. Yo bezwen yon AI ki rete nan biwo yo, sou aparèy ki pou yo, k ap fè egzakteman travay yo bay li pou fè a.",
     pivot: "Levoila se pi gwo repons lan pou menm kesyon an.",
@@ -138,7 +139,7 @@ const ht: Messages = {
     languagesLabel: "Lang yo",
     languagesValue: "Angle · Franse · Kreyòl · Espayòl · Pòtigè",
     educationLabel: "Edikasyon",
-    educationValue: "Carnegie Mellon · U. de Guadalajara · Harvard ekzekitif",
+    educationValue: "Carnegie Mellon · U. de Guadalajara · Harvard & UNC ekzekitif",
     credentialsLabel: "Sètifikasyon",
     credentialsValue: "Six Sigma Black Belt · PMP · ITIL",
   },
@@ -146,7 +147,7 @@ const ht: Messages = {
     eyebrow: "Pèspektiv",
     headline: "Ekri, an mo senp.",
     subhead:
-      "Nòt sou travay la — dirije yon ti biznis nan epòk AI, bati bibliyotèk ak fò, ak sa 25 lane nan plis pase 30 peyi aprann ou tout bon.",
+      "Nòt sou travay la — dirije yon ti biznis nan epòk AI, bati bibliyotèk ak fò, ak sa 25 lane nan 15 peyi aprann ou tout bon.",
     allWriting: "Tout ekri yo",
     readLabel: "Li",
     posts: [
@@ -213,11 +214,11 @@ const ht: Messages = {
     items: [
       {
         q: "Kiyès Jacques M. Jean ye?",
-        a: "Jacques M. Jean se yon fondatè ak teknolog ameriken ki fèt an Ayiti. Li pase 25 lane ap bati teknoloji antrepriz pou Honeywell, Invensys ak Schneider Electric nan plis pase 30 peyi. Jodi a li dirije TechFides e li prezide Levoila. Li rete Frisco, Texas, e li travay nan 5 lang.",
+        a: "Jacques M. Jean se yon fondatè ak teknolog ameriken ki fèt an Ayiti. Li pase 25 lane ap bati teknoloji antrepriz pou Honeywell, Invensys ak Schneider Electric nan 15 peyi. Jodi a li dirije TechFides e li prezide Levoila. Li rete Frisco, Texas, e li travay nan 5 lang.",
       },
       {
         q: "Kisa TechFides ye?",
-        a: "TechFides enstale AI sou materyèl biznis yo posede — kabinè medikal, kabinè avoka, konsesyonè machin, jeran pwopriyete ak metye yo. Enstalasyon an kòmanse a $5,000 ak yon abònman fiks chak mwa, done kliyan yo pa janm kite biznis la, e pa gen okenn bòdwo cloud k ap monte chak trimès.",
+        a: "TechFides deplwaye AI sou materyèl biznis yo posede — kabinè medikal, kabinè avoka, konsesyonè machin, jeran pwopriyete ak metye yo. Deplwaman an kòmanse a $5,000 ak yon abònman fiks chak mwa, done kliyan yo pa janm kite biznis la, e pa gen okenn bòdwo cloud k ap monte chak trimès.",
       },
       {
         q: "Kisa Levoila ye?",

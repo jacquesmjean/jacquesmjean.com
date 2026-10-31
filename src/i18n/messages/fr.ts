@@ -5,7 +5,7 @@ const fr: Messages = {
     title:
       "Jacques M. Jean — Fondateur, technologue, opérateur international",
     description:
-      "Fondateur de TechFides et Levoila. 25 ans dans plus de 30 pays — j'aide les petites entreprises à posséder leur IA et je restaure les sites que le monde a oubliés.",
+      "Fondateur de TechFides et Levoila. 25 ans dans 15 pays — j'aide les petites entreprises à posséder leur IA et je restaure les sites que le monde a oubliés.",
   },
   nav: {
     work: "Ce que je fais",
@@ -23,10 +23,10 @@ const fr: Messages = {
     headline2Pre: "et je restaure",
     headline2Em: "ce que les gouvernements oublient",
     bodyPre:
-      "Je m'appelle Jacques. J'ai passé 25 ans à concevoir des systèmes technologiques pour Honeywell, Invensys et Schneider Electric dans plus de 30 pays. Aujourd'hui je dirige ",
+      "Je m'appelle Jacques. J'ai passé 25 ans à concevoir des systèmes technologiques pour Honeywell, Invensys et Schneider Electric dans 15 pays. Aujourd'hui je dirige ",
     bodyTF: "TechFides",
     bodyMid:
-      ", où de petites entreprises installent une IA sur du matériel qui leur appartient — aucune location, aucune donnée qui quitte les locaux. Et je préside ",
+      ", où de petites entreprises font tourner une IA sur du matériel qui leur appartient — aucune location, aucune donnée qui quitte les locaux. Et je préside ",
     bodyLV: "Levoila",
     bodyPost:
       ", une fondation citoyenne mondiale qui restaure les sites que le monde a laissés à l'abandon.",
@@ -36,6 +36,7 @@ const fr: Messages = {
     creds: [
       "Forbes Technology Council",
       "Goldman Sachs 10KSB",
+      "USGLC Texas Advisory Committee",
       "MS Carnegie Mellon",
     ],
   },
@@ -49,7 +50,7 @@ const fr: Messages = {
         label: "L'entreprise",
         title: "TechFides",
         role: "PDG et fondateur",
-        body: "IA locale pour les petites et moyennes entreprises. Cabinets médicaux, cabinets d'avocats, concessionnaires automobiles, gestionnaires immobiliers, métiers de la construction. Nous installons l'IA sur du matériel qui vous appartient — aucune location, aucune donnée qui quitte vos locaux.",
+        body: "IA locale pour les petites et moyennes entreprises. Cabinets médicaux, cabinets d'avocats, concessionnaires automobiles, gestionnaires immobiliers, métiers de la construction. Nous déployons l'IA sur du matériel qui vous appartient — aucune location, aucune donnée qui quitte vos locaux.",
         linkLabel: "Comment TechFides fonctionne",
       },
       {
@@ -73,7 +74,7 @@ const fr: Messages = {
     headline: "Soyez propriétaire de votre IA.",
     body1:
       "La plupart des petites entreprises sont coincées à louer leur IA auprès des géants de la tech. Chaque conversation, chaque document, chaque dossier client quitte vos locaux. La facture grimpe. Les données ne vous appartiennent pas. Vous n'avez rien à transmettre au prochain propriétaire de l'entreprise.",
-    body2Pre: "TechFides installe une IA sur du matériel qui ",
+    body2Pre: "TechFides déploie une IA sur du matériel qui ",
     body2Em: "vous",
     body2Post:
       " appartient, configurée pour vos opérations. Le cabinet médical qui garde les dossiers patients sur place. Le cabinet d'avocats qui ne peut pas confier les données clients au nuage de quelqu'un d'autre. Le concessionnaire automobile qui veut que l'IA survive au prochain fournisseur.",
@@ -84,11 +85,11 @@ const fr: Messages = {
       "Vos dossiers patients, vos contrats et vos données clients quittent vos locaux chaque fois que vous l'utilisez.",
       "Votre facture mensuelle d'API grimpe chaque trimestre — et vous ne possédez rien à la fin.",
     ],
-    installLabel: "Ce que nous installons",
+    installLabel: "Ce que nous déployons",
     installItems: [
       "L'IA fonctionne sur du matériel qui vous appartient — Mac, Windows, un Raspberry Pi ou un serveur.",
       "Vos données ne quittent jamais votre bureau.",
-      "Tarif d'installation fixe. Contrat de maintenance facultatif. Aucune surprise.",
+      "Tarif de déploiement fixe. Contrat de maintenance facultatif. Aucune surprise.",
     ],
   },
   levoila: {
@@ -130,7 +131,7 @@ const fr: Messages = {
     pullquote:
       '« J\'avais dix-huit ans la première fois que je suis entré dans une bibliothèque. »',
     para1:
-      "Je suis né Jacques Medina Jean à Ferrier, dans le nord-est d'Haïti. Je suis arrivé aux États-Unis adolescent et j'ai passé les vingt-cinq années suivantes à bâtir des systèmes technologiques pour des entreprises que tout le monde connaît — Honeywell, Invensys, Schneider Electric — dans plus de trente pays. J'ai appris à quoi ressemblent les vrais systèmes à grande échelle. J'ai aussi appris que rien de tout ça n'avait été conçu pour le peuple d'où je viens.",
+      "Je suis né Jacques Medina Jean à Ferrier, dans le nord-est d'Haïti. Je suis arrivé aux États-Unis adolescent et j'ai passé les vingt-cinq années suivantes à bâtir des systèmes technologiques pour des entreprises que tout le monde connaît — Honeywell, Invensys, Schneider Electric — dans quinze pays — avec des voyages qui m'ont mené à travers quarante-cinq. J'ai appris à quoi ressemblent les vrais systèmes à grande échelle. J'ai aussi appris que rien de tout ça n'avait été conçu pour le peuple d'où je viens.",
     para2:
       "Alors j'ai commencé à construire. Il y a quelques années, trois petites bibliothèques ont vu le jour dans le nord d'Haïti — à Pilate, dans mon village natal de Ferrier, et à Ouanaminthe. Elles m'ont appris que les petites choses bien bâties changent tout ce qui les entoure. Cette leçon est devenue TechFides : les petites entreprises n'ont pas besoin d'un nuage de la taille d'un pays. Elles ont besoin d'une IA qui vit dans leur bureau, sur leur matériel, et qui fait exactement le travail pour lequel elles l'ont embauchée.",
     pivot: "Levoila, c'est la réponse plus grande à la même question.",
@@ -139,7 +140,7 @@ const fr: Messages = {
     languagesLabel: "Langues",
     languagesValue: "Anglais · Français · Kreyòl · Espagnol · Portugais",
     educationLabel: "Formation",
-    educationValue: "Carnegie Mellon · U. de Guadalajara · Harvard cadres",
+    educationValue: "Carnegie Mellon · U. de Guadalajara · Harvard & UNC cadres",
     credentialsLabel: "Certifications",
     credentialsValue: "Ceinture noire Six Sigma · PMP · ITIL",
   },
@@ -147,7 +148,7 @@ const fr: Messages = {
     eyebrow: "Perspectives",
     headline: "Écrire, simplement.",
     subhead:
-      "Notes prises sur le terrain — diriger une petite entreprise à l'ère de l'IA, bâtir des bibliothèques et des forteresses, et ce que 25 ans dans plus de 30 pays vous enseignent vraiment.",
+      "Notes prises sur le terrain — diriger une petite entreprise à l'ère de l'IA, bâtir des bibliothèques et des forteresses, et ce que 25 ans dans 15 pays vous enseignent vraiment.",
     allWriting: "Tous les écrits",
     readLabel: "Lire",
     posts: [
@@ -214,11 +215,11 @@ const fr: Messages = {
     items: [
       {
         q: "Qui est Jacques M. Jean ?",
-        a: "Jacques M. Jean est un fondateur et technologue américain né en Haïti. Il a passé 25 ans à bâtir des systèmes technologiques d'entreprise pour Honeywell, Invensys et Schneider Electric dans plus de 30 pays. Aujourd'hui, il dirige TechFides et préside Levoila. Il vit à Frisco, au Texas, et travaille en 5 langues.",
+        a: "Jacques M. Jean est un fondateur et technologue américain né en Haïti. Il a passé 25 ans à bâtir des systèmes technologiques d'entreprise pour Honeywell, Invensys et Schneider Electric dans 15 pays. Aujourd'hui, il dirige TechFides et préside Levoila. Il vit à Frisco, au Texas, et travaille en 5 langues.",
       },
       {
         q: "Qu'est-ce que TechFides ?",
-        a: "TechFides installe l'IA sur du matériel que les entreprises possèdent — cabinets médicaux, cabinets d'avocats, concessionnaires automobiles, gestionnaires immobiliers et métiers techniques. L'installation démarre à 5 000 $ avec un forfait mensuel fixe, les données clients ne quittent jamais le bâtiment, et aucune facture cloud ne grimpe chaque trimestre.",
+        a: "TechFides déploie l'IA sur du matériel que les entreprises possèdent — cabinets médicaux, cabinets d'avocats, concessionnaires automobiles, gestionnaires immobiliers et métiers techniques. Le déploiement démarre à 5 000 $ avec un forfait mensuel fixe, les données clients ne quittent jamais le bâtiment, et aucune facture cloud ne grimpe chaque trimestre.",
       },
       {
         q: "Qu'est-ce que Levoila ?",

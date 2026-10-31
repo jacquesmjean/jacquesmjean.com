@@ -21,7 +21,7 @@ export default function JsonLd({ locale }: { locale: Locale }) {
     image: `${SITE}/images/headshot.png`,
     jobTitle: "Founder & CEO, TechFides · Founder & Chair, Levoila",
     description:
-      "Founder of TechFides and Levoila. Twenty-five years building enterprise technology for Honeywell, Invensys, and Schneider Electric across more than thirty countries.",
+      "Founder of TechFides and Levoila. Twenty-five years building enterprise technology for Honeywell, Invensys, and Schneider Electric across fifteen countries.",
     nationality: { "@type": "Country", name: "United States" },
     birthPlace: {
       "@type": "Place",
@@ -138,7 +138,7 @@ export default function JsonLd({ locale }: { locale: Locale }) {
     name: "TechFides",
     url: "https://techfides.com",
     description:
-      "Local AI deployment for small and mid-size businesses. AI installed on hardware the client owns — no rent, no data leaving the building.",
+      "Local AI deployment for small and mid-size businesses. AI deployed on hardware the client owns — no rent, no data leaving the building.",
     founder: { "@id": `${SITE}/#jacques` },
     address: {
       "@type": "PostalAddress",

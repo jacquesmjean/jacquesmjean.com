@@ -4,7 +4,7 @@ const es: Messages = {
   meta: {
     title: "Jacques M. Jean — Fundador, Tecnólogo, Operador Internacional",
     description:
-      "Fundador de TechFides y Levoila. 25 años en más de 30 países — ayudo a las pequeñas empresas a ser dueñas de su IA y restauro sitios que el mundo ha olvidado.",
+      "Fundador de TechFides y Levoila. 25 años en 15 países — ayudo a las pequeñas empresas a ser dueñas de su IA y restauro sitios que el mundo ha olvidado.",
   },
   nav: {
     work: "Lo que hago",
@@ -22,10 +22,10 @@ const es: Messages = {
     headline2Pre: "y restauro",
     headline2Em: "lo que los gobiernos olvidan",
     bodyPre:
-      "Me llamo Jacques. Pasé 25 años construyendo sistemas tecnológicos para Honeywell, Invensys y Schneider Electric en más de 30 países. Hoy dirijo ",
+      "Me llamo Jacques. Pasé 25 años construyendo sistemas tecnológicos para Honeywell, Invensys y Schneider Electric en 15 países. Hoy dirijo ",
     bodyTF: "TechFides",
     bodyMid:
-      ", donde las pequeñas empresas instalan IA en hardware que les pertenece — sin alquiler, sin datos saliendo de la oficina. Y presido ",
+      ", donde las pequeñas empresas operan IA en hardware que les pertenece — sin alquiler, sin datos saliendo de la oficina. Y presido ",
     bodyLV: "Levoila",
     bodyPost:
       ", un fideicomiso patrimonial mundial que restaura los sitios que el mundo ha abandonado.",
@@ -35,6 +35,7 @@ const es: Messages = {
     creds: [
       "Forbes Technology Council",
       "Goldman Sachs 10KSB",
+      "USGLC Texas Advisory Committee",
       "MS Carnegie Mellon",
     ],
   },
@@ -48,7 +49,7 @@ const es: Messages = {
         label: "La empresa",
         title: "TechFides",
         role: "CEO y Fundador",
-        body: "IA local para pequeñas y medianas empresas. Consultorios médicos, despachos de abogados, concesionarios, administradores de propiedades, oficios. Instalamos IA en hardware que te pertenece — sin alquiler, sin datos saliendo de tu oficina.",
+        body: "IA local para pequeñas y medianas empresas. Consultorios médicos, despachos de abogados, concesionarios, administradores de propiedades, oficios. Desplegamos IA en hardware que te pertenece — sin alquiler, sin datos saliendo de tu oficina.",
         linkLabel: "Cómo funciona TechFides",
       },
       {
@@ -72,7 +73,7 @@ const es: Messages = {
     headline: "Sé dueño de tu IA.",
     body1:
       "La mayoría de las pequeñas empresas están atrapadas alquilando IA a las grandes tecnológicas. Cada conversación, cada documento, cada registro de cliente sale de la oficina. La factura no para de subir. Los datos no son tuyos. No hay nada que puedas entregar al próximo dueño del negocio.",
-    body2Pre: "TechFides instala IA en hardware que ",
+    body2Pre: "TechFides despliega IA en hardware que ",
     body2Em: "te",
     body2Post:
       " pertenece, configurada para tus operaciones. El consultorio médico que mantiene los expedientes de pacientes en las instalaciones. El despacho de abogados que no puede poner datos de clientes en la nube de otro. El concesionario que quiere que la IA sobreviva al próximo proveedor.",
@@ -83,11 +84,11 @@ const es: Messages = {
       "Tus expedientes de pacientes, contratos y datos de clientes salen de la oficina cada vez que la usas.",
       "Tu factura mensual de API sube cada trimestre — y no eres dueño de nada cuando termines.",
     ],
-    installLabel: "Lo que instalamos",
+    installLabel: "Lo que desplegamos",
     installItems: [
       "La IA corre en hardware que te pertenece — Mac, Windows, una Raspberry Pi o un servidor.",
       "Tus datos nunca salen de tu oficina.",
-      "Tarifa fija de instalación. Mantenimiento opcional. Sin sorpresas.",
+      "Tarifa fija de implementación. Mantenimiento opcional. Sin sorpresas.",
     ],
   },
   levoila: {
@@ -129,7 +130,7 @@ const es: Messages = {
     pullquote:
       '"Tenía dieciocho años la primera vez que entré a una biblioteca."',
     para1:
-      "Nací Jacques Medina Jean en Ferrier, en el noreste de Haití. Llegué a Estados Unidos siendo adolescente y pasé los siguientes veinticinco años construyendo tecnología empresarial para compañías que todo el mundo conoce — Honeywell, Invensys, Schneider Electric — en más de treinta países. Aprendí cómo lucen los sistemas reales a escala. También aprendí que nada de eso había sido construido para la gente de donde yo vengo.",
+      "Nací Jacques Medina Jean en Ferrier, en el noreste de Haití. Llegué a Estados Unidos siendo adolescente y pasé los siguientes veinticinco años construyendo tecnología empresarial para compañías que todo el mundo conoce — Honeywell, Invensys, Schneider Electric — en quince países — con viajes que me llevaron por cuarenta y cinco. Aprendí cómo lucen los sistemas reales a escala. También aprendí que nada de eso había sido construido para la gente de donde yo vengo.",
     para2:
       "Así que empecé a construir. Hace unos años, tres pequeñas bibliotecas surgieron en el norte de Haití — en Pilate, en mi pueblo natal de Ferrier, y en Ouanaminthe. Me enseñaron que las cosas pequeñas y bien hechas cambian todo a su alrededor. Esa lección se convirtió en TechFides: las pequeñas empresas no necesitan una nube del tamaño de un país. Necesitan una IA que viva en su oficina, en hardware que les pertenezca, haciendo exactamente el trabajo para el que la contrataron.",
     pivot: "Levoila es la respuesta más grande a la misma pregunta.",
@@ -138,7 +139,7 @@ const es: Messages = {
     languagesLabel: "Idiomas",
     languagesValue: "Inglés · Francés · Kreyòl · Español · Portugués",
     educationLabel: "Formación",
-    educationValue: "Carnegie Mellon · U. de Guadalajara · Harvard ejecutivo",
+    educationValue: "Carnegie Mellon · U. de Guadalajara · Harvard y UNC ejecutivo",
     credentialsLabel: "Certificaciones",
     credentialsValue: "Six Sigma Black Belt · PMP · ITIL",
   },
@@ -146,7 +147,7 @@ const es: Messages = {
     eyebrow: "Perspectivas",
     headline: "Escribir, en español claro.",
     subhead:
-      "Notas del trabajo — dirigir una pequeña empresa en la era de la IA, construir bibliotecas y fortalezas, y lo que 25 años en más de 30 países realmente te enseñan.",
+      "Notas del trabajo — dirigir una pequeña empresa en la era de la IA, construir bibliotecas y fortalezas, y lo que 25 años en 15 países realmente te enseñan.",
     allWriting: "Todo lo escrito",
     readLabel: "Leer",
     posts: [
@@ -213,11 +214,11 @@ const es: Messages = {
     items: [
       {
         q: "¿Quién es Jacques M. Jean?",
-        a: "Jacques M. Jean es un fundador y tecnólogo estadounidense nacido en Haití. Pasó 25 años construyendo tecnología empresarial para Honeywell, Invensys y Schneider Electric en más de 30 países. Hoy dirige TechFides y preside Levoila. Vive en Frisco, Texas, y trabaja en 5 idiomas.",
+        a: "Jacques M. Jean es un fundador y tecnólogo estadounidense nacido en Haití. Pasó 25 años construyendo tecnología empresarial para Honeywell, Invensys y Schneider Electric en 15 países. Hoy dirige TechFides y preside Levoila. Vive en Frisco, Texas, y trabaja en 5 idiomas.",
       },
       {
         q: "¿Qué es TechFides?",
-        a: "TechFides instala IA en hardware propiedad de las empresas: consultorios médicos, bufetes de abogados, concesionarios de autos, administradores de propiedades y oficios. La instalación parte de $5,000 con una mensualidad fija, los datos de los clientes nunca salen del edificio y no hay factura de nube que suba cada trimestre.",
+        a: "TechFides despliega IA en hardware propiedad de las empresas: consultorios médicos, bufetes de abogados, concesionarios de autos, administradores de propiedades y oficios. La implementación parte de $5,000 con una mensualidad fija, los datos de los clientes nunca salen del edificio y no hay factura de nube que suba cada trimestre.",
       },
       {
         q: "¿Qué es Levoila?",

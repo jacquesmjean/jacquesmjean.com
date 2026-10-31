@@ -7,7 +7,7 @@ export const defaultLocale: Locale = "en";
 export const localeLabels: Record<Locale, { code: string; full: string }> = {
   en: { code: "EN", full: "English" },
   fr: { code: "FR", full: "Français" },
-  ht: { code: "KR", full: "Kreyòl" },
+  ht: { code: "HT", full: "Kreyòl" },
   es: { code: "ES", full: "Español" },
   pt: { code: "PT", full: "Português" },
 };
