@@ -100,6 +100,10 @@ export default function JsonLd({ locale }: { locale: Locale }) {
       { "@type": "Organization", name: "Goldman Sachs 10,000 Small Businesses" },
       {
         "@type": "Organization",
+        name: "U.S. Global Leadership Coalition — Texas Advisory Committee",
+      },
+      {
+        "@type": "Organization",
         name: "American Business Council Gabon",
         roleName: "Co-Chair (Founding)",
       },

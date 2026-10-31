@@ -5,6 +5,7 @@ export type Messages = {
     techfides: string;
     levoila: string;
     story: string;
+    speaking: string;
     contact: string;
     getInTouch: string;
     selectLanguage: string;
@@ -112,6 +113,27 @@ export type Messages = {
     eyebrow: string;
     headline: string;
     items: { q: string; a: string }[];
+  };
+  speaking: {
+    metaTitle: string;
+    metaDescription: string;
+    eyebrow: string;
+    headline: string;
+    intro: string;
+    downloadCta: string;
+    downloadNote: string;
+    themesEyebrow: string;
+    themesHeadline: string;
+    themes: { title: string; body: string }[];
+    bioEyebrow: string;
+    bioHeadline: string;
+    bio1: string;
+    bio2: string;
+    facts: { label: string; value: string }[];
+    bookEyebrow: string;
+    bookHeadline: string;
+    bookBody: string;
+    bookCta: string;
   };
   footer: {
     rights: string;

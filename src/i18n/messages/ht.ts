@@ -11,6 +11,7 @@ const ht: Messages = {
     techfides: "TechFides",
     levoila: "Levoila",
     story: "Istwa mwen",
+    speaking: "Konferans",
     contact: "Kontak",
     getInTouch: "Pran kontak",
     selectLanguage: "Lang",
@@ -229,6 +230,50 @@ const ht: Messages = {
         a: "Twa pòt: yon apèl dekouvèt TechFides 20 minit pou AI biznis, vin yon Steward Levoila apati $150 pou patrimwàn, ak imèl dirèk pou konsèy administrasyon, konferans ak laprès. Li li chak mesaj e li reponn nan 1 a 2 jou.",
       },
     ],
+  },
+  speaking: {
+    metaTitle: "Konferans — Jacques M. Jean",
+    metaDescription:
+      "Konferans ak brifing sou posede AI ou, souverènte dijital pou gouvènman, ak aksè a teknoloji kòm konstriksyon nasyon. Telechaje fich prezantasyon yon paj la.",
+    eyebrow: "Konferans & angajman",
+    headline: "Istwa mwen rakonte soti nan eksperyans, pa nan teyori.",
+    intro:
+      "Vennsenk ane teknoloji antrepriz nan kenz peyi. Twa bibliyotèk bati nan nò Ayiti. Yon biznis k ap montre ti konpayi kijan pou yo posede AI yo. Mwen pale ak konsèy administrasyon, ministè, anbasad ak konferans — nan senk lang.",
+    downloadCta: "Telechaje fich yon paj la (PDF)",
+    downloadNote: "Tout sa yon òganizatè bezwen, sou yon sèl paj. Pare pou voye bay lòt moun.",
+    themesEyebrow: "Sou kisa m pale",
+    themesHeadline: "Twa sijè. Yon sèl fil: posesyon.",
+    themes: [
+      {
+        title: "Posede AI ou",
+        body: "Poukisa biznis yo ta dwe fè AI mache sou enfrastrikti yo kontwole — ak sa sa chanje nan koze pri, konfidansyalite ak endepandans. Rakonte soti sou teren an, pa nan laboratwa.",
+      },
+      {
+        title: "Souverènte dijital pou gouvènman",
+        body: "Sa posede AI vle di pou ministè, anbasad ak enstitisyon piblik ki pa ka kite done yo soti nan peyi a. Chemen pratik, pa abstraksyon politik.",
+      },
+      {
+        title: "Bibliyotèk la a dizuit an",
+        body: "Soti nan premye fwa li antre nan yon bibliyotèk a dizuit an rive nan bati twa ladan yo ann Ayiti: aksè a teknoloji kòm konstriksyon nasyon, rakonte apati yon lavi ki pase Ayiti, Meksik, Ewòp, Afrik ak gwo konpayi Ozetazini.",
+      },
+    ],
+    bioEyebrow: "Oratè a",
+    bioHeadline: "Ki moun ki nan sal la.",
+    bio1: "Jacques M. Jean pase vennsenk ane ap bati teknoloji antrepriz pou Honeywell, Invensys ak Schneider Electric, ak pwojè li livre nan kenz peyi, ak vwayaj ki mennen l nan karannsenk. Li fèt ann Ayiti, li fòme Ozetazini, e li te antre nan yon bibliyotèk pou premye fwa a dizuit an.",
+    bio2: "Jodi a li se CEO TechFides, k ap ede biznis posede AI yo depann de li a, ak Fondatè & Prezidan Levoila, fondasyon patrimwàn mondyal ki soti nan twa bibliyotèk piblik li te bati nan nò Ayiti yo. Li se Ko-Prezidan (Fondatè) American Business Council Gabon ak Prezidan Konsèy OVYNA.",
+    facts: [
+      { label: "Lang yo", value: "Angle · Franse · Kreyòl · Panyòl · Pòtigè" },
+      { label: "Edikasyon", value: "Carnegie Mellon · U. de Guadalajara · Harvard & UNC exec" },
+      { label: "Sètifikasyon", value: "Six Sigma Black Belt · PMP · ITIL" },
+      {
+        label: "Afilyasyon",
+        value: "Forbes Technology Council · Goldman Sachs 10KSB · Komite Konsiltatif USGLC Texas",
+      },
+    ],
+    bookEyebrow: "Rezève yon entèvansyon",
+    bookHeadline: "Pote sa a nan sal pa w la.",
+    bookBody: "Di m ki moun k ap koute, ki dat, ak kisa ou vle yo pote ale. Mwen li chak mesaj e mwen reponn nan yon jou ou de.",
+    bookCta: "Ekri engage@jacquesmjean.com",
   },
   footer: {
     rights: "Tout dwa rezève.",

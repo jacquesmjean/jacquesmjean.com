@@ -11,6 +11,7 @@ const es: Messages = {
     techfides: "TechFides",
     levoila: "Levoila",
     story: "Mi historia",
+    speaking: "Conferencias",
     contact: "Contacto",
     getInTouch: "Hablemos",
     selectLanguage: "Idioma",
@@ -229,6 +230,50 @@ const es: Messages = {
         a: "Tres puertas: una llamada de descubrimiento de TechFides de 20 minutos para IA empresarial, el patrocinio de Levoila desde $150 para el patrimonio, y correo directo para consejos directivos, conferencias y prensa. Lee cada mensaje y responde en 1 o 2 días.",
       },
     ],
+  },
+  speaking: {
+    metaTitle: "Conferencias — Jacques M. Jean",
+    metaDescription:
+      "Conferencias y briefings sobre ser dueño de tu IA, la soberanía digital de los gobiernos y el acceso a la tecnología como construcción de nación. Descarga la ficha de presentación de una página.",
+    eyebrow: "Conferencias & compromisos",
+    headline: "Historias contadas desde la experiencia, no desde la teoría.",
+    intro:
+      "Veinticinco años de tecnología empresarial en quince países. Tres bibliotecas construidas en el norte de Haití. Un negocio que enseña a las pequeñas empresas a ser dueñas de su IA. Hablo ante juntas directivas, ministerios, embajadas y conferencias — en cinco idiomas.",
+    downloadCta: "Descargar la ficha de una página (PDF)",
+    downloadNote: "Todo lo que un organizador necesita, en una página. Lista para reenviar.",
+    themesEyebrow: "Mis temas",
+    themesHeadline: "Tres temas. Un hilo conductor: la propiedad.",
+    themes: [
+      {
+        title: "Sé dueño de tu IA",
+        body: "Por qué las empresas deberían ejecutar la IA en infraestructura que controlan — y qué cambia eso en costos, privacidad e independencia. Contado desde el terreno, no desde el laboratorio.",
+      },
+      {
+        title: "Soberanía digital para gobiernos",
+        body: "Qué significa ser dueño de la IA para ministerios, embajadas e instituciones públicas cuyos datos no pueden salir del país. Caminos prácticos, no abstracciones de política.",
+      },
+      {
+        title: "La biblioteca a los dieciocho",
+        body: "De su primera visita a una biblioteca a los dieciocho años a construir tres en Haití: el acceso a la tecnología como construcción de nación, contado desde una vida entre Haití, México, Europa, África y la América corporativa.",
+      },
+    ],
+    bioEyebrow: "El conferencista",
+    bioHeadline: "Quién está en la sala.",
+    bio1: "Jacques M. Jean pasó veinticinco años construyendo tecnología empresarial para Honeywell, Invensys y Schneider Electric, con proyectos entregados en quince países y viajes que lo llevaron por cuarenta y cinco. Nacido en Haití y forjado en Estados Unidos, entró a una biblioteca por primera vez a los dieciocho años.",
+    bio2: "Hoy es CEO de TechFides, que ayuda a las empresas a ser dueñas de la IA de la que dependen, y Fundador & Presidente de Levoila, el fideicomiso patrimonial mundial que nació de las tres bibliotecas públicas que construyó en el norte de Haití. Es Co-Presidente (Fundador) del American Business Council Gabon y Presidente de la Junta de OVYNA.",
+    facts: [
+      { label: "Idiomas", value: "Inglés · Francés · Criollo · Español · Portugués" },
+      { label: "Formación", value: "Carnegie Mellon · U. de Guadalajara · Harvard & UNC exec" },
+      { label: "Certificaciones", value: "Six Sigma Black Belt · PMP · ITIL" },
+      {
+        label: "Afiliaciones",
+        value: "Forbes Technology Council · Goldman Sachs 10KSB · Comité Asesor USGLC Texas",
+      },
+    ],
+    bookEyebrow: "Reservar una intervención",
+    bookHeadline: "Lleva esto a tu sala.",
+    bookBody: "Dime la audiencia, la fecha y con qué quieres que se queden. Leo cada mensaje y respondo en uno o dos días.",
+    bookCta: "Escribir a engage@jacquesmjean.com",
   },
   footer: {
     rights: "Todos los derechos reservados.",
