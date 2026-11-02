@@ -91,7 +91,7 @@ export default function JsonLd({ locale }: { locale: Locale }) {
       {
         "@type": "NGO",
         "@id": `${SITE}/#levoila`,
-        name: "Levoila — The Global Heritage Trust",
+        name: "Levoila: The Global Heritage Trust",
         url: "https://levoila.org",
       },
     ],
@@ -100,7 +100,7 @@ export default function JsonLd({ locale }: { locale: Locale }) {
       { "@type": "Organization", name: "Goldman Sachs 10,000 Small Businesses" },
       {
         "@type": "Organization",
-        name: "U.S. Global Leadership Coalition — Texas Advisory Committee",
+        name: "U.S. Global Leadership Coalition, Texas Advisory Committee",
       },
       {
         "@type": "Organization",
@@ -142,7 +142,7 @@ export default function JsonLd({ locale }: { locale: Locale }) {
     name: "TechFides",
     url: "https://techfides.com",
     description:
-      "Local AI deployment for small and mid-size businesses. AI deployed on hardware the client owns — no rent, no data leaving the building.",
+      "Local AI deployment for small and mid-size businesses. AI deployed on hardware the client owns, with no rent and no data leaving the building.",
     founder: { "@id": `${SITE}/#jacques` },
     address: {
       "@type": "PostalAddress",
@@ -157,10 +157,10 @@ export default function JsonLd({ locale }: { locale: Locale }) {
     "@context": "https://schema.org",
     "@type": "NGO",
     "@id": `${SITE}/#levoila`,
-    name: "Levoila — The Global Heritage Trust",
+    name: "Levoila: The Global Heritage Trust",
     url: "https://levoila.org",
     description:
-      "Citizen-led trust restoring historic sites that governments have abandoned. Phase One in Haiti — the Citadelle Henri Christophe, the Palais Sans-Souci, and Fort Liberté.",
+      "Citizen-led trust restoring historic sites that governments have abandoned. Phase One in Haiti, the Citadelle Henri Christophe, the Palais Sans-Souci, and Fort Liberté.",
     founder: { "@id": `${SITE}/#jacques` },
     nonprofitStatus: "Nonprofit501c3",
   };
@@ -170,7 +170,7 @@ export default function JsonLd({ locale }: { locale: Locale }) {
     "@type": "WebPage",
     "@id": `${SITE}${localeHref(locale)}#webpage`,
     url: `${SITE}${localeHref(locale)}`,
-    name: "Jacques M. Jean — Founder, Technologist, Global Operator",
+    name: "Jacques M. Jean: Founder, Technologist, Global Operator",
     inLanguage: locale,
     isPartOf: { "@id": `${SITE}/#website` },
     about: { "@id": `${SITE}/#jacques` },

@@ -2,9 +2,9 @@ import type { Messages } from "./_types";
 
 const es: Messages = {
   meta: {
-    title: "Jacques M. Jean — Fundador, Tecnólogo, Operador Internacional",
+    title: "Jacques M. Jean: Fundador, Tecnólogo, Operador Internacional",
     description:
-      "Fundador de TechFides y Levoila. 25 años en 15 países — ayudo a las pequeñas empresas a ser dueñas de su IA y restauro sitios que el mundo ha olvidado.",
+      "Fundador de TechFides y Levoila. 25 años en 15 países. Ayudo a las pequeñas empresas a ser dueñas de su IA y restauro sitios que el mundo ha olvidado.",
   },
   nav: {
     work: "Lo que hago",
@@ -26,7 +26,7 @@ const es: Messages = {
       "Me llamo Jacques. Pasé 25 años construyendo sistemas tecnológicos para Honeywell, Invensys y Schneider Electric en 15 países. Hoy dirijo ",
     bodyTF: "TechFides",
     bodyMid:
-      ", donde las pequeñas empresas operan IA en hardware que les pertenece — sin alquiler, sin datos saliendo de la oficina. Y presido ",
+      ", donde las pequeñas empresas operan IA en hardware que les pertenece, sin alquiler y sin datos saliendo de la oficina. Y presido ",
     bodyLV: "Levoila",
     bodyPost:
       ", un fideicomiso patrimonial mundial que restaura los sitios que el mundo ha abandonado.",
@@ -50,14 +50,14 @@ const es: Messages = {
         label: "La empresa",
         title: "TechFides",
         role: "CEO y Fundador",
-        body: "IA local para pequeñas y medianas empresas. Consultorios médicos, despachos de abogados, concesionarios, administradores de propiedades, oficios. Desplegamos IA en hardware que te pertenece — sin alquiler, sin datos saliendo de tu oficina.",
+        body: "IA local para pequeñas y medianas empresas. Consultorios médicos, despachos de abogados, concesionarios, administradores de propiedades, oficios. Desplegamos IA en hardware que te pertenece, sin alquiler y sin datos saliendo de tu oficina.",
         linkLabel: "Cómo funciona TechFides",
       },
       {
         label: "El legado",
         title: "Levoila",
         role: "Fundador y Presidente",
-        body: "Fideicomiso patrimonial mundial. Los ciudadanos proponen sitios en riesgo. Los Guardianes votan qué salvar. Empezamos en Haití — en la Citadelle, Sans-Souci y Fort Liberté — y vamos a donde el mundo se olvida.",
+        body: "Fideicomiso patrimonial mundial. Los ciudadanos proponen sitios en riesgo. Los Guardianes votan qué salvar. Empezamos en Haití, en la Citadelle, Sans-Souci y Fort Liberté, y vamos a donde el mundo se olvida.",
         linkLabel: "Acompaña a Levoila",
       },
       {
@@ -83,26 +83,26 @@ const es: Messages = {
     brokenItems: [
       "Estás alquilando tu IA a la nube de otro.",
       "Tus expedientes de pacientes, contratos y datos de clientes salen de la oficina cada vez que la usas.",
-      "Tu factura mensual de API sube cada trimestre — y no eres dueño de nada cuando termines.",
+      "Tu factura mensual de API sube cada trimestre, y no eres dueño de nada cuando termines.",
     ],
     installLabel: "Lo que desplegamos",
     installItems: [
-      "La IA corre en hardware que te pertenece — Mac, Windows, una Raspberry Pi o un servidor.",
+      "La IA corre en hardware que te pertenece: Mac, Windows, una Raspberry Pi o un servidor.",
       "Tus datos nunca salen de tu oficina.",
       "Tarifa fija de implementación. Mantenimiento opcional. Sin sorpresas.",
     ],
   },
   levoila: {
-    eyebrow: "Levoila — El Fideicomiso Patrimonial Mundial",
+    eyebrow: "Levoila: El Fideicomiso Patrimonial Mundial",
     headline1: "Cuando los gobiernos olvidan,",
     headline2Em: "el mundo recuerda.",
     body1:
-      "En 1805, haitianos recién liberados de la esclavitud construyeron la fortaleza más grande del hemisferio occidental — prueba de que una nación negra libre podía construir cualquier cosa que cualquier corte europea hubiera construido. Dos siglos después, la Citadelle no tiene seguridad, no tiene supervisión, no hay nadie a cargo. El 11 de abril de 2026, murieron niños haitianos allí.",
+      "En 1805, haitianos recién liberados de la esclavitud construyeron la fortaleza más grande del hemisferio occidental, prueba de que una nación negra libre podía construir cualquier cosa que cualquier corte europea hubiera construido. Dos siglos después, la Citadelle no tiene seguridad, no tiene supervisión, no hay nadie a cargo. El 11 de abril de 2026, murieron niños haitianos allí.",
     body2:
       "Levoila es lo que estoy haciendo al respecto. Un fideicomiso liderado por ciudadanos donde cualquiera puede proponer un sitio, el mundo vota qué salvar, y cada dólar es rastreable en un libro mayor público. Empezamos en Haití. Vamos a donde el mundo se olvida después.",
-    ctaSteward: "Hazte Guardián — desde $150",
+    ctaSteward: "Hazte Guardián, desde $150",
     ctaRead: "Leer la historia completa",
-    phaseOneLabel: "Fase Uno — Haití",
+    phaseOneLabel: "Fase Uno: Haití",
     sites: [
       { name: "Citadelle Henri Christophe", note: "UNESCO · Milot, Haití" },
       { name: "Palais Sans-Souci", note: "UNESCO · Milot, Haití" },
@@ -131,12 +131,12 @@ const es: Messages = {
     pullquote:
       '"Tenía dieciocho años la primera vez que entré a una biblioteca."',
     para1:
-      "Nací Jacques Medina Jean en Ferrier, en el noreste de Haití. Llegué a Estados Unidos siendo adolescente y pasé los siguientes veinticinco años construyendo tecnología empresarial para compañías que todo el mundo conoce — Honeywell, Invensys, Schneider Electric — en quince países — con viajes que me llevaron por cuarenta y cinco. Aprendí cómo lucen los sistemas reales a escala. También aprendí que nada de eso había sido construido para la gente de donde yo vengo.",
+      "Nací Jacques Medina Jean en Ferrier, en el noreste de Haití. Llegué a Estados Unidos siendo adolescente y pasé los siguientes veinticinco años construyendo tecnología empresarial para compañías que todo el mundo conoce: Honeywell, Invensys, Schneider Electric, en quince países, con viajes que me llevaron por cuarenta y cinco. Aprendí cómo lucen los sistemas reales a escala. También aprendí que nada de eso había sido construido para la gente de donde yo vengo.",
     para2:
-      "Así que empecé a construir. Hace unos años, tres pequeñas bibliotecas surgieron en el norte de Haití — en Pilate, en mi pueblo natal de Ferrier, y en Ouanaminthe. Me enseñaron que las cosas pequeñas y bien hechas cambian todo a su alrededor. Esa lección se convirtió en TechFides: las pequeñas empresas no necesitan una nube del tamaño de un país. Necesitan una IA que viva en su oficina, en hardware que les pertenezca, haciendo exactamente el trabajo para el que la contrataron.",
+      "Así que empecé a construir. Hace unos años, tres pequeñas bibliotecas surgieron en el norte de Haití, en Pilate, en mi pueblo natal de Ferrier, y en Ouanaminthe. Me enseñaron que las cosas pequeñas y bien hechas cambian todo a su alrededor. Esa lección se convirtió en TechFides: las pequeñas empresas no necesitan una nube del tamaño de un país. Necesitan una IA que viva en su oficina, en hardware que les pertenezca, haciendo exactamente el trabajo para el que la contrataron.",
     pivot: "Levoila es la respuesta más grande a la misma pregunta.",
     para3:
-      "Las bibliotecas fueron un comienzo. Levoila es el legado que estoy construyendo ahora — un fideicomiso patrimonial mundial para los edificios que mis antepasados construyeron, y para cada sitio que el mundo ha dejado de cuidar. La Citadelle, donde murieron niños haitianos en abril porque nadie estaba a cargo. Sans-Souci. Fort Liberté. Y luego, en todas partes donde un gobierno haya olvidado lo que su propio pueblo construyó. Ese es el trabajo que tiene mi atención ahora.",
+      "Las bibliotecas fueron un comienzo. Levoila es el legado que estoy construyendo ahora, un fideicomiso patrimonial mundial para los edificios que mis antepasados construyeron, y para cada sitio que el mundo ha dejado de cuidar. La Citadelle, donde murieron niños haitianos en abril porque nadie estaba a cargo. Sans-Souci. Fort Liberté. Y luego, en todas partes donde un gobierno haya olvidado lo que su propio pueblo construyó. Ese es el trabajo que tiene mi atención ahora.",
     languagesLabel: "Idiomas",
     languagesValue: "Inglés · Francés · Kreyòl · Español · Portugués",
     educationLabel: "Formación",
@@ -148,10 +148,17 @@ const es: Messages = {
     eyebrow: "Perspectivas",
     headline: "Escribir, en español claro.",
     subhead:
-      "Notas del trabajo — dirigir una pequeña empresa en la era de la IA, construir bibliotecas y fortalezas, y lo que 25 años en 15 países realmente te enseñan.",
+      "Notas del trabajo: dirigir una pequeña empresa en la era de la IA, construir bibliotecas y fortalezas, y lo que 25 años en 15 países realmente te enseñan.",
     allWriting: "Todo lo escrito",
     readLabel: "Leer",
     posts: [
+      {
+        tag: "IA soberana",
+        title: "El mundo dejó de esperar a Estados Unidos",
+        blurb:
+          "Europa prepara su salida, Canadá convoca las alianzas que antes convocábamos nosotros, y China regala su IA. Un informe desde las salas donde el mundo elige a sus socios tecnológicos.",
+        when: "Perspectivas · noviembre de 2026",
+      },
       {
         tag: "Fundador · Levoila",
         title: "De la biblioteca a los 18 a la Citadelle a los 50",
@@ -165,14 +172,6 @@ const es: Messages = {
         blurb:
           "Antes de Levoila, hubo el Universal Learning Centre. Antes, un niño en Ferrier que nunca había visto una biblioteca hasta los dieciocho. La historia completa de cómo nacieron 500 000 lectores.",
         when: "Dispatch Levoila · abril 2026",
-      },
-      {
-        tag: "Forbes Tech Council",
-        title:
-          "Cómo las organizaciones sin fines de lucro pueden cambiar su forma de ver la tecnología",
-        blurb:
-          "Apenas el 12 % de las organizaciones sin fines de lucro están maduras digitalmente — y las que lo están tienen cuatro veces más probabilidades de cumplir su misión. Por qué hay que tratar a TI como el núcleo del trabajo, no como un gasto.",
-        when: "Forbes Tech Council",
       },
     ],
   },
@@ -189,7 +188,7 @@ const es: Messages = {
       {
         label: "Negocios",
         title: "IA local para tu empresa",
-        body: "Médico, legal, automotor, propiedad, oficios. Llamada de descubrimiento con TechFides — unos 20 minutos.",
+        body: "Médico, legal, automotor, propiedad, oficios. Llamada de descubrimiento con TechFides, unos 20 minutos.",
         cta: "Iniciar una conversación con TechFides",
         external: false,
       },
@@ -203,7 +202,7 @@ const es: Messages = {
       {
         label: "Consejos · Conferencias · Prensa",
         title: "Otros compromisos",
-        body: "Trabajo en consejos, conferencias, asesorías, prensa, delegaciones del ABC Gabon. Envía el brief — corto está bien.",
+        body: "Trabajo en consejos, conferencias, asesorías, prensa, delegaciones del ABC Gabon. Envía el brief. Corto está bien.",
         cta: "Escríbeme directamente",
         external: false,
       },
@@ -223,7 +222,7 @@ const es: Messages = {
       },
       {
         q: "¿Qué es Levoila?",
-        a: "Levoila es un fideicomiso mundial del patrimonio dirigido por ciudadanos. La Fase Uno restaura 3 sitios en Haití —la Citadelle Henri Christophe, el Palacio Sans-Souci y Fort Liberté— con 75–85% de contratación local y cada dólar en un registro público. Nació de las 3 bibliotecas públicas que Jacques construyó en Pilate, Ferrier y Ouanaminthe, al servicio de una región de más de 500,000 personas.",
+        a: "Levoila es un fideicomiso mundial del patrimonio dirigido por ciudadanos. La Fase Uno restaura 3 sitios en Haití, la Citadelle Henri Christophe, el Palacio Sans-Souci y Fort Liberté, con 75–85% de contratación local y cada dólar en un registro público. Nació de las 3 bibliotecas públicas que Jacques construyó en Pilate, Ferrier y Ouanaminthe, al servicio de una región de más de 500,000 personas.",
       },
       {
         q: "¿Cómo trabajo con Jacques?",
@@ -232,13 +231,13 @@ const es: Messages = {
     ],
   },
   speaking: {
-    metaTitle: "Conferencias — Jacques M. Jean",
+    metaTitle: "Conferencias | Jacques M. Jean",
     metaDescription:
       "Conferencias y briefings sobre ser dueño de tu IA, la soberanía digital de los gobiernos y el acceso a la tecnología como construcción de nación. Descarga la ficha de presentación de una página.",
     eyebrow: "Conferencias & compromisos",
     headline: "Historias contadas desde la experiencia, no desde la teoría.",
     intro:
-      "Veinticinco años de tecnología empresarial en quince países. Tres bibliotecas construidas en el norte de Haití. Un negocio que enseña a las pequeñas empresas a ser dueñas de su IA. Hablo ante juntas directivas, ministerios, embajadas y conferencias — en cinco idiomas.",
+      "Veinticinco años de tecnología empresarial en quince países. Tres bibliotecas construidas en el norte de Haití. Un negocio que enseña a las pequeñas empresas a ser dueñas de su IA. Hablo ante juntas directivas, ministerios, embajadas y conferencias, en cinco idiomas.",
     downloadCta: "Descargar la ficha de una página (PDF)",
     downloadNote: "Todo lo que un organizador necesita, en una página. Lista para reenviar.",
     themesEyebrow: "Mis temas",
@@ -246,7 +245,7 @@ const es: Messages = {
     themes: [
       {
         title: "Sé dueño de tu IA",
-        body: "Por qué las empresas deberían ejecutar la IA en infraestructura que controlan — y qué cambia eso en costos, privacidad e independencia. Contado desde el terreno, no desde el laboratorio.",
+        body: "Por qué las empresas deberían ejecutar la IA en infraestructura que controlan, y qué cambia eso en costos, privacidad e independencia. Contado desde el terreno, no desde el laboratorio.",
       },
       {
         title: "Soberanía digital para gobiernos",

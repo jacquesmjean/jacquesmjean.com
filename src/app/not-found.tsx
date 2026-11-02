@@ -9,7 +9,7 @@ export default function NotFound() {
           This page doesn&apos;t exist.
         </h1>
         <p className="mt-6 max-w-md text-lg leading-relaxed text-ink-soft">
-          Either it never did, or it moved when we redesigned the site. Either way — back to the start.
+          Either it never did, or it moved when we redesigned the site. Either way, back to the start.
         </p>
         <a
           href="/"

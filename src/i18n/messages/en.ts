@@ -2,9 +2,9 @@ import type { Messages } from "./_types";
 
 const en: Messages = {
   meta: {
-    title: "Jacques M. Jean — Founder, Technologist, Global Operator",
+    title: "Jacques M. Jean: Founder, Technologist, Global Operator",
     description:
-      "Founder of TechFides and Levoila. 25 years across 15 countries — now helping small business own its AI, and restoring sites the world has forgotten.",
+      "Founder of TechFides and Levoila. 25 years across 15 countries. Now helping small business own its AI, and restoring sites the world has forgotten.",
   },
   nav: {
     work: "What I Do",
@@ -25,7 +25,7 @@ const en: Messages = {
     bodyPre: "I'm Jacques. I spent 25 years building technology systems for Honeywell, Invensys, and Schneider Electric across 15 countries. Today I run ",
     bodyTF: "TechFides",
     bodyMid:
-      ", where small businesses run AI on hardware they own — no rent, no data leaving the building. And I chair ",
+      ", where small businesses run AI on hardware they own, with no rent and no data leaving the building. And I chair ",
     bodyLV: "Levoila",
     bodyPost:
       ", a global heritage trust restoring sites the world has abandoned.",
@@ -49,14 +49,14 @@ const en: Messages = {
         label: "The Business",
         title: "TechFides",
         role: "CEO & Founder",
-        body: "Local AI for small and mid-size businesses. Medical offices, law firms, auto dealers, property managers, trades. We deploy AI on hardware you own — no rent, no data leaving the building.",
+        body: "Local AI for small and mid-size businesses. Medical offices, law firms, auto dealers, property managers, trades. We deploy AI on hardware you own, with no rent and no data leaving the building.",
         linkLabel: "How TechFides works",
       },
       {
         label: "The Legacy",
         title: "Levoila",
         role: "Founder & Chair",
-        body: "Global heritage trust. Citizens nominate sites at risk. Stewards vote on what to save. We start in Haiti — at the Citadelle, Sans-Souci, and Fort Liberté — and we go where the world is forgotten next.",
+        body: "Global heritage trust. Citizens nominate sites at risk. Stewards vote on what to save. We start in Haiti, at the Citadelle, Sans-Souci, and Fort Liberté, and we go where the world is forgotten next.",
         linkLabel: "Stand with Levoila",
       },
       {
@@ -82,26 +82,26 @@ const en: Messages = {
     brokenItems: [
       "You're renting AI from someone else's cloud.",
       "Your patient files, contracts, and customer data leave the building every time you use it.",
-      "Your monthly API bill climbs every quarter — and you don't own anything when you're done.",
+      "Your monthly API bill climbs every quarter, and you don't own anything when you're done.",
     ],
     installLabel: "What we deploy",
     installItems: [
-      "AI runs on hardware you own — Mac, Windows, a Pi, or a server.",
+      "AI runs on hardware you own: Mac, Windows, a Pi, or a server.",
       "Your data never leaves your office.",
       "Flat deployment fee. Optional retainer. No surprise bills.",
     ],
   },
   levoila: {
-    eyebrow: "Levoila — The Global Heritage Trust",
+    eyebrow: "Levoila: The Global Heritage Trust",
     headline1: "When the governments forget,",
     headline2Em: "the world remembers.",
     body1:
-      "In 1805, formerly enslaved Haitians built the largest fortress in the Western Hemisphere — proof that a free Black nation could build whatever any European court could build. Two centuries later, the Citadelle has no security, no oversight, no one in charge. On April 11, 2026, Haitian children died there.",
+      "In 1805, formerly enslaved Haitians built the largest fortress in the Western Hemisphere, proof that a free Black nation could build whatever any European court could build. Two centuries later, the Citadelle has no security, no oversight, no one in charge. On April 11, 2026, Haitian children died there.",
     body2:
       "Levoila is what I'm doing about it. A citizen-led trust where anyone can nominate a site, the world votes on what to save, and every dollar is traceable on a public ledger. We start in Haiti. We go where the world is forgotten next.",
-    ctaSteward: "Become a Steward — from $150",
+    ctaSteward: "Become a Steward, from $150",
     ctaRead: "Read the full story",
-    phaseOneLabel: "Phase One — Haiti",
+    phaseOneLabel: "Phase One: Haiti",
     sites: [
       { name: "Citadelle Henri Christophe", note: "UNESCO · Milot, Haiti" },
       { name: "Palais Sans-Souci", note: "UNESCO · Milot, Haiti" },
@@ -130,12 +130,12 @@ const en: Messages = {
     pullquote:
       '"I was eighteen years old the first time I walked into a library."',
     para1:
-      "I was born Jacques Medina Jean in Ferrier, in the northeast of Haiti. I came to the United States as a teenager and spent the next twenty-five years building enterprise technology for companies people have heard of — Honeywell, Invensys, Schneider Electric — across fifteen countries — with travels that carried me through forty-five. I learned what real systems look like at scale. I also learned that none of it had been built for the people I came from.",
+      "I was born Jacques Medina Jean in Ferrier, in the northeast of Haiti. I came to the United States as a teenager and spent the next twenty-five years building enterprise technology for companies people have heard of: Honeywell, Invensys, Schneider Electric, across fifteen countries, with travels that carried me through forty-five. I learned what real systems look like at scale. I also learned that none of it had been built for the people I came from.",
     para2:
-      "So I started building. A few years ago, three small libraries went up in northern Haiti — in Pilate, in my hometown of Ferrier, and in Ouanaminthe. They taught me that small, well-built things change everything around them. That lesson became TechFides: small businesses don't need a cloud the size of a country. They need AI that lives in their office, on hardware they own, doing exactly the job they hired it to do.",
+      "So I started building. A few years ago, three small libraries went up in northern Haiti, in Pilate, in my hometown of Ferrier, and in Ouanaminthe. They taught me that small, well-built things change everything around them. That lesson became TechFides: small businesses don't need a cloud the size of a country. They need AI that lives in their office, on hardware they own, doing exactly the job they hired it to do.",
     pivot: "Levoila is the bigger answer to the same question.",
     para3:
-      "The libraries were a beginning. Levoila is the legacy I am building now — a global heritage trust for the buildings my ancestors made, and for every site the world has stopped tending. The Citadelle, where Haitian children died in April because no one was in charge. Sans-Souci. Fort Liberté. And then everywhere a government has forgotten what its own people made. That is the work that has my attention now.",
+      "The libraries were a beginning. Levoila is the legacy I am building now, a global heritage trust for the buildings my ancestors made, and for every site the world has stopped tending. The Citadelle, where Haitian children died in April because no one was in charge. Sans-Souci. Fort Liberté. And then everywhere a government has forgotten what its own people made. That is the work that has my attention now.",
     languagesLabel: "Languages",
     languagesValue: "English · French · Kreyòl · Spanish · Portuguese",
     educationLabel: "Education",
@@ -147,10 +147,17 @@ const en: Messages = {
     eyebrow: "Perspectives",
     headline: "Writing, in plain English.",
     subhead:
-      "Notes from the work — running a small business in the AI era, building libraries and fortresses, and what 25 years across 15 countries actually teaches you.",
+      "Notes from the work: running a small business in the AI era, building libraries and fortresses, and what 25 years across 15 countries actually teaches you.",
     allWriting: "All writing",
     readLabel: "Read",
     posts: [
+      {
+        tag: "Sovereign AI",
+        title: "The World Stopped Waiting for the United States",
+        blurb:
+          "Europe is building its exit, Canada is convening the alliances we used to, and China is giving its AI away. A field report from the rooms where the world is choosing its technology partners.",
+        when: "Perspectives · November 2026",
+      },
       {
         tag: "Founder · Levoila",
         title: "From the library at 18 to the Citadelle at 50",
@@ -164,14 +171,6 @@ const en: Messages = {
         blurb:
           "Before Levoila, there was the Universal Learning Centre. Before that, a boy in Ferrier who had never seen a library until he was eighteen. The full story of how 500,000 readers came to be.",
         when: "Levoila dispatch · April 2026",
-      },
-      {
-        tag: "Forbes Tech Council",
-        title:
-          "How nonprofits can shift their mindset to information technology",
-        blurb:
-          "Just twelve percent of nonprofits are digitally mature — and those that are happen to be four times more likely to achieve their mission. The case for treating IT as core to the work, not overhead.",
-        when: "Forbes Tech Council",
       },
     ],
   },
@@ -188,7 +187,7 @@ const en: Messages = {
       {
         label: "Business",
         title: "Local AI for your business",
-        body: "Medical, legal, auto, property, trades. Discovery call with TechFides — typically 20 minutes.",
+        body: "Medical, legal, auto, property, trades. Discovery call with TechFides, typically 20 minutes.",
         cta: "Start a TechFides conversation",
         external: false,
       },
@@ -202,7 +201,7 @@ const en: Messages = {
       {
         label: "Board · Speaking · Press",
         title: "Other engagements",
-        body: "Board work, speaking, advisory, press, ABC Gabon delegations. Send the brief — short is fine.",
+        body: "Board work, speaking, advisory, press, ABC Gabon delegations. Send the brief. Short is fine.",
         cta: "Email me directly",
         external: false,
       },
@@ -218,11 +217,11 @@ const en: Messages = {
       },
       {
         q: "What is TechFides?",
-        a: "TechFides deploys AI on hardware businesses own — medical offices, law firms, auto dealers, property managers, and trades. Setup starts at $5,000 with a flat monthly retainer, customer data never leaves the building, and there is no cloud bill climbing every quarter.",
+        a: "TechFides deploys AI on hardware businesses own: medical offices, law firms, auto dealers, property managers, and trades. Setup starts at $5,000 with a flat monthly retainer, customer data never leaves the building, and there is no cloud bill climbing every quarter.",
       },
       {
         q: "What is Levoila?",
-        a: "Levoila is a citizen-led global heritage trust. Phase One restores 3 sites in Haiti — the Citadelle Henri Christophe, Palais Sans-Souci, and Fort Liberté — with 75–85% local hiring and every dollar on a public ledger. It grew from the 3 public libraries Jacques built in Pilate, Ferrier, and Ouanaminthe, serving a region of more than 500,000 people.",
+        a: "Levoila is a citizen-led global heritage trust. Phase One restores 3 sites in Haiti, the Citadelle Henri Christophe, Palais Sans-Souci, and Fort Liberté, with 75–85% local hiring and every dollar on a public ledger. It grew from the 3 public libraries Jacques built in Pilate, Ferrier, and Ouanaminthe, serving a region of more than 500,000 people.",
       },
       {
         q: "How do I work with Jacques?",
@@ -231,13 +230,13 @@ const en: Messages = {
     ],
   },
   speaking: {
-    metaTitle: "Speaking — Jacques M. Jean",
+    metaTitle: "Speaking | Jacques M. Jean",
     metaDescription:
       "Keynotes and briefings on owning your AI, digital sovereignty for governments, and technology access as nation building. Download the one-page leadership brief.",
     eyebrow: "Speaking & Engagements",
     headline: "Stories I tell from experience, not theory.",
     intro:
-      "Twenty-five years of enterprise technology across fifteen countries. Three libraries built in northern Haiti. A business teaching small companies to own their AI. I speak to boardrooms, ministries, embassies, and conferences — in five languages.",
+      "Twenty-five years of enterprise technology across fifteen countries. Three libraries built in northern Haiti. A business teaching small companies to own their AI. I speak to boardrooms, ministries, embassies, and conferences, in five languages.",
     downloadCta: "Download the one-page brief (PDF)",
     downloadNote: "Everything an organizer needs on one page. Ready to forward.",
     themesEyebrow: "What I speak on",
@@ -245,7 +244,7 @@ const en: Messages = {
     themes: [
       {
         title: "Own Your AI",
-        body: "Why businesses should run AI on infrastructure they control — and what that changes about cost, privacy, and independence. Told from the field, not the lab.",
+        body: "Why businesses should run AI on infrastructure they control, and what that changes about cost, privacy, and independence. Told from the field, not the lab.",
       },
       {
         title: "Digital Sovereignty for Governments",

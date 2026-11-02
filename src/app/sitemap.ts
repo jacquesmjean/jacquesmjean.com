@@ -32,5 +32,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   }));
 
-  return [...home, ...speaking];
+  const perspectives: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}/perspectives/world-stopped-waiting-for-the-us-sovereign-ai`,
+      lastModified: now,
+      priority: 0.8,
+    },
+  ];
+
+  return [...home, ...speaking, ...perspectives];
 }

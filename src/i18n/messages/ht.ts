@@ -2,9 +2,9 @@ import type { Messages } from "./_types";
 
 const ht: Messages = {
   meta: {
-    title: "Jacques M. Jean — Fondatè, Teknolojis, Operatè Entènasyonal",
+    title: "Jacques M. Jean: Fondatè, Teknolojis, Operatè Entènasyonal",
     description:
-      "Fondatè TechFides ak Levoila. 25 lane nan 15 peyi — m ap ede ti antrepriz posede pwòp AI yo, epi m ap restore sit mond lan bliye yo.",
+      "Fondatè TechFides ak Levoila. 25 lane nan 15 peyi. M ap ede ti antrepriz posede pwòp AI yo, epi m ap restore sit mond lan bliye yo.",
   },
   nav: {
     work: "Sa m fè",
@@ -26,7 +26,7 @@ const ht: Messages = {
       "Yo rele m Jacques. Mwen pase 25 lane ap bati sistèm teknolojik pou Honeywell, Invensys ak Schneider Electric nan 15 peyi. Jodi a m ap dirije ",
     bodyTF: "TechFides",
     bodyMid:
-      ", kote ti antrepriz yo fè AI mache sou aparèy ki pou yo — okenn lwaye, okenn done pa janm soti deyò biwo a. Epi m ap prezide ",
+      ", kote ti antrepriz yo fè AI mache sou aparèy ki pou yo, san lwaye e san done pa janm soti deyò biwo a. Epi m ap prezide ",
     bodyLV: "Levoila",
     bodyPost:
       ", yon fondasyon entènasyonal sitwayen k ap restore sit mond lan abandone yo.",
@@ -50,14 +50,14 @@ const ht: Messages = {
         label: "Biznis la",
         title: "TechFides",
         role: "PDG ak Fondatè",
-        body: "AI lokal pou ti antrepriz ak antrepriz mwayen. Kabinè doktè, kabinè avoka, konsesyonè otomobil, jeran imobilye, metye konstriksyon. Nou deplwaye AI sou aparèy ki pou ou — okenn lwaye, okenn done pa soti deyò biwo a.",
+        body: "AI lokal pou ti antrepriz ak antrepriz mwayen. Kabinè doktè, kabinè avoka, konsesyonè otomobil, jeran imobilye, metye konstriksyon. Nou deplwaye AI sou aparèy ki pou ou, san lwaye e san done pa soti deyò biwo a.",
         linkLabel: "Kòman TechFides mache",
       },
       {
         label: "Eritaj la",
         title: "Levoila",
         role: "Fondatè ak Prezidan",
-        body: "Fondasyon entènasyonal patrimwàn. Sitwayen yo pwopoze sit ki an danje. Gadyen yo vote sou sa pou sove. Nou kòmanse ann Ayiti — nan Sitadèl la, nan Sans-Souci, ak nan Fò Libète — epi n ap ale tout kote mond lan bliye.",
+        body: "Fondasyon entènasyonal patrimwàn. Sitwayen yo pwopoze sit ki an danje. Gadyen yo vote sou sa pou sove. Nou kòmanse ann Ayiti, nan Sitadèl la, nan Sans-Souci, ak nan Fò Libète, epi n ap ale tout kote mond lan bliye.",
         linkLabel: "Kanpe ak Levoila",
       },
       {
@@ -83,26 +83,26 @@ const ht: Messages = {
     brokenItems: [
       "W ap lwe AI ou nan nyaj yon lòt moun.",
       "Dosye pasyan ou yo, kontra ou yo ak done kliyan ou yo soti deyò biwo a chak fwa w sèvi avè l.",
-      "Fakti API mansyèl ou a monte chak trimès — epi ou pa posede anyen lè w fini.",
+      "Fakti API mansyèl ou a monte chak trimès, epi ou pa posede anyen lè w fini.",
     ],
     installLabel: "Sa nou deplwaye",
     installItems: [
-      "AI a mache sou aparèy ki pou ou — Mac, Windows, yon Raspberry Pi, oswa yon sèvè.",
+      "AI a mache sou aparèy ki pou ou: Mac, Windows, yon Raspberry Pi, oswa yon sèvè.",
       "Done ou yo pa janm kite biwo ou.",
       "Yon sèl pri pou deplwaman an. Kontra antretyen opsyonèl. Pa gen sipriz.",
     ],
   },
   levoila: {
-    eyebrow: "Levoila — Fondasyon Patrimwàn Mondyal",
+    eyebrow: "Levoila: Fondasyon Patrimwàn Mondyal",
     headline1: "Lè gouvènman yo bliye,",
     headline2Em: "mond lan sonje.",
     body1:
-      "An 1805, Ayisyen ki te fèk libere nan esklavaj te bati pi gwo fò nan Emisfè Lwès la — prèv yon nasyon nwa lib te ka bati nenpòt sa nenpòt kou ewopeyen te janm bati. De syèk pita, Sitadèl la pa gen sekirite, pa gen siveyans, pa gen pèsonn responsab. Sou 11 avril 2026, timoun ayisyen yo mouri la.",
+      "An 1805, Ayisyen ki te fèk libere nan esklavaj te bati pi gwo fò nan Emisfè Lwès la, prèv yon nasyon nwa lib te ka bati nenpòt sa nenpòt kou ewopeyen te janm bati. De syèk pita, Sitadèl la pa gen sekirite, pa gen siveyans, pa gen pèsonn responsab. Sou 11 avril 2026, timoun ayisyen yo mouri la.",
     body2:
       "Levoila se repons mwen. Yon fondasyon ki dirije pa sitwayen yo, kote nenpòt moun ka pwopoze yon sit, mond lan vote pou sa pou sove, e chak dola sou yon rejis piblik tout moun ka swiv. Nou kòmanse ann Ayiti. N ap ale tout kote mond lan bliye apre.",
-    ctaSteward: "Vin yon Gadyen — apati 150 $",
+    ctaSteward: "Vin yon Gadyen, apati 150 $",
     ctaRead: "Li istwa konplè a",
-    phaseOneLabel: "Premye Faz — Ayiti",
+    phaseOneLabel: "Premye Faz, Ayiti",
     sites: [
       { name: "Sitadèl Anri Kristòf", note: "UNESCO · Milot, Ayiti" },
       { name: "Pale Sans-Souci", note: "UNESCO · Milot, Ayiti" },
@@ -131,12 +131,12 @@ const ht: Messages = {
     pullquote:
       "« M te gen dizwit lane premye fwa m te antre nan yon bibliyotèk. »",
     para1:
-      "Mwen fèt Jacques Medina Jean nan Feryè, nan Nòdès Ayiti. Mwen vin Etazini lè m te adolesan epi m pase ven-senk lane ki vin apre yo ap bati teknoloji antrepriz pou konpayi tout moun konnen — Honeywell, Invensys, Schneider Electric — nan kenz peyi — ak vwayaj ki mennen m nan karannsenk peyi. M aprann kijan vrè sistèm yo ye nan gwo nivo. M aprann tou ke yo pa t bati anyen nan sa pou moun mwen sòti yo.",
+      "Mwen fèt Jacques Medina Jean nan Feryè, nan Nòdès Ayiti. Mwen vin Etazini lè m te adolesan epi m pase ven-senk lane ki vin apre yo ap bati teknoloji antrepriz pou konpayi tout moun konnen: Honeywell, Invensys, Schneider Electric, nan kenz peyi, ak vwayaj ki mennen m nan karannsenk peyi. M aprann kijan vrè sistèm yo ye nan gwo nivo. M aprann tou ke yo pa t bati anyen nan sa pou moun mwen sòti yo.",
     para2:
-      "Kidonk m kòmanse bati. Gen kèk lane, twa ti bibliyotèk te leve nan Nò Ayiti — nan Pilàt, nan vil mwen Feryè, ak nan Wanament. Yo aprann mwen ke ti bagay yo ki byen bati chanje tout sa ki bò kote yo. Leson sa a vin TechFides : ti antrepriz pa bezwen yon nyaj gwosè peyi a. Yo bezwen yon AI ki rete nan biwo yo, sou aparèy ki pou yo, k ap fè egzakteman travay yo bay li pou fè a.",
+      "Kidonk m kòmanse bati. Gen kèk lane, twa ti bibliyotèk te leve nan Nò Ayiti, nan Pilàt, nan vil mwen Feryè, ak nan Wanament. Yo aprann mwen ke ti bagay yo ki byen bati chanje tout sa ki bò kote yo. Leson sa a vin TechFides : ti antrepriz pa bezwen yon nyaj gwosè peyi a. Yo bezwen yon AI ki rete nan biwo yo, sou aparèy ki pou yo, k ap fè egzakteman travay yo bay li pou fè a.",
     pivot: "Levoila se pi gwo repons lan pou menm kesyon an.",
     para3:
-      "Bibliyotèk yo te yon kòmansman. Levoila se eritaj m ap bati kounye a — yon fondasyon entènasyonal patrimwàn pou bilding zansèt mwen yo bati yo, ak pou chak sit mond lan sispann pran swen. Sitadèl la, kote timoun ayisyen mouri an avril paske pa t gen pèsonn responsab. Sans-Souci. Fò Libète. Epi answit, tout kote yon gouvènman bliye sa pwòp pèp li bati. Se travay sa a ki nan tèt mwen kounye a.",
+      "Bibliyotèk yo te yon kòmansman. Levoila se eritaj m ap bati kounye a, yon fondasyon entènasyonal patrimwàn pou bilding zansèt mwen yo bati yo, ak pou chak sit mond lan sispann pran swen. Sitadèl la, kote timoun ayisyen mouri an avril paske pa t gen pèsonn responsab. Sans-Souci. Fò Libète. Epi answit, tout kote yon gouvènman bliye sa pwòp pèp li bati. Se travay sa a ki nan tèt mwen kounye a.",
     languagesLabel: "Lang yo",
     languagesValue: "Angle · Franse · Kreyòl · Espayòl · Pòtigè",
     educationLabel: "Edikasyon",
@@ -148,10 +148,17 @@ const ht: Messages = {
     eyebrow: "Pèspektiv",
     headline: "Ekri, an mo senp.",
     subhead:
-      "Nòt sou travay la — dirije yon ti biznis nan epòk AI, bati bibliyotèk ak fò, ak sa 25 lane nan 15 peyi aprann ou tout bon.",
+      "Nòt sou travay la: dirije yon ti biznis nan epòk AI, bati bibliyotèk ak fò, ak sa 25 lane nan 15 peyi aprann ou tout bon.",
     allWriting: "Tout ekri yo",
     readLabel: "Li",
     posts: [
+      {
+        tag: "AI souvren",
+        title: "Mond lan sispann tann Etazini",
+        blurb:
+          "Ewòp ap prepare sòti li, Kanada ap rasanble alyans nou te konn rasanble yo, epi Lachin ap bay AI li gratis. Yon rapò soti nan sal kote mond lan ap chwazi patnè teknoloji li yo.",
+        when: "Pèspektiv · novanm 2026",
+      },
       {
         tag: "Fondatè · Levoila",
         title: "Soti nan bibliyotèk la a 18 lane pou rive nan Sitadèl la a 50",
@@ -165,14 +172,6 @@ const ht: Messages = {
         blurb:
           "Anvan Levoila, te gen Universal Learning Centre. Anvan sa, te gen yon ti gason nan Feryè ki pa t janm wè yon bibliyotèk anvan li te gen dizwit lane. Istwa konplè kijan 500 000 lektè vin egziste.",
         when: "Dispatch Levoila · avril 2026",
-      },
-      {
-        tag: "Forbes Tech Council",
-        title:
-          "Kijan òganizasyon san bi likratif yo ka chanje fason yo wè teknoloji enfòmasyon",
-        blurb:
-          "Sèlman 12 % nan òganizasyon san bi likratif yo mati sou plan dijital — e sa ki yo, gen kat fwa plis chans pou yo rive nan misyon yo. Pou ki sa fòk yo trete IT tankou kè travay la, pa yon depans.",
-        when: "Forbes Tech Council",
       },
     ],
   },
@@ -189,7 +188,7 @@ const ht: Messages = {
       {
         label: "Biznis",
         title: "Yon AI lokal pou biznis ou",
-        body: "Medsin, dwa, otomobil, imobilye, metye konstriksyon. Apèl dekouvèt avèk TechFides — anjeneral 20 minit.",
+        body: "Medsin, dwa, otomobil, imobilye, metye konstriksyon. Apèl dekouvèt avèk TechFides, anjeneral 20 minit.",
         cta: "Kòmanse yon konvèsasyon TechFides",
         external: false,
       },
@@ -203,7 +202,7 @@ const ht: Messages = {
       {
         label: "Konsèy · Konferans · Près",
         title: "Lòt angajman",
-        body: "Travay nan konsèy, konferans, misyon konsiltatif, près, delegasyon ABC Gabon. Voye brèf la — kout, sa nòmal.",
+        body: "Travay nan konsèy, konferans, misyon konsiltatif, près, delegasyon ABC Gabon. Voye brèf la, kout, sa nòmal.",
         cta: "Ekri m dirèkteman",
         external: false,
       },
@@ -219,11 +218,11 @@ const ht: Messages = {
       },
       {
         q: "Kisa TechFides ye?",
-        a: "TechFides deplwaye AI sou materyèl biznis yo posede — kabinè medikal, kabinè avoka, konsesyonè machin, jeran pwopriyete ak metye yo. Deplwaman an kòmanse a $5,000 ak yon abònman fiks chak mwa, done kliyan yo pa janm kite biznis la, e pa gen okenn bòdwo cloud k ap monte chak trimès.",
+        a: "TechFides deplwaye AI sou materyèl biznis yo posede, kabinè medikal, kabinè avoka, konsesyonè machin, jeran pwopriyete ak metye yo. Deplwaman an kòmanse a $5,000 ak yon abònman fiks chak mwa, done kliyan yo pa janm kite biznis la, e pa gen okenn bòdwo cloud k ap monte chak trimès.",
       },
       {
         q: "Kisa Levoila ye?",
-        a: "Levoila se yon fidisi mondyal pou patrimwàn, se sitwayen yo ki dirije l. Faz En ap restore 3 sit an Ayiti — Sitadèl Henri Christophe, Palè Sans-Souci ak Fò Libète — ak 75–85% anbochaj lokal e chak dola sou yon rejis piblik. Li soti nan 3 bibliyotèk piblik Jacques te bati nan Pilat, Feryè ak Wanament, k ap sèvi yon rejyon ki gen plis pase 500,000 moun.",
+        a: "Levoila se yon fidisi mondyal pou patrimwàn, se sitwayen yo ki dirije l. Faz En ap restore 3 sit an Ayiti, Sitadèl Henri Christophe, Palè Sans-Souci ak Fò Libète, ak 75–85% anbochaj lokal e chak dola sou yon rejis piblik. Li soti nan 3 bibliyotèk piblik Jacques te bati nan Pilat, Feryè ak Wanament, k ap sèvi yon rejyon ki gen plis pase 500,000 moun.",
       },
       {
         q: "Kijan pou m travay ak Jacques?",
@@ -232,13 +231,13 @@ const ht: Messages = {
     ],
   },
   speaking: {
-    metaTitle: "Konferans — Jacques M. Jean",
+    metaTitle: "Konferans | Jacques M. Jean",
     metaDescription:
       "Konferans ak brifing sou posede AI ou, souverènte dijital pou gouvènman, ak aksè a teknoloji kòm konstriksyon nasyon. Telechaje fich prezantasyon yon paj la.",
     eyebrow: "Konferans & angajman",
     headline: "Istwa mwen rakonte soti nan eksperyans, pa nan teyori.",
     intro:
-      "Vennsenk ane teknoloji antrepriz nan kenz peyi. Twa bibliyotèk bati nan nò Ayiti. Yon biznis k ap montre ti konpayi kijan pou yo posede AI yo. Mwen pale ak konsèy administrasyon, ministè, anbasad ak konferans — nan senk lang.",
+      "Vennsenk ane teknoloji antrepriz nan kenz peyi. Twa bibliyotèk bati nan nò Ayiti. Yon biznis k ap montre ti konpayi kijan pou yo posede AI yo. Mwen pale ak konsèy administrasyon, ministè, anbasad ak konferans, nan senk lang.",
     downloadCta: "Telechaje fich yon paj la (PDF)",
     downloadNote: "Tout sa yon òganizatè bezwen, sou yon sèl paj. Pare pou voye bay lòt moun.",
     themesEyebrow: "Sou kisa m pale",
@@ -246,7 +245,7 @@ const ht: Messages = {
     themes: [
       {
         title: "Posede AI ou",
-        body: "Poukisa biznis yo ta dwe fè AI mache sou enfrastrikti yo kontwole — ak sa sa chanje nan koze pri, konfidansyalite ak endepandans. Rakonte soti sou teren an, pa nan laboratwa.",
+        body: "Poukisa biznis yo ta dwe fè AI mache sou enfrastrikti yo kontwole, ak sa sa chanje nan koze pri, konfidansyalite ak endepandans. Rakonte soti sou teren an, pa nan laboratwa.",
       },
       {
         title: "Souverènte dijital pou gouvènman",
