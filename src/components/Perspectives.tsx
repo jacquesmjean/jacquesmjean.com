@@ -1,9 +1,9 @@
 import type { Messages } from "@/i18n";
 
 const POST_HREFS = [
+  "/perspectives/world-stopped-waiting-for-the-us-sovereign-ai",
   "https://levoila.org/#founder",
   "https://levoila.org/#dispatches",
-  "https://www.linkedin.com/posts/jacques-m-jean_council-post-how-nonprofits-can-shift-their-activity-7041570520508620800-jVau",
 ];
 
 export default function Perspectives({
@@ -41,8 +41,9 @@ export default function Perspectives({
             <a
               key={p.title}
               href={POST_HREFS[i]}
-              target="_blank"
-              rel="noreferrer"
+              {...(POST_HREFS[i].startsWith("/")
+                ? {}
+                : { target: "_blank", rel: "noreferrer" })}
               className="group flex flex-col rounded-2xl border border-ink/10 bg-paper-warm p-7 transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_20px_40px_-20px_rgba(184,71,45,0.15)]"
             >
               <div className="flex items-center justify-between text-[10px] font-medium uppercase tracking-wider">

@@ -154,6 +154,13 @@ const fr: Messages = {
     readLabel: "Lire",
     posts: [
       {
+        tag: "IA souveraine",
+        title: "Le monde n'attend plus les États-Unis",
+        blurb:
+          "L'Europe prépare sa sortie, le Canada réunit les alliances que nous réunissions, et la Chine offre son IA. Un reportage depuis les salles où le monde choisit ses partenaires technologiques.",
+        when: "Perspectives · novembre 2026",
+      },
+      {
         tag: "Fondateur · Levoila",
         title: "De la bibliothèque à 18 ans à la Citadelle à 50",
         blurb:
@@ -166,14 +173,6 @@ const fr: Messages = {
         blurb:
           "Avant Levoila, il y a eu l'Universal Learning Centre. Avant ça, un garçon de Ferrier qui n'avait jamais vu de bibliothèque avant ses dix-huit ans. L'histoire complète de comment 500 000 lecteurs ont vu le jour.",
         when: "Dispatch Levoila · avril 2026",
-      },
-      {
-        tag: "Forbes Tech Council",
-        title:
-          "Comment les organismes sans but lucratif peuvent changer leur regard sur l'informatique",
-        blurb:
-          "Seulement 12 % des organismes sans but lucratif sont mûrs sur le plan numérique — et ceux qui le sont ont quatre fois plus de chances de remplir leur mission. Pourquoi il faut traiter l'informatique comme un cœur de métier, pas un coût.",
-        when: "Forbes Tech Council",
       },
     ],
   },

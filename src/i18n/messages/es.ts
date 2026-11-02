@@ -153,6 +153,13 @@ const es: Messages = {
     readLabel: "Leer",
     posts: [
       {
+        tag: "IA soberana",
+        title: "El mundo dejó de esperar a Estados Unidos",
+        blurb:
+          "Europa prepara su salida, Canadá convoca las alianzas que antes convocábamos nosotros, y China regala su IA. Un informe desde las salas donde el mundo elige a sus socios tecnológicos.",
+        when: "Perspectivas · noviembre de 2026",
+      },
+      {
         tag: "Fundador · Levoila",
         title: "De la biblioteca a los 18 a la Citadelle a los 50",
         blurb:
@@ -165,14 +172,6 @@ const es: Messages = {
         blurb:
           "Antes de Levoila, hubo el Universal Learning Centre. Antes, un niño en Ferrier que nunca había visto una biblioteca hasta los dieciocho. La historia completa de cómo nacieron 500 000 lectores.",
         when: "Dispatch Levoila · abril 2026",
-      },
-      {
-        tag: "Forbes Tech Council",
-        title:
-          "Cómo las organizaciones sin fines de lucro pueden cambiar su forma de ver la tecnología",
-        blurb:
-          "Apenas el 12 % de las organizaciones sin fines de lucro están maduras digitalmente — y las que lo están tienen cuatro veces más probabilidades de cumplir su misión. Por qué hay que tratar a TI como el núcleo del trabajo, no como un gasto.",
-        when: "Forbes Tech Council",
       },
     ],
   },

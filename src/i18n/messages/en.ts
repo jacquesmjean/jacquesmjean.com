@@ -152,6 +152,13 @@ const en: Messages = {
     readLabel: "Read",
     posts: [
       {
+        tag: "Sovereign AI",
+        title: "The World Stopped Waiting for the United States",
+        blurb:
+          "Europe is building its exit, Canada is convening the alliances we used to, and China is giving its AI away. A field report from the rooms where the world is choosing its technology partners.",
+        when: "Perspectives · November 2026",
+      },
+      {
         tag: "Founder · Levoila",
         title: "From the library at 18 to the Citadelle at 50",
         blurb:
@@ -164,14 +171,6 @@ const en: Messages = {
         blurb:
           "Before Levoila, there was the Universal Learning Centre. Before that, a boy in Ferrier who had never seen a library until he was eighteen. The full story of how 500,000 readers came to be.",
         when: "Levoila dispatch · April 2026",
-      },
-      {
-        tag: "Forbes Tech Council",
-        title:
-          "How nonprofits can shift their mindset to information technology",
-        blurb:
-          "Just twelve percent of nonprofits are digitally mature — and those that are happen to be four times more likely to achieve their mission. The case for treating IT as core to the work, not overhead.",
-        when: "Forbes Tech Council",
       },
     ],
   },

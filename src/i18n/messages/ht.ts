@@ -153,6 +153,13 @@ const ht: Messages = {
     readLabel: "Li",
     posts: [
       {
+        tag: "AI souvren",
+        title: "Mond lan sispann tann Etazini",
+        blurb:
+          "Ewòp ap prepare sòti li, Kanada ap rasanble alyans nou te konn rasanble yo, epi Lachin ap bay AI li gratis. Yon rapò soti nan sal kote mond lan ap chwazi patnè teknoloji li yo.",
+        when: "Pèspektiv · novanm 2026",
+      },
+      {
         tag: "Fondatè · Levoila",
         title: "Soti nan bibliyotèk la a 18 lane pou rive nan Sitadèl la a 50",
         blurb:
@@ -165,14 +172,6 @@ const ht: Messages = {
         blurb:
           "Anvan Levoila, te gen Universal Learning Centre. Anvan sa, te gen yon ti gason nan Feryè ki pa t janm wè yon bibliyotèk anvan li te gen dizwit lane. Istwa konplè kijan 500 000 lektè vin egziste.",
         when: "Dispatch Levoila · avril 2026",
-      },
-      {
-        tag: "Forbes Tech Council",
-        title:
-          "Kijan òganizasyon san bi likratif yo ka chanje fason yo wè teknoloji enfòmasyon",
-        blurb:
-          "Sèlman 12 % nan òganizasyon san bi likratif yo mati sou plan dijital — e sa ki yo, gen kat fwa plis chans pou yo rive nan misyon yo. Pou ki sa fòk yo trete IT tankou kè travay la, pa yon depans.",
-        when: "Forbes Tech Council",
       },
     ],
   },
