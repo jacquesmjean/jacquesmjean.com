@@ -163,7 +163,7 @@ export default function SpeakingContent({ locale }: { locale: Locale }) {
         </div>
       </section>
 
-      <Footer messages={m.footer} />
+      <Footer messages={m.footer} locale={locale} nav={m.nav} />
     </main>
   );
 }

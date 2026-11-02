@@ -5,6 +5,8 @@ export type Messages = {
     techfides: string;
     levoila: string;
     story: string;
+    ventures: string;
+    perspectives: string;
     speaking: string;
     contact: string;
     getInTouch: string;
@@ -137,5 +139,24 @@ export type Messages = {
   };
   footer: {
     rights: string;
+    siteLabel: string;
+    venturesLabel: string;
+    elsewhereLabel: string;
+  };
+  pages: {
+    story: { metaTitle: string; metaDescription: string };
+    ventures: {
+      metaTitle: string;
+      metaDescription: string;
+      eyebrow: string;
+      headline: string;
+      intro: string;
+      governanceEyebrow: string;
+      gov1Role: string;
+      gov2Role: string;
+      gov3Role: string;
+    };
+    contact: { metaTitle: string; metaDescription: string };
+    perspectives: { metaTitle: string; metaDescription: string };
   };
 };

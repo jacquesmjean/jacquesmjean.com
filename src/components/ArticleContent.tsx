@@ -216,7 +216,7 @@ export default function ArticleContent({ article }: { article: Article }) {
         </div>
       </section>
 
-      <Footer messages={m.footer} />
+      <Footer messages={m.footer} locale="en" nav={m.nav} />
     </main>
   );
 }

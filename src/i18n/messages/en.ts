@@ -11,6 +11,8 @@ const en: Messages = {
     techfides: "TechFides",
     levoila: "Levoila",
     story: "Story",
+    ventures: "Ventures",
+    perspectives: "Perspectives",
     speaking: "Speaking",
     contact: "Contact",
     getInTouch: "Get in touch",
@@ -275,6 +277,34 @@ const en: Messages = {
   },
   footer: {
     rights: "All rights reserved.",
+    siteLabel: "Site",
+    venturesLabel: "Ventures",
+    elsewhereLabel: "Elsewhere",
+  },
+  pages: {
+    story: {
+      metaTitle: "The Story | Jacques M. Jean",
+      metaDescription: "From a first library at eighteen in Haiti to enterprise technology in fifteen countries, three libraries, TechFides, and Levoila.",
+    },
+    ventures: {
+      metaTitle: "Ventures | Jacques M. Jean",
+      metaDescription: "TechFides, Levoila, and the governance work: what Jacques M. Jean runs, with one thread through it all, ownership.",
+      eyebrow: "Ventures",
+      headline: "Two ventures, one conviction: ownership.",
+      intro: "A business that helps companies own their AI, a trust that restores what governments forget, and the board work that connects them.",
+      governanceEyebrow: "Governance",
+      gov1Role: "Board Chair",
+      gov2Role: "Co-Chair, Founding",
+      gov3Role: "Texas Advisory Committee",
+    },
+    contact: {
+      metaTitle: "Contact | Jacques M. Jean",
+      metaDescription: "Three doors: a TechFides discovery call, Levoila stewardship, or direct email for board service, speaking, and press.",
+    },
+    perspectives: {
+      metaTitle: "Perspectives | Jacques M. Jean",
+      metaDescription: "Writing in plain English on sovereign AI, heritage, and operating: essays and dispatches from Jacques M. Jean.",
+    },
   },
 };
 

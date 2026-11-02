@@ -11,6 +11,8 @@ const ht: Messages = {
     techfides: "TechFides",
     levoila: "Levoila",
     story: "Istwa mwen",
+    ventures: "Antrepriz yo",
+    perspectives: "Pèspektiv",
     speaking: "Konferans",
     contact: "Kontak",
     getInTouch: "Pran kontak",
@@ -276,6 +278,34 @@ const ht: Messages = {
   },
   footer: {
     rights: "Tout dwa rezève.",
+    siteLabel: "Sit",
+    venturesLabel: "Antrepriz",
+    elsewhereLabel: "Lòt kote",
+  },
+  pages: {
+    story: {
+      metaTitle: "Istwa a | Jacques M. Jean",
+      metaDescription: "Soti nan yon premye bibliyotèk a dizwit lane ann Ayiti rive nan teknoloji antrepriz nan kenz peyi, twa bibliyotèk, TechFides ak Levoila.",
+    },
+    ventures: {
+      metaTitle: "Antrepriz yo | Jacques M. Jean",
+      metaDescription: "TechFides, Levoila ak travay gouvènans lan: sa Jacques M. Jean ap dirije, ak yon sèl fil, posesyon.",
+      eyebrow: "Antrepriz yo",
+      headline: "De antrepriz, yon sèl konviksyon: posesyon.",
+      intro: "Yon biznis k ap ede konpayi posede AI yo, yon fondasyon k ap restore sa gouvènman yo bliye, ak travay konsèy ki konekte yo.",
+      governanceEyebrow: "Gouvènans",
+      gov1Role: "Prezidan konsèy",
+      gov2Role: "Ko-prezidan fondatè",
+      gov3Role: "Komite konsiltatif Texas",
+    },
+    contact: {
+      metaTitle: "Kontak | Jacques M. Jean",
+      metaDescription: "Twa pòt: yon apèl dekouvèt TechFides, patwonaj Levoila, oswa yon imèl dirèk pou konsèy, konferans ak laprès.",
+    },
+    perspectives: {
+      metaTitle: "Pèspektiv | Jacques M. Jean",
+      metaDescription: "Tèks nan langaj klè sou AI souvren, patrimwàn ak metye operatè a, pa Jacques M. Jean.",
+    },
   },
 };
 

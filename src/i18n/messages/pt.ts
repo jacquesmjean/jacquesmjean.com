@@ -12,6 +12,8 @@ const pt: Messages = {
     techfides: "TechFides",
     levoila: "Levoila",
     story: "Minha história",
+    ventures: "Empresas",
+    perspectives: "Perspectivas",
     speaking: "Palestras",
     contact: "Contato",
     getInTouch: "Entrar em contato",
@@ -277,6 +279,34 @@ const pt: Messages = {
   },
   footer: {
     rights: "Todos os direitos reservados.",
+    siteLabel: "Site",
+    venturesLabel: "Empresas",
+    elsewhereLabel: "Outros lugares",
+  },
+  pages: {
+    story: {
+      metaTitle: "A história | Jacques M. Jean",
+      metaDescription: "De uma primeira biblioteca aos dezoito anos no Haiti à tecnologia corporativa em quinze países, três bibliotecas, TechFides e Levoila.",
+    },
+    ventures: {
+      metaTitle: "Empresas | Jacques M. Jean",
+      metaDescription: "TechFides, Levoila e o trabalho de governança: o que Jacques M. Jean dirige, com um único fio condutor, a propriedade.",
+      eyebrow: "Empresas",
+      headline: "Duas empresas, uma convicção: a propriedade.",
+      intro: "Um negócio que ajuda empresas a serem donas da própria IA, um fundo que restaura o que os governos esquecem, e os conselhos que os conectam.",
+      governanceEyebrow: "Governança",
+      gov1Role: "Presidente do conselho",
+      gov2Role: "Copresidente fundador",
+      gov3Role: "Comitê consultivo do Texas",
+    },
+    contact: {
+      metaTitle: "Contato | Jacques M. Jean",
+      metaDescription: "Três portas: uma chamada de descoberta da TechFides, o apadrinhamento da Levoila, ou um e-mail direto para conselhos, palestras e imprensa.",
+    },
+    perspectives: {
+      metaTitle: "Perspectivas | Jacques M. Jean",
+      metaDescription: "Textos em linguagem clara sobre IA soberana, patrimônio e o ofício de operar, por Jacques M. Jean.",
+    },
   },
 };
 
