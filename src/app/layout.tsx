@@ -2,9 +2,9 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "Jacques M. Jean — Founder, Technologist, Global Operator",
+  title: "Jacques M. Jean: Founder, Technologist, Global Operator",
   description:
-    "Founder of TechFides and Levoila. 25 years across 15 countries — now helping small business own its AI, and restoring sites the world has forgotten.",
+    "Founder of TechFides and Levoila. 25 years across 15 countries. Now helping small business own its AI, and restoring sites the world has forgotten.",
   metadataBase: new URL("https://jacquesmjean.com"),
   applicationName: "Jacques M. Jean",
   authors: [{ name: "Jacques M. Jean", url: "https://jacquesmjean.com" }],
@@ -27,9 +27,9 @@ export const metadata: Metadata = {
     "MUSA Asset Management",
   ],
   openGraph: {
-    title: "Jacques M. Jean — Founder, Technologist, Global Operator",
+    title: "Jacques M. Jean: Founder, Technologist, Global Operator",
     description:
-      "Founder of TechFides and Levoila. Built three libraries in Haiti. Now building local AI for small business — and restoring what governments have abandoned.",
+      "Founder of TechFides and Levoila. Built three libraries in Haiti. Now building local AI for small business, and restoring what governments have abandoned.",
     url: "https://jacquesmjean.com",
     siteName: "Jacques M. Jean",
     images: [{ url: "/images/og-image.jpg", width: 1200, height: 630 }],

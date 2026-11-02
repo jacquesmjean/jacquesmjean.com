@@ -21,8 +21,8 @@ export default function Hero({
 
             <h1 className="font-display text-5xl font-medium leading-[1.05] tracking-tightish text-ink md:text-7xl">
               {messages.headline1Pre}{" "}
-              <span className="text-accent italic">{messages.headline1Em}</span>{" "}
-              — {messages.headline2Pre}{" "}
+              <span className="text-accent italic">{messages.headline1Em}</span>,{" "}
+              {messages.headline2Pre}{" "}
               <span className="text-accent italic">{messages.headline2Em}</span>.
             </h1>
 

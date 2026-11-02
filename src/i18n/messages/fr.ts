@@ -3,9 +3,9 @@ import type { Messages } from "./_types";
 const fr: Messages = {
   meta: {
     title:
-      "Jacques M. Jean — Fondateur, technologue, opérateur international",
+      "Jacques M. Jean : Fondateur, technologue, opérateur international",
     description:
-      "Fondateur de TechFides et Levoila. 25 ans dans 15 pays — j'aide les petites entreprises à posséder leur IA et je restaure les sites que le monde a oubliés.",
+      "Fondateur de TechFides et Levoila. 25 ans dans 15 pays. J'aide les petites entreprises à posséder leur IA et je restaure les sites que le monde a oubliés.",
   },
   nav: {
     work: "Ce que je fais",
@@ -27,7 +27,7 @@ const fr: Messages = {
       "Je m'appelle Jacques. J'ai passé 25 ans à concevoir des systèmes technologiques pour Honeywell, Invensys et Schneider Electric dans 15 pays. Aujourd'hui je dirige ",
     bodyTF: "TechFides",
     bodyMid:
-      ", où de petites entreprises font tourner une IA sur du matériel qui leur appartient — aucune location, aucune donnée qui quitte les locaux. Et je préside ",
+      ", où de petites entreprises font tourner une IA sur du matériel qui leur appartient, sans location et sans donnée qui quitte les locaux. Et je préside ",
     bodyLV: "Levoila",
     bodyPost:
       ", une fondation citoyenne mondiale qui restaure les sites que le monde a laissés à l'abandon.",
@@ -51,14 +51,14 @@ const fr: Messages = {
         label: "L'entreprise",
         title: "TechFides",
         role: "PDG et fondateur",
-        body: "IA locale pour les petites et moyennes entreprises. Cabinets médicaux, cabinets d'avocats, concessionnaires automobiles, gestionnaires immobiliers, métiers de la construction. Nous déployons l'IA sur du matériel qui vous appartient — aucune location, aucune donnée qui quitte vos locaux.",
+        body: "IA locale pour les petites et moyennes entreprises. Cabinets médicaux, cabinets d'avocats, concessionnaires automobiles, gestionnaires immobiliers, métiers de la construction. Nous déployons l'IA sur du matériel qui vous appartient, sans location et sans donnée qui quitte vos locaux.",
         linkLabel: "Comment TechFides fonctionne",
       },
       {
         label: "L'héritage",
         title: "Levoila",
         role: "Fondateur et président",
-        body: "Fondation mondiale du patrimoine. Les citoyens proposent des sites en péril. Les Gardiens votent pour les sauver. Nous commençons en Haïti — à la Citadelle, à Sans-Souci et à Fort-Liberté — et nous irons partout où le monde est oublié.",
+        body: "Fondation mondiale du patrimoine. Les citoyens proposent des sites en péril. Les Gardiens votent pour les sauver. Nous commençons en Haïti, à la Citadelle, à Sans-Souci et à Fort-Liberté, et nous irons partout où le monde est oublié.",
         linkLabel: "Soutenir Levoila",
       },
       {
@@ -84,26 +84,26 @@ const fr: Messages = {
     brokenItems: [
       "Vous louez votre IA au nuage de quelqu'un d'autre.",
       "Vos dossiers patients, vos contrats et vos données clients quittent vos locaux chaque fois que vous l'utilisez.",
-      "Votre facture mensuelle d'API grimpe chaque trimestre — et vous ne possédez rien à la fin.",
+      "Votre facture mensuelle d'API grimpe chaque trimestre, et vous ne possédez rien à la fin.",
     ],
     installLabel: "Ce que nous déployons",
     installItems: [
-      "L'IA fonctionne sur du matériel qui vous appartient — Mac, Windows, un Raspberry Pi ou un serveur.",
+      "L'IA fonctionne sur du matériel qui vous appartient : Mac, Windows, un Raspberry Pi ou un serveur.",
       "Vos données ne quittent jamais votre bureau.",
       "Tarif de déploiement fixe. Contrat de maintenance facultatif. Aucune surprise.",
     ],
   },
   levoila: {
-    eyebrow: "Levoila — La Fondation mondiale du patrimoine",
+    eyebrow: "Levoila : La Fondation mondiale du patrimoine",
     headline1: "Quand les gouvernements oublient,",
     headline2Em: "le monde se souvient.",
     body1:
-      "En 1805, des Haïtiens qui venaient de se libérer de l'esclavage ont bâti la plus grande forteresse de l'hémisphère occidental — la preuve qu'une nation noire libre pouvait construire tout ce qu'aucune cour européenne avait jamais bâti. Deux siècles plus tard, la Citadelle n'a plus de sécurité, plus de surveillance, plus personne aux commandes. Le 11 avril 2026, des enfants haïtiens y sont morts.",
+      "En 1805, des Haïtiens qui venaient de se libérer de l'esclavage ont bâti la plus grande forteresse de l'hémisphère occidental, la preuve qu'une nation noire libre pouvait construire tout ce qu'aucune cour européenne avait jamais bâti. Deux siècles plus tard, la Citadelle n'a plus de sécurité, plus de surveillance, plus personne aux commandes. Le 11 avril 2026, des enfants haïtiens y sont morts.",
     body2:
       "Levoila, c'est ma réponse. Une fondation citoyenne où chacun peut proposer un site, où le monde vote pour ce qu'il faut sauver, et où chaque dollar est traçable sur un registre public. Nous commençons en Haïti. Nous irons partout où le monde est oublié.",
-    ctaSteward: "Devenir Gardien — à partir de 150 $",
+    ctaSteward: "Devenir Gardien, à partir de 150 $",
     ctaRead: "Lire l'histoire complète",
-    phaseOneLabel: "Phase Un — Haïti",
+    phaseOneLabel: "Phase Un : Haïti",
     sites: [
       { name: "Citadelle Henri Christophe", note: "UNESCO · Milot, Haïti" },
       { name: "Palais Sans-Souci", note: "UNESCO · Milot, Haïti" },
@@ -132,12 +132,12 @@ const fr: Messages = {
     pullquote:
       '« J\'avais dix-huit ans la première fois que je suis entré dans une bibliothèque. »',
     para1:
-      "Je suis né Jacques Medina Jean à Ferrier, dans le nord-est d'Haïti. Je suis arrivé aux États-Unis adolescent et j'ai passé les vingt-cinq années suivantes à bâtir des systèmes technologiques pour des entreprises que tout le monde connaît — Honeywell, Invensys, Schneider Electric — dans quinze pays — avec des voyages qui m'ont mené à travers quarante-cinq. J'ai appris à quoi ressemblent les vrais systèmes à grande échelle. J'ai aussi appris que rien de tout ça n'avait été conçu pour le peuple d'où je viens.",
+      "Je suis né Jacques Medina Jean à Ferrier, dans le nord-est d'Haïti. Je suis arrivé aux États-Unis adolescent et j'ai passé les vingt-cinq années suivantes à bâtir des systèmes technologiques pour des entreprises que tout le monde connaît : Honeywell, Invensys, Schneider Electric, dans quinze pays, avec des voyages qui m'ont mené à travers quarante-cinq. J'ai appris à quoi ressemblent les vrais systèmes à grande échelle. J'ai aussi appris que rien de tout ça n'avait été conçu pour le peuple d'où je viens.",
     para2:
-      "Alors j'ai commencé à construire. Il y a quelques années, trois petites bibliothèques ont vu le jour dans le nord d'Haïti — à Pilate, dans mon village natal de Ferrier, et à Ouanaminthe. Elles m'ont appris que les petites choses bien bâties changent tout ce qui les entoure. Cette leçon est devenue TechFides : les petites entreprises n'ont pas besoin d'un nuage de la taille d'un pays. Elles ont besoin d'une IA qui vit dans leur bureau, sur leur matériel, et qui fait exactement le travail pour lequel elles l'ont embauchée.",
+      "Alors j'ai commencé à construire. Il y a quelques années, trois petites bibliothèques ont vu le jour dans le nord d'Haïti, à Pilate, dans mon village natal de Ferrier, et à Ouanaminthe. Elles m'ont appris que les petites choses bien bâties changent tout ce qui les entoure. Cette leçon est devenue TechFides : les petites entreprises n'ont pas besoin d'un nuage de la taille d'un pays. Elles ont besoin d'une IA qui vit dans leur bureau, sur leur matériel, et qui fait exactement le travail pour lequel elles l'ont embauchée.",
     pivot: "Levoila, c'est la réponse plus grande à la même question.",
     para3:
-      "Les bibliothèques étaient un début. Levoila, c'est l'héritage que je bâtis aujourd'hui — une fondation mondiale du patrimoine pour les bâtiments que mes ancêtres ont construits, et pour chaque site que le monde a cessé d'entretenir. La Citadelle, où des enfants haïtiens sont morts en avril parce que personne n'était responsable. Sans-Souci. Fort-Liberté. Et ensuite, partout où un gouvernement a oublié ce que son propre peuple a bâti. C'est le travail qui retient mon attention maintenant.",
+      "Les bibliothèques étaient un début. Levoila, c'est l'héritage que je bâtis aujourd'hui, une fondation mondiale du patrimoine pour les bâtiments que mes ancêtres ont construits, et pour chaque site que le monde a cessé d'entretenir. La Citadelle, où des enfants haïtiens sont morts en avril parce que personne n'était responsable. Sans-Souci. Fort-Liberté. Et ensuite, partout où un gouvernement a oublié ce que son propre peuple a bâti. C'est le travail qui retient mon attention maintenant.",
     languagesLabel: "Langues",
     languagesValue: "Anglais · Français · Kreyòl · Espagnol · Portugais",
     educationLabel: "Formation",
@@ -189,7 +189,7 @@ const fr: Messages = {
       {
         label: "Entreprise",
         title: "Une IA locale pour votre entreprise",
-        body: "Médecine, droit, automobile, immobilier, métiers du bâtiment. Appel découverte avec TechFides — environ 20 minutes.",
+        body: "Médecine, droit, automobile, immobilier, métiers du bâtiment. Appel découverte avec TechFides, environ 20 minutes.",
         cta: "Démarrer une conversation TechFides",
         external: false,
       },
@@ -203,7 +203,7 @@ const fr: Messages = {
       {
         label: "Conseil · Conférences · Presse",
         title: "Autres engagements",
-        body: "Conseils d'administration, conférences, missions consultatives, presse, délégations ABC Gabon. Envoyez le brief — court, c'est très bien.",
+        body: "Conseils d'administration, conférences, missions consultatives, presse, délégations ABC Gabon. Envoyez le brief. Court, c'est très bien.",
         cta: "M'écrire directement",
         external: false,
       },
@@ -219,11 +219,11 @@ const fr: Messages = {
       },
       {
         q: "Qu'est-ce que TechFides ?",
-        a: "TechFides déploie l'IA sur du matériel que les entreprises possèdent — cabinets médicaux, cabinets d'avocats, concessionnaires automobiles, gestionnaires immobiliers et métiers techniques. Le déploiement démarre à 5 000 $ avec un forfait mensuel fixe, les données clients ne quittent jamais le bâtiment, et aucune facture cloud ne grimpe chaque trimestre.",
+        a: "TechFides déploie l'IA sur du matériel que les entreprises possèdent : cabinets médicaux, cabinets d'avocats, concessionnaires automobiles, gestionnaires immobiliers et métiers techniques. Le déploiement démarre à 5 000 $ avec un forfait mensuel fixe, les données clients ne quittent jamais le bâtiment, et aucune facture cloud ne grimpe chaque trimestre.",
       },
       {
         q: "Qu'est-ce que Levoila ?",
-        a: "Levoila est une fiducie mondiale du patrimoine, dirigée par les citoyens. La Phase Un restaure 3 sites en Haïti — la Citadelle Henri Christophe, le Palais Sans-Souci et Fort-Liberté — avec 75 à 85 % d'embauche locale et chaque dollar inscrit sur un registre public. Elle est née des 3 bibliothèques publiques que Jacques a construites à Pilate, Ferrier et Ouanaminthe, au service d'une région de plus de 500 000 personnes.",
+        a: "Levoila est une fiducie mondiale du patrimoine, dirigée par les citoyens. La Phase Un restaure 3 sites en Haïti, la Citadelle Henri Christophe, le Palais Sans-Souci et Fort-Liberté, avec 75 à 85 % d'embauche locale et chaque dollar inscrit sur un registre public. Elle est née des 3 bibliothèques publiques que Jacques a construites à Pilate, Ferrier et Ouanaminthe, au service d'une région de plus de 500 000 personnes.",
       },
       {
         q: "Comment travailler avec Jacques ?",
@@ -232,13 +232,13 @@ const fr: Messages = {
     ],
   },
   speaking: {
-    metaTitle: "Conférences — Jacques M. Jean",
+    metaTitle: "Conférences | Jacques M. Jean",
     metaDescription:
       "Conférences et briefings sur la propriété de l'IA, la souveraineté numérique des gouvernements et l'accès à la technologie comme construction nationale. Téléchargez la fiche de présentation.",
     eyebrow: "Conférences & engagements",
     headline: "Des histoires tirées de l'expérience, pas de la théorie.",
     intro:
-      "Vingt-cinq ans de technologie d'entreprise dans quinze pays. Trois bibliothèques construites dans le nord d'Haïti. Une entreprise qui apprend aux PME à posséder leur IA. Je m'adresse aux conseils d'administration, aux ministères, aux ambassades et aux conférences — en cinq langues.",
+      "Vingt-cinq ans de technologie d'entreprise dans quinze pays. Trois bibliothèques construites dans le nord d'Haïti. Une entreprise qui apprend aux PME à posséder leur IA. Je m'adresse aux conseils d'administration, aux ministères, aux ambassades et aux conférences, en cinq langues.",
     downloadCta: "Télécharger la fiche d'une page (PDF)",
     downloadNote: "Tout ce dont un organisateur a besoin, sur une page. Prête à transférer.",
     themesEyebrow: "Mes sujets",
@@ -246,7 +246,7 @@ const fr: Messages = {
     themes: [
       {
         title: "Posséder son IA",
-        body: "Pourquoi les entreprises devraient faire tourner l'IA sur une infrastructure qu'elles contrôlent — et ce que cela change pour les coûts, la confidentialité et l'indépendance. Raconté depuis le terrain, pas depuis le laboratoire.",
+        body: "Pourquoi les entreprises devraient faire tourner l'IA sur une infrastructure qu'elles contrôlent, et ce que cela change pour les coûts, la confidentialité et l'indépendance. Raconté depuis le terrain, pas depuis le laboratoire.",
       },
       {
         title: "Souveraineté numérique des gouvernements",

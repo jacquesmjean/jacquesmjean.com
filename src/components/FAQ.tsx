@@ -1,7 +1,7 @@
 import type { Messages } from "@/i18n";
 
 /**
- * FAQ — visible Q&A section + FAQPage JSON-LD from the same source,
+ * FAQ, visible Q&A section + FAQPage JSON-LD from the same source,
  * so the structured data always matches the on-page content.
  * Added for GEO (AI-search) citability: question headings and
  * digit-dense answers are what AI assistants quote.
