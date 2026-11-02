@@ -1,5 +1,6 @@
 import type { MetadataRoute } from "next";
 import { locales, localeHref } from "@/i18n";
+import { articles } from "@/data/articles";
 
 export const dynamic = "force-static";
 
@@ -51,13 +52,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }))
   );
 
-  const articlePages: MetadataRoute.Sitemap = [
-    {
-      url: `${baseUrl}/perspectives/world-stopped-waiting-for-the-us-sovereign-ai`,
-      lastModified: now,
-      priority: 0.8,
-    },
-  ];
+  const articlePages: MetadataRoute.Sitemap = articles.map((a) => ({
+    url: `${baseUrl}/perspectives/${a.slug}`,
+    lastModified: now,
+    priority: 0.8,
+  }));
 
   return [...home, ...speaking, ...localizedPages, ...articlePages];
 }

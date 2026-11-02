@@ -131,6 +131,85 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "system-to-system-competition-africa",
+    eyebrow: "Perspectives \u00B7 Africa",
+    title: "America Does Not Lose in Africa on Price. It Loses on Architecture.",
+    metaTitle: "System-to-System Competition: Why U.S. Companies Lose in Africa | Jacques M. Jean",
+    metaDescription:
+      "After two years working with ministries and enterprises in Central Africa, a founder's field report: U.S. firms lose deals before the bid opens, because they compete alone against integrated systems.",
+    dek: "I wrote this argument as a paper in February, after two years on the ground in Central Africa. November proved it. American firms are not losing on capability or price. They are losing because they arrive alone against integrated systems.",
+    datePublished: "2026-11-02",
+    dateDisplay: "November 2026",
+    readTime: "7 min read",
+    keywords: [
+      "US companies in Africa",
+      "system-to-system competition",
+      "US Africa trade strategy",
+      "Gabon business",
+      "AGOA",
+      "sovereign financing Africa",
+    ],
+    ogImage: "/images/perspectives/system-to-system-og.png",
+    sections: [
+      {
+        paragraphs: [
+          "In Libreville I watched American companies lose deals they never got to bid on. The winning side arrived as a package: a sovereign bank with financing ready to sign, builders, training programs, and technical standards for telecom, power, and rail, all in one envelope. The American firm arrived with a good product and a price list.",
+          "I spent the better part of two years in Central Africa working with ministries, private enterprises, and sovereign stakeholders. In February I wrote a paper about what I saw. I put it away, and this fall the world caught up with it. So here is the argument, refreshed, with what has happened since.",
+          "**The competition in emerging African economies is not firm against firm. It is system against system.** Chinese engagement arrives with sovereign financing, bundled infrastructure, commodity-backed agreements, standards integration, negotiated labor terms, and industrial zones aligned with their own small businesses. American firms arrive alone. That is not a failure of American entrepreneurship. It is a failure of architecture.",
+        ],
+      },
+      {
+        heading: "Nine ways to lose before the bid opens",
+        paragraphs: [
+          "Start with money. Competing bids come paired with ready-to-deploy sovereign credit. American small and mid-sized firms rely on commercial lending at far higher cost, so projects are lost before anyone evaluates technical merit. Governments increasingly want turnkey packages, financing plus build plus training plus long-term servicing, and without an integrated American aid, trade, and technical offer, our firms cannot compete for large public infrastructure at all.",
+          "Then the rules. Uncertainty around trade frameworks like AGOA makes U.S. trade flows unpredictable while other partners sign zero-tariff bilateral deals. American companies carry VAT reimbursement delays and government payment arrears with no sovereign offset mechanism, while state-backed competitors negotiate payment security inside broader debt structures. In CEMAC markets, central bank authorization requirements trap liquidity in-country. With no bilateral tax treaty, withholding can reach 25 percent, pricing American technical providers out before the conversation starts.",
+          "Then the quiet traps. In transitional governance environments, debt audits can freeze legitimate contracts, and firms operating under strict FCPA compliance have no room to maneuver. In 5G, power, rail, and industrial automation, the standards embedded today decide thirty years of interoperability, and without feasibility funding, American standards risk exclusion. Local content laws require domestic equity and local management, but without American-backed vocational training on the ground, our firms face a compliance paradox: the law demands local skills that no one is helping to build.",
+          "Nine gaps. Not one of them is about product quality. Every one of them is about the system behind the product.",
+        ],
+      },
+      {
+        heading: "Where America still wins",
+        paragraphs: [
+          "None of this means the game is lost. American firms hold real structural advantages in the sectors that matter next: value-added mineral processing as raw export bans arrive, because American ESG standards open premium Western markets; trusted digital infrastructure, government cloud, cybersecurity, and AI governance, where American software credibility is still the gold standard; precision agribusiness in nations importing 60 to 80 percent of their food; sustainable forestry processing; renewable industrial power; healthcare systems, where American quality assurance still carries weight; and vocational education, because American certification keeps its prestige long after a project ends.",
+          "Notice what those have in common. They are trust businesses. They are exactly the terrain where the world's doubts about everyone else become America's advantage, if we show up.",
+        ],
+      },
+      {
+        heading: "What I did about it",
+        paragraphs: [
+          "I did not write the February paper from a library. I built three national technology programs with the Government of Gabon, in cybersecurity, digital transformation, and a national technology incubator, and carried all three to signed memoranda in Washington during the President of Gabon's delegation visit. I was one of five American companies, out of thirty-five invited, in the closed-door roundtable with the President and his staff. When the U.S. Ambassador asked for the dormant American Business Council Gabon to be revived, I helped relaunch it, and I co-chair it today. The programs were later suspended by trade disruptions beyond the commercial parties' control. The relationships were not.",
+          "I tell you this for one reason: the system-to-system problem is not a theory to me. I have sat on the American side of the table and felt what it is to represent the strongest economy on earth with no system behind you.",
+        ],
+      },
+      {
+        heading: "February's paper, November's proof",
+        paragraphs: [
+          "Since I wrote those pages, the argument has gone global. The trust gap between American and Chinese technology is now measured in double digits. Brazil split its AI infrastructure between both camps on purpose. China is giving its models away across the Global South while rebuilding a third of its university system around AI. I covered that larger picture in my last piece, and the conclusion is the same at every scale: the old deference is gone, and what replaces it will be earned by systems, not slogans.",
+          "What would an American system look like? Coordinated financing instruments that travel with the bid. Aid, trade, and technical packages built as one offer. Feasibility funding so American standards are in the room when the next thirty years get decided. Vocational partnerships that make local content laws an advantage instead of a trap. Sovereign-level engagement that does not evaporate with a news cycle. None of this is beyond a country that built the Marshall Plan. All of it is beyond a country that will not coordinate.",
+          "The question is not whether American companies can compete in Africa. They can. I have watched them do it with nothing behind them. The question is whether anyone will build the system that lets them compete against other systems. I have seen what the other side's system looks like. It is excellent. And it is not waiting.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "What is system-to-system competition?",
+        a: "Competition where integrated national packages, sovereign financing, infrastructure, standards, labor terms, and diplomacy bundled together, compete against individual firms. In emerging African markets, Chinese engagement typically arrives as such a package while American companies arrive alone.",
+      },
+      {
+        q: "Why do U.S. companies lose deals in African markets?",
+        a: "Mostly before the bid opens: no sovereign financing to pair with offers, no turnkey aid-trade-technical packages, trade uncertainty around frameworks like AGOA, VAT and payment arrears with no offset, trapped liquidity under CEMAC currency rules, withholding up to 25 percent with no tax treaty, and standards decisions that exclude American technology for decades.",
+      },
+      {
+        q: "Where can American firms still win in Africa?",
+        a: "Trust-driven sectors: value-added mineral processing, government cloud and cybersecurity, AI governance, precision agribusiness, sustainable forestry processing, renewable industrial power, healthcare systems, and vocational education, where American standards and certification still command a premium.",
+      },
+      {
+        q: "What is the author's experience in Africa?",
+        a: "Jacques M. Jean spent about two years in Central Africa, built three national technology programs with the Government of Gabon that reached signed memoranda in Washington, joined the closed-door roundtable with Gabon's President as one of five U.S. companies selected from thirty-five, and co-chairs the American Business Council Gabon, which he helped revive at the U.S. Ambassador's request.",
+      },
+    ],
+  },
 ];
 
 export function getArticle(slug: string): Article | undefined {

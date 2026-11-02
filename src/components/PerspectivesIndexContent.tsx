@@ -18,6 +18,7 @@ export default function PerspectivesIndexContent({ locale }: { locale: Locale })
     base === "/" ? `/perspectives/${slug}` : `${base}/perspectives/${slug}`;
   // Message posts: index 0 mirrors the featured article; 1+ are external dispatches.
   const externalPosts = p.posts.slice(1);
+  const moreArticles = articles.slice(1);
 
   return (
     <main lang={locale} className="min-h-screen bg-paper text-ink">
@@ -74,6 +75,24 @@ export default function PerspectivesIndexContent({ locale }: { locale: Locale })
             </a>
           </div>
           <div className="mt-8 grid gap-6 md:grid-cols-2">
+            {moreArticles.map((a) => (
+              <a
+                key={a.slug}
+                href={articleHref(a.slug)}
+                className="group flex flex-col rounded-2xl border border-ink/10 bg-paper p-7 transition-all hover:-translate-y-0.5 hover:border-accent/40"
+              >
+                <div className="flex items-center justify-between text-[10px] font-medium uppercase tracking-wider">
+                  <span className="text-accent">{a.eyebrow}</span>
+                  <span className="text-ink-muted">{a.dateDisplay} · {a.readTime}</span>
+                </div>
+                <h3 className="mt-4 font-display text-xl font-medium leading-snug text-ink group-hover:text-accent transition-colors">
+                  {a.title}
+                </h3>
+                <p className="mt-3 flex-1 text-[15px] leading-relaxed text-ink-soft">
+                  {a.metaDescription}
+                </p>
+              </a>
+            ))}
             {externalPosts.map((post, i) => (
               <a
                 key={post.title}
