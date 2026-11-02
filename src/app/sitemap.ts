@@ -32,7 +32,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   }));
 
-  const perspectives: MetadataRoute.Sitemap = [
+  const pageUrl = (l: (typeof locales)[number], path: string) =>
+    localeHref(l) === "/"
+      ? `${baseUrl}/${path}`
+      : `${baseUrl}${localeHref(l)}/${path}`;
+
+  const localizedPages: MetadataRoute.Sitemap = ["story", "ventures", "perspectives", "contact"].flatMap(
+    (path) =>
+      locales.map((locale) => ({
+        url: pageUrl(locale, path),
+        lastModified: now,
+        priority: locale === "en" ? 0.8 : 0.7,
+        alternates: {
+          languages: Object.fromEntries(
+            locales.map((l) => [l, pageUrl(l, path)])
+          ),
+        },
+      }))
+  );
+
+  const articlePages: MetadataRoute.Sitemap = [
     {
       url: `${baseUrl}/perspectives/world-stopped-waiting-for-the-us-sovereign-ai`,
       lastModified: now,
@@ -40,5 +59,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     },
   ];
 
-  return [...home, ...speaking, ...perspectives];
+  return [...home, ...speaking, ...localizedPages, ...articlePages];
 }

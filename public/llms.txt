@@ -19,6 +19,10 @@
 ## Key pages
 
 - [Home](https://jacquesmjean.com/): who Jacques is, what he is building, and how to reach him.
+- [Story](https://jacquesmjean.com/story): from a first library at eighteen in Haiti to enterprise technology in fifteen countries.
+- [Ventures](https://jacquesmjean.com/ventures): TechFides, Levoila, and the governance work, with one thread through it all, ownership.
+- [Perspectives](https://jacquesmjean.com/perspectives): writing in plain English on sovereign AI, heritage, and operating.
+- [Contact](https://jacquesmjean.com/contact): three doors, a TechFides discovery call, Levoila stewardship, or direct email.
 - [Speaking](https://jacquesmjean.com/speaking): keynote topics (Own Your AI, digital sovereignty for governments, technology access as nation building), speaker bio, and the downloadable one-page leadership brief (PDF).
 - [TechFides — Own Your AI](https://techfides.com): the business. Solutions, pricing, and the free AI Fit Check.
 - [Levoila — The Global Heritage Trust](https://levoila.org): stewardship from $150, site nominations, the public ledger.

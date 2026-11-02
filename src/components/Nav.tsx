@@ -10,14 +10,13 @@ export default function Nav({
   messages: Messages["nav"];
 }) {
   const base = localeHref(locale); // "/" or "/fr"
-  const speakingHref = base === "/" ? "/speaking" : `${base}/speaking`;
+  const p = (path: string) => (base === "/" ? path : `${base}${path}`);
   const links = [
-    { href: `${base}#work`, label: messages.work },
-    { href: `${base}#techfides`, label: messages.techfides },
-    { href: `${base}#levoila`, label: messages.levoila },
-    { href: `${base}#story`, label: messages.story },
-    { href: speakingHref, label: messages.speaking },
-    { href: `${base}#contact`, label: messages.contact },
+    { href: p("/story"), label: messages.story },
+    { href: p("/ventures"), label: messages.ventures },
+    { href: p("/perspectives"), label: messages.perspectives },
+    { href: p("/speaking"), label: messages.speaking },
+    { href: p("/contact"), label: messages.contact },
   ];
 
   return (
@@ -43,7 +42,7 @@ export default function Nav({
         <div className="flex items-center gap-3">
           <LanguageSwitcher current={locale} label={messages.selectLanguage} />
           <a
-            href={`${base}#contact`}
+            href={p("/contact")}
             className="hidden rounded-full bg-ink px-4 py-2 text-sm font-medium text-paper hover:bg-accent transition-colors sm:inline-block"
           >
             {messages.getInTouch}

@@ -25,7 +25,7 @@ export default function PageContent({ locale }: { locale: Locale }) {
       <FAQ messages={m.faq} />
       <Perspectives messages={m.perspectives} />
       <Contact messages={m.contact} />
-      <Footer messages={m.footer} />
+      <Footer messages={m.footer} locale={locale} nav={m.nav} />
     </main>
   );
 }
