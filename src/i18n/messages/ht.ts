@@ -148,7 +148,7 @@ const ht: Messages = {
     eyebrow: "Pèspektiv",
     headline: "Ekri, an mo senp.",
     subhead:
-      "Nòt sou travay la — dirije yon ti biznis nan epòk AI, bati bibliyotèk ak fò, ak sa 25 lane nan 15 peyi aprann ou tout bon.",
+      "Nòt sou travay la: dirije yon ti biznis nan epòk AI, bati bibliyotèk ak fò, ak sa 25 lane nan 15 peyi aprann ou tout bon.",
     allWriting: "Tout ekri yo",
     readLabel: "Li",
     posts: [

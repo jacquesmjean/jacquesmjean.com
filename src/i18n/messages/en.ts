@@ -147,7 +147,7 @@ const en: Messages = {
     eyebrow: "Perspectives",
     headline: "Writing, in plain English.",
     subhead:
-      "Notes from the work — running a small business in the AI era, building libraries and fortresses, and what 25 years across 15 countries actually teaches you.",
+      "Notes from the work: running a small business in the AI era, building libraries and fortresses, and what 25 years across 15 countries actually teaches you.",
     allWriting: "All writing",
     readLabel: "Read",
     posts: [

@@ -148,7 +148,7 @@ const es: Messages = {
     eyebrow: "Perspectivas",
     headline: "Escribir, en español claro.",
     subhead:
-      "Notas del trabajo — dirigir una pequeña empresa en la era de la IA, construir bibliotecas y fortalezas, y lo que 25 años en 15 países realmente te enseñan.",
+      "Notas del trabajo: dirigir una pequeña empresa en la era de la IA, construir bibliotecas y fortalezas, y lo que 25 años en 15 países realmente te enseñan.",
     allWriting: "Todo lo escrito",
     readLabel: "Leer",
     posts: [

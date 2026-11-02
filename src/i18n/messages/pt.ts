@@ -149,7 +149,7 @@ const pt: Messages = {
     eyebrow: "Perspectivas",
     headline: "Escrita, em português claro.",
     subhead:
-      "Notas do trabalho — tocar uma pequena empresa na era da IA, construir bibliotecas e fortalezas, e o que 25 anos em 15 países realmente ensinam.",
+      "Notas do trabalho: tocar uma pequena empresa na era da IA, construir bibliotecas e fortalezas, e o que 25 anos em 15 países realmente ensinam.",
     allWriting: "Todos os textos",
     readLabel: "Ler",
     posts: [

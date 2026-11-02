@@ -149,7 +149,7 @@ const fr: Messages = {
     eyebrow: "Perspectives",
     headline: "Écrire, simplement.",
     subhead:
-      "Notes prises sur le terrain — diriger une petite entreprise à l'ère de l'IA, bâtir des bibliothèques et des forteresses, et ce que 25 ans dans 15 pays vous enseignent vraiment.",
+      "Notes prises sur le terrain: diriger une petite entreprise à l'ère de l'IA, bâtir des bibliothèques et des forteresses, et ce que 25 ans dans 15 pays vous enseignent vraiment.",
     allWriting: "Tous les écrits",
     readLabel: "Lire",
     posts: [
