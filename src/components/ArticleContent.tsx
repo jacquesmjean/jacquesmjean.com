@@ -1,5 +1,7 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import Comments from "@/components/Comments";
+import ShareArticle from "@/components/ShareArticle";
 import { getMessages } from "@/i18n";
 import type { Article } from "@/data/articles";
 import type { ReactNode } from "react";
@@ -95,20 +97,23 @@ export default function ArticleContent({ article }: { article: Article }) {
           <p className="mt-7 text-xl leading-relaxed text-ink-soft md:text-[1.35rem] md:leading-relaxed">
             {article.dek}
           </p>
-          <div className="mt-10 flex items-center gap-4 border-t border-ink/10 pt-6">
-            <img
-              src="/images/headshot.png"
-              alt="Jacques M. Jean"
-              width={48}
-              height={48}
-              className="h-12 w-12 rounded-full object-cover"
-            />
-            <div className="text-sm">
-              <div className="font-medium text-ink">Jacques M. Jean</div>
-              <div className="text-ink-muted">
-                {article.dateDisplay} · {article.readTime}
+          <div className="mt-10 flex flex-wrap items-center justify-between gap-x-6 gap-y-5 border-t border-ink/10 pt-6">
+            <div className="flex items-center gap-4">
+              <img
+                src="/images/headshot.png"
+                alt="Jacques M. Jean"
+                width={48}
+                height={48}
+                className="h-12 w-12 rounded-full object-cover"
+              />
+              <div className="text-sm">
+                <div className="font-medium text-ink">Jacques M. Jean</div>
+                <div className="text-ink-muted">
+                  {article.dateDisplay} · {article.readTime}
+                </div>
               </div>
             </div>
+            <ShareArticle url={pageUrl} title={article.title} />
           </div>
         </div>
       </section>
@@ -135,6 +140,18 @@ export default function ArticleContent({ article }: { article: Article }) {
 
         {/* Signature rule */}
         <div className="mt-14 h-1 w-16 rounded-full bg-accent" aria-hidden />
+
+        {/* End-of-piece share prompt */}
+        <div className="mt-14 rounded-2xl border border-ink/10 bg-paper-warm px-7 py-7">
+          <div className="mb-4 text-[11px] font-medium uppercase tracking-wider text-accent">
+            Pass it on
+          </div>
+          <p className="mb-5 max-w-xl text-[15px] leading-relaxed text-ink-soft">
+            If this piece sharpened a thought for you, send it to someone who&rsquo;d
+            benefit from the same sharpening.
+          </p>
+          <ShareArticle url={pageUrl} title={article.title} />
+        </div>
       </article>
 
       {/* FAQ */}
@@ -215,6 +232,9 @@ export default function ArticleContent({ article }: { article: Article }) {
           </div>
         </div>
       </section>
+
+      {/* Comments */}
+      <Comments slug={article.slug} locale="en" />
 
       <Footer messages={m.footer} locale="en" nav={m.nav} />
     </main>
