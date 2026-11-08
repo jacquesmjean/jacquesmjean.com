@@ -14,7 +14,7 @@ export default function SubscribeForm({
   locale?: Locale;
   /** Where the signup came from, e.g. the page path. */
   source: string;
-  variant?: "card" | "band" | "footer";
+  variant?: "card" | "band" | "footer" | "inline";
 }) {
   const t = readerUi(locale);
   const [status, setStatus] = useState<Status>("idle");
@@ -48,14 +48,16 @@ export default function SubscribeForm({
   return (
     <div
       className={
-        variant === "footer"
+        variant === "inline"
+          ? "text-paper"
+          : variant === "footer"
           ? "grid gap-6 text-paper md:grid-cols-2 md:items-end md:gap-12"
           : dark
             ? "rounded-3xl bg-ink px-7 py-10 text-paper md:px-12 md:py-12"
             : "rounded-2xl border border-ink/10 bg-paper-warm px-7 py-8 md:px-9"
       }
     >
-      <div>
+      <div className={variant === "inline" ? "hidden" : undefined}>
       <div className={`text-[11px] font-medium uppercase tracking-wider ${dark ? "text-accent-soft" : "text-accent"}`}>
         {t.subEyebrow}
       </div>

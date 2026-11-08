@@ -259,15 +259,15 @@ export default function ArticleContent({
               </a>
             </nav>
             {otherLangs.length > 0 && (
-              <div className="flex items-center gap-2">
-                <span>{t.alsoIn}</span>
+              <div className="-mx-6 flex max-w-[100vw] items-center gap-2 overflow-x-auto px-6 pb-1 [scrollbar-width:none] md:mx-0 md:max-w-none md:px-0">
+                <span className="shrink-0">{t.alsoIn}</span>
                 {otherLangs.map((l) => (
                   <a
                     key={l}
                     href={articlePath(article.slug, l)}
                     hrefLang={l}
                     lang={l}
-                    className="rounded-md border border-ink/10 px-3 py-1 font-medium text-ink hover:border-accent hover:text-accent transition-colors"
+                    className="shrink-0 rounded-md border border-ink/10 px-3 py-1 font-medium text-ink hover:border-accent hover:text-accent transition-colors"
                   >
                     {localeLabels[l].full}
                   </a>
@@ -379,10 +379,30 @@ export default function ArticleContent({
           </aside>
         )}
 
-        {/* Subscribe, at the moment the reader has finished */}
-        <div className="mt-12">
-          <SubscribeForm locale={locale} source={path} />
-        </div>
+        {/* Promised follow-up, with the signup right under it */}
+        {article.comingNext && (
+          <aside className="mt-12 overflow-hidden rounded-2xl border border-ink/10 bg-ink text-paper">
+            <div className="px-7 pt-7 md:px-9 md:pt-9">
+              <div className="flex flex-wrap items-center gap-x-4 gap-y-2 text-[11px] font-medium uppercase tracking-wider">
+                <span className="text-accent-soft">{t.comingNext}</span>
+                <span className="text-paper/45">{article.comingNext.when}</span>
+              </div>
+              <h2 className="mt-3 font-display text-2xl font-semibold leading-snug md:text-3xl text-balance">
+                {article.comingNext.title}
+              </h2>
+              <p className="mt-3 max-w-2xl text-[16px] leading-relaxed text-paper/75">{article.comingNext.blurb}</p>
+              <p className="mt-5 text-[15px] font-medium text-paper">{t.comingNextCta}</p>
+            </div>
+            <div className="px-7 pb-7 pt-1 md:px-9 md:pb-9 [&_form]:mt-3 [&_p[role=status]]:mt-3">
+              <SubscribeForm locale={locale} source={`${path}#coming-next`} variant="inline" />
+            </div>
+          </aside>
+        )}
+        {!article.comingNext && (
+          <div className="mt-12">
+            <SubscribeForm locale={locale} source={path} />
+          </div>
+        )}
 
         {/* End-of-piece share prompt */}
         <div className="mt-6 rounded-2xl border border-ink/10 px-7 py-7">

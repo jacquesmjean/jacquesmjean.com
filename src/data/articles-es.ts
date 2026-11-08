@@ -23,6 +23,12 @@ export const handshakeEs: ArticleTranslation = {
     "Oligui Nguema Xi Jinping",
   ],
   heroCaption: "Pekín, noviembre de 2026.",
+  comingNext: {
+    title: "Cómo se nos escaparon tres acuerdos firmados",
+    blurb:
+      "La historia desde dentro de los memorandos con Gabón: qué pasó después de la ceremonia de firma, dónde desapareció nuestro propio lado, cómo los aranceles y la política hicieron el resto, y qué haría distinto como fundador.",
+    when: "Próximamente en noviembre",
+  },
   sections: [
     {
       heading: "El contrato empieza en la puerta",
