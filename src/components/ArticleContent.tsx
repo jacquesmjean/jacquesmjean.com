@@ -285,7 +285,7 @@ export default function ArticleContent({
           <div className="mt-10 flex flex-wrap items-center justify-between gap-x-6 gap-y-5 border-t border-ink/10 pt-6">
             <div className="flex items-center gap-4">
               <img
-                src="/images/headshot.png"
+                src="/images/headshot-linkedin.jpg"
                 alt="Jacques M. Jean"
                 width={48}
                 height={48}
@@ -437,7 +437,7 @@ export default function ArticleContent({
         <div className="mx-auto max-w-3xl px-6 py-16 md:py-20">
           <div className="flex flex-col gap-8 rounded-2xl border border-ink/10 bg-paper-warm p-8 md:flex-row md:items-center md:p-10">
             <img
-              src="/images/headshot.png"
+              src="/images/headshot-linkedin.jpg"
               alt="Jacques M. Jean"
               width={112}
               height={112}
