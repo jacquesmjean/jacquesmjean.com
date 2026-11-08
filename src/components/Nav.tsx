@@ -47,6 +47,31 @@ export default function Nav({
           >
             {messages.getInTouch}
           </a>
+          {/* Mobile menu: works without JavaScript */}
+          <details className="group relative md:hidden">
+            <summary
+              aria-label="Menu"
+              className="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-full border border-ink/10 text-ink hover:border-accent hover:text-accent transition-colors [&::-webkit-details-marker]:hidden"
+            >
+              <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden className="group-open:hidden">
+                <path d="M2 5h14M2 9h14M2 13h14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+              </svg>
+              <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden className="hidden group-open:block">
+                <path d="M4 4l10 10M14 4L4 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
+              </svg>
+            </summary>
+            <nav className="absolute right-0 top-12 w-60 rounded-2xl border border-ink/10 bg-paper p-2 shadow-[0_30px_60px_-30px_rgba(20,18,15,0.35)]">
+              {links.map((l) => (
+                <a
+                  key={l.href}
+                  href={l.href}
+                  className="block rounded-xl px-4 py-3 text-[15px] text-ink hover:bg-paper-warm hover:text-accent transition-colors"
+                >
+                  {l.label}
+                </a>
+              ))}
+            </nav>
+          </details>
         </div>
       </div>
     </header>
