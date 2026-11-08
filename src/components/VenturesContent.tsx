@@ -16,7 +16,7 @@ export default function VenturesContent({ locale }: { locale: Locale }) {
   ];
 
   return (
-    <main lang={locale} className="min-h-screen bg-paper text-ink">
+    <main id="main" lang={locale} className="min-h-screen bg-paper text-ink">
       <Nav locale={locale} messages={m.nav} />
       <PageHeader eyebrow={v.eyebrow} title={v.headline} intro={v.intro} />
       <TechFidesSpotlight messages={m.techFides} />

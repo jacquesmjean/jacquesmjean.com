@@ -2,9 +2,37 @@ import type { Messages } from "@/i18n";
 
 export default function Story({
   messages,
+  compact = false,
+  moreHref,
+  moreLabel,
 }: {
   messages: Messages["story"];
+  /** Homepage teaser: the opening only, with a link to the full story page. */
+  compact?: boolean;
+  moreHref?: string;
+  moreLabel?: string;
 }) {
+  if (compact) {
+    return (
+      <section id="story" className="border-t border-ink/5 bg-paper-warm scroll-mt-24">
+        <div className="mx-auto max-w-3xl px-6 py-20 md:py-28">
+          <div className="mb-4 text-xs font-medium uppercase tracking-wider text-accent">{messages.eyebrow}</div>
+          <p className="font-display text-3xl font-medium leading-snug text-ink md:text-4xl text-balance">
+            {messages.pullquote}
+          </p>
+          <p className="mt-6 text-lg leading-relaxed text-ink-soft">{messages.para1}</p>
+          {moreHref && (
+            <a
+              href={moreHref}
+              className="mt-8 inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-2.5 text-sm font-medium text-ink hover:border-accent hover:text-accent transition-colors"
+            >
+              {moreLabel} <span aria-hidden>→</span>
+            </a>
+          )}
+        </div>
+      </section>
+    );
+  }
   return (
     <section id="story" className="border-t border-ink/5 bg-paper-warm scroll-mt-24">
       <div className="mx-auto max-w-3xl px-6 py-24 md:py-32">

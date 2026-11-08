@@ -64,9 +64,9 @@ const es: Messages = {
       },
       {
         label: "Los consejos",
-        title: "OVYNA · ABC Gabon · MUSA",
+        title: "OVYNA · ABC Gabon",
         role: "Roles de gobernanza",
-        body: "Presidente del Consejo de OVYNA. Copresidente Fundador del American Business Council Gabon, construyendo puentes comerciales entre EE. UU. y Gabón. Presidente del Consejo de MUSA Asset Management.",
+        body: "Presidente del Consejo de OVYNA. Copresidente Fundador del American Business Council Gabon, construyendo puentes comerciales entre EE. UU. y Gabón.",
         linkLabel: "Consultas de consejos",
       },
     ],

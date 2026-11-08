@@ -1,9 +1,8 @@
 import ArticleContent from "@/components/ArticleContent";
 import { articles, getArticle } from "@/data/articles";
+import { articleMetadata } from "@/lib/articleMeta";
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
-
-const SITE = "https://jacquesmjean.com";
 
 export function generateStaticParams() {
   return articles.map((a) => ({ slug: a.slug }));
@@ -18,32 +17,7 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { slug } = await params;
   const article = getArticle(slug);
-  if (!article) return {};
-  const url = `${SITE}/perspectives/${article.slug}`;
-  return {
-    title: article.metaTitle,
-    description: article.metaDescription,
-    keywords: article.keywords,
-    authors: [{ name: "Jacques M. Jean", url: SITE }],
-    alternates: { canonical: url },
-    openGraph: {
-      title: article.title,
-      description: article.metaDescription,
-      url,
-      siteName: "Jacques M. Jean",
-      locale: "en_US",
-      type: "article",
-      publishedTime: article.datePublished,
-      authors: ["Jacques M. Jean"],
-      images: [{ url: article.ogImage, width: 1200, height: 630 }],
-    },
-    twitter: {
-      card: "summary_large_image",
-      title: article.title,
-      description: article.metaDescription,
-      images: [article.ogImage],
-    },
-  };
+  return article ? articleMetadata(article, "en") : {};
 }
 
 export default async function ArticlePage({
@@ -54,5 +28,5 @@ export default async function ArticlePage({
   const { slug } = await params;
   const article = getArticle(slug);
   if (!article) notFound();
-  return <ArticleContent article={article} />;
+  return <ArticleContent article={article} locale="en" />;
 }

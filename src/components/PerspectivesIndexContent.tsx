@@ -1,7 +1,7 @@
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
-import { articles } from "@/data/articles";
+import { articleLocales, articles, localizeArticle } from "@/data/articles";
 import { getMessages, type Locale } from "@/i18n";
 
 const EXTERNAL_POST_HREFS = [
@@ -12,14 +12,19 @@ const EXTERNAL_POST_HREFS = [
 export default function PerspectivesIndexContent({ locale }: { locale: Locale }) {
   const m = getMessages(locale);
   const p = m.perspectives;
-  const [featured, ...more] = articles;
-  // Articles are published in English at /perspectives/<slug>/.
-  const articleHref = (slug: string) => `/perspectives/${slug}/`;
+  const [featured, ...more] = articles.map((a) => localizeArticle(a, locale));
+  // English editions live at /perspectives/<slug>/; translations at /<locale>/perspectives/<slug>/.
+  const articleHref = (slug: string) => {
+    const a = articles.find((x) => x.slug === slug);
+    return a && locale !== "en" && articleLocales(a).includes(locale)
+      ? `/${locale}/perspectives/${slug}/`
+      : `/perspectives/${slug}/`;
+  };
   // Message posts: index 0 mirrors the featured article; 1+ are external dispatches.
   const externalPosts = p.posts.slice(1);
 
   return (
-    <main lang={locale} className="min-h-screen bg-paper text-ink">
+    <main id="main" lang={locale} className="min-h-screen bg-paper text-ink">
       <Nav locale={locale} messages={m.nav} />
       <PageHeader eyebrow={p.eyebrow} title={p.headline} intro={p.subhead} />
 

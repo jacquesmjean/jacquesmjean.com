@@ -1,6 +1,6 @@
 import type { MetadataRoute } from "next";
 import { locales, localeHref } from "@/i18n";
-import { articles } from "@/data/articles";
+import { articleLocales, articles } from "@/data/articles";
 
 export const dynamic = "force-static";
 
@@ -52,12 +52,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
       }))
   );
 
-  const articlePages: MetadataRoute.Sitemap = articles.map((a) => ({
-    url: `${baseUrl}/perspectives/${a.slug}/`,
-    lastModified: new Date(a.dateModified ?? a.datePublished),
-    priority: 0.8,
-    images: [`${baseUrl}${a.ogImage}`, ...(a.hero ? [`${baseUrl}${a.hero.src}`] : [])],
-  }));
+  const articlePath = (slug: string, l: string) =>
+    l === "en" ? `${baseUrl}/perspectives/${slug}/` : `${baseUrl}/${l}/perspectives/${slug}/`;
+  const articlePages: MetadataRoute.Sitemap = articles.flatMap((a) =>
+    articleLocales(a).map((l) => ({
+      url: articlePath(a.slug, l),
+      lastModified: new Date(a.dateModified ?? a.datePublished),
+      priority: l === "en" ? 0.8 : 0.7,
+      images: [`${baseUrl}${a.ogImage}`, ...(a.hero ? [`${baseUrl}${a.hero.src}`] : [])],
+      alternates: {
+        languages: Object.fromEntries(articleLocales(a).map((x) => [x, articlePath(a.slug, x)])),
+      },
+    }))
+  );
 
   return [...home, ...speaking, ...localizedPages, ...articlePages];
 }

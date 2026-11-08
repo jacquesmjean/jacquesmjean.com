@@ -1,22 +1,36 @@
 import Link from "next/link";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
-import Comments from "@/components/Comments";
+import ReaderResponses from "@/components/ReaderResponses";
 import ShareArticle from "@/components/ShareArticle";
-import { getMessages } from "@/i18n";
+import SubscribeForm from "@/components/SubscribeForm";
+import { getMessages, localeLabels, type Locale } from "@/i18n";
 import {
+  articleLocales,
   getArticle,
   getFollowUps,
   getReadNext,
+  localizeArticle,
   type Article,
   type ArticleFigure,
 } from "@/data/articles";
+import { readerUi } from "@/lib/readers";
 import type { ReactNode } from "react";
 
 const SITE = "https://jacquesmjean.com";
 
 const linkClass =
   "font-medium text-ink underline decoration-accent/50 decoration-1 underline-offset-4 hover:text-accent hover:decoration-accent transition-colors";
+
+/** Path of an article in a given language. English lives at the root. */
+export function articlePath(slug: string, locale: Locale = "en"): string {
+  return locale === "en" ? `/perspectives/${slug}/` : `/${locale}/perspectives/${slug}/`;
+}
+
+/** Path of the Perspectives index in a given language. */
+function indexPath(locale: Locale): string {
+  return locale === "en" ? "/perspectives/" : `/${locale}/perspectives/`;
+}
 
 /** Renders **bold** and [text](url) inline markup. */
 function renderInline(text: string): ReactNode[] {
@@ -53,7 +67,15 @@ function renderInline(text: string): ReactNode[] {
   return out;
 }
 
-function Figure({ figure, priority = false }: { figure: ArticleFigure; priority?: boolean }) {
+function Figure({
+  figure,
+  photoLabel,
+  priority = false,
+}: {
+  figure: ArticleFigure;
+  photoLabel: string;
+  priority?: boolean;
+}) {
   return (
     <figure className="my-12">
       <img
@@ -70,7 +92,9 @@ function Figure({ figure, priority = false }: { figure: ArticleFigure; priority?
         <figcaption className="mt-4 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 text-[13px] leading-relaxed text-ink-muted">
           {figure.caption && <span className="text-ink-soft">{figure.caption}</span>}
           {figure.credit && (
-            <span className="text-[11px] uppercase tracking-wider">Photo: {figure.credit}</span>
+            <span className="text-[11px] uppercase tracking-wider">
+              {photoLabel}: {figure.credit}
+            </span>
           )}
         </figcaption>
       )}
@@ -78,10 +102,10 @@ function Figure({ figure, priority = false }: { figure: ArticleFigure; priority?
   );
 }
 
-function ArticleCard({ article, label }: { article: Article; label: string }) {
+function ArticleCard({ article, href, readLabel }: { article: Article; href: string; readLabel: string }) {
   return (
     <a
-      href={`/perspectives/${article.slug}/`}
+      href={href}
       className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-paper transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_20px_40px_-20px_rgba(184,71,45,0.18)]"
     >
       <img
@@ -95,14 +119,14 @@ function ArticleCard({ article, label }: { article: Article; label: string }) {
       />
       <div className="flex flex-1 flex-col p-6">
         <div className="text-[10px] font-medium uppercase tracking-wider text-accent">
-          {label} · {article.dateDisplay}
+          {article.tag} · {article.dateDisplay}
         </div>
         <h3 className="mt-3 font-display text-xl font-medium leading-snug text-ink group-hover:text-accent transition-colors">
           {article.title}
         </h3>
         <p className="mt-3 flex-1 text-[15px] leading-relaxed text-ink-soft">{article.summary}</p>
         <div className="mt-5 text-sm font-medium text-ink">
-          Read · {article.readTime}{" "}
+          {readLabel} · {article.readTime}{" "}
           <span aria-hidden className="inline-block transition-transform group-hover:translate-x-0.5">
             →
           </span>
@@ -112,12 +136,30 @@ function ArticleCard({ article, label }: { article: Article; label: string }) {
   );
 }
 
-export default function ArticleContent({ article }: { article: Article }) {
-  const m = getMessages("en");
-  const pageUrl = `${SITE}/perspectives/${article.slug}/`;
-  const continues = article.continues ? getArticle(article.continues) : undefined;
-  const followUps = getFollowUps(article.slug);
-  const readNext = getReadNext(article.slug);
+/** Link target for another article: same language if it exists, otherwise English. */
+function relatedHref(a: Article, locale: Locale): string {
+  return articleLocales(a).includes(locale) ? articlePath(a.slug, locale) : articlePath(a.slug);
+}
+
+export default function ArticleContent({
+  article: base,
+  locale = "en",
+}: {
+  article: Article;
+  locale?: Locale;
+}) {
+  const article = localizeArticle(base, locale);
+  const m = getMessages(locale);
+  const t = readerUi(locale);
+  const path = articlePath(article.slug, locale);
+  const pageUrl = `${SITE}${path}`;
+  const langs = articleLocales(base);
+  const otherLangs = langs.filter((l) => l !== locale);
+
+  const continuesBase = article.continues ? getArticle(article.continues) : undefined;
+  const continues = continuesBase && localizeArticle(continuesBase, locale);
+  const followUps = getFollowUps(article.slug).map((a) => localizeArticle(a, locale));
+  const readNext = getReadNext(article.slug).map((a) => localizeArticle(a, locale));
 
   const articleLd = {
     "@context": "https://schema.org",
@@ -127,7 +169,7 @@ export default function ArticleContent({ article }: { article: Article }) {
     description: article.metaDescription,
     datePublished: article.datePublished,
     dateModified: article.dateModified ?? article.datePublished,
-    inLanguage: "en",
+    inLanguage: locale,
     url: pageUrl,
     mainEntityOfPage: pageUrl,
     image: [
@@ -152,9 +194,8 @@ export default function ArticleContent({ article }: { article: Article }) {
     },
     publisher: { "@type": "Person", "@id": `${SITE}/#jacques` },
     isPartOf: { "@id": `${SITE}/#website` },
-    ...(continues
-      ? { isBasedOn: `${SITE}/perspectives/${continues.slug}/` }
-      : {}),
+    ...(locale !== "en" ? { translationOfWork: { "@id": `${SITE}${articlePath(article.slug)}#article` } } : {}),
+    ...(continues ? { isBasedOn: `${SITE}${articlePath(continues.slug)}` } : {}),
     ...(article.sources?.some((s) => s.url)
       ? { citation: article.sources.filter((s) => s.url).map((s) => s.url) }
       : {}),
@@ -164,6 +205,7 @@ export default function ArticleContent({ article }: { article: Article }) {
     "@context": "https://schema.org",
     "@type": "FAQPage",
     "@id": `${pageUrl}#faq`,
+    inLanguage: locale,
     mainEntity: article.faq.map((f) => ({
       "@type": "Question",
       name: f.q,
@@ -175,34 +217,56 @@ export default function ArticleContent({ article }: { article: Article }) {
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: "Home", item: `${SITE}/` },
-      { "@type": "ListItem", position: 2, name: "Perspectives", item: `${SITE}/perspectives/` },
+      { "@type": "ListItem", position: 1, name: t.home, item: `${SITE}${locale === "en" ? "/" : `/${locale}`}` },
+      { "@type": "ListItem", position: 2, name: t.perspectives, item: `${SITE}${indexPath(locale)}` },
       { "@type": "ListItem", position: 3, name: article.title, item: pageUrl },
     ],
   };
 
+  const alternates = Object.fromEntries(langs.map((l) => [l, articlePath(article.slug, l)])) as Partial<
+    Record<Locale, string>
+  >;
+
   return (
-    <main lang="en" className="min-h-screen bg-paper text-ink">
+    <main id="main" lang={locale} className="min-h-screen bg-paper text-ink">
       {[articleLd, faqLd, breadcrumbLd].map((ld, i) => (
-        <script
-          key={i}
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }}
-        />
+        <script key={i} type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(ld) }} />
       ))}
-      <Nav locale="en" messages={m.nav} />
+      <Nav locale={locale} messages={m.nav} alternates={alternates} />
 
       {/* Header */}
       <section className={article.hero ? "" : "border-b border-ink/5"}>
         <div className="mx-auto max-w-3xl px-6 pt-12 pb-12 md:pt-20 md:pb-14">
-          <nav aria-label="Breadcrumb" className="mb-8 text-[13px] text-ink-muted">
-            <Link href="/" className="hover:text-accent transition-colors">Home</Link>
-            <span aria-hidden className="mx-2">/</span>
-            <Link href="/perspectives/" className="hover:text-accent transition-colors">Perspectives</Link>
-          </nav>
-          <div className="mb-5 text-xs font-medium uppercase tracking-wider text-accent">
-            {article.eyebrow}
+          <div className="mb-8 flex flex-wrap items-center justify-between gap-4 text-[13px] text-ink-muted">
+            <nav aria-label="Breadcrumb">
+              <a href={locale === "en" ? "/" : `/${locale}`} className="hover:text-accent transition-colors">
+                {t.home}
+              </a>
+              <span aria-hidden className="mx-2">
+                /
+              </span>
+              <a href={indexPath(locale)} className="hover:text-accent transition-colors">
+                {t.perspectives}
+              </a>
+            </nav>
+            {otherLangs.length > 0 && (
+              <div className="flex items-center gap-2">
+                <span>{t.alsoIn}</span>
+                {otherLangs.map((l) => (
+                  <a
+                    key={l}
+                    href={articlePath(article.slug, l)}
+                    hrefLang={l}
+                    lang={l}
+                    className="rounded-full border border-ink/10 px-3 py-1 font-medium text-ink hover:border-accent hover:text-accent transition-colors"
+                  >
+                    {localeLabels[l].full}
+                  </a>
+                ))}
+              </div>
+            )}
           </div>
+          <div className="mb-5 text-xs font-medium uppercase tracking-wider text-accent">{article.eyebrow}</div>
           <h1 className="font-display text-4xl font-medium leading-[1.08] tracking-tightish text-ink md:text-6xl text-balance">
             {article.title}
           </h1>
@@ -221,12 +285,11 @@ export default function ArticleContent({ article }: { article: Article }) {
               <div className="text-sm">
                 <div className="font-medium text-ink">Jacques M. Jean</div>
                 <div className="text-ink-muted">
-                  <time dateTime={article.datePublished}>{article.dateDisplay}</time> ·{" "}
-                  {article.readTime}
+                  <time dateTime={article.datePublished}>{article.dateDisplay}</time> · {article.readTime}
                 </div>
               </div>
             </div>
-            <ShareArticle url={pageUrl} title={article.title} />
+            <ShareArticle url={pageUrl} title={article.title} locale={locale} />
           </div>
         </div>
       </section>
@@ -234,7 +297,7 @@ export default function ArticleContent({ article }: { article: Article }) {
       {/* Lead photo, wider than the text column for impact */}
       {article.hero && (
         <div className="mx-auto max-w-5xl px-6 [&_figure]:my-0">
-          <Figure figure={article.hero} priority />
+          <Figure figure={article.hero} photoLabel={t.photo} priority />
         </div>
       )}
 
@@ -242,11 +305,9 @@ export default function ArticleContent({ article }: { article: Article }) {
       <article className="mx-auto max-w-3xl px-6 py-16 md:py-20">
         {continues && (
           <aside className="mb-12 rounded-2xl border border-ink/10 bg-paper-warm px-6 py-5 text-[15px] leading-relaxed text-ink-soft">
-            <span className="mr-2 text-[11px] font-medium uppercase tracking-wider text-accent">
-              Follow up
-            </span>
-            This piece continues{" "}
-            <a href={`/perspectives/${continues.slug}/`} className={linkClass}>
+            <span className="mr-2 text-[11px] font-medium uppercase tracking-wider text-accent">{t.followUpBadge}</span>
+            {t.continues}{" "}
+            <a href={relatedHref(continues, locale)} className={linkClass}>
               {continues.title}
             </a>
           </aside>
@@ -284,7 +345,7 @@ export default function ArticleContent({ article }: { article: Article }) {
                 {s.pullQuote}
               </blockquote>
             )}
-            {s.figure && <Figure figure={s.figure} />}
+            {s.figure && <Figure figure={s.figure} photoLabel={t.photo} />}
           </section>
         ))}
 
@@ -293,39 +354,37 @@ export default function ArticleContent({ article }: { article: Article }) {
 
         {followUps.length > 0 && (
           <aside className="mt-12 rounded-2xl border border-accent/30 bg-paper-warm px-7 py-6">
-            <div className="mb-2 text-[11px] font-medium uppercase tracking-wider text-accent">
-              The follow up
-            </div>
+            <div className="mb-2 text-[11px] font-medium uppercase tracking-wider text-accent">{t.followUpTitle}</div>
             {followUps.map((f) => (
               <a
                 key={f.slug}
-                href={`/perspectives/${f.slug}/`}
+                href={relatedHref(f, locale)}
                 className="group block font-display text-xl font-medium leading-snug text-ink hover:text-accent transition-colors"
               >
                 {f.title}{" "}
-                <span aria-hidden className="inline-block transition-transform group-hover:translate-x-0.5">→</span>
+                <span aria-hidden className="inline-block transition-transform group-hover:translate-x-0.5">
+                  →
+                </span>
               </a>
             ))}
           </aside>
         )}
 
+        {/* Subscribe, at the moment the reader has finished */}
+        <div className="mt-12">
+          <SubscribeForm locale={locale} source={path} />
+        </div>
+
         {/* End-of-piece share prompt */}
-        <div className="mt-12 rounded-2xl border border-ink/10 bg-paper-warm px-7 py-7">
-          <div className="mb-4 text-[11px] font-medium uppercase tracking-wider text-accent">
-            Pass it on
-          </div>
-          <p className="mb-5 max-w-xl text-[15px] leading-relaxed text-ink-soft">
-            If this piece sharpened a thought for you, send it to someone who&rsquo;d
-            benefit from the same sharpening.
-          </p>
-          <ShareArticle url={pageUrl} title={article.title} />
+        <div className="mt-6 rounded-2xl border border-ink/10 px-7 py-7">
+          <div className="mb-4 text-[11px] font-medium uppercase tracking-wider text-accent">{t.passItOn}</div>
+          <p className="mb-5 max-w-xl text-[15px] leading-relaxed text-ink-soft">{t.passItOnBody}</p>
+          <ShareArticle url={pageUrl} title={article.title} locale={locale} />
         </div>
 
         {article.sources && article.sources.length > 0 && (
           <div className="mt-14">
-            <div className="mb-4 text-[11px] font-medium uppercase tracking-wider text-ink-muted">
-              Sources
-            </div>
+            <div className="mb-4 text-[11px] font-medium uppercase tracking-wider text-ink-muted">{t.sources}</div>
             <ol className="space-y-2 text-[14px] leading-relaxed text-ink-muted">
               {article.sources.map((src, i) => (
                 <li key={i} className="flex gap-3">
@@ -352,9 +411,7 @@ export default function ArticleContent({ article }: { article: Article }) {
       {/* FAQ */}
       <section className="border-t border-ink/5 bg-paper-warm/40">
         <div className="mx-auto max-w-3xl px-6 py-16 md:py-20">
-          <div className="mb-4 text-xs font-medium uppercase tracking-wider text-accent">
-            Questions this piece answers
-          </div>
+          <div className="mb-4 text-xs font-medium uppercase tracking-wider text-accent">{t.questions}</div>
           <div className="mt-8 space-y-5">
             {article.faq.map((f) => (
               <div key={f.q} className="rounded-2xl border border-ink/10 bg-paper p-7">
@@ -381,22 +438,22 @@ export default function ArticleContent({ article }: { article: Article }) {
             <div>
               <div className="font-display text-2xl font-medium text-ink">Jacques M. Jean</div>
               <p className="mt-3 text-[15px] leading-relaxed text-ink-soft">
-                Haitian-born American founder and technologist. 25 years of enterprise
-                technology at Honeywell, Invensys, and Schneider Electric, with projects
-                delivered in 15 countries. CEO of{" "}
+                {t.bio}{" "}
+                {locale === "fr" ? "PDG de " : "CEO of "}
                 <a href="https://techfides.com" className={linkClass}>
                   TechFides
                 </a>
-                , Founding Co-Chair of the American Business Council Gabon, and Founder &amp;
-                Chair of{" "}
+                {locale === "fr"
+                  ? ", coprésident fondateur de l’American Business Council Gabon, fondateur et président de "
+                  : ", Founding Co-Chair of the American Business Council Gabon, and Founder & Chair of "}
                 <a href="https://levoila.org" className={linkClass}>
                   Levoila
                 </a>
                 .
               </p>
               <div className="mt-5 flex flex-wrap gap-4 text-sm font-medium">
-                <Link href="/speaking/" className="text-ink hover:text-accent transition-colors">
-                  Speaking →
+                <Link href={locale === "en" ? "/speaking/" : `/${locale}/speaking/`} className="text-ink hover:text-accent transition-colors">
+                  {t.speaking} →
                 </Link>
                 <a
                   href="https://www.linkedin.com/in/jacques-m-jean/"
@@ -404,11 +461,11 @@ export default function ArticleContent({ article }: { article: Article }) {
                   rel="noopener"
                   className="text-ink hover:text-accent transition-colors"
                 >
-                  Follow on LinkedIn →
+                  {t.followLinkedIn} →
                 </a>
-                <Link href="/perspectives/" className="text-ink hover:text-accent transition-colors">
-                  All perspectives →
-                </Link>
+                <a href={indexPath(locale)} className="text-ink hover:text-accent transition-colors">
+                  {t.allPerspectives} →
+                </a>
               </div>
             </div>
           </div>
@@ -420,29 +477,23 @@ export default function ArticleContent({ article }: { article: Article }) {
         <section className="border-t border-ink/5 bg-paper-warm/40">
           <div className="mx-auto max-w-5xl px-6 py-16 md:py-20">
             <div className="flex items-end justify-between gap-6">
-              <h2 className="font-display text-3xl font-medium tracking-tightish text-ink">
-                Keep reading
-              </h2>
-              <Link
-                href="/perspectives/"
-                className="text-sm font-medium text-ink hover:text-accent transition-colors"
-              >
-                All perspectives →
-              </Link>
+              <h2 className="font-display text-3xl font-medium tracking-tightish text-ink">{t.keepReading}</h2>
+              <a href={indexPath(locale)} className="text-sm font-medium text-ink hover:text-accent transition-colors">
+                {t.allPerspectives} →
+              </a>
             </div>
             <div className="mt-8 grid gap-6 md:grid-cols-2">
               {readNext.map((a) => (
-                <ArticleCard key={a.slug} article={a} label={a.tag} />
+                <ArticleCard key={a.slug} article={a} href={relatedHref(a, locale)} readLabel={t.read} />
               ))}
             </div>
           </div>
         </section>
       )}
 
-      {/* Comments */}
-      <Comments slug={article.slug} locale="en" />
+      <ReaderResponses slug={article.slug} locale={locale} />
 
-      <Footer messages={m.footer} locale="en" nav={m.nav} />
+      <Footer messages={m.footer} locale={locale} nav={m.nav} showSubscribe={false} />
     </main>
   );
 }

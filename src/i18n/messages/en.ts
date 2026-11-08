@@ -63,9 +63,9 @@ const en: Messages = {
       },
       {
         label: "The Boards",
-        title: "OVYNA · ABC Gabon · MUSA",
+        title: "OVYNA · ABC Gabon",
         role: "Governance roles",
-        body: "Board Chair at OVYNA. Co-Chair (Founding) of the American Business Council Gabon, building U.S.–Gabon commercial bridges. Board Chair of MUSA Asset Management.",
+        body: "Board Chair at OVYNA. Co-Chair (Founding) of the American Business Council Gabon, building U.S.–Gabon commercial bridges.",
         linkLabel: "Board inquiries",
       },
     ],

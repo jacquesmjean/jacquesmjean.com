@@ -1,3 +1,6 @@
+import type { Locale } from "@/i18n/locales";
+import { handshakeFr } from "./articles-fr";
+
 export interface ArticleFigure {
   src: string;
   alt: string;
@@ -28,6 +31,23 @@ export interface ArticleSource {
   url?: string;
 }
 
+/** A translated edition. Sections line up with the English sections by position. */
+export interface ArticleTranslation {
+  eyebrow: string;
+  tag: string;
+  title: string;
+  metaTitle: string;
+  metaDescription: string;
+  dek: string;
+  summary: string;
+  dateDisplay: string;
+  readTime: string;
+  keywords: string[];
+  heroCaption?: string;
+  sections: (Omit<ArticleSection, "figure"> & { figureCaption?: string })[];
+  faq: ArticleFaqItem[];
+}
+
 export interface Article {
   slug: string;
   eyebrow: string;
@@ -52,6 +72,7 @@ export interface Article {
   sections: ArticleSection[];
   faq: ArticleFaqItem[];
   sources?: ArticleSource[];
+  translations?: Partial<Record<Locale, ArticleTranslation>>;
 }
 
 // Newest first. Inline markup: **bold** and [link text](url).
@@ -90,6 +111,7 @@ export const articles: Article[] = [
       height: 853,
     },
     continues: "world-stopped-waiting-for-the-us-sovereign-ai",
+    translations: { fr: handshakeFr },
     sections: [
       {
         heading: "The deal starts at the door",
@@ -259,6 +281,7 @@ export const articles: Article[] = [
       "Europe is building its exit, Canada is convening the alliances we used to, and China is giving its AI away. A field report from the rooms where the world is choosing its technology partners.",
     dek: "Europe is building its exit. Canada is convening the alliances we used to. China is giving its AI away. A field report from the rooms where the world is choosing its technology partners, and what the next Congress must prove.",
     datePublished: "2026-11-01",
+    dateModified: "2026-11-08",
     dateDisplay: "November 2026",
     readTime: "8 min read",
     keywords: [
@@ -314,7 +337,7 @@ export const articles: Article[] = [
           "Why does the world doubt us? Because before the world judges a country's exports, it judges how that country treats its own people. And on that score, we are telling a story no diplomat can spin.",
           "Start with healthcare. Roughly two out of three personal bankruptcies in the United States involve medical bills. Think about what that means. You can work your whole life in the wealthiest country in history, serve it honestly, and the month you lose your job, one hospital stay can erase everything you built. No other advanced nation does this to its people. The world knows it, because their citizens who studied here went home and told them.",
           "Meanwhile we spend a defense budget approaching a trillion dollars a year, on top of the roughly eight trillion dollars that Brown University's Costs of War project counts for the post-9/11 wars. I am not naive about security. I am saying what every operator knows: resources follow priorities, and our priorities are visible from every capital on earth.",
-          "Education tells the same story. The world used to send us its brightest because our universities were the destination. This year, new international student enrollment dropped roughly 20 percent, and fall enrollment was projected to fall another 10 percent, driven by our own visa policies. We are not being beaten. We are withdrawing. While China rebuilds a third of its university system around AI, we are turning away the people who wanted to build here.",
+          "Education tells the same story. The world used to send us its brightest because our universities were the destination. Last fall, new international student enrollment dropped 17 percent, driven by our own visa policies. We are not being beaten. We are withdrawing. While China rebuilds a third of its university system around AI, we are turning away the people who wanted to build here.",
           "Even our own technology boom is sending a double message. AI is being embraced across every industry, from medicine to manufacturing to law. Yet U.S. tech companies cut nearly 200,000 workers in 2026 while spending record sums on AI infrastructure. The gains are real. The question the world asks is the same one our own workers ask: gains for whom?",
           "Then look at what serious small countries do. Singapore opens a savings account for every newborn and co-funds it, dollar for dollar, so every child starts life with assets, while its healthcare system keeps its people out of bankruptcy. A city-state of six million understands something a superpower has forgotten: taking care of your existing generation while investing in the next one is not welfare. It is strategy. It is the most convincing export a nation has.",
           "Something has to change. Not because it is charitable, but because credibility begins at home. A country where a hospital bill can bankrupt a working family cannot lecture the world about trust.",
@@ -330,6 +353,48 @@ export const articles: Article[] = [
           "I am an immigrant. I chose this country on the bet that it can. I built my company here on the same conviction I offer my clients: own your technology, keep your data, control your future. That is what sovereignty means for a business, and it is what leadership means for a nation.",
           "The world stopped waiting for the United States. It has not stopped watching, yet. The next two years decide whether it ever looks back.",
         ],
+      },
+    ],
+    sources: [
+      {
+        label: "Semafor: trust in tech companies dropped globally in 2026 (Edelman Trust Barometer)",
+        url: "https://semafor.com/article/02/11/2026/trust-in-tech-companies-dropped-globally-in-2026-report",
+      },
+      {
+        label: "European Parliament resolution of 22 January 2026 on technological sovereignty and digital infrastructure",
+        url: "https://data.europarl.europa.eu/distribution/doc/TA-10-2026-0022_en.pdf",
+      },
+      {
+        label: "Gartner: geopolitics will drive 61% of Western European CIOs to rely more on local cloud providers",
+        url: "https://www.gartner.com/en/newsroom/press-releases/2025-11-12-gartner-survey-reveals-geopolitics-will-drive-61-percent-of-cios-and-information-technology-leaders-in-western-europe-to-increase-reliance-on-local-cloud-providers",
+      },
+      {
+        label: "Government of Canada: Canada and Germany sign AI joint declaration and launch the Sovereign Technology Alliance",
+        url: "https://www.canada.ca/en/innovation-science-economic-development/news/2026/02/canada-and-germany-sign-ai-joint-declaration-and-launch-sovereign-technology-alliance.html",
+      },
+      {
+        label: "South China Morning Post: China's universities cut 12,000 obsolete degrees in the race to embrace AI",
+        url: "https://scmp.com/economy/china-economy/article/3356913/chinas-universities-cut-12000-obsolete-degrees-amid-race-embrace-ai-era",
+      },
+      {
+        label: "Al Jazeera: Brazil launches AI supercomputer push while balancing U.S. and Chinese tech",
+        url: "https://www.aljazeera.com/economy/2026/8/21/brazil-launches-ai-supercomputer-push-while-balancing-us-and-chinese-tech",
+      },
+      {
+        label: "Becker's Hospital Review: medical debt a factor in two-thirds of bankruptcies (American Journal of Public Health)",
+        url: "https://www.beckershospitalreview.com/finance/medical-debt-a-factor-in-two-thirds-of-bankruptcies-in-survey.html",
+      },
+      {
+        label: "Brown University Costs of War project: post-9/11 wars cost more than $8 trillion",
+        url: "https://www.brown.edu/news/2021-09-01/costsofwar",
+      },
+      {
+        label: "NBC News: new international student enrollment fell 17% (Open Doors fall snapshot)",
+        url: "https://www.nbcnews.com/data-graphics/new-international-student-enrollment-fell-sharply-us-trump-immigration-rcna243295",
+      },
+      {
+        label: "TechRepublic: tech layoffs in 2026 affect about 196,000 workers",
+        url: "https://www.techrepublic.com/article/news-tech-layoffs-2026-companies-cutting-jobs/",
       },
     ],
     faq: [
@@ -359,6 +424,38 @@ export const articles: Article[] = [
 
 export function getArticle(slug: string): Article | undefined {
   return articles.find((a) => a.slug === slug);
+}
+
+/** Languages this article is published in (English always). */
+export function articleLocales(a: Article): Locale[] {
+  return ["en", ...(Object.keys(a.translations ?? {}) as Locale[])];
+}
+
+/** The article as it reads in `locale`; falls back to English. */
+export function localizeArticle(a: Article, locale: Locale): Article {
+  const t = locale === "en" ? undefined : a.translations?.[locale];
+  if (!t) return a;
+  return {
+    ...a,
+    eyebrow: t.eyebrow,
+    tag: t.tag,
+    title: t.title,
+    metaTitle: t.metaTitle,
+    metaDescription: t.metaDescription,
+    dek: t.dek,
+    summary: t.summary,
+    dateDisplay: t.dateDisplay,
+    readTime: t.readTime,
+    keywords: t.keywords,
+    hero: a.hero && { ...a.hero, caption: t.heroCaption ?? a.hero.caption },
+    sections: a.sections.map((s, i) => {
+      const ts = t.sections[i];
+      if (!ts) return s;
+      const { figureCaption, ...rest } = ts;
+      return { ...rest, figure: s.figure && { ...s.figure, caption: figureCaption ?? s.figure.caption } };
+    }),
+    faq: t.faq,
+  };
 }
 
 /** Pieces that continue this one (the reverse of `continues`). */
