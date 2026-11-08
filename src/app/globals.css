@@ -1,20 +1,27 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #15171C;
-  --color-ink-soft: #2A2D35;
-  --color-ink-muted: #5C6068;
+  /* Boardroom palette: deep navy on white, gold used sparingly */
+  --color-ink: #0F1E33;
+  --color-ink-soft: #33415A;
+  --color-ink-muted: #5E6B7E;
 
-  --color-paper: #FAF7F2;
-  --color-paper-warm: #F3EEE5;
-  --color-paper-sand: #E8DFD3;
+  --color-paper: #FFFFFF;
+  --color-paper-warm: #F4F6F9;
+  --color-paper-sand: #E3E8EF;
 
-  --color-accent: #B8472D;
-  --color-accent-deep: #8E351F;
-  --color-accent-soft: #D67658;
+  /* Gold. Text-safe on white (#8A6A35 ≈ 5:1); the soft tone is for navy backgrounds. */
+  --color-accent: #8A6A35;
+  --color-accent-deep: #6E5428;
+  --color-accent-soft: #C9A96E;
 
-  --font-display: "Fraunces", Georgia, ui-serif, serif;
+  --font-display: "Inter Tight", "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
   --font-sans: "Inter", ui-sans-serif, system-ui, -apple-system, sans-serif;
+
+  /* Squarer, more corporate corners */
+  --radius-xl: 0.5rem;
+  --radius-2xl: 0.625rem;
+  --radius-3xl: 0.75rem;
 }
 
 html {

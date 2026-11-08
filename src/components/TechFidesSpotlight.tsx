@@ -29,7 +29,7 @@ export default function TechFidesSpotlight({
               href="https://techfides.com"
               target="_blank"
               rel="noreferrer"
-              className="mt-10 inline-flex items-center gap-2 rounded-full bg-ink px-6 py-3 text-sm font-medium text-paper hover:bg-accent transition-colors"
+              className="mt-10 inline-flex items-center gap-2 rounded-md bg-ink px-6 py-3 text-sm font-medium text-paper hover:bg-accent transition-colors"
             >
               {messages.cta} <span aria-hidden>→</span>
             </a>
@@ -56,7 +56,7 @@ export default function TechFidesSpotlight({
               </ul>
             </div>
 
-            <div className="rounded-2xl border border-accent/20 bg-paper p-7 shadow-[0_20px_40px_-20px_rgba(184,71,45,0.25)]">
+            <div className="rounded-2xl border border-accent/20 bg-paper p-7 shadow-[0_20px_40px_-20px_rgba(15,30,51,0.25)]">
               <div className="text-[10px] font-medium uppercase tracking-wider text-accent">
                 {messages.installLabel}
               </div>

@@ -19,7 +19,7 @@ export default function LevoilaSpotlight({
             </div>
             <h2 className="font-display text-4xl font-medium leading-tight tracking-tightish text-paper md:text-5xl">
               {messages.headline1}{" "}
-              <span className="italic text-accent-soft">
+              <span className="text-accent-soft">
                 {messages.headline2Em}
               </span>
             </h2>
@@ -35,7 +35,7 @@ export default function LevoilaSpotlight({
                 href="https://levoila.org"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full bg-accent px-6 py-3 text-sm font-medium text-paper hover:bg-accent-soft transition-colors"
+                className="rounded-md bg-accent px-6 py-3 text-sm font-medium text-paper hover:bg-accent-soft transition-colors"
               >
                 {messages.ctaSteward}
               </a>
@@ -43,7 +43,7 @@ export default function LevoilaSpotlight({
                 href="https://levoila.org"
                 target="_blank"
                 rel="noreferrer"
-                className="rounded-full border border-paper/20 px-6 py-3 text-sm font-medium text-paper hover:border-accent-soft hover:text-accent-soft transition-colors"
+                className="rounded-md border border-paper/20 px-6 py-3 text-sm font-medium text-paper hover:border-accent-soft hover:text-accent-soft transition-colors"
               >
                 {messages.ctaRead} →
               </a>
@@ -80,7 +80,7 @@ export default function LevoilaSpotlight({
                   {messages.countries.map((c) => (
                     <span
                       key={c}
-                      className="rounded-full border border-paper/15 px-3 py-1 text-xs text-paper-warm/80"
+                      className="rounded-md border border-paper/15 px-3 py-1 text-xs text-paper-warm/80"
                     >
                       {c}
                     </span>

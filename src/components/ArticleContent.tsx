@@ -86,7 +86,7 @@ function Figure({
         loading={priority ? "eager" : "lazy"}
         decoding="async"
         {...(priority ? { fetchPriority: "high" as const } : {})}
-        className="w-full rounded-2xl border border-ink/10 object-cover shadow-[0_30px_60px_-40px_rgba(20,18,15,0.45)]"
+        className="w-full rounded-2xl border border-ink/10 object-cover shadow-[0_30px_60px_-40px_rgba(15,30,51,0.45)]"
       />
       {(figure.caption || figure.credit) && (
         <figcaption className="mt-4 flex flex-wrap items-baseline justify-between gap-x-6 gap-y-1 text-[13px] leading-relaxed text-ink-muted">
@@ -106,7 +106,7 @@ function ArticleCard({ article, href, readLabel }: { article: Article; href: str
   return (
     <a
       href={href}
-      className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-paper transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_20px_40px_-20px_rgba(184,71,45,0.18)]"
+      className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-paper transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_20px_40px_-20px_rgba(15,30,51,0.18)]"
     >
       <img
         src={article.ogImage}
@@ -258,7 +258,7 @@ export default function ArticleContent({
                     href={articlePath(article.slug, l)}
                     hrefLang={l}
                     lang={l}
-                    className="rounded-full border border-ink/10 px-3 py-1 font-medium text-ink hover:border-accent hover:text-accent transition-colors"
+                    className="rounded-md border border-ink/10 px-3 py-1 font-medium text-ink hover:border-accent hover:text-accent transition-colors"
                   >
                     {localeLabels[l].full}
                   </a>
@@ -280,7 +280,7 @@ export default function ArticleContent({
                 alt="Jacques M. Jean"
                 width={48}
                 height={48}
-                className="h-12 w-12 rounded-full object-cover"
+                className="h-12 w-12 rounded-md object-cover"
               />
               <div className="text-sm">
                 <div className="font-medium text-ink">Jacques M. Jean</div>
@@ -350,7 +350,7 @@ export default function ArticleContent({
         ))}
 
         {/* Signature rule */}
-        <div className="mt-14 h-1 w-16 rounded-full bg-accent" aria-hidden />
+        <div className="mt-14 h-1 w-16 rounded-md bg-accent" aria-hidden />
 
         {followUps.length > 0 && (
           <aside className="mt-12 rounded-2xl border border-accent/30 bg-paper-warm px-7 py-6">
@@ -433,7 +433,7 @@ export default function ArticleContent({
               width={112}
               height={112}
               loading="lazy"
-              className="h-28 w-28 rounded-2xl object-cover shadow-[0_20px_40px_-20px_rgba(20,18,15,0.35)]"
+              className="h-28 w-28 rounded-2xl object-cover shadow-[0_20px_40px_-20px_rgba(15,30,51,0.35)]"
             />
             <div>
               <div className="font-display text-2xl font-medium text-ink">Jacques M. Jean</div>

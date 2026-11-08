@@ -24,7 +24,7 @@ export default function Story({
           {moreHref && (
             <a
               href={moreHref}
-              className="mt-8 inline-flex items-center gap-2 rounded-full border border-ink/15 px-5 py-2.5 text-sm font-medium text-ink hover:border-accent hover:text-accent transition-colors"
+              className="mt-8 inline-flex items-center gap-2 rounded-md border border-ink/15 px-5 py-2.5 text-sm font-medium text-ink hover:border-accent hover:text-accent transition-colors"
             >
               {moreLabel} <span aria-hidden>→</span>
             </a>

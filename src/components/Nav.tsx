@@ -34,7 +34,7 @@ export default function Nav({
     <>
     <a
       href="#main"
-      className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-ink focus:px-5 focus:py-3 focus:text-sm focus:font-medium focus:text-paper"
+      className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-md focus:bg-ink focus:px-5 focus:py-3 focus:text-sm focus:font-medium focus:text-paper"
     >
       {SKIP[locale]}
     </a>
@@ -61,7 +61,7 @@ export default function Nav({
           <LanguageSwitcher current={locale} label={messages.selectLanguage} alternates={alternates} />
           <a
             href={p("/contact")}
-            className="hidden rounded-full bg-ink px-4 py-2 text-sm font-medium text-paper hover:bg-accent transition-colors sm:inline-block"
+            className="hidden rounded-md bg-ink px-4 py-2 text-sm font-medium text-paper hover:bg-accent transition-colors sm:inline-block"
           >
             {messages.getInTouch}
           </a>
@@ -69,7 +69,7 @@ export default function Nav({
           <details className="group relative md:hidden">
             <summary
               aria-label="Menu"
-              className="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-full border border-ink/10 text-ink hover:border-accent hover:text-accent transition-colors [&::-webkit-details-marker]:hidden"
+              className="flex h-10 w-10 cursor-pointer list-none items-center justify-center rounded-md border border-ink/10 text-ink hover:border-accent hover:text-accent transition-colors [&::-webkit-details-marker]:hidden"
             >
               <svg width="18" height="18" viewBox="0 0 18 18" aria-hidden className="group-open:hidden">
                 <path d="M2 5h14M2 9h14M2 13h14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
@@ -78,7 +78,7 @@ export default function Nav({
                 <path d="M4 4l10 10M14 4L4 14" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" />
               </svg>
             </summary>
-            <nav className="absolute right-0 top-12 w-60 rounded-2xl border border-ink/10 bg-paper p-2 shadow-[0_30px_60px_-30px_rgba(20,18,15,0.35)]">
+            <nav className="absolute right-0 top-12 w-60 rounded-2xl border border-ink/10 bg-paper p-2 shadow-[0_30px_60px_-30px_rgba(15,30,51,0.35)]">
               {links.map((l) => (
                 <a
                   key={l.href}
