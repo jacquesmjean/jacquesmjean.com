@@ -87,7 +87,7 @@ export default function SubscribeForm({
             required
             autoComplete="email"
             placeholder={t.subPlaceholder}
-            className={`min-w-0 flex-1 rounded-full border px-5 py-3 text-[15px] outline-none transition-colors focus:border-accent ${
+            className={`min-w-0 flex-1 rounded-md border px-5 py-3 text-[15px] outline-none transition-colors focus:border-accent ${
               dark
                 ? "border-paper/20 bg-paper/5 text-paper placeholder:text-paper/50"
                 : "border-ink/15 bg-paper text-ink placeholder:text-ink-muted"
@@ -105,7 +105,7 @@ export default function SubscribeForm({
           <button
             type="submit"
             disabled={status === "sending"}
-            className={`rounded-full px-6 py-3 text-[15px] font-medium transition-colors disabled:opacity-60 ${
+            className={`rounded-md px-6 py-3 text-[15px] font-medium transition-colors disabled:opacity-60 ${
               dark ? "bg-paper text-ink hover:bg-accent hover:text-paper" : "bg-ink text-paper hover:bg-accent"
             }`}
           >

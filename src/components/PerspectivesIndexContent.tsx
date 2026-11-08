@@ -40,7 +40,7 @@ export default function PerspectivesIndexContent({ locale }: { locale: Locale })
               alt={featured.title}
               width={1200}
               height={630}
-              className="aspect-[1200/630] w-full rounded-2xl border border-ink/10 object-cover shadow-[0_30px_60px_-40px_rgba(20,18,15,0.4)]"
+              className="aspect-[1200/630] w-full rounded-2xl border border-ink/10 object-cover shadow-[0_30px_60px_-40px_rgba(15,30,51,0.4)]"
             />
             <div>
               <div className="text-[10px] font-medium uppercase tracking-wider text-accent">
@@ -73,7 +73,7 @@ export default function PerspectivesIndexContent({ locale }: { locale: Locale })
                 <a
                   key={a.slug}
                   href={articleHref(a.slug)}
-                  className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-paper transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_20px_40px_-20px_rgba(184,71,45,0.18)]"
+                  className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-paper transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_20px_40px_-20px_rgba(15,30,51,0.18)]"
                 >
                   <img
                     src={a.ogImage}

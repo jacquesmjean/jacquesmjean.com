@@ -162,7 +162,7 @@ export default function ReaderResponses({ slug, locale = "en" }: { slug: string;
               <button
                 type="submit"
                 disabled={status === "sending"}
-                className="rounded-full bg-ink px-6 py-3 text-[15px] font-medium text-paper transition-colors hover:bg-accent disabled:opacity-60"
+                className="rounded-md bg-ink px-6 py-3 text-[15px] font-medium text-paper transition-colors hover:bg-accent disabled:opacity-60"
               >
                 {status === "sending" ? t.resSending : t.resSubmit}
               </button>

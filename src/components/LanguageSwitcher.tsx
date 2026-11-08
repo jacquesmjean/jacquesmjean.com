@@ -14,7 +14,7 @@ export default function LanguageSwitcher({
       <button
         type="button"
         aria-label={label}
-        className="flex items-center gap-1 rounded-full border border-ink/10 bg-paper-warm px-3 py-1.5 text-xs font-medium uppercase tracking-wider text-ink-soft hover:border-accent hover:text-accent transition-colors"
+        className="flex items-center gap-1 rounded-md border border-ink/10 bg-paper-warm px-3 py-1.5 text-xs font-medium uppercase tracking-wider text-ink-soft hover:border-accent hover:text-accent transition-colors"
       >
         <span aria-hidden>🌐</span>
         <span>{localeLabels[current].code}</span>

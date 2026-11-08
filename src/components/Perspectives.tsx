@@ -67,7 +67,7 @@ export default function Perspectives({
               {...(p.href.startsWith("/")
                 ? {}
                 : { target: "_blank", rel: "noreferrer" })}
-              className="group flex flex-col rounded-2xl border border-ink/10 bg-paper-warm p-7 transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_20px_40px_-20px_rgba(184,71,45,0.15)]"
+              className="group flex flex-col rounded-2xl border border-ink/10 bg-paper-warm p-7 transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_20px_40px_-20px_rgba(15,30,51,0.15)]"
             >
               <div className="flex items-center justify-between text-[10px] font-medium uppercase tracking-wider">
                 <span className="text-accent">{p.tag}</span>

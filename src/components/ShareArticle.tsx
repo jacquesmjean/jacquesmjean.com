@@ -77,8 +77,8 @@ export default function ShareArticle({ url, title, locale = "en", tone = "light"
 
   const btnClass =
     tone === "dark"
-      ? "inline-flex items-center gap-2 rounded-full border border-paper/15 px-3 py-1.5 text-sm text-paper/85 hover:border-accent-soft hover:text-accent-soft transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-soft"
-      : "inline-flex items-center gap-2 rounded-full border border-ink/10 bg-paper px-3 py-1.5 text-sm text-ink hover:border-accent/40 hover:text-accent transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
+      ? "inline-flex items-center gap-2 rounded-md border border-paper/15 px-3 py-1.5 text-sm text-paper/85 hover:border-accent-soft hover:text-accent-soft transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent-soft"
+      : "inline-flex items-center gap-2 rounded-md border border-ink/10 bg-paper px-3 py-1.5 text-sm text-ink hover:border-accent/40 hover:text-accent transition-colors focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-accent";
 
   return (
     <div className="flex flex-wrap items-center gap-x-2 gap-y-2">

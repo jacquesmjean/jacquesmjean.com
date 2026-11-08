@@ -50,7 +50,7 @@ export default function SpeakingContent({ locale }: { locale: Locale }) {
                 <a
                   href={PDF_HREF}
                   download
-                  className="rounded-full bg-ink px-6 py-3 text-sm font-medium text-paper hover:bg-accent transition-colors"
+                  className="rounded-md bg-ink px-6 py-3 text-sm font-medium text-paper hover:bg-accent transition-colors"
                 >
                   {s.downloadCta}
                 </a>
@@ -63,7 +63,7 @@ export default function SpeakingContent({ locale }: { locale: Locale }) {
                 alt="Jacques M. Jean"
                 width={420}
                 height={520}
-                className="w-full max-w-sm rounded-2xl object-cover shadow-[0_30px_60px_-30px_rgba(20,18,15,0.35)]"
+                className="w-full max-w-sm rounded-2xl object-cover shadow-[0_30px_60px_-30px_rgba(15,30,51,0.35)]"
               />
             </div>
           </div>
@@ -148,7 +148,7 @@ export default function SpeakingContent({ locale }: { locale: Locale }) {
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <a
               href={BOOK_HREF}
-              className="rounded-full bg-paper px-6 py-3 text-sm font-medium text-ink hover:bg-accent-soft hover:text-ink transition-colors"
+              className="rounded-md bg-paper px-6 py-3 text-sm font-medium text-ink hover:bg-accent-soft hover:text-ink transition-colors"
             >
               {s.bookCta}
             </a>
