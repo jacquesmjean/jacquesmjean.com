@@ -23,6 +23,12 @@ export const handshakeHt: ArticleTranslation = {
     "Oligui Nguema Xi Jinping",
   ],
   heroCaption: "Beijing, novanm 2026.",
+  comingNext: {
+    title: "Kijan twa akò siyen chape anba men nou",
+    blurb:
+      "Istwa a anndan akò Gabon yo: sa ki pase apre seremoni siyati a, kote pwòp bò pa nou disparèt, kijan tarif ak politik fè rès la, ak sa mwen t ap fè yon lòt jan kòm fondatè.",
+    when: "Ap vini an novanm",
+  },
   sections: [
     {
       heading: "Kontra a kòmanse nan pòt la",

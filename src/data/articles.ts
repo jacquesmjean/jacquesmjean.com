@@ -34,6 +34,13 @@ export interface ArticleSource {
   url?: string;
 }
 
+export interface ComingNext {
+  title: string;
+  blurb: string;
+  /** e.g. "Coming in November 2026" or "Next week". */
+  when: string;
+}
+
 /** A translated edition. Sections line up with the English sections by position. */
 export interface ArticleTranslation {
   eyebrow: string;
@@ -47,6 +54,7 @@ export interface ArticleTranslation {
   readTime: string;
   keywords: string[];
   heroCaption?: string;
+  comingNext?: ComingNext;
   sections: (Omit<ArticleSection, "figure"> & { figureCaption?: string })[];
   faq: ArticleFaqItem[];
 }
@@ -72,6 +80,8 @@ export interface Article {
   hero?: ArticleFigure;
   /** Earlier piece this one continues. */
   continues?: string;
+  /** A promised follow-up that is not published yet. Shown as a teaser with the signup. */
+  comingNext?: ComingNext;
   sections: ArticleSection[];
   faq: ArticleFaqItem[];
   sources?: ArticleSource[];
@@ -115,6 +125,12 @@ export const articles: Article[] = [
     },
     continues: "world-stopped-waiting-for-the-us-sovereign-ai",
     translations: { fr: handshakeFr, ht: handshakeHt, es: handshakeEs, pt: handshakePt },
+    comingNext: {
+      title: "How Three Signed Deals Slipped Away",
+      blurb:
+        "The inside story of the Gabon MOUs: what happened after the signing ceremony, where our own side went missing, how tariffs and politics did the rest, and what I would do differently as a founder.",
+      when: "Coming in November",
+    },
     sections: [
       {
         heading: "The deal starts at the door",
@@ -458,6 +474,7 @@ export function localizeArticle(a: Article, locale: Locale): Article {
       return { ...rest, figure: s.figure && { ...s.figure, caption: figureCaption ?? s.figure.caption } };
     }),
     faq: t.faq,
+    comingNext: t.comingNext ?? a.comingNext,
   };
 }
 

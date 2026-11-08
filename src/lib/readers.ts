@@ -32,6 +32,8 @@ type Ui = {
   bio: string;
   photo: string;
   alsoIn: string;
+  comingNext: string;
+  comingNextCta: string;
   // subscribe
   subEyebrow: string;
   subTitle: string;
@@ -81,6 +83,8 @@ const en: Ui = {
   bio: "Haitian-born American founder and technologist. 25 years of enterprise technology at Honeywell, Invensys, and Schneider Electric, with projects delivered in 15 countries.",
   photo: "Photo",
   alsoIn: "Also in",
+  comingNext: "Coming next",
+  comingNextCta: "Get it the day it publishes.",
   subEyebrow: "New writing by email",
   subTitle: "Get the next piece first.",
   subBody:
@@ -130,6 +134,8 @@ const fr: Ui = {
   bio: "Fondateur et technologue américain né en Haïti. 25 ans de technologie d’entreprise chez Honeywell, Invensys et Schneider Electric, avec des projets menés dans 15 pays.",
   photo: "Photo",
   alsoIn: "Aussi en",
+  comingNext: "À venir",
+  comingNextCta: "Recevez-le le jour de sa publication.",
   subEyebrow: "Nouveaux articles par e-mail",
   subTitle: "Recevez le prochain article en premier.",
   subBody:
@@ -178,6 +184,8 @@ const ht: Ui = {
   bio: "Fondatè ak teknològ ameriken ki fèt an Ayiti. 25 ane teknoloji antrepriz nan Honeywell, Invensys ak Schneider Electric, ak pwojè nan 15 peyi.",
   photo: "Foto",
   alsoIn: "Tou an",
+  comingNext: "Pwochen atik",
+  comingNextCta: "Resevwa l jou li pibliye a.",
   subEyebrow: "Nouvo atik pa imèl",
   subTitle: "Resevwa pwochen atik la an premye.",
   subBody: "Yon imèl chak fwa mwen pibliye. Nòt sou IA, Afrik, Ayiti, ak biznis san fwontyè. Pa gen spam, ou ka kite nenpòt lè.",
@@ -224,6 +232,8 @@ const es: Ui = {
   bio: "Fundador y tecnólogo estadounidense nacido en Haití. 25 años de tecnología empresarial en Honeywell, Invensys y Schneider Electric, con proyectos en 15 países.",
   photo: "Foto",
   alsoIn: "También en",
+  comingNext: "Próximo artículo",
+  comingNextCta: "Recíbelo el día que se publique.",
   subEyebrow: "Nuevos artículos por correo",
   subTitle: "Recibe el próximo artículo primero.",
   subBody: "Un correo cada vez que publico. Notas de campo sobre IA, África, Haití y hacer negocios sin fronteras. Sin spam, y puedes irte cuando quieras.",
@@ -270,6 +280,8 @@ const pt: Ui = {
   bio: "Fundador e tecnólogo americano nascido no Haiti. 25 anos de tecnologia corporativa na Honeywell, Invensys e Schneider Electric, com projetos em 15 países.",
   photo: "Foto",
   alsoIn: "Também em",
+  comingNext: "Próximo artigo",
+  comingNextCta: "Receba no dia em que for publicado.",
   subEyebrow: "Novos artigos por e-mail",
   subTitle: "Receba o próximo artigo primeiro.",
   subBody: "Um e-mail a cada publicação. Notas de campo sobre IA, África, Haiti e negócios sem fronteiras. Sem spam, e você pode sair quando quiser.",

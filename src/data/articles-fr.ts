@@ -23,6 +23,12 @@ export const handshakeFr: ArticleTranslation = {
     "Oligui Nguema Xi Jinping",
   ],
   heroCaption: "Pékin, novembre 2026.",
+  comingNext: {
+    title: "Comment trois accords signés nous ont échappé",
+    blurb:
+      "L\u2019histoire de l\u2019intérieur des protocoles d\u2019accord avec le Gabon : ce qui s\u2019est passé après la cérémonie de signature, où notre propre camp a disparu, comment les droits de douane et la politique ont fait le reste, et ce que je ferais autrement en tant que fondateur.",
+    when: "À paraître en novembre",
+  },
   sections: [
     {
       heading: "Le contrat commence à la porte",
