@@ -1,16 +1,42 @@
+import Link from "next/link";
 import type { Messages } from "@/i18n";
+import { articles } from "@/data/articles";
 
-const POST_HREFS = [
-  "/perspectives/world-stopped-waiting-for-the-us-sovereign-ai",
-  "https://levoila.org/#founder",
-  "https://levoila.org/#dispatches",
-];
+const DISPATCH_HREFS = ["https://levoila.org/#founder", "https://levoila.org/#dispatches"];
+
+// messages.posts[0] is the translated card for this article; reuse it when it matches.
+const TRANSLATED_SLUG = "world-stopped-waiting-for-the-us-sovereign-ai";
+
+interface Card {
+  tag: string;
+  title: string;
+  blurb: string;
+  when: string;
+  href: string;
+}
 
 export default function Perspectives({
   messages,
 }: {
   messages: Messages["perspectives"];
 }) {
+  // The two newest site articles, then the latest Levoila dispatch.
+  const articleCards: Card[] = articles.slice(0, 2).map((a) =>
+    a.slug === TRANSLATED_SLUG
+      ? { ...messages.posts[0], href: `/perspectives/${a.slug}/` }
+      : {
+          tag: a.tag,
+          title: a.title,
+          blurb: a.summary,
+          when: `Perspectives · ${a.dateDisplay}`,
+          href: `/perspectives/${a.slug}/`,
+        }
+  );
+  const dispatchCards: Card[] = messages.posts
+    .slice(1)
+    .map((p, i) => ({ ...p, href: DISPATCH_HREFS[i] }));
+  const cards = [...articleCards, ...dispatchCards].slice(0, 3);
+
   return (
     <section className="border-t border-ink/5 bg-paper">
       <div className="mx-auto max-w-6xl px-6 py-24 md:py-32">
@@ -26,22 +52,20 @@ export default function Perspectives({
               {messages.subhead}
             </p>
           </div>
-          <a
-            href="https://www.linkedin.com/in/jacques-m-jean/recent-activity/all/"
-            target="_blank"
-            rel="noopener"
+          <Link
+            href="/perspectives/"
             className="self-start text-sm font-medium text-ink hover:text-accent transition-colors"
           >
             {messages.allWriting} →
-          </a>
+          </Link>
         </div>
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {messages.posts.map((p, i) => (
+          {cards.map((p) => (
             <a
               key={p.title}
-              href={POST_HREFS[i]}
-              {...(POST_HREFS[i].startsWith("/")
+              href={p.href}
+              {...(p.href.startsWith("/")
                 ? {}
                 : { target: "_blank", rel: "noreferrer" })}
               className="group flex flex-col rounded-2xl border border-ink/10 bg-paper-warm p-7 transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_20px_40px_-20px_rgba(184,71,45,0.15)]"

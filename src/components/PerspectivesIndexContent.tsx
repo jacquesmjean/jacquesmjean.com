@@ -2,7 +2,7 @@ import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import PageHeader from "@/components/PageHeader";
 import { articles } from "@/data/articles";
-import { getMessages, localeHref, type Locale } from "@/i18n";
+import { getMessages, type Locale } from "@/i18n";
 
 const EXTERNAL_POST_HREFS = [
   "https://levoila.org/#founder",
@@ -12,10 +12,9 @@ const EXTERNAL_POST_HREFS = [
 export default function PerspectivesIndexContent({ locale }: { locale: Locale }) {
   const m = getMessages(locale);
   const p = m.perspectives;
-  const featured = articles[0];
-  const base = localeHref(locale);
-  const articleHref = (slug: string) =>
-    base === "/" ? `/perspectives/${slug}` : `${base}/perspectives/${slug}`;
+  const [featured, ...more] = articles;
+  // Articles are published in English at /perspectives/<slug>/.
+  const articleHref = (slug: string) => `/perspectives/${slug}/`;
   // Message posts: index 0 mirrors the featured article; 1+ are external dispatches.
   const externalPosts = p.posts.slice(1);
 
@@ -36,7 +35,7 @@ export default function PerspectivesIndexContent({ locale }: { locale: Locale })
               alt={featured.title}
               width={1200}
               height={630}
-              className="w-full rounded-2xl border border-ink/10 shadow-[0_30px_60px_-40px_rgba(20,18,15,0.4)]"
+              className="aspect-[1200/630] w-full rounded-2xl border border-ink/10 object-cover shadow-[0_30px_60px_-40px_rgba(20,18,15,0.4)]"
             />
             <div>
               <div className="text-[10px] font-medium uppercase tracking-wider text-accent">
@@ -46,7 +45,7 @@ export default function PerspectivesIndexContent({ locale }: { locale: Locale })
                 {featured.title}
               </h2>
               <p className="mt-5 text-base leading-relaxed text-ink-soft">
-                {featured.dek}
+                {featured.summary}
               </p>
               <div className="mt-6 text-sm font-medium text-ink">
                 {p.readLabel} · {featured.readTime}{" "}
@@ -56,6 +55,51 @@ export default function PerspectivesIndexContent({ locale }: { locale: Locale })
           </a>
         </div>
       </section>
+
+      {/* More from the site */}
+      {more.length > 0 && (
+        <section className="border-b border-ink/5">
+          <div className="mx-auto max-w-6xl px-6 py-16 md:py-20">
+            <div className="text-xs font-medium uppercase tracking-wider text-ink-muted">
+              {locale === "en" ? "More perspectives" : p.allWriting}
+            </div>
+            <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+              {more.map((a) => (
+                <a
+                  key={a.slug}
+                  href={articleHref(a.slug)}
+                  className="group flex flex-col overflow-hidden rounded-2xl border border-ink/10 bg-paper transition-all hover:-translate-y-0.5 hover:border-accent/40 hover:shadow-[0_20px_40px_-20px_rgba(184,71,45,0.18)]"
+                >
+                  <img
+                    src={a.ogImage}
+                    alt=""
+                    width={1200}
+                    height={630}
+                    loading="lazy"
+                    decoding="async"
+                    className="aspect-[1200/630] w-full object-cover"
+                  />
+                  <div className="flex flex-1 flex-col p-6">
+                    <div className="text-[10px] font-medium uppercase tracking-wider text-accent">
+                      {a.tag} · {a.dateDisplay}
+                    </div>
+                    <h3 className="mt-3 font-display text-xl font-medium leading-snug text-ink group-hover:text-accent transition-colors">
+                      {a.title}
+                    </h3>
+                    <p className="mt-3 flex-1 text-[15px] leading-relaxed text-ink-soft">
+                      {a.summary}
+                    </p>
+                    <div className="mt-5 text-sm font-medium text-ink">
+                      {p.readLabel} · {a.readTime}{" "}
+                      <span aria-hidden className="inline-block transition-transform group-hover:translate-x-0.5">→</span>
+                    </div>
+                  </div>
+                </a>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* Dispatches */}
       <section className="bg-paper-warm/40">
