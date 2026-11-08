@@ -1,0 +1,32 @@
+name: Send newsletter
+
+on:
+  workflow_dispatch:
+    inputs:
+      slug:
+        description: "Article slug (the last part of its URL)"
+        required: true
+        type: string
+      test_to:
+        description: "Send a test only to this email (leave empty to send to all subscribers)"
+        required: false
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+      - name: Send
+        env:
+          SLUG: ${{ inputs.slug }}
+          TEST_TO: ${{ inputs.test_to }}
+          RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: node scripts/send-newsletter.mjs
