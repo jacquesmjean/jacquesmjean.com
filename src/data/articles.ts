@@ -292,7 +292,7 @@ export const articles: Article[] = [
       "AI geopolitics",
       "2026 midterms AI policy",
     ],
-    ogImage: "/images/perspectives/sovereign-ai-og.png",
+    ogImage: "/images/perspectives/sovereign-ai-og.jpg",
     sections: [
       {
         paragraphs: [
