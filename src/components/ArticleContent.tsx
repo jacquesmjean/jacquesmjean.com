@@ -19,6 +19,15 @@ import type { ReactNode } from "react";
 
 const SITE = "https://jacquesmjean.com";
 
+const CEO_OF: Record<Locale, string> = { en: "CEO of ", fr: "PDG de ", ht: "PDG ", es: "CEO de ", pt: "CEO da " };
+const ROLES_AND: Record<Locale, string> = {
+  en: ", Founding Co-Chair of the American Business Council Gabon, and Founder & Chair of ",
+  fr: ", coprésident fondateur de l’American Business Council Gabon, fondateur et président de ",
+  ht: ", ko-prezidan fondatè American Business Council Gabon, fondatè ak prezidan ",
+  es: ", copresidente fundador del American Business Council Gabon, y fundador y presidente de ",
+  pt: ", copresidente fundador do American Business Council Gabon, e fundador e presidente da ",
+};
+
 const linkClass =
   "font-medium text-ink underline decoration-accent/50 decoration-1 underline-offset-4 hover:text-accent hover:decoration-accent transition-colors";
 
@@ -439,13 +448,11 @@ export default function ArticleContent({
               <div className="font-display text-2xl font-medium text-ink">Jacques M. Jean</div>
               <p className="mt-3 text-[15px] leading-relaxed text-ink-soft">
                 {t.bio}{" "}
-                {locale === "fr" ? "PDG de " : "CEO of "}
+                {CEO_OF[locale]}
                 <a href="https://techfides.com" className={linkClass}>
                   TechFides
                 </a>
-                {locale === "fr"
-                  ? ", coprésident fondateur de l’American Business Council Gabon, fondateur et président de "
-                  : ", Founding Co-Chair of the American Business Council Gabon, and Founder & Chair of "}
+                {ROLES_AND[locale]}
                 <a href="https://levoila.org" className={linkClass}>
                   Levoila
                 </a>

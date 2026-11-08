@@ -1,5 +1,8 @@
 import type { Locale } from "@/i18n/locales";
 import { handshakeFr } from "./articles-fr";
+import { handshakeEs } from "./articles-es";
+import { handshakePt } from "./articles-pt";
+import { handshakeHt } from "./articles-ht";
 
 export interface ArticleFigure {
   src: string;
@@ -111,7 +114,7 @@ export const articles: Article[] = [
       height: 853,
     },
     continues: "world-stopped-waiting-for-the-us-sovereign-ai",
-    translations: { fr: handshakeFr },
+    translations: { fr: handshakeFr, ht: handshakeHt, es: handshakeEs, pt: handshakePt },
     sections: [
       {
         heading: "The deal starts at the door",
