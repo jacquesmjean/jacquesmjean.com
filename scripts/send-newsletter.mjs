@@ -79,7 +79,7 @@ async function sb(path, init = {}) {
   return r.status === 204 ? null : r.json();
 }
 
-const article = await fetch(`${SITE}/newsletter/${SLUG}`).then((r) => (r.ok ? r.json() : null));
+const article = await fetch(`${SITE}/newsletter/${SLUG}/`, { redirect: "follow" }).then((r) => (r.ok ? r.text() : null)).then((t) => { try { return t ? JSON.parse(t) : null; } catch { return null; } });
 if (!article) { console.error(`No article feed at ${SITE}/newsletter/${SLUG} (is the site deployed?)`); process.exit(1); }
 
 let recipients;
