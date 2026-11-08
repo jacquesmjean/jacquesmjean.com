@@ -8,7 +8,7 @@ export default function StoryContent({ locale }: { locale: Locale }) {
   const s = m.story;
 
   return (
-    <main lang={locale} className="min-h-screen bg-paper text-ink">
+    <main id="main" lang={locale} className="min-h-screen bg-paper text-ink">
       <Nav locale={locale} messages={m.nav} />
       <PageHeader eyebrow={s.eyebrow} title={s.headline} />
 

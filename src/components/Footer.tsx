@@ -1,20 +1,45 @@
 import type { Messages } from "@/i18n";
+import ShareArticle from "@/components/ShareArticle";
+import SubscribeForm from "@/components/SubscribeForm";
 import { localeHref, type Locale } from "@/i18n";
+
+const SHARE_SITE: Record<Locale, string> = {
+  en: "Know someone who should read this? Share the site.",
+  fr: "Quelqu\u2019un devrait lire ceci ? Partagez le site.",
+  ht: "Ou konnen yon moun ki ta dwe li sa? Pataje sit la.",
+  es: "¿Conoces a alguien que debería leer esto? Comparte el sitio.",
+  pt: "Conhece alguém que deveria ler isto? Compartilhe o site.",
+};
 
 export default function Footer({
   messages,
   locale = "en",
   nav,
+  showSubscribe = true,
 }: {
   messages: Messages["footer"];
   locale?: Locale;
   nav?: Messages["nav"];
+  /** Off on pages that already show a signup in the body. */
+  showSubscribe?: boolean;
 }) {
   const base = localeHref(locale);
   const p = (path: string) => (base === "/" ? path : `${base}${path}`);
 
   return (
     <footer className="border-t border-paper/10 bg-ink text-paper-warm/60">
+      <div className="mx-auto max-w-6xl px-6 pt-14">
+        {showSubscribe && <SubscribeForm locale={locale} source={`footer:${base}`} variant="footer" />}
+        <div className={`${showSubscribe ? "mt-10 " : ""}flex flex-col gap-4 border-b border-paper/10 pb-10`}>
+          <div className="font-display text-lg text-paper">{SHARE_SITE[locale]}</div>
+          <ShareArticle
+            url={`https://jacquesmjean.com${base === "/" ? "/" : `${base}/`}`}
+            title="Jacques M. Jean · Founder, technologist, global operator"
+            locale={locale}
+            tone="dark"
+          />
+        </div>
+      </div>
       <div className="mx-auto flex max-w-6xl flex-col gap-10 px-6 py-14 md:flex-row md:justify-between">
         <div className="max-w-xs">
           <div className="font-display text-base text-paper">Jacques M. Jean</div>

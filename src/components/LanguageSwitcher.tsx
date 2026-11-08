@@ -3,9 +3,11 @@ import { locales, localeLabels, localeHref, type Locale } from "@/i18n";
 export default function LanguageSwitcher({
   current,
   label,
+  alternates,
 }: {
   current: Locale;
   label: string;
+  alternates?: Partial<Record<Locale, string>>;
 }) {
   return (
     <div className="group relative">
@@ -24,7 +26,8 @@ export default function LanguageSwitcher({
         {locales.map((l) => (
           <a
             key={l}
-            href={localeHref(l)}
+            href={alternates?.[l] ?? localeHref(l)}
+            hrefLang={l}
             aria-current={l === current ? "page" : undefined}
             className={`flex items-center justify-between gap-3 rounded-lg px-3 py-2 text-sm transition-colors ${
               l === current

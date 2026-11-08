@@ -7,7 +7,7 @@ export default function ContactContent({ locale }: { locale: Locale }) {
   const m = getMessages(locale);
 
   return (
-    <main lang={locale} className="min-h-screen bg-paper text-ink">
+    <main id="main" lang={locale} className="min-h-screen bg-paper text-ink">
       <Nav locale={locale} messages={m.nav} />
       <h1 className="sr-only">{m.pages.contact.metaTitle}</h1>
       <Contact messages={m.contact} />

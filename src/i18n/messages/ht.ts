@@ -64,9 +64,9 @@ const ht: Messages = {
       },
       {
         label: "Konsèy yo",
-        title: "OVYNA · ABC Gabon · MUSA",
+        title: "OVYNA · ABC Gabon",
         role: "Wòl gouvènans",
-        body: "Prezidan Konsèy nan OVYNA. Ko-Prezidan Fondatè nan American Business Council Gabon, k ap bati pon komèsyal ant Etazini ak Gabon. Prezidan Konsèy nan MUSA Asset Management.",
+        body: "Prezidan Konsèy nan OVYNA. Ko-Prezidan Fondatè nan American Business Council Gabon, k ap bati pon komèsyal ant Etazini ak Gabon.",
         linkLabel: "Demand konsèy",
       },
     ],

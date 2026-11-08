@@ -25,7 +25,7 @@ export default function SpeakingContent({ locale }: { locale: Locale }) {
   };
 
   return (
-    <main lang={locale} className="min-h-screen bg-paper text-ink">
+    <main id="main" lang={locale} className="min-h-screen bg-paper text-ink">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(webpage) }}

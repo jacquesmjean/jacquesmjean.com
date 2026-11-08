@@ -2,12 +2,23 @@ import LanguageSwitcher from "./LanguageSwitcher";
 import type { Messages } from "@/i18n";
 import { localeHref, type Locale } from "@/i18n";
 
+const SKIP: Record<Locale, string> = {
+  en: "Skip to content",
+  fr: "Aller au contenu",
+  ht: "Ale nan kontni an",
+  es: "Ir al contenido",
+  pt: "Ir para o conteúdo",
+};
+
 export default function Nav({
   locale,
   messages,
+  alternates,
 }: {
   locale: Locale;
   messages: Messages["nav"];
+  /** Same page in other languages, when it exists (e.g. a translated article). */
+  alternates?: Partial<Record<Locale, string>>;
 }) {
   const base = localeHref(locale); // "/" or "/fr"
   const p = (path: string) => (base === "/" ? path : `${base}${path}`);
@@ -20,6 +31,13 @@ export default function Nav({
   ];
 
   return (
+    <>
+    <a
+      href="#main"
+      className="sr-only focus:not-sr-only focus:fixed focus:left-4 focus:top-4 focus:z-50 focus:rounded-full focus:bg-ink focus:px-5 focus:py-3 focus:text-sm focus:font-medium focus:text-paper"
+    >
+      {SKIP[locale]}
+    </a>
     <header className="sticky top-0 z-40 border-b border-ink/5 bg-paper/85 backdrop-blur-md">
       <div className="mx-auto flex max-w-6xl items-center justify-between gap-4 px-6 py-4">
         <a
@@ -40,7 +58,7 @@ export default function Nav({
           ))}
         </nav>
         <div className="flex items-center gap-3">
-          <LanguageSwitcher current={locale} label={messages.selectLanguage} />
+          <LanguageSwitcher current={locale} label={messages.selectLanguage} alternates={alternates} />
           <a
             href={p("/contact")}
             className="hidden rounded-full bg-ink px-4 py-2 text-sm font-medium text-paper hover:bg-accent transition-colors sm:inline-block"
@@ -75,5 +93,6 @@ export default function Nav({
         </div>
       </div>
     </header>
+    </>
   );
 }

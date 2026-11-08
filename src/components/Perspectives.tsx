@@ -1,6 +1,7 @@
 import Link from "next/link";
 import type { Messages } from "@/i18n";
-import { articles } from "@/data/articles";
+import { articleLocales, articles, localizeArticle } from "@/data/articles";
+import type { Locale } from "@/i18n";
 
 const DISPATCH_HREFS = ["https://levoila.org/#founder", "https://levoila.org/#dispatches"];
 
@@ -17,21 +18,19 @@ interface Card {
 
 export default function Perspectives({
   messages,
+  locale = "en",
 }: {
   messages: Messages["perspectives"];
+  locale?: Locale;
 }) {
   // The two newest site articles, then the latest Levoila dispatch.
-  const articleCards: Card[] = articles.slice(0, 2).map((a) =>
-    a.slug === TRANSLATED_SLUG
-      ? { ...messages.posts[0], href: `/perspectives/${a.slug}/` }
-      : {
-          tag: a.tag,
-          title: a.title,
-          blurb: a.summary,
-          when: `Perspectives · ${a.dateDisplay}`,
-          href: `/perspectives/${a.slug}/`,
-        }
-  );
+  const articleCards: Card[] = articles.slice(0, 2).map((base) => {
+    const translated = locale !== "en" && articleLocales(base).includes(locale);
+    const href = translated ? `/${locale}/perspectives/${base.slug}/` : `/perspectives/${base.slug}/`;
+    if (base.slug === TRANSLATED_SLUG) return { ...messages.posts[0], href };
+    const a = localizeArticle(base, locale);
+    return { tag: a.tag, title: a.title, blurb: a.summary, when: `Perspectives · ${a.dateDisplay}`, href };
+  });
   const dispatchCards: Card[] = messages.posts
     .slice(1)
     .map((p, i) => ({ ...p, href: DISPATCH_HREFS[i] }));
@@ -53,7 +52,7 @@ export default function Perspectives({
             </p>
           </div>
           <Link
-            href="/perspectives/"
+            href={locale === "en" ? "/perspectives/" : `/${locale}/perspectives/`}
             className="self-start text-sm font-medium text-ink hover:text-accent transition-colors"
           >
             {messages.allWriting} →

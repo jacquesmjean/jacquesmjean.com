@@ -1,4 +1,4 @@
-import { locales, localeLabels, localeHref, type Locale } from "@/i18n";
+import type { Locale } from "@/i18n";
 import type { Messages } from "@/i18n";
 
 export default function Hero({
@@ -58,27 +58,6 @@ export default function Hero({
                   ) : null}
                 </span>
               ))}
-              <span aria-hidden className="text-ink/20">·</span>
-              <span className="flex flex-wrap items-center gap-2">
-                {locales.map((l, i) => (
-                  <span key={l} className="flex items-center gap-2">
-                    <a
-                      href={localeHref(l)}
-                      aria-current={l === locale ? "page" : undefined}
-                      className={`transition-colors ${
-                        l === locale
-                          ? "text-accent"
-                          : "text-ink-muted hover:text-accent"
-                      }`}
-                    >
-                      {localeLabels[l].code}
-                    </a>
-                    {i < locales.length - 1 ? (
-                      <span aria-hidden className="text-ink/20">·</span>
-                    ) : null}
-                  </span>
-                ))}
-              </span>
             </div>
           </div>
 
