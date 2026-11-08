@@ -186,7 +186,7 @@ export const articles: Article[] = [
           "For a company our size, that was not just a deal. It was a turning point. It showed what we could become, and it was built to grow into new projects. Ambassador FitzPatrick proved the point of this whole article: when the right person sits in the chair, doors open. In January 2026, she was among the career ambassadors called home. Gabon has had no U.S. ambassador since.",
           "We lost all three.",
           "Not to a better proposal. We lost them to a lack of support from our own side, to tariff decisions made in Washington with no thought for a small partner, and to politics that changed the rules every few months. Gabon was suspended from the U.S. trade preference program AGOA in 2024 and only reinstated this year. Meanwhile new U.S. tariffs landed on top, and China opened its market duty free. What happened inside that process deserves its own story. I will tell it in my next piece.",
-          "Each project was signed over to Chinese firms. This week I watched the last one go, openly, to Huawei.",
+          "All three went to the same company: Huawei. This week I watched the last one go, openly.",
           "So what was it? Incompetence on our side? Not enough size? I have asked myself both. The honest answer is simpler. China showed up, stayed, financed, and followed through. We sent signals that said we might.",
           "If I sat in the president's chair, I would have made the same decision. A head of state owes his people results, not loyalty to a partner who will not return his calls.",
         ],
