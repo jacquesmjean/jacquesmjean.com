@@ -102,7 +102,7 @@ function Figure({
           {figure.caption && <span className="text-ink-soft">{figure.caption}</span>}
           {figure.credit && (
             <span className="text-[11px] uppercase tracking-wider">
-              {photoLabel}: {figure.credit}
+              {figure.credit.startsWith("!") ? figure.credit.slice(1) : `${photoLabel}: ${figure.credit}`}
             </span>
           )}
         </figcaption>
