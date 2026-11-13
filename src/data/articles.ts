@@ -104,7 +104,7 @@ export const articles: Article[] = [
       "The man who decided who gets AI chips sat in hotel lobbies with no protocol for years. A former cybersecurity analyst on what boards and Washington must change.",
     datePublished: "2026-11-13",
     dateDisplay: "November 2026",
-    readTime: "9 min read",
+    readTime: "10 min read",
     keywords: [
       "Jensen Huang resignation",
       "Nvidia Alice Huang Megaspeed",
@@ -164,6 +164,17 @@ export const articles: Article[] = [
           "What I know is the timeline. The President was briefed in October 2025. The story broke in November 2026, days after the midterms and a few weeks after Huang used his first ever post on X to argue against banning Chinese open source models. Somebody held this for a year and then it moved. Who, and why now, are questions the public deserves answered. Asking them is not a conspiracy theory. It is oversight.",
           "And there is a second possibility people forget. If a foreign service placed someone close to him, the relationship was the operation. The leak may be the second act, designed to take him off the board at the moment he became inconvenient. Removing the man who decides where the chips go is a prize for more than one government.",
           "Either way the question comes back to the same place. Our system knew, and it did not act.",
+        ],
+      },
+      {
+        heading: "Too close to the flag",
+        paragraphs: [
+          "There is an older lesson underneath this one, and we keep refusing to learn it.",
+          "Business and government each answer to the public, but they answer for different things. A company owes its shareholders a return and its customers a product. A government owes its citizens protection and a fair set of rules. The moment the two get too close, both stop doing their jobs.",
+          "Look at the last eighteen months. The CEO of Nvidia flew to Beijing on Air Force One. He sat in the Oval Office. When the story broke, the President called him an honorable guy who had done an amazing job for the country. The Commerce Department never put his most suspicious customer on the restricted list, and the Treasury Secretary reportedly had to confront the Commerce Secretary to ask why.",
+          "That is not a scandal about one man's private life. That is what proximity does. When a company gets close enough to power, warnings about it become inconvenient. Regulators hesitate. Export rules bend. A briefing in October gets filed in a drawer because acting on it would embarrass a friend in December.",
+          "And the company learns the wrong lesson too. A CEO who can get a meeting with the President stops believing anyone can tell him no. He starts to think he answers to himself. That is how a disciplined founder, thirty years into building a company, ends up with two undisclosed relationships and a board that looked away.",
+          "I have seen this in other countries. In places where the biggest company and the government share a table, you get oligarchs, monopolies, and rules that apply to everyone else. America is supposed to be the country where that does not happen. It only stays that way if business keeps its distance from power, and power keeps its distance from business. Access, donations, a seat on the plane: all of it has a price, and the bill always arrives.",
         ],
       },
       {
