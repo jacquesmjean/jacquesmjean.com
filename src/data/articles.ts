@@ -92,6 +92,131 @@ export interface Article {
 // Newest first. Inline markup: **bold** and [link text](url).
 export const articles: Article[] = [
   {
+    slug: "own-your-ai-americas-small-business-tech",
+    eyebrow: "Perspectives · AI Policy",
+    tag: "AI Policy · Small Business",
+    title: "Own Your AI: The Case for Backing America's Small Business Tech",
+    metaTitle: "Own Your AI: The Case for Backing America's Small Business Tech | Jacques M. Jean",
+    metaDescription:
+      "Cloud AI is leaking small business IP one prompt at a time. Private AI reverses it. Why Washington should invest in the small firms building the alternative.",
+    dek: "The AI boom is turning American small businesses into tenants. They rent intelligence by the month while their data leaks out on every prompt. There is another way, and Washington should be funding the small firms building it.",
+    summary:
+      "Every prompt into a cloud AI tool carries a small business's IP out the door. A founder on private AI, the asset it builds, and what Washington owes the firms building the alternative.",
+    datePublished: "2026-11-19",
+    dateDisplay: "November 2026",
+    readTime: "7 min read",
+    keywords: [
+      "private AI small business",
+      "Own Your AI",
+      "AI data leakage intellectual property",
+      "on premise AI deployment",
+      "small business exit value AI",
+      "federal AI procurement small business set-asides",
+      "SBIR applied AI funding",
+      "compute access small firms",
+      "China small business support overseas",
+    ],
+    ogImage: "/images/perspectives/mainstreet-og.jpg",
+    hero: {
+      src: "/images/perspectives/mainstreet/main-street-dusk.jpg",
+      alt: "A quiet small town Main Street at dusk: a row of brick storefronts under a deep blue sky, an American flag on a pole, and one warmly lit office where an owner works at his desk beside a small server cabinet glowing blue",
+      caption: "The intelligence stays in the building.",
+      credit: "!Illustration",
+      width: 2048,
+      height: 1382,
+    },
+    sections: [
+      {
+        heading: "The AI boom has a landlord problem",
+        paragraphs: [
+          "The AI revolution is turning American small businesses into tenants. They rent intelligence by the month, at prices they don't control, from a handful of companies that own the rails. Stop paying, and everything you built on those tools disappears.",
+          "I know what ownership looks like because I spent 25 years building technology systems for Honeywell, Invensys, and Schneider Electric across 15 countries. I came to the United States from Haiti, and in 2019 I founded [TechFides](https://techfides.com) in Frisco, Texas, on a simple conviction. The medical offices, law firms, auto dealers, and trades contractors that keep this country running deserve the same grade of technology the Fortune 500 takes for granted, and they deserve to own it.",
+        ],
+      },
+      {
+        heading: "The leak nobody sees",
+        paragraphs: [
+          "Every time an employee pastes a contract, a client list, a patient note, or a pricing sheet into a cloud AI tool, that information leaves the building. It flows to servers the business doesn't control, under terms most owners have never read, where it can be stored, reviewed, and in some cases used to train someone else's model.",
+          "That is intellectual property walking out the door. The processes, formulas, and client knowledge that took an owner twenty years to build, leaking one prompt at a time, invisibly, every day.",
+          "A small medical practice showed me its AI stack earlier this year. $1,200 a month for a chat tool. $2,400 a month for an AI scribe. Three more subscriptions behind those. Over $4,200 a month, rented, never owned, with patient data leaving the building on every query. Their compliance officer wasn't sleeping. He was right not to.",
+        ],
+        pullQuote: "Your IP took twenty years to build. It leaks one prompt at a time.",
+      },
+      {
+        heading: "What owning your AI changes",
+        paragraphs: [
+          "Private AI reverses the arrangement. We deploy AI on hardware the client owns, configured for their operations. The model runs inside their walls. No cloud dependency, no recurring API bills, and the data never leaves the building.",
+          "Three things change the day a business owns its intelligence.",
+          "**Protection.** The law firm protects privilege. The medical office protects patients. The manufacturer protects its designs. Trade secrets stay secret because they never travel.",
+          "**Cost.** Rented AI is a bill that climbs every quarter and never ends. Owned AI is bought once and works for years, like the building itself.",
+          "**Equity.** This is the benefit nobody talks about. Rented AI is an expense that vanishes the day you stop paying. Owned AI is an asset: your systems, your trained workflows, your protected data, running on your hardware. The day an owner decides to sell, a business that owns its intelligence commands a different multiple than one renting it month to month. We are helping owners build equity, not subscriptions.",
+          "These systems are running in Texas small businesses today. The demand we see is national.",
+        ],
+      },
+      {
+        heading: "Look at how our competitors do it",
+        paragraphs: [
+          "When a small Chinese company decides to compete overseas, it does not go alone. It walks into the target market on top of an infrastructure built to help it capitalize: state backed financing, export credit, trade promotion, technology access. That is a deliberate national strategy, executed through small firms, and it works. Their small businesses arrive in a new market with a system behind them.",
+          "An American small business making the same move largely goes it alone. The skills are here. The technology is here. The drive is here. I have watched it in fifteen countries, and nothing anywhere outworks the American small business owner. What is missing is not talent. It is the infrastructure behind the talent.",
+          "And the stakes are bigger than any one company. Private AI keeps American business data in American buildings, on American owned hardware. Every small firm we equip is a door closed to data leaving this country.",
+        ],
+        figure: {
+          src: "/images/perspectives/mainstreet/port-at-night.jpg",
+          alt: "A vast container port at night, cranes and ships working under floodlights, while in the foreground a lone figure in a small boat carries a few crates toward open water",
+          caption: "When their small firms go to compete overseas, they do not go alone.",
+          credit: "!Illustration",
+          width: 2048,
+          height: 1382,
+        },
+      },
+      {
+        heading: "Not a handout. A defined investment process.",
+        paragraphs: [
+          "American small business is not asking to be carried. We are asking for an investment process that matches what we already bring, with clear criteria, real access, and accountability on both sides. Three places to start.",
+        ],
+        list: [
+          "**Federal AI procurement set-asides.** Federal AI contracts flow overwhelmingly to the largest vendors. Meaningful small business set-asides in AI procurement would do what procurement policy has always done best: give capable small firms a first customer and a track record.",
+          "**Expanded SBIR funding for applied AI.** The research programs exist. Point them at the companies putting AI to work on Main Street. Deployment, not just invention.",
+          "**Compute access for small AI firms.** The scarcest input in this industry is compute, and today small firms rent it from the same giants they compete against. A national compute access program for qualified small businesses levels the single most tilted part of the field.",
+        ],
+      },
+      {
+        heading: "Competitiveness runs through Main Street",
+        paragraphs: [
+          "Each of these is a defined process with a measurable return: more competitors in the market, more American IP protected, more Main Street businesses with technology they own.",
+          "I walked into a library for the first time at eighteen. I know exactly what access to the right tools at the right moment does for a person, because it happened to me, and I have spent my career building so it can happen for others. Small business owners don't need to be convinced of the future. [They are already working in it](/perspectives/world-stopped-waiting-for-the-us-sovereign-ai/), every day, with whatever tools they can afford.",
+          "China figured out that national competitiveness runs through its small businesses. **America invented that idea. It's time we funded it again.**",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "What is private AI?",
+        a: "Private AI is artificial intelligence deployed on hardware the business owns, inside its own walls, instead of rented from a cloud provider. The models run locally, there are no recurring API bills, and company data never leaves the building.",
+      },
+      {
+        q: "How does cloud AI leak a company's intellectual property?",
+        a: "Every prompt an employee types into a cloud AI tool travels to servers the business does not control. Contracts, client lists, patient notes, and pricing can be stored and reviewed under the provider's terms, and in some cases used to train models that serve other customers, including competitors.",
+      },
+      {
+        q: "Does owning AI increase the value of a business?",
+        a: "Yes. Rented AI subscriptions are an expense that ends when payment stops. Owned AI systems, trained workflows, and protected data are assets that transfer with the business, which matters the day the owner decides to sell.",
+      },
+      {
+        q: "What policies would help small American tech firms compete in AI?",
+        a: "Three defined steps: meaningful small business set-asides in federal AI procurement, expanded SBIR funding aimed at applied AI deployment, and a national compute access program so small firms are not renting their core input from the giants they compete against.",
+      },
+      {
+        q: "How does China support its small businesses overseas?",
+        a: "Chinese small firms entering foreign markets typically arrive with state backed financing, export credit, trade promotion, and technology access behind them, as part of a deliberate national strategy executed through small companies.",
+      },
+      {
+        q: "Who is Jacques M. Jean?",
+        a: "Jacques M. Jean is a Haitian-born American founder and technologist who spent 25 years building technology systems for Honeywell, Invensys, and Schneider Electric across 15 countries. He is founder and CEO of TechFides, a member of the U.S. Global Leadership Coalition's Texas Advisory Committee, and a member of the Forbes Technology Council.",
+      },
+    ],
+  },
+  {
     slug: "most-valuable-man-in-america-had-no-security-detail",
     eyebrow: "Perspectives · Security",
     tag: "Security · Governance",
