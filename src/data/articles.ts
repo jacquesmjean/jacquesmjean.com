@@ -1,8 +1,8 @@
 import type { Locale } from "@/i18n/locales";
-import { handshakeFr } from "./articles-fr";
-import { handshakeEs } from "./articles-es";
-import { handshakePt } from "./articles-pt";
-import { handshakeHt } from "./articles-ht";
+import { handshakeFr, ownYourAiFr, jensenFr, worldFr } from "./articles-fr";
+import { handshakeEs, ownYourAiEs, jensenEs, worldEs } from "./articles-es";
+import { handshakePt, ownYourAiPt, jensenPt, worldPt } from "./articles-pt";
+import { handshakeHt, ownYourAiHt, jensenHt, worldHt } from "./articles-ht";
 
 export interface ArticleFigure {
   src: string;
@@ -215,6 +215,7 @@ export const articles: Article[] = [
         a: "Jacques M. Jean is a Haitian-born American founder and technologist who spent 25 years building technology systems for Honeywell, Invensys, and Schneider Electric across 15 countries. He is founder and CEO of TechFides, a member of the U.S. Global Leadership Coalition's Texas Advisory Committee, and a member of the Forbes Technology Council.",
       },
     ],
+    translations: { fr: ownYourAiFr, ht: ownYourAiHt, es: ownYourAiEs, pt: ownYourAiPt },
   },
   {
     slug: "most-valuable-man-in-america-had-no-security-detail",
@@ -393,6 +394,7 @@ export const articles: Article[] = [
         url: "https://fortune.com/2026/07/22/jensen-huang-chinese-open-source-ai-models-kimi-deepseek-washington-ban-nvidia-chips-data-centers-security/",
       },
     ],
+    translations: { fr: jensenFr, ht: jensenHt, es: jensenEs, pt: jensenPt },
   },
   {
     slug: "handshake-is-the-deal-us-china-africa-gabon",
@@ -742,6 +744,7 @@ export const articles: Article[] = [
         a: "Jacques M. Jean is a Haitian-born American technologist and founder. He spent 25 years building technology systems in 15 countries for companies including Honeywell and Schneider Electric, is the founder and CEO of TechFides, co-chairs the American Business Council Gabon, and founded Levoila, the Global Heritage Trust.",
       },
     ],
+    translations: { fr: worldFr, ht: worldHt, es: worldEs, pt: worldPt },
   },
 ];
 
