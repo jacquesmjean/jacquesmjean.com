@@ -229,6 +229,7 @@ export const articles: Article[] = [
     summary:
       "The man who decided who gets AI chips sat in hotel lobbies with no protocol for years. A former cybersecurity analyst on what boards and Washington must change.",
     datePublished: "2026-11-13",
+    dateModified: "2026-11-27",
     dateDisplay: "November 2026",
     readTime: "9 min read",
     keywords: [
@@ -299,6 +300,7 @@ export const articles: Article[] = [
           "That is not a scandal about one man's private life. That is what proximity does. When a company gets close enough to power, warnings about it become inconvenient. Regulators hesitate. Export rules bend. A briefing in October gets filed in a drawer because acting on it would embarrass a friend in December.",
           "The company learns the wrong lesson too. A CEO who can get the President on the phone stops believing anyone can tell him no. That is how a disciplined founder, thirty years in, ends up with two undisclosed relationships and a board that looked away.",
           "I have seen this in other countries. Where the biggest company and the government share a table, you get oligarchs, monopolies, and rules that apply to everyone else. America is supposed to be the place where that does not happen. It stays that way only if business keeps its distance from power, and power from business. Access, donations, a seat on the plane: all of it has a price, and the bill always arrives.",
+          "**Update, November 23.** Eleven days after he resigned, Nvidia's board reinstated Jensen Huang as CEO. The President said on television that he was represented in the board meeting and that his intervention played an important role. The stock rose 33 percent that morning. The SEC and Justice Department investigations remain open. I wrote the paragraphs above before any of that happened. I would not change a word.",
         ],
       },
       {
@@ -341,7 +343,7 @@ export const articles: Article[] = [
     faq: [
       {
         q: "Why did Jensen Huang resign from Nvidia?",
-        a: "He resigned on November 12, 2026, after admitting an extramarital affair with Alice Huang, former head of Megaspeed, a Singapore based Nvidia customer under U.S. investigation for moving chips to China, and amid reports of a second relationship with an Nvidia executive who reported to him. Nvidia's board had opened an independent investigation.",
+        a: "He resigned on November 12, 2026, after admitting an extramarital affair with Alice Huang, former head of Megaspeed, a Singapore based Nvidia customer under U.S. investigation for moving chips to China, and amid reports of a second relationship with an Nvidia executive who reported to him. On November 23, 2026, Nvidia's board reinstated him as CEO after the President publicly backed his return. SEC and Justice Department investigations remain open.",
       },
       {
         q: "Was Alice Huang a Chinese spy?",
@@ -388,6 +390,10 @@ export const articles: Article[] = [
       {
         label: "Axios: Bessent confronted Lutnick over Megaspeed, November 11, 2026",
         url: "https://www.axios.com/2026/11/11/bessent-lutnick-megaspeed-nvidia-china-chips",
+      },
+      {
+        label: "Al Jazeera: Nvidia board reinstates Jensen Huang as CEO, November 23, 2026",
+        url: "https://www.aljazeera.com/economy/2026/11/23/nvidia-board-reinstates-jensen-huang-as-ceo",
       },
       {
         label: "Fortune: Huang argues against banning Chinese open source models, July 2026",
