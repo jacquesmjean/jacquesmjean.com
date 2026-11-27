@@ -10,7 +10,7 @@
 
 The first thing a member of the Gabonese delegation told me, after the ceremony, was not congratulations.
 
-It was a warning. American companies, he said, sign in Washington and stay in Washington. They never show up in Libreville. The Chinese show up. The French show up. The Turks and the Moroccans show up. They open an office, they come to the follow-up meetings, they are at the table when the decision gets made. The Americans send an email.
+It was a warning. American companies, he said, sign in Washington and stay in Washington. They never show up in Libreville. The Chinese show up. The Europeans show up. They open an office, they come to the follow-up meetings, they are at the table when the decision gets made. The Americans send an email.
 
 So I made a promise, standing there with the ink still wet. I would be in Gabon in December. I would sit with every institution named in those three agreements and every person who had to sign off on them. I would show up.
 
@@ -68,11 +68,11 @@ I remember putting the phone down and knowing. Not the details, not yet. But kno
 
 They came one at a time, the way these things do.
 
-First I heard that Huawei would be working with the education ministry. That was the incubation program, or close enough to it that ours had no reason to exist.
+First came the digital transformation. I heard that Huawei, already working with the education ministry, was expanding its scope and would be doing it. The project we had scoped with their lawyer and their finance lead, document by document, now belonged to a company that had never needed to ask anyone in Washington for a bank.
 
-Then I heard Huawei was expanding its work and would be doing the digital transformation. The project we had scoped with their lawyer and their finance lead, document by document, now belonged to a company that had never needed to ask anyone in Washington for a bank.
+Then the cybersecurity assessment, the one that had brought a delegation to Dallas for four days. Same company, same quiet.
 
-The cybersecurity assessment, the one that had brought a delegation to Dallas for four days, was the last. I learned it had gone the same way this month, the same week China gave Gabon's president an honor guard and a state banquet in Beijing.
+The incubation program was the last. I learned it had gone the same way this month, the same week China gave Gabon's president an honor guard and a state banquet in Beijing.
 
 Nobody in Gabon did anything wrong. They waited longer for us than they had to. They told me plainly, back in September 2024, what would happen if we did not show up with everything, and I showed up with everything except the one thing they needed. The Chinese showed up with that.
 
@@ -80,11 +80,11 @@ Nobody in Gabon did anything wrong. They waited longer for us than they had to. 
 
 Here is what I do not regret.
 
-While the deals were dying I got to know the country. I spent days in PK12, the working neighborhood on the edge of the city, talking to people about what did not work in their lives and what might. I crossed the street from where I was staying and sat with the fishermen, and heard about fuel, storage, and buyers who set the price. I would take a taxi for the whole day and ride from one university campus to the next, walking the grounds, talking to students and professors about what they needed and what they were building anyway.
+While the deals were dying I got to know the country. I spent days in PK12, the working neighborhood on the edge of the city, talking to people about what did not work in their lives and what might. I crossed the street from where I was staying and sat with the fishermen. No cold storage, so the catch is sold the same day at whatever price is offered. Taxes that feel heavy for men who are on their own on the water. The danger out there, the health problems that come with the work, and under all of it a product that could be sold far beyond that beach if anyone built the chain to do it. I would take a taxi for the whole day and ride from one university campus to the next, walking the grounds, talking to students and professors about what they needed and what they were building anyway.
 
 Everywhere I went there was an opportunity standing in plain sight. Not a pitch deck opportunity. A real one, with a person attached to it.
 
-And the ambassador's team, seeing all this, asked me to help launch an American Business Council in Gabon. We did. It is still running. It is the only thing from those two years that exists today, and it exists because people showed up in person.
+And the ambassador's team, seeing all this, asked me to help launch an American Business Council in Gabon. Aymeric Saha, chief executive of MIDA Advisors, and I co-chaired it and got it off the ground. It is still running. It is the only thing from those two years that exists today, and it exists because people showed up in person.
 
 ## The door we left open
 
@@ -126,10 +126,10 @@ Next time, I will bring the bank.
 Three memoranda of understanding signed in September 2024 at the U.S. Chamber of Commerce in Washington with Gabon's government: a digital transformation program, a cybersecurity assessment of government systems, and an incubation program for young technologists.
 
 **Why did the Gabon deals go to Huawei?**
-After both scoped projects cleared Gabonese procurement in early 2025, the government required a financial institution to finance them. The American company could not secure financing through U.S. development agencies, which gave inconsistent or no answers over several months. Huawei arrived with financing and took all three projects between 2025 and November 2026.
+After both scoped projects cleared Gabonese procurement in early 2025, the government required a financial institution to finance them. The American company could not secure financing through U.S. development agencies, which gave inconsistent or no answers over several months. Huawei arrived with financing and took the digital transformation, then the cybersecurity assessment, then the incubation program, the last in November 2026.
 
 **What is the American Business Council Gabon?**
-A business council launched in Gabon at the request of the U.S. embassy to connect American and Gabonese companies. Jacques M. Jean is a founding co-chair. It remains active.
+A business council launched in Gabon at the request of the U.S. embassy to connect American and Gabonese companies. Jacques M. Jean and Aymeric Saha, CEO of MIDA Advisors, are its founding co-chairs. It remains active.
 
 **Is Gabon in AGOA?**
 Gabon's eligibility for the African Growth and Opportunity Act was terminated effective January 1, 2024, following the 2023 coup, and restored effective January 1, 2026. AGOA itself lapsed in late 2025 and was renewed for one year.
