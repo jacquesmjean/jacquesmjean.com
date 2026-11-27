@@ -34,7 +34,7 @@ I used to think that was science fiction. Now I install the meter for a living.
 
 ## A doctor and a bill
 
-A friend of mine is a physician. He built a health application. Good idea, real patients, his own money.
+A close friend of mine in Minnesota is a physician. He left practice a few years ago to work on healthy living, and he built something good: a product I drink every morning after my workout, and an application to go with it. Real users, his own money.
 
 Over dinner this month he told me where it stands. The AI behind his app runs on tokens he buys from a large provider. The bill is unpredictable and some months runs past a thousand dollars. He pays a second company, overseas, to maintain the thing because he cannot. And one morning his application was gone from Android. Nobody asked him. Nobody called. It was simply not there anymore.
 
@@ -94,13 +94,13 @@ Nobody you elected. The rules of this economy are being set by the pricing teams
 
 A fair society, in my view, is one where the clock does not run on the things you need to live. We decided that about water, about roads, about the public library. We have not decided it about intelligence, and we are running out of time to decide, because the buildings are going up now.
 
-I know what the other side of that fence looks like. I grew up in Dayton. Not the one in the film. The one in northern Haiti, where I walked into a library for the first time at eighteen and understood that knowledge had been metered my whole life and I had not known it. I have since built three libraries there. A library is the one place I know where the clock does not run.
+I know what the other side of that fence looks like. I grew up in Dayton. Not the one in the film. Ouanaminthe and Pilate, in northern Haiti, where I walked into a library for the first time at eighteen and understood that knowledge had been metered my whole life and I had not known it. I have since built three libraries there. A library is the one place I know where the clock does not run.
 
 ## The chase
 
 Someone is always running the clock across the line.
 
-In Libreville it is China, showing up with servers and a handshake. In the open source world it is a model you can download for free and run on a machine you own, which terrifies the people who sell tokens. In a strip mall in Frisco, Texas, it is a dental practice with a small server in the back closet, running its own AI, paying no one by the minute. I know because we installed it.
+In Libreville it is China, showing up with servers and a handshake. In the open source world it is a model you can download for free and run on a machine you own, which terrifies the people who sell tokens. In Houston it is a lawyer launching a platform for social causes around the world, running his own AI on a machine he owns, paying no one by the minute. I know because we installed it.
 
 None of these is a revolution. They are people deciding to own their clock instead of renting it. That is all the hero of the film does, in the end. He stops paying the toll.
 
