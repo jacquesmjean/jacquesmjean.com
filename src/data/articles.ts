@@ -92,6 +92,209 @@ export interface Article {
 // Newest first. Inline markup: **bold** and [link text](url).
 export const articles: Article[] = [
   {
+    slug: "what-if-intelligence-is-the-new-currency-in-time",
+    eyebrow: "Perspectives · AI & Society",
+    tag: "AI · Society",
+    title: "What If Intelligence Is the New Currency? I Rewatched “In Time” and Could Not Sleep.",
+    metaTitle: "What If Intelligence Is the New Currency? “In Time” and the AI Economy | Jacques M. Jean",
+    metaDescription:
+      "In the film, time is money and the poor die at the end of the day. Rewatching it on Thanksgiving night, Jacques M. Jean saw the AI economy we are building: a meter on every mind, a few who own the clock, and a map of who runs out first.",
+    dek: "In the film, time is money and the poor die at the end of the day. On Thanksgiving night I watched it again and saw the AI economy we are building: a meter on every mind, a few people who own the clock, and a map of who runs out first.",
+    summary:
+      "A doctor's AI bill, a 700 billion dollar build-out, and a continent with 0.6 percent of the world's compute. What \"In Time\" gets right about the economy we are building.",
+    datePublished: "2026-11-27",
+    dateDisplay: "November 2026",
+    readTime: "9 min read",
+    keywords: [
+      "In Time movie AI",
+      "intelligence as currency",
+      "AI tokens cost small business",
+      "AI inequality Africa data centers",
+      "Own Your AI",
+      "AI concentration risk",
+      "Web3 crypto AI tokens",
+      "sovereign AI",
+    ],
+    ogImage: "/images/perspectives/in-time-og.jpg",
+    hero: {
+      src: "/images/perspectives/in-time/doctor-and-the-bill.jpg",
+      alt: "A physician alone at a kitchen table at one in the morning, lit by a phone showing a usage meter and a laptop, a stethoscope and cold coffee beside him",
+      caption: "Three meters, and he owns none of them.",
+      credit: "!Illustration",
+      width: 2048,
+      height: 1382,
+    },
+    sections: [
+      {
+        heading: "12:04 AM",
+        paragraphs: [
+          "It is Thanksgiving night and the house is finally quiet.",
+          "I am on the couch with the news on. A Salvadoran army is fighting gangs in the streets of my own country. Haitians are marching in the streets to thank a foreign president for sending soldiers. A chief executive who resigned eleven days ago under federal investigation is back on his throne, and the President is on television taking credit for putting him there. There is a war in Iran on the crawl at the bottom of the screen. There is a vice president running Venezuela because we flew her boss to a courtroom in January.",
+          "I turn it off. I need something that is not real.",
+          "I put on \"In Time.\" I had seen it years ago and remembered it as a chase movie with Justin Timberlake. Two hours later I am sitting in the dark with the credits running, and I am not thinking about the movie at all.",
+          "I am thinking about my friend's phone bill.",
+        ],
+      },
+      {
+        heading: "12:19 AM. The clock on the arm",
+        paragraphs: [
+          "If you have not seen it, here is the whole film in four sentences.",
+          "In the future, nobody ages past 25. After that, a clock on your forearm starts counting down and you have one year. Time is the only currency. You earn it, you spend it, and when the clock hits zero you drop dead where you stand.",
+          "The rich live in a zone called New Greenwich with centuries on their arms. The poor live in Dayton, waking up with a day or less, and the price of coffee goes up while they sleep. Between the zones are tolls. A month to cross. Then two. The tolls are not there to raise money. They are there to keep Dayton in Dayton.",
+          "The hero's mother runs out of time two seconds before he reaches her. The bus fare went up that morning.",
+          "It is not a subtle film. That is why it works. Strip away the costumes and it asks one question. What happens to a society when the thing everyone needs to live is metered by the minute, and a few people own the meter?",
+          "I used to think that was science fiction. Now I install the meter for a living.",
+        ],
+      },
+      {
+        heading: "12:38 AM. A doctor and a bill",
+        paragraphs: [
+          "A close friend of mine in Minnesota is a physician. He left practice a few years ago to work on healthy living, and he built something good: a product I drink every morning after my workout, and an application to go with it. Real users, his own money.",
+          "This month he called me. Not to catch up. He called the way people call when they have run out of ideas.",
+          "The AI behind his app runs on tokens he buys from a large provider. The bill is unpredictable and some months runs past a thousand dollars. He pays a second company, overseas, to maintain the thing because he cannot. And one morning his application was gone from Android. Nobody asked him. Nobody called. It was simply not there anymore.",
+          "\"I have no control over any of it,\" he said. \"I think I have to let it go.\"",
+          "Three meters, and he owns none of them. One counts his tokens. One counts his support hours. One decides whether his product exists today.",
+          "He is a doctor. He is in the top few percent of earners in the richest country on earth. And he is living day to day on borrowed intelligence, the way the people in Dayton live day to day on borrowed time.",
+          "That is the line I could not get out of my head. In the film, the villain is a man in a suit. In life there is no man. There is pricing. There is a terms of service update. There is a policy change on a platform in another time zone. The clock runs down by itself.",
+        ],
+        pullQuote: "The meter does not hate him. It does not need to.",
+      },
+      {
+        heading: "12:57 AM. I kept saying \"what if.\" Then I checked.",
+        paragraphs: [
+          "Here is where the what if stops.",
+          "The price of intelligence is falling. The cost to run a query at the level of the first ChatGPT dropped from about twenty dollars per million tokens in late 2022 to seven cents by late 2024, according to Stanford's AI Index. Nearly three hundred times cheaper. On paper, the minute got cheaper for everyone.",
+          "And yet my friend's bill went up. Yours did too. The minute got cheaper and the meter ran faster. That is the trick in the film, exactly. Prices in Dayton rise \"to keep up with the cost of living,\" a banker says, and nobody in Dayton gets to ask what that means.",
+          "It is not only him. In April, Fast Company ran a piece called \"The end of all-you-can-eat AI.\" The flat-rate plans were ending. Providers were moving everyone to metered tokens and tightening the limits. One Chinese provider had raised its API prices 83 percent since January. Businesses that had built on a monthly plan woke up on a meter. Nobody in Dayton was consulted about that either.",
+          "Now look at who owns the clock.",
+          "The four largest cloud companies plan to spend roughly seven hundred billion dollars this year building AI infrastructure. Seven hundred billion. That is New Greenwich under construction, and the tolls are the subscription prices. The chips in those buildings come, overwhelmingly, from one company, whose CEO was out and back in within eleven days this month on the word of a president. One company, one man, one phone call. I wrote about that in [my last piece](/perspectives/most-valuable-man-in-america-had-no-security-detail/). Rereading it after the film, it reads like a scene from Dayton's point of view.",
+          "Now look at the map.",
+          "Africa has 1.4 billion people, the youngest workforce on earth, and the cobalt, manganese, and rare earths inside every one of those servers. It holds 0.6 percent of the world's data center capacity. Most African data is stored in Europe and North America. The continent that supplies the minerals rents back the intelligence built from them, by the token, in dollars.",
+          "In the film, the zones have names. In life, the zones have the same borders they had in 1960.",
+        ],
+        figure: {
+          src: "/images/perspectives/in-time/the-toll.jpg",
+          alt: "Aerial view at dusk of a brightly lit wall of data centers behind a fence, with a long line of people at a toll gate and a dark neighborhood with a bus stop on the other side",
+          caption: "In the film, the zones have names. In life, the zones have the same borders they had in 1960.",
+          credit: "!Illustration",
+          width: 2048,
+          height: 1382,
+        },
+      },
+      {
+        heading: "1:14 AM. Three floors up",
+        paragraphs: [
+          "The pattern does not change as you go up. Only the size of the body.",
+          "**A person.** My friend. One doctor, three meters, no ownership. When the meter runs out, his patients lose a tool and he loses a company. Nobody decided that. It just happened at the end of the month.",
+          "**A company.** Every small business in Texas that has moved its front desk, its scheduling, and its records onto AI it rents. The owner thinks he bought a system. He bought a month. Next month the price changes, or the model changes, or the terms change, and he finds out his business runs on someone else's clock. I meet these owners every week. The smart ones have started asking one question: what do I actually own?",
+          "**A country.** Gabon, where I [signed three agreements](/perspectives/handshake-is-the-deal-us-china-africa-gabon/) in a U.S. Chamber of Commerce room two years ago and watched all three go to Huawei. A nation with oil, manganese, and forest, and no servers of its own. Whoever owns the compute owns the decisions. Beijing understood that before Washington did. So did Libreville, which is why the door is open to whoever shows up with hardware instead of a subscription.",
+          "Same mechanism. Same meter. The elevator just keeps going up.",
+        ],
+      },
+      {
+        heading: "1:29 AM. Web3 promised to break the clock. It built a casino.",
+        paragraphs: [
+          "The currency in \"In Time\" is a bearer token. It lives on your arm, you pass it hand to hand, and nobody can freeze it. That is the dream Web3 sold us ten years ago: a clock nobody could own.",
+          "What we got was speculation and a coin price on the news next to the weather. Meanwhile the real currency of the next economy arrived quietly under the same name. Tokens. Not on a blockchain. Bought by the million from a model provider, counted while you use them. The decentralization crowd was looking at the wrong token.",
+        ],
+      },
+      {
+        heading: "1:41 AM. Who sets the rules?",
+        paragraphs: [
+          "My friend asked me that at dinner, and I did not have a good answer, so here is my honest one.",
+          "Nobody you elected. The rules of this economy are being set by the pricing teams of a handful of companies, by export control offices in one capital, and by platform policies that can switch off a doctor's app in the night. The President of the United States now sits in Nvidia board meetings by proxy. That is who defines fair.",
+          "A fair society, in my view, is one where the clock does not run on the things you need to live. We decided that about water, about roads, about the public library. We have not decided it about intelligence, and we are running out of time to decide, because the buildings are going up now.",
+          "I know what the other side of that fence looks like. I grew up in Dayton. Not the one in the film. Ouanaminthe and Pilate, in northern Haiti, where I walked into a library for the first time at eighteen and understood that knowledge had been metered my whole life and I had not known it. I have since built three libraries there. A library is the one place I know where the clock does not run.",
+        ],
+        figure: {
+          src: "/images/perspectives/in-time/the-library.jpg",
+          alt: "A teenage boy reading at a wooden table in a small whitewashed library in northern Haiti, a laptop and a small server box with one green light beside him, other children reading in the background",
+          caption: "The one place I know where the clock does not run.",
+          credit: "!Illustration",
+          width: 2048,
+          height: 1382,
+        },
+      },
+      {
+        heading: "1:52 AM. The chase",
+        paragraphs: [
+          "Someone is always running the clock across the line.",
+          "In Libreville it is China, showing up with servers and a handshake. In the open source world it is a model you can download for free and run on a machine you own, which terrifies the people who sell tokens. In Houston it is a lawyer launching a platform for social causes around the world, running his own AI on a machine he owns, paying no one by the minute. I know because we installed it.",
+          "None of these is a revolution. They are people deciding to own their clock instead of renting it. That is all the hero of the film does, in the end. He stops paying the toll.",
+        ],
+      },
+      {
+        heading: "8:00 AM. The choice",
+        paragraphs: [
+          "It is almost two in the morning when I turn off the lamp. My friend's app is still gone. The bus fare went up this morning.",
+          "At eight I call him back.",
+          "He has decided. He is letting the old application go. He is going to start over. He says it like a man reading his own verdict, and I tell him it is the best sentence he has said all month. Because starting over is the hero's move in the film too. Will Salas does not win by paying faster. He wins by refusing the meter.",
+          "So here is the plan. He starts over owning it. The model runs on a machine he controls. The data stays in his building. The support contract becomes a tool he can fire, not a landlord he cannot. The bill becomes a number he can predict, and then a number he can mostly forget. We start Monday.",
+          "The film ends with a question it does not answer. Will you steal time, or keep paying?",
+          "Ours is less dramatic and more urgent. Will you own your intelligence, or keep renting it? And if you rent, from whom, under whose rules, and what happens the morning the clock stops?",
+          "If you run a business, ask what you own. If you run a country, ask where your data sleeps at night. If you run a family, ask what your children will be able to afford to know.",
+          "My friend is starting over. The rest of us still have a choice.",
+        ],
+      },
+    ],
+    faq: [
+      {
+        q: "What is the movie \"In Time\" about?",
+        a: "A 2011 film by Andrew Niccol set in a future where time is the only currency. Everyone stops aging at 25 and receives one year on a clock built into their arm. The wealthy hold centuries; the poor live day to day. Rising prices and tolls between zones keep the poor where they are.",
+      },
+      {
+        q: "How does \"In Time\" relate to AI?",
+        a: "Intelligence is increasingly priced and metered like a utility, bought by the token from a handful of providers. Falling unit prices have not lowered many users' bills, and the infrastructure is concentrated in a few companies and countries. The film's question, what happens when a few people own the meter for something everyone needs, applies directly.",
+      },
+      {
+        q: "How much of the world's data center capacity is in Africa?",
+        a: "About 0.6 percent, according to the Data Centres in Africa 2026 report, for a continent of 1.4 billion people. Most African data is stored in Europe and North America.",
+      },
+      {
+        q: "How much are the big cloud companies spending on AI infrastructure in 2026?",
+        a: "Industry estimates put combined 2026 capital spending by Amazon, Microsoft, Alphabet, and Meta at roughly 650 to 725 billion dollars.",
+      },
+      {
+        q: "What does \"own your AI\" mean?",
+        a: "Running AI on hardware you control, with models you can keep, so your operations do not depend on a monthly meter, a single supplier's pricing, or a platform's policy decisions. It applies to a small business, a hospital, or a country.",
+      },
+      {
+        q: "Who is Jacques M. Jean?",
+        a: "Jacques M. Jean is a Haitian-born American founder and technologist who grew up in Ouanaminthe and Pilate, Haiti. He spent 25 years building technology systems in 15 countries, is CEO of TechFides, Founding Co-Chair of the American Business Council Gabon, and founder of three public libraries in northern Haiti.",
+      },
+    ],
+    sources: [
+      {
+        label: "Stanford HAI, AI Index Report 2025: inference cost for GPT-3.5 level performance fell from about $20 to $0.07 per million tokens, November 2022 to October 2024",
+        url: "https://hai.stanford.edu/ai-index/2025-ai-index-report",
+      },
+      {
+        label: "Techeconomy, on the Data Centres in Africa 2026 report: Africa holds 0.6 percent of global data center capacity; most African data is stored abroad",
+        url: "https://techeconomy.ng/africa-data-centre-capacity-0-6-percent-ai-1-2gw-2030/",
+      },
+      {
+        label: "Datacenter Knowledge: Big Tech to spend $650B in 2026 as AI race intensifies",
+        url: "https://www.datacenterknowledge.com/hyperscalers/big-tech-to-spend-650b-this-year-as-ai-race-intensifies",
+      },
+      {
+        label: "Fast Company: The end of all-you-can-eat AI, April 9, 2026",
+        url: "https://www.fastcompany.com/91524498/the-end-of-all-you-can-eat-ai",
+      },
+      {
+        label: "Al Jazeera: Nvidia board reinstates Jensen Huang as CEO, November 23, 2026",
+        url: "https://www.aljazeera.com/economy/2026/11/23/nvidia-board-reinstates-jensen-huang-as-ceo",
+      },
+      {
+        label: "Al Jazeera: Haitians protest in support of El Salvador's anti-gang troop deployment, November 17, 2026",
+        url: "https://aljazeera.com/news/2026/11/17/haitians-protest-in-support-of-el-salvadors-anti-gang-troop-deployment",
+      },
+      {
+        label: "Council on Foreign Relations: guide to second-term U.S. military strikes and actions",
+        url: "https://www.cfr.org/articles/guide-trumps-second-term-military-strikes-and-actions",
+      },
+    ],
+  },
+  {
     slug: "own-your-ai-americas-small-business-tech",
     eyebrow: "Perspectives · AI Policy",
     tag: "AI Policy · Small Business",
