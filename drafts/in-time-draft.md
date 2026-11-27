@@ -6,7 +6,7 @@
 
 ---
 
-## Midnight, Thursday
+## 12:04 AM
 
 It is Thanksgiving night and the house is finally quiet.
 
@@ -18,7 +18,7 @@ I put on "In Time." I had seen it years ago and remembered it as a chase movie w
 
 I am thinking about my friend's phone bill.
 
-## The clock on the arm
+## 12:19 AM. The clock on the arm
 
 If you have not seen it, here is the whole film in four sentences.
 
@@ -32,11 +32,15 @@ It is not a subtle film. That is why it works. Strip away the costumes and it as
 
 I used to think that was science fiction. Now I install the meter for a living.
 
-## A doctor and a bill
+## 12:38 AM. A doctor and a bill
 
 A close friend of mine in Minnesota is a physician. He left practice a few years ago to work on healthy living, and he built something good: a product I drink every morning after my workout, and an application to go with it. Real users, his own money.
 
-Over dinner this month he told me where it stands. The AI behind his app runs on tokens he buys from a large provider. The bill is unpredictable and some months runs past a thousand dollars. He pays a second company, overseas, to maintain the thing because he cannot. And one morning his application was gone from Android. Nobody asked him. Nobody called. It was simply not there anymore.
+This month he called me. Not to catch up. He called the way people call when they have run out of ideas.
+
+The AI behind his app runs on tokens he buys from a large provider. The bill is unpredictable and some months runs past a thousand dollars. He pays a second company, overseas, to maintain the thing because he cannot. And one morning his application was gone from Android. Nobody asked him. Nobody called. It was simply not there anymore.
+
+"I have no control over any of it," he said. "I think I have to let it go."
 
 Three meters, and he owns none of them. One counts his tokens. One counts his support hours. One decides whether his product exists today.
 
@@ -46,13 +50,15 @@ He is a doctor. He is in the top few percent of earners in the richest country o
 
 That is the line I could not get out of my head. In the film, the villain is a man in a suit. In life there is no man. There is pricing. There is a terms of service update. There is a policy change on a platform in another time zone. The clock runs down by itself.
 
-## I kept saying "what if." Then I checked.
+## 12:57 AM. I kept saying "what if." Then I checked.
 
 Here is where the what if stops.
 
 The price of intelligence is falling. The cost to run a query at the level of the first ChatGPT dropped from about twenty dollars per million tokens in late 2022 to seven cents by late 2024, according to Stanford's AI Index. Nearly three hundred times cheaper. On paper, the minute got cheaper for everyone.
 
 And yet my friend's bill went up. Yours did too. The minute got cheaper and the meter ran faster. That is the trick in the film, exactly. Prices in Dayton rise "to keep up with the cost of living," a banker says, and nobody in Dayton gets to ask what that means.
+
+It is not only him. In April, Fast Company ran a piece called "The end of all-you-can-eat AI." The flat-rate plans were ending. Providers were moving everyone to metered tokens and tightening the limits. One Chinese provider had raised its API prices 83 percent since January. Businesses that had built on a monthly plan woke up on a meter. Nobody in Dayton was consulted about that either.
 
 Now look at who owns the clock.
 
@@ -64,7 +70,7 @@ Africa has 1.4 billion people, the youngest workforce on earth, and the cobalt, 
 
 In the film, the zones have names. In life, the zones have the same borders they had in 1960.
 
-## Three floors up
+## 1:14 AM. Three floors up
 
 The pattern does not change as you go up. Only the size of the body.
 
@@ -76,17 +82,13 @@ The pattern does not change as you go up. Only the size of the body.
 
 Same mechanism. Same meter. The elevator just keeps going up.
 
-## Web3 promised to break the clock. It built a casino.
+## 1:29 AM. Web3 promised to break the clock. It built a casino.
 
-I should say something about crypto, because the film is secretly about it.
+The currency in "In Time" is a bearer token. It lives on your arm, you pass it hand to hand, and nobody can freeze it. That is the dream Web3 sold us ten years ago: a clock nobody could own.
 
-The currency in "In Time" is a bearer token. It lives on your arm. You transfer it hand to hand, nobody can freeze it, nobody needs a bank. That is the dream Web3 sold us ten years ago: a clock nobody could own.
+What we got was speculation and a coin price on the news next to the weather. Meanwhile the real currency of the next economy arrived quietly under the same name. Tokens. Not on a blockchain. Bought by the million from a model provider, counted while you use them. The decentralization crowd was looking at the wrong token.
 
-What we got was speculation, scams, and a coin price on the news next to the weather. Meanwhile the real currency of the next economy arrived quietly, under a different name. Tokens. Not the kind on a blockchain. The kind you buy by the million from a model provider, and the kind that counts your minutes while you use them.
-
-The decentralization crowd was looking at the wrong token.
-
-## Who sets the rules?
+## 1:41 AM. Who sets the rules?
 
 My friend asked me that at dinner, and I did not have a good answer, so here is my honest one.
 
@@ -96,7 +98,7 @@ A fair society, in my view, is one where the clock does not run on the things yo
 
 I know what the other side of that fence looks like. I grew up in Dayton. Not the one in the film. Ouanaminthe and Pilate, in northern Haiti, where I walked into a library for the first time at eighteen and understood that knowledge had been metered my whole life and I had not known it. I have since built three libraries there. A library is the one place I know where the clock does not run.
 
-## The chase
+## 1:52 AM. The chase
 
 Someone is always running the clock across the line.
 
@@ -104,7 +106,15 @@ In Libreville it is China, showing up with servers and a handshake. In the open 
 
 None of these is a revolution. They are people deciding to own their clock instead of renting it. That is all the hero of the film does, in the end. He stops paying the toll.
 
-## The choice
+## 8:00 AM. The choice
+
+It is almost two in the morning when I turn off the lamp. My friend's app is still gone. The bus fare went up this morning.
+
+At eight I call him back.
+
+He has decided. He is letting the old application go. He is going to start over. He says it like a man reading his own verdict, and I tell him it is the best sentence he has said all month. Because starting over is the hero's move in the film too. Will Salas does not win by paying faster. He wins by refusing the meter.
+
+So here is the plan. He starts over owning it. The model runs on a machine he controls. The data stays in his building. The support contract becomes a tool he can fire, not a landlord he cannot. The bill becomes a number he can predict, and then a number he can mostly forget. We start Monday.
 
 The film ends with a question it does not answer. Will you steal time, or keep paying?
 
@@ -112,7 +122,7 @@ Ours is less dramatic and more urgent. Will you own your intelligence, or keep r
 
 If you run a business, ask what you own. If you run a country, ask where your data sleeps at night. If you run a family, ask what your children will be able to afford to know.
 
-It is almost two in the morning when I finally turn off the lamp. My friend's app is still gone. The bus fare went up this morning.
+My friend is starting over. The rest of us still have a choice.
 
 ---
 
@@ -141,6 +151,7 @@ A Haitian born American founder and technologist. He spent 25 years building tec
 - Stanford HAI, AI Index Report 2025: inference cost for GPT-3.5 level performance fell from about $20 to $0.07 per million tokens between November 2022 and October 2024.
 - Techeconomy, reporting the Data Centres in Africa 2026 report: Africa holds 0.6 percent of global data center capacity; most African data is stored abroad.
 - Yahoo Finance / Datacenter Knowledge: hyperscaler 2026 capital spending plans of roughly $650 to $725 billion.
+- Fast Company, "The end of all-you-can-eat AI," April 9, 2026: flat-rate plans ending, metered token pricing, Zhipu API prices up 83 percent year to date.
 - Al Jazeera: Nvidia board reinstates Jensen Huang as CEO, November 23, 2026.
 - Al Jazeera: El Salvador's Bukele touts military intervention in Haiti, November 5, 2026; Haitians protest in support of Salvadoran deployment, November 17, 2026.
 - Council on Foreign Relations: guide to second term U.S. military strikes and actions (Venezuela, Iran).
