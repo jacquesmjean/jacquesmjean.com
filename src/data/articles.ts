@@ -1,5 +1,5 @@
 import type { Locale } from "@/i18n/locales";
-import { handshakeFr, ownYourAiFr, jensenFr, worldFr } from "./articles-fr";
+import { handshakeFr, ownYourAiFr, jensenFr, worldFr, inTimeFr, threeDealsFr } from "./articles-fr";
 import { handshakeEs, ownYourAiEs, jensenEs, worldEs } from "./articles-es";
 import { handshakePt, ownYourAiPt, jensenPt, worldPt } from "./articles-pt";
 import { handshakeHt, ownYourAiHt, jensenHt, worldHt } from "./articles-ht";
@@ -117,6 +117,7 @@ export const articles: Article[] = [
     ],
     ogImage: "/images/perspectives/three-deals-og.jpg",
     continues: "handshake-is-the-deal-us-china-africa-gabon",
+    translations: { fr: threeDealsFr },
     hero: {
       src: "/images/perspectives/three-deals/christmas-libreville.jpg",
       alt: "Jacques M. Jean in a Santa hat bending down to hand a wrapped gift to a small girl in a pink dress on a paved lane on the outskirts of Libreville, volunteers in Fondation Dorcas shirts behind him",
@@ -330,6 +331,7 @@ export const articles: Article[] = [
       "sovereign AI",
     ],
     ogImage: "/images/perspectives/in-time-og.jpg",
+    translations: { fr: inTimeFr },
     hero: {
       src: "/images/perspectives/in-time/doctor-and-the-bill.jpg",
       alt: "A physician alone at a kitchen table at one in the morning, lit by a phone showing a usage meter and a laptop, a stethoscope and cold coffee beside him",

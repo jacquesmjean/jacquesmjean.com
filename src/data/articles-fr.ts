@@ -328,6 +328,7 @@ export const jensenFr: ArticleTranslation = {
         "Ce n'est pas le scandale de la vie privée d'un homme. C'est ce que produit la proximité. Quand une entreprise s'approche assez du pouvoir, les avertissements qui la concernent deviennent gênants. Les régulateurs hésitent. Les règles d'exportation plient. Un briefing d'octobre finit dans un tiroir parce qu'agir embarrasserait un ami en décembre.",
         "L'entreprise aussi apprend la mauvaise leçon. Un PDG qui peut joindre le Président au téléphone cesse de croire que quiconque peut lui dire non. C'est ainsi qu'un fondateur discipliné, après trente ans, se retrouve avec deux relations non déclarées et un conseil d'administration qui a détourné le regard.",
         "J'ai vu cela dans d'autres pays. Là où la plus grande entreprise et le gouvernement partagent la même table, on obtient des oligarques, des monopoles et des règles qui ne s'appliquent qu'aux autres. L'Amérique est censée être l'endroit où cela n'arrive pas. Elle ne le reste que si les affaires gardent leurs distances avec le pouvoir, et le pouvoir avec les affaires. L'accès, les dons, une place dans l'avion : tout cela a un prix, et la facture finit toujours par arriver.",
+        "**Mise à jour, 23 novembre.** Onze jours après sa démission, le conseil d'administration de Nvidia a réinstallé Jensen Huang au poste de PDG. Le Président a déclaré à la télévision qu'il était représenté à la réunion du conseil et que son intervention avait joué un rôle important. L'action a bondi de 33 pour cent ce matin-là. Les enquêtes de la SEC et du ministère de la Justice restent ouvertes. J'ai écrit les paragraphes ci-dessus avant tout cela. Je n'en changerais pas un mot.",
       ],
     },
     {
@@ -498,6 +499,311 @@ export const worldFr: ArticleTranslation = {
     {
       q: "Qui est Jacques M. Jean ?",
       a: "Jacques M. Jean est un technologue et fondateur américain d'origine haïtienne. Il a passé 25 ans à bâtir des systèmes technologiques dans 15 pays pour des entreprises comme Honeywell et Schneider Electric, est fondateur et PDG de TechFides, copréside l'American Business Council Gabon et a fondé Levoila, le Global Heritage Trust.",
+    },
+  ],
+};
+
+/** French edition of "What If Intelligence Is the New Currency?" */
+export const inTimeFr: ArticleTranslation = {
+  eyebrow: "Perspectives · IA et société",
+  tag: "IA · Société",
+  title: "Et si l'intelligence était la nouvelle monnaie ? J'ai revu « In Time » et je n'ai pas dormi.",
+  metaTitle: "Et si l'intelligence était la nouvelle monnaie ? « In Time » et l'économie de l'IA | Jacques M. Jean",
+  metaDescription:
+    "Dans le film, le temps est de l'argent et les pauvres meurent à la fin de la journée. En le revoyant le soir de Thanksgiving, Jacques M. Jean y a vu l'économie de l'IA que nous bâtissons : un compteur sur chaque esprit, quelques-uns qui possèdent l'horloge, et une carte de ceux qui s'épuisent en premier.",
+  dek: "Dans le film, le temps est de l'argent et les pauvres meurent à la fin de la journée. Le soir de Thanksgiving, je l'ai revu et j'y ai vu l'économie de l'IA que nous sommes en train de bâtir : un compteur sur chaque esprit, quelques personnes qui possèdent l'horloge, et une carte de ceux qui s'épuisent en premier.",
+  summary:
+    "La facture d'IA d'un médecin, un chantier à 700 milliards de dollars et un continent qui détient 0,6 pour cent du calcul mondial. Ce que « In Time » dit juste de l'économie que nous bâtissons.",
+  dateDisplay: "Novembre 2026",
+  readTime: "9 min de lecture",
+  keywords: [
+    "In Time film IA",
+    "intelligence comme monnaie",
+    "coût des tokens IA petites entreprises",
+    "inégalités IA Afrique centres de données",
+    "Own Your AI",
+    "risque de concentration IA",
+    "IA souveraine",
+  ],
+  heroCaption: "Trois compteurs, et aucun ne lui appartient.",
+  sections: [
+    {
+      heading: "0 h 04",
+      paragraphs: [
+        "C'est le soir de Thanksgiving et la maison est enfin silencieuse.",
+        "Je suis sur le canapé, les informations allumées. Une armée salvadorienne combat les gangs dans les rues de mon propre pays. Des Haïtiens défilent pour remercier un président étranger d'avoir envoyé des soldats. Un patron qui a démissionné il y a onze jours sous le coup d'une enquête fédérale est de retour sur son trône, et le Président s'en attribue le mérite à la télévision. Il y a une guerre en Iran dans le bandeau en bas de l'écran. Il y a une vice-présidente qui dirige le Venezuela parce que nous avons emmené son patron devant un tribunal en janvier.",
+        "J'éteins. J'ai besoin de quelque chose qui ne soit pas réel.",
+        "Je lance « In Time ». Je l'avais vu il y a des années et j'en gardais le souvenir d'un film de poursuite avec Justin Timberlake. Deux heures plus tard, je suis assis dans le noir pendant le générique, et je ne pense plus du tout au film.",
+        "Je pense à la facture de téléphone de mon ami.",
+      ],
+    },
+    {
+      heading: "0 h 19. L'horloge sur le bras",
+      paragraphs: [
+        "Si vous ne l'avez pas vu, voici tout le film en quatre phrases.",
+        "Dans le futur, personne ne vieillit au-delà de 25 ans. Ensuite, une horloge sur votre avant-bras commence le compte à rebours et il vous reste un an. Le temps est la seule monnaie. Vous le gagnez, vous le dépensez, et quand l'horloge arrive à zéro, vous tombez mort là où vous êtes.",
+        "Les riches vivent dans une zone appelée New Greenwich, avec des siècles sur le bras. Les pauvres vivent à Dayton, se réveillent avec une journée ou moins, et le prix du café augmente pendant qu'ils dorment. Entre les zones, il y a des péages. Un mois pour traverser. Puis deux. Les péages ne servent pas à lever de l'argent. Ils servent à garder Dayton à Dayton.",
+        "La mère du héros manque de temps deux secondes avant qu'il ne l'atteigne. Le prix du bus avait augmenté ce matin-là.",
+        "Ce n'est pas un film subtil. C'est pour cela qu'il fonctionne. Enlevez les costumes et il pose une seule question. Qu'arrive-t-il à une société quand la chose dont tout le monde a besoin pour vivre est facturée à la minute, et que quelques personnes possèdent le compteur ?",
+        "Je pensais que c'était de la science-fiction. Aujourd'hui, j'installe le compteur pour gagner ma vie.",
+      ],
+    },
+    {
+      heading: "0 h 38. Un médecin et une facture",
+      paragraphs: [
+        "Un ami proche, dans le Minnesota, est médecin. Il a quitté la pratique il y a quelques années pour se consacrer au bien-vivre, et il a construit quelque chose de bien : un produit que je bois chaque matin après l'entraînement, et une application qui va avec. De vrais utilisateurs, son propre argent.",
+        "Ce mois-ci, il m'a appelé. Pas pour prendre des nouvelles. Il a appelé comme on appelle quand on n'a plus d'idées.",
+        "L'IA derrière son application tourne avec des tokens qu'il achète à un grand fournisseur. La facture est imprévisible et dépasse certains mois mille dollars. Il paie une deuxième société, à l'étranger, pour maintenir l'ensemble parce qu'il ne le peut pas lui-même. Et un matin, son application avait disparu d'Android. Personne ne lui a demandé. Personne n'a appelé. Elle n'était tout simplement plus là.",
+        "« Je n'ai aucun contrôle sur rien de tout cela », m'a-t-il dit. « Je crois que je dois laisser tomber. »",
+        "Trois compteurs, et aucun ne lui appartient. L'un compte ses tokens. L'autre compte ses heures de support. Le troisième décide si son produit existe aujourd'hui.",
+        "C'est un médecin. Il fait partie des quelques pour cent les mieux payés du pays le plus riche du monde. Et il vit au jour le jour d'une intelligence empruntée, comme les gens de Dayton vivent au jour le jour d'un temps emprunté.",
+        "C'est la phrase que je n'arrivais pas à chasser. Dans le film, le méchant est un homme en costume. Dans la vie, il n'y a pas d'homme. Il y a une grille tarifaire. Il y a une mise à jour des conditions d'utilisation. Il y a un changement de règle sur une plateforme dans un autre fuseau horaire. L'horloge descend toute seule.",
+      ],
+      pullQuote: "Le compteur ne le déteste pas. Il n'en a pas besoin.",
+    },
+    {
+      heading: "0 h 57. Je disais « et si ». Puis j'ai vérifié.",
+      paragraphs: [
+        "C'est ici que le « et si » s'arrête.",
+        "Le prix de l'intelligence baisse. Le coût d'une requête au niveau du premier ChatGPT est passé d'environ vingt dollars par million de tokens fin 2022 à sept cents fin 2024, selon l'AI Index de Stanford. Près de trois cents fois moins cher. Sur le papier, la minute est devenue moins chère pour tout le monde.",
+        "Et pourtant la facture de mon ami a augmenté. La vôtre aussi. La minute est devenue moins chère et le compteur a tourné plus vite. C'est exactement le tour de passe-passe du film. À Dayton, les prix montent « pour suivre le coût de la vie », dit un banquier, et personne à Dayton n'a le droit de demander ce que cela veut dire.",
+        "Il n'est pas le seul. En avril, Fast Company a publié un article intitulé « La fin de l'IA à volonté ». Les forfaits illimités disparaissaient. Les fournisseurs faisaient passer tout le monde au token compté et resserraient les limites. Un fournisseur chinois avait augmenté ses prix d'API de 83 pour cent depuis janvier. Des entreprises qui avaient bâti sur un abonnement mensuel se sont réveillées sur un compteur. Personne à Dayton n'a été consulté non plus.",
+        "Regardez maintenant qui possède l'horloge.",
+        "Les quatre plus grandes entreprises du cloud prévoient de dépenser environ sept cents milliards de dollars cette année pour bâtir l'infrastructure de l'IA. Sept cents milliards. C'est New Greenwich en construction, et les péages sont les prix d'abonnement. Les puces dans ces bâtiments viennent, dans leur écrasante majorité, d'une seule entreprise, dont le PDG a été dehors puis dedans en onze jours ce mois-ci, sur la parole d'un président. Une entreprise, un homme, un coup de téléphone. J'en ai parlé dans [mon dernier article](/fr/perspectives/most-valuable-man-in-america-had-no-security-detail/). Relu après le film, il se lit comme une scène vue depuis Dayton.",
+        "Regardez maintenant la carte.",
+        "L'Afrique compte 1,4 milliard d'habitants, la main-d'œuvre la plus jeune du monde, et le cobalt, le manganèse et les terres rares qui se trouvent dans chacun de ces serveurs. Elle détient 0,6 pour cent de la capacité mondiale des centres de données. La plupart des données africaines sont stockées en Europe et en Amérique du Nord. Le continent qui fournit les minerais loue en retour l'intelligence qu'on en a tirée, au token, en dollars.",
+        "Dans le film, les zones ont des noms. Dans la vie, les zones ont les mêmes frontières qu'en 1960.",
+      ],
+      figureCaption: "Dans le film, les zones ont des noms. Dans la vie, elles ont les frontières de 1960.",
+    },
+    {
+      heading: "1 h 14. Trois étages plus haut",
+      paragraphs: [
+        "Le schéma ne change pas quand on monte. Seule la taille du corps change.",
+        "**Une personne.** Mon ami. Un médecin, trois compteurs, aucune propriété. Quand le compteur s'arrête, ses patients perdent un outil et lui perd une entreprise. Personne ne l'a décidé. C'est simplement arrivé à la fin du mois.",
+        "**Une entreprise.** Chaque petite entreprise du Texas qui a déplacé son accueil, ses rendez-vous et ses dossiers sur une IA qu'elle loue. Le patron croit avoir acheté un système. Il a acheté un mois. Le mois suivant, le prix change, ou le modèle change, ou les conditions changent, et il découvre que son entreprise tourne sur l'horloge de quelqu'un d'autre. Je rencontre ces patrons chaque semaine. Les plus avisés ont commencé à poser une question : qu'est-ce que je possède vraiment ?",
+        "**Un pays.** Le Gabon, où j'ai [signé trois accords](/fr/perspectives/handshake-is-the-deal-us-china-africa-gabon/) dans une salle de la Chambre de commerce des États-Unis il y a deux ans, et où je les ai vus partir tous les trois chez Huawei. Une nation avec du pétrole, du manganèse et de la forêt, et aucun serveur à elle. Celui qui possède le calcul possède les décisions. Pékin l'a compris avant Washington. Libreville aussi, et c'est pour cela que la porte est ouverte à quiconque arrive avec du matériel plutôt qu'un abonnement.",
+        "Même mécanisme. Même compteur. L'ascenseur continue simplement de monter.",
+      ],
+    },
+    {
+      heading: "1 h 29. Le Web3 avait promis de casser l'horloge. Il a construit un casino.",
+      paragraphs: [
+        "La monnaie de « In Time » est un jeton au porteur. Elle vit sur votre bras, on se la passe de main en main, et personne ne peut la geler. C'est le rêve que le Web3 nous a vendu il y a dix ans : une horloge que personne ne pourrait posséder.",
+        "Nous avons eu de la spéculation et un cours de cryptomonnaie aux informations, juste à côté de la météo. Pendant ce temps, la vraie monnaie de la prochaine économie est arrivée sans bruit, sous le même nom. Des tokens. Pas sur une blockchain. Achetés par millions à un fournisseur de modèles, comptés pendant que vous les utilisez. Les partisans de la décentralisation regardaient le mauvais token.",
+      ],
+    },
+    {
+      heading: "1 h 41. Qui fixe les règles ?",
+      paragraphs: [
+        "Mon ami me l'a demandé au téléphone, et je n'avais pas de bonne réponse, alors voici ma réponse honnête.",
+        "Personne que vous ayez élu. Les règles de cette économie sont fixées par les équipes tarifaires d'une poignée d'entreprises, par des bureaux de contrôle des exportations dans une seule capitale, et par des politiques de plateformes capables d'éteindre l'application d'un médecin en pleine nuit. Le Président des États-Unis siège désormais par procuration aux réunions du conseil de Nvidia. Voilà qui définit ce qui est juste.",
+        "Une société juste, à mes yeux, est une société où l'horloge ne tourne pas sur ce dont vous avez besoin pour vivre. Nous l'avons décidé pour l'eau, pour les routes, pour la bibliothèque publique. Nous ne l'avons pas décidé pour l'intelligence, et le temps presse, parce que les bâtiments sortent de terre maintenant.",
+        "Je sais à quoi ressemble l'autre côté de la clôture. J'ai grandi à Dayton. Pas celui du film. Ouanaminthe et Pilate, dans le nord d'Haïti, où je suis entré dans une bibliothèque pour la première fois à dix-huit ans et où j'ai compris que le savoir m'avait été compté toute ma vie sans que je le sache. J'y ai depuis construit trois bibliothèques. Une bibliothèque est le seul endroit que je connaisse où l'horloge ne tourne pas.",
+      ],
+      figureCaption: "Le seul endroit que je connaisse où l'horloge ne tourne pas.",
+    },
+    {
+      heading: "1 h 52. La poursuite",
+      paragraphs: [
+        "Quelqu'un fait toujours passer l'horloge de l'autre côté de la ligne.",
+        "À Libreville, c'est la Chine, qui arrive avec des serveurs et une poignée de main. Dans le monde de l'open source, c'est un modèle que l'on peut télécharger gratuitement et faire tourner sur une machine à soi, ce qui terrifie ceux qui vendent des tokens. À Houston, c'est un avocat qui lance une plateforme pour des causes sociales à travers le monde, qui fait tourner sa propre IA sur une machine qu'il possède et ne paie personne à la minute. Je le sais parce que c'est nous qui l'avons installée.",
+        "Rien de tout cela n'est une révolution. Ce sont des gens qui décident de posséder leur horloge au lieu de la louer. C'est tout ce que fait le héros du film, à la fin. Il arrête de payer le péage.",
+      ],
+    },
+    {
+      heading: "8 h 00. Le choix",
+      paragraphs: [
+        "Il est presque deux heures du matin quand j'éteins la lampe. L'application de mon ami a toujours disparu. Le prix du bus a augmenté ce matin.",
+        "À huit heures, je le rappelle.",
+        "Il a décidé. Il laisse partir l'ancienne application. Il va recommencer. Il le dit comme un homme qui lit son propre verdict, et je lui réponds que c'est la meilleure phrase qu'il ait prononcée de tout le mois. Parce que recommencer, c'est aussi le geste du héros dans le film. Will Salas ne gagne pas en payant plus vite. Il gagne en refusant le compteur.",
+        "Voici donc le plan. Il recommence en propriétaire. Le modèle tourne sur une machine qu'il contrôle. Les données restent chez lui. Le contrat de support devient un outil qu'il peut résilier, pas un propriétaire qu'il ne peut pas quitter. La facture devient un chiffre qu'il peut prévoir, puis un chiffre qu'il peut presque oublier. On commence lundi.",
+        "Le film se termine sur une question à laquelle il ne répond pas. Volerez-vous du temps, ou continuerez-vous à payer ?",
+        "La nôtre est moins dramatique et plus urgente. Posséderez-vous votre intelligence, ou continuerez-vous à la louer ? Et si vous louez, à qui, selon quelles règles, et que se passe-t-il le matin où l'horloge s'arrête ?",
+        "Si vous dirigez une entreprise, demandez-vous ce que vous possédez. Si vous dirigez un pays, demandez-vous où vos données dorment la nuit. Si vous dirigez une famille, demandez-vous ce que vos enfants auront les moyens de savoir.",
+        "Mon ami recommence. Nous autres avons encore le choix.",
+      ],
+    },
+  ],
+  faq: [
+    {
+      q: "De quoi parle le film « In Time » ?",
+      a: "Un film de 2011 d'Andrew Niccol, situé dans un futur où le temps est la seule monnaie. Chacun cesse de vieillir à 25 ans et reçoit une année sur une horloge intégrée à son bras. Les riches détiennent des siècles ; les pauvres vivent au jour le jour. La hausse des prix et les péages entre les zones maintiennent les pauvres à leur place.",
+    },
+    {
+      q: "Quel rapport entre « In Time » et l'IA ?",
+      a: "L'intelligence est de plus en plus tarifée et comptée comme un service public, achetée au token auprès d'une poignée de fournisseurs. La baisse des prix unitaires n'a pas réduit la facture de nombreux utilisateurs, et l'infrastructure est concentrée dans quelques entreprises et quelques pays. La question du film, qu'arrive-t-il quand quelques personnes possèdent le compteur de ce dont tout le monde a besoin, s'applique directement.",
+    },
+    {
+      q: "Quelle part de la capacité mondiale des centres de données se trouve en Afrique ?",
+      a: "Environ 0,6 pour cent, selon le rapport Data Centres in Africa 2026, pour un continent de 1,4 milliard d'habitants. La plupart des données africaines sont stockées en Europe et en Amérique du Nord.",
+    },
+    {
+      q: "Combien les grands acteurs du cloud dépensent-ils en infrastructure d'IA en 2026 ?",
+      a: "Les estimations du secteur situent les dépenses d'investissement cumulées d'Amazon, Microsoft, Alphabet et Meta pour 2026 entre 650 et 725 milliards de dollars environ.",
+    },
+    {
+      q: "Que signifie « posséder son IA » ?",
+      a: "Faire tourner l'IA sur du matériel que vous contrôlez, avec des modèles que vous pouvez conserver, afin que votre activité ne dépende pas d'un compteur mensuel, de la tarification d'un seul fournisseur ou des décisions d'une plateforme. Cela vaut pour une petite entreprise, un hôpital ou un pays.",
+    },
+    {
+      q: "Qui est Jacques M. Jean ?",
+      a: "Jacques M. Jean est un fondateur et technologue américain d'origine haïtienne, qui a grandi à Ouanaminthe et à Pilate, en Haïti. Il a passé 25 ans à bâtir des systèmes technologiques dans 15 pays, dirige TechFides, copréside l'American Business Council Gabon et a fondé trois bibliothèques publiques dans le nord d'Haïti.",
+    },
+  ],
+};
+
+/** French edition of "How Three Signed Deals Slipped Away". */
+export const threeDealsFr: ArticleTranslation = {
+  eyebrow: "Perspectives · Afrique",
+  tag: "Afrique · Affaires",
+  title: "Comment trois accords signés nous ont échappé",
+  metaTitle: "Comment trois accords signés nous ont échappé : le Gabon, Huawei et la banque que nous n'avons pas amenée | Jacques M. Jean",
+  metaDescription:
+    "En septembre 2024, Jacques M. Jean a signé trois accords avec le Gabon à la Chambre de commerce des États-Unis. En novembre 2026, les trois appartenaient à Huawei. Ce qui s'est passé entre les deux, et ce que cela dit de la manière dont l'Amérique fait des affaires en Afrique.",
+  dek: "En septembre 2024, j'ai signé trois accords avec le gouvernement du Gabon dans une salle de la Chambre de commerce des États-Unis, sous les yeux du président et de l'ambassadrice américaine. Ce mois-ci, les trois appartenaient à Huawei. Voici ce qui s'est passé entre les deux, et ce que cela dit de la manière dont l'Amérique fait des affaires en Afrique.",
+  summary:
+    "Trois accords signés, une promesse d'être présent, quatorze mois de portes fermées à Washington, et un coup de téléphone : mon interlocuteur était en Chine. La suite que j'avais promise.",
+  dateDisplay: "Novembre 2026",
+  readTime: "10 min de lecture",
+  keywords: [
+    "Gabon Huawei",
+    "entreprises américaines Afrique",
+    "American Business Council Gabon",
+    "financement DFC Afrique PME",
+    "AGOA Gabon",
+    "Chambre de commerce des États-Unis Gabon",
+    "concurrence Chine Afrique",
+    "Libreville",
+  ],
+  heroCaption: "Noël 2024, dans la périphérie de Libreville. J'avais promis d'être là.",
+  sections: [
+    {
+      heading: "Une promesse à Washington",
+      paragraphs: [
+        "La première chose qu'un membre de la délégation gabonaise m'a dite, après la cérémonie, n'était pas des félicitations.",
+        "C'était un avertissement. Les entreprises américaines, m'a-t-il dit, signent à Washington et restent à Washington. Elles ne viennent jamais à Libreville. Les Chinois viennent. Les Européens viennent. Ils ouvrent un bureau, ils assistent aux réunions de suivi, ils sont à la table quand la décision se prend. Les Américains envoient un courriel.",
+        "Alors j'ai fait une promesse, debout, l'encre encore fraîche. Je serais au Gabon en décembre. Je m'assiérais avec chaque institution nommée dans ces trois accords et avec chaque personne qui devait les valider. Je serais présent.",
+        "J'ai tenu la promesse. Cela n'a pas sauvé les accords. Mais cela m'a appris exactement comment ils ont été perdus, et cela vaut plus que je ne le comprenais à l'époque.",
+      ],
+    },
+    {
+      heading: "Avant Washington, il y a eu Dallas",
+      paragraphs: [
+        "Ce n'était pas ma première rencontre avec le Gabon. Un an avant la Chambre, une délégation gabonaise était venue nous voir au Texas pour évaluer si une entreprise de notre taille pouvait livrer le travail de cybersécurité dont elle avait besoin.",
+        "Ils ont passé quatre jours avec nous. Trois journées complètes de sessions de travail avec nos partenaires en cybersécurité dans la salle. Le maire de Dallas les a accueillis et leur a fait visiter les infrastructures de la ville. Nous avons dîné au centre d'entraînement des Cowboys à Frisco. Nous les avons emmenés dans les magasins, comme on emmène la famille. Nous voulions qu'ils se sentent chez eux, et à la fin, c'était le cas. En partant, ils nous ont invités à Libreville. Quand nous y sommes allés, c'était comme rendre visite à de vieux amis.",
+        "Je dois vous dire quelque chose sur le Gabon, parce que cela explique la suite de cette histoire. Ce pays me rappelle Haïti. L'océan, la cuisine, la musique, la manière dont fonctionne l'amitié, la manière dont un inconnu devient un frère le temps d'un repas. J'ai travaillé dans 15 pays. Le Gabon est le seul qui m'ait jamais donné l'impression de rentrer à la maison.",
+        "Quand je suis revenu pour les trois accords, le gouvernement avait changé. Les gens qui étaient venus à Dallas n'étaient pas ceux qui se trouvaient dans la salle de la Chambre. Mais le nouveau président a signé, et nous aussi.",
+      ],
+    },
+    {
+      heading: "Décembre à Libreville",
+      paragraphs: [
+        "J'ai atterri à Libreville en décembre 2024, comme promis. J'y avais déjà des amis, ce qui a rendu le travail plus facile et le mois plus beau.",
+        "C'était Noël. J'ai fait du bénévolat avec une organisation locale et passé une journée à distribuer des jouets à des enfants dans la périphérie de la ville. La semaine suivante, un ami m'a emmené dans un autre groupe qui faisait la même chose, avec plus de musique que je n'en ai entendu à aucun Noël depuis mon enfance. Ce mois-là, je n'étais pas un dirigeant de passage. J'étais un homme dans un pays qui ressemblait au sien, faisant ce que l'on fait en décembre.",
+        "Et je travaillais. Chaque réunion que j'ai demandée, je l'ai obtenue. Les ministres, les directeurs, les chefs de programme, les gens qui allaient réellement conduire les projets. Les accords couvraient trois choses : un programme de transformation numérique pour le gouvernement, un audit de cybersécurité de ses systèmes, et un programme d'incubation pour les jeunes technologues gabonais.",
+        "Sur les deux premiers, le plus dur était déjà fait. Lors d'une visite précédente, notre équipe s'était assise avec leur juriste, leur responsable financier et leur chef de programme pour cadrer correctement les deux projets. Chaque document requis était rempli. En janvier 2025, les deux ont été soumis à la passation des marchés. On m'a dit d'attendre que la procédure suive son cours.",
+        "J'ai quitté Libreville convaincu que je reviendrais au printemps pour commencer le travail.",
+      ],
+      figureCaption: "Le bois est la deuxième industrie du Gabon après le pétrole. De la forêt au port.",
+    },
+    {
+      heading: "Le mot qui a tout arrêté",
+      paragraphs: [
+        "Quelques semaines plus tard, le message est arrivé. Les projets avaient franchi la première étape. Le gouvernement avait maintenant besoin d'une chose de plus avant de pouvoir avancer.",
+        "Une institution financière pour les financer.",
+        "Je vais être honnête. Nous n'en avions pas. Nous étions une petite entreprise technologique américaine qui venait de signer avec un gouvernement souverain. Nous avions les gens, les partenaires et le plan. Nous n'avions pas de banque.",
+        "Alors nous nous sommes mis à chercher. L'ambassadrice des États-Unis, Vernelle Trim FitzPatrick, était tout ce que l'on attend d'une ambassadrice. Elle ouvrait des portes, faisait des présentations, et mettait son propre poids derrière les entreprises américaines qui tentaient de faire des affaires dans son pays d'affectation. Par son bureau et par nos propres moyens, nous avons contacté les agences qui existent précisément pour cela. La Development Finance Corporation. La Banque mondiale. Les autres.",
+        "Ce qui est revenu, c'est une tournée de portes fermées avec des panneaux polis dessus.",
+        "« Nous ne faisons que des projets d'infrastructure. » Très bien, qui fait la technologie ? Aucune orientation. « Le gouvernement ne souhaite pas investir dans des projets en Afrique pour le moment, mais nous révisons notre portefeuille. » Une réunion, un suivi, le silence. Une autre réunion, un autre suivi, le silence. Pas un seul n'a dit : voici comment cela se fait. Pas un seul n'a dit non, non plus. Ils ont dit plus tard, ce qui, en affaires, est le même mot écrit plus lentement.",
+        "Pendant ce temps, l'horloge tournait du côté gabonais, et l'horloge tournait du mien. Une petite entreprise n'a pas les poches pour maintenir au chaud un contrat souverain pendant un an. Libreville est l'une des villes les plus chères d'Afrique. Chaque mois d'attente était payé par une entreprise qui avait d'autres chantiers.",
+      ],
+    },
+    {
+      heading: "« Il est en Chine cette semaine »",
+      paragraphs: [
+        "Tout le printemps et l'été 2025, j'ai maintenu les réunions. J'ai continué d'appeler nos interlocuteurs gabonais pour avoir des nouvelles. Quelque chose bougeait toujours. Quelque chose était toujours repoussé à la semaine suivante, puis au mois suivant.",
+        "Puis un jour, j'ai appelé pour organiser une réunion avec le département responsable de l'un des projets, et on m'a dit que mon interlocuteur ne pourrait pas être là.",
+        "Il était en Chine pour une réunion.",
+        "Je me souviens d'avoir reposé le téléphone et d'avoir su. Pas les détails, pas encore. Mais su.",
+      ],
+      pullQuote: "Ils ont dit plus tard, ce qui, en affaires, est le même mot écrit plus lentement.",
+    },
+    {
+      heading: "Trois fins",
+      paragraphs: [
+        "Elles sont arrivées une à la fois, comme toujours dans ces cas-là.",
+        "D'abord la transformation numérique. J'ai appris que Huawei, qui travaillait déjà avec le ministère de l'Éducation, élargissait son périmètre et s'en chargerait. Le projet que nous avions cadré avec leur juriste et leur responsable financier, document par document, appartenait désormais à une entreprise qui n'avait jamais eu besoin de demander une banque à qui que ce soit à Washington.",
+        "Puis l'audit de cybersécurité, celui qui avait amené une délégation à Dallas pendant quatre jours. Même entreprise, même silence.",
+        "Le programme d'incubation a été le dernier. J'ai appris qu'il avait suivi le même chemin ce mois-ci, la semaine même où la Chine offrait au président gabonais [une garde d'honneur et un banquet d'État à Pékin](/fr/perspectives/handshake-is-the-deal-us-china-africa-gabon/).",
+        "Personne au Gabon n'a rien fait de mal. Ils nous ont attendus plus longtemps qu'ils n'y étaient tenus. Ils m'avaient dit clairement, en septembre 2024, ce qui arriverait si nous ne venions pas avec tout, et je suis venu avec tout sauf la seule chose dont ils avaient besoin. Les Chinois sont venus avec.",
+      ],
+    },
+    {
+      heading: "Ce que j'ai fait du temps qui restait",
+      paragraphs: [
+        "Voici ce que je ne regrette pas.",
+        "Pendant que les accords mouraient, j'ai appris à connaître le pays. J'ai passé des journées à PK12, le quartier populaire en bordure de la ville, à parler avec les gens de ce qui ne fonctionnait pas dans leur vie et de ce qui pourrait. J'ai traversé la rue depuis l'endroit où je logeais pour m'asseoir avec les pêcheurs. Pas de chambre froide, alors la prise se vend le jour même, au prix qu'on veut bien en offrir. Des taxes qui pèsent lourd pour des hommes seuls sur l'eau. Le danger au large, les problèmes de santé qui viennent avec le métier, et sous tout cela un produit qui pourrait se vendre bien au-delà de cette plage si quelqu'un construisait la chaîne pour le faire. Je prenais un taxi pour la journée entière et j'allais d'un campus universitaire à l'autre, à marcher dans les allées, à parler avec les étudiants et les professeurs de ce dont ils avaient besoin et de ce qu'ils construisaient malgré tout. Je me suis assis avec les hommes qui dirigent les grandes exploitations forestières, ceux qui expédient le bois gabonais sur tous les continents, et j'ai appris comment ce métier fonctionne vraiment, de la forêt au port. Je me suis fait des amis au golf de Libreville qui sont encore mes amis aujourd'hui.",
+        "Partout où j'allais, il y avait une opportunité en pleine vue. Pas une opportunité de présentation PowerPoint. Une vraie, avec une personne attachée.",
+        "Et l'équipe de l'ambassadrice, voyant tout cela, m'a demandé d'aider à lancer un American Business Council au Gabon. Aymeric Saha, directeur général de MIDA Advisors, et moi l'avons coprésidé et mis sur pied. Il fonctionne toujours. C'est la seule chose de ces deux années qui existe encore aujourd'hui, et elle existe parce que des gens sont venus en personne.",
+      ],
+      figureCaption: "La prise se vend le jour même, au prix qu'on veut bien en offrir.",
+    },
+    {
+      heading: "La porte que nous avons laissée ouverte",
+      paragraphs: [
+        "Prenez du recul et le tableau ne parle ni de moi ni de trois contrats.",
+        "Le Gabon a été exclu de l'AGOA, le principal programme commercial américain pour l'Afrique, le premier jour de 2024, après le coup d'État. Il n'y a été réadmis que le premier jour de cette année. L'AGOA elle-même a été laissée expirer l'automne dernier avant d'être renouvelée pour une seule année. Les droits de douane de 2025 sont tombés sur des pays africains qui n'exportent presque rien chez nous, et certains ont répondu de la même manière. L'ambassadrice FitzPatrick a quitté son poste en janvier. L'ambassade de Libreville est dirigée par un chargé d'affaires depuis, et le candidat désigné pour lui succéder a passé son audition au Sénat en septembre et attend toujours. Sur tout le continent, les mêmes fauteuils vides.",
+        "Comparez l'argent que cette administration a mis en Afrique avec celle d'avant, ou celle d'encore avant, et la tendance n'est pas subtile. Regardez comment se sont passées les rencontres avec les dirigeants africains. La distance, la langue, le vocabulaire, [le déjeuner pour cinq chefs d'État à la fois](/fr/perspectives/handshake-is-the-deal-us-china-africa-gabon/).",
+        "Rien de tout cela ne visait une petite entreprise du Texas. Tout cela est retombé sur une.",
+        "Chaque élément disait à Libreville la même chose que la délégation m'avait dite à la Chambre : les Américains ne viendront pas. Et chaque élément a ouvert la porte un peu plus grand au seul pays qui vient toujours. La Chine n'a pas eu à nous battre au Gabon. Il lui a suffi d'être là quand nous n'y étions pas.",
+      ],
+      figureCaption: "Avec l'ambassadrice Vernelle Trim FitzPatrick et Aymeric Saha à l'ambassade des États-Unis à Libreville. Son fauteuil est vide depuis janvier.",
+    },
+    {
+      heading: "Ce que je ferais autrement",
+      paragraphs: [
+        "Une chose, pas une liste.",
+        "Je ne signerais plus jamais un accord souverain sans que le financement soit à la table à côté de moi. Pas une promesse de financement. Une banque, un fonds ou un partenaire avec un nom, déjà engagé. Les Gabonais n'avaient pas besoin qu'on leur explique notre technologie deux fois. Ils avaient besoin de savoir qui paierait, et cette question aurait dû trouver sa réponse avant la cérémonie, pas lors d'un coup de téléphone quatre mois plus tard.",
+        "Et une chose pour Washington, pas une liste non plus.",
+        "Construisez le guichet. Un seul endroit où une entreprise américaine détenant un accord signé dans un pays africain peut aller et obtenir une réponse en trente jours. Oui, non, ou voici qui. Pas une tournée. Pas « nous ne faisons que de l'infrastructure ». Pas « nous révisons notre portefeuille ». Trente jours, une réponse, un nom. Si ce guichet avait existé en février 2025, je crois qu'au moins deux de ces trois accords seraient en cours aujourd'hui, avec des ingénieurs américains à Libreville plutôt que chinois.",
+        "Et gardez les ambassadeurs dans leurs fauteuils. L'ambassadrice FitzPatrick a fait plus pour les entreprises américaines au Gabon que toutes les agences que nous avons appelées réunies. Le fauteuil est vide depuis janvier. Pékin l'a remarqué. Libreville aussi.",
+      ],
+    },
+    {
+      heading: "Ce qui reste",
+      paragraphs: [
+        "J'y retourne encore. Les amis sont toujours là. Le Council est toujours là. Le pêcheur d'en face a toujours le même problème avec les acheteurs.",
+        "Trois accords signés nous ont échappé. Ce qui ne m'a pas échappé, c'est ce que j'ai appris sur cette plage, dans ce taxi, dans cette salle de classe à PK12. Les opportunités sont réelles et elles sont partout. Le pays n'attend pas l'Amérique. Il attend celui qui viendra.",
+        "La prochaine fois, j'amènerai la banque.",
+      ],
+      figureCaption: "Libreville, depuis la fenêtre.",
+    },
+  ],
+  faq: [
+    {
+      q: "Quels étaient les trois accords signés par Jacques M. Jean avec le Gabon ?",
+      a: "Trois protocoles d'accord signés en septembre 2024 à la Chambre de commerce des États-Unis à Washington avec le gouvernement gabonais : un programme de transformation numérique, un audit de cybersécurité des systèmes de l'État, et un programme d'incubation pour les jeunes technologues.",
+    },
+    {
+      q: "Pourquoi les accords gabonais sont-ils allés à Huawei ?",
+      a: "Après que les deux projets cadrés ont franchi la passation des marchés gabonaise début 2025, le gouvernement a exigé une institution financière pour les financer. L'entreprise américaine n'a pas pu obtenir de financement auprès des agences de développement américaines, qui ont donné des réponses incohérentes ou aucune pendant plusieurs mois. Huawei est arrivé avec le financement et a pris la transformation numérique, puis l'audit de cybersécurité, puis le programme d'incubation, le dernier en novembre 2026.",
+    },
+    {
+      q: "Qu'est-ce que l'American Business Council Gabon ?",
+      a: "Un conseil d'affaires lancé au Gabon à la demande de l'ambassade des États-Unis pour relier les entreprises américaines et gabonaises. Jacques M. Jean et Aymeric Saha, directeur général de MIDA Advisors, en sont les coprésidents fondateurs. Il est toujours actif.",
+    },
+    {
+      q: "Le Gabon fait-il partie de l'AGOA ?",
+      a: "L'éligibilité du Gabon à l'African Growth and Opportunity Act a pris fin le 1er janvier 2024, après le coup d'État de 2023, et a été rétablie le 1er janvier 2026. L'AGOA elle-même a expiré fin 2025 avant d'être renouvelée pour un an.",
+    },
+    {
+      q: "Les États-Unis ont-ils un ambassadeur au Gabon ?",
+      a: "Le mandat de l'ambassadrice Vernelle Trim FitzPatrick s'est achevé le 16 janvier 2026. Fin novembre 2026, l'ambassade est dirigée par un chargé d'affaires ; un candidat a été auditionné par le Sénat en septembre 2026.",
+    },
+    {
+      q: "Qui est Jacques M. Jean ?",
+      a: "Un fondateur et technologue américain d'origine haïtienne, PDG de TechFides et coprésident fondateur de l'American Business Council Gabon. Il a passé 25 ans à bâtir des systèmes technologiques dans 15 pays et a fondé trois bibliothèques publiques dans le nord d'Haïti.",
     },
   ],
 };
